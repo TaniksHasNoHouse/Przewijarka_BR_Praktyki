@@ -4,6 +4,7 @@
   <Objects>
     <Object Type="File" Private="true">lPIDType.typ</Object>
     <Object Type="File" Private="true">lPIDVar.var</Object>
+    <Object Type="Program" Language="IEC">PID</Object>
     <Object Type="Package">Actions</Object>
   </Objects>
 </Package>
