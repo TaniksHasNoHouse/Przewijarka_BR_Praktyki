@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="PrzewijarkaPraktykiBR.Hardware.hw" LastWriteTime="07/16/2025 09:39:05" />
+    <TimeStamp LogicalPath="PrzewijarkaPraktykiBR.Hardware.hw" LastWriteTime="07/16/2025 11:43:43" />
   </TimeStamps>
   <Modules>
     <Module Name="X20BB52" Type="X20BB52" X="70" Y="7" />
@@ -18,32 +18,9 @@
     <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" X="184" Y="44" />
     <Module Name="80VD100PD.C000-01a" Type="80VD100PD.C000-01" X="294" Y="44" />
     <Module Name="4XP0057.00-00W" Type="4XP0057.00-00W" X="134" Y="228" />
+    <Module Name="6PPT50.0702-16A" Type="6PPT50.0702-16A" X="70" Y="-149" />
   </Modules>
   <Links>
-    <Link From="80VD100PD.C000-01" To="X20CP0483" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
-      <Point X="223" Y="118" />
-      <Point X="223" Y="103" />
-      <Point X="242" Y="103" />
-      <Point X="255" Y="103" />
-      <Point X="255" Y="185" />
-      <Point X="65" Y="185" />
-      <Point X="65" Y="80" />
-      <Point X="69" Y="80" />
-      <Point X="84" Y="80" />
-      <Point X="84" Y="80" />
-    </Link>
-    <Link From="80VD100PD.C000-01a" To="80VD100PD.C000-01" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="333" Y="118" />
-      <Point X="333" Y="103" />
-      <Point X="352" Y="103" />
-      <Point X="365" Y="103" />
-      <Point X="365" Y="185" />
-      <Point X="285" Y="185" />
-      <Point X="285" Y="118" />
-      <Point X="242" Y="118" />
-      <Point X="233" Y="118" />
-      <Point X="233" Y="118" />
-    </Link>
     <Link From="4XP0057.00-00W" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="214" Y="284" />
       <Point X="214" Y="284" />
@@ -56,6 +33,42 @@
       <Point X="135" Y="51" />
       <Point X="128" Y="51" />
       <Point X="128" Y="51" />
+    </Link>
+    <Link From="80VD100PD.C000-01" To="X20CP0483" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="223" Y="118" />
+      <Point X="223" Y="103" />
+      <Point X="242" Y="103" />
+      <Point X="255" Y="103" />
+      <Point X="255" Y="185" />
+      <Point X="65" Y="185" />
+      <Point X="65" Y="80" />
+      <Point X="69" Y="80" />
+      <Point X="84" Y="80" />
+      <Point X="84" Y="80" />
+    </Link>
+    <Link From="80VD100PD.C000-01" To="80VD100PD.C000-01a" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="333" Y="118" />
+      <Point X="333" Y="103" />
+      <Point X="352" Y="103" />
+      <Point X="365" Y="103" />
+      <Point X="365" Y="185" />
+      <Point X="285" Y="185" />
+      <Point X="285" Y="118" />
+      <Point X="242" Y="118" />
+      <Point X="233" Y="118" />
+      <Point X="233" Y="118" />
+    </Link>
+    <Link From="6PPT50.0702-16A" To="X20CP0483" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
+      <Point X="132.950012" Y="-47" />
+      <Point X="132.950012" Y="-47" />
+      <Point X="132.950012" Y="-42" />
+      <Point X="132.950012" Y="-35" />
+      <Point X="152" Y="-35" />
+      <Point X="152" Y="115" />
+      <Point X="84" Y="115" />
+      <Point X="84" Y="107" />
+      <Point X="84" Y="97" />
+      <Point X="84" Y="97" />
     </Link>
   </Links>
   <InfoElements />
