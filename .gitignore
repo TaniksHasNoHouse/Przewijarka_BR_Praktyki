@@ -1,0 +1,35 @@
+#Ignore AR versions
+/AS/System
+
+#Ignore project binaries
+/Binaries
+
+#Ignore project diagnosis
+/Diagnosis
+
+#Ignore project temporary files
+/Temp
+
+#Ignore upgrades
+/Upgrades
+
+#Ignore .set and .isopen files
+/*.set
+/*.isopen
+
+#Ignore all debug.log files
+debug.log
+
+#mappSafety files
+#/Physical/**/BusNavigator.xostd
+#Do not ignore DLFiles!
+#!/Physical/**/mappSafety/**/DLFiles
+#Temporary debug files
+#/Physical/**/mappSafety/**/C/PLC/R/CPU
+#All the POUs must be included
+#/Physical/**/mappSafety/**/POE
+
+!/Physical/**/*.set
+
+#Ignore revinfo (Loupe)
+*RevInfo.var

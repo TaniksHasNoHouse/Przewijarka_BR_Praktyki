@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="PrzewijarkaPraktykiBR.Hardware.hw" LastWriteTime="07/16/2025 09:39:05" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20BB52" Type="X20BB52" X="70" Y="7" />
+    <Module Name="X20BM11" Type="X20BM11" X="108" Y="7" />
+    <Module Name="X20AI2437" Type="X20AI2437" X="108" Y="7" />
+    <Module Name="X20TB12a" Type="X20TB12" X="108" Y="34" />
+    <Module Name="X20BM11a" Type="X20BM11" X="121" Y="7" />
+    <Module Name="X20BT9100" Type="X20BT9100" X="121" Y="7" />
+    <Module Name="X20TB12b" Type="X20TB12" X="121" Y="34" />
+    <Module Name="X20PS9600" Type="X20PS9600" X="95" Y="7" />
+    <Module Name="X20TB12" Type="X20TB12" X="95" Y="34" />
+    <Module Name="X20CP0483" Type="X20CP0483" X="70" Y="7" />
+    <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" X="184" Y="44" />
+    <Module Name="80VD100PD.C000-01a" Type="80VD100PD.C000-01" X="294" Y="44" />
+    <Module Name="4XP0057.00-00W" Type="4XP0057.00-00W" X="134" Y="228" />
+  </Modules>
+  <Links>
+    <Link From="80VD100PD.C000-01" To="X20CP0483" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="223" Y="118" />
+      <Point X="223" Y="103" />
+      <Point X="242" Y="103" />
+      <Point X="255" Y="103" />
+      <Point X="255" Y="185" />
+      <Point X="65" Y="185" />
+      <Point X="65" Y="80" />
+      <Point X="69" Y="80" />
+      <Point X="84" Y="80" />
+      <Point X="84" Y="80" />
+    </Link>
+    <Link From="80VD100PD.C000-01a" To="80VD100PD.C000-01" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="333" Y="118" />
+      <Point X="333" Y="103" />
+      <Point X="352" Y="103" />
+      <Point X="365" Y="103" />
+      <Point X="365" Y="185" />
+      <Point X="285" Y="185" />
+      <Point X="285" Y="118" />
+      <Point X="242" Y="118" />
+      <Point X="233" Y="118" />
+      <Point X="233" Y="118" />
+    </Link>
+    <Link From="4XP0057.00-00W" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="214" Y="284" />
+      <Point X="214" Y="284" />
+      <Point X="214" Y="289" />
+      <Point X="214" Y="295" />
+      <Point X="125" Y="295" />
+      <Point X="125" Y="215" />
+      <Point X="145" Y="215" />
+      <Point X="145" Y="51" />
+      <Point X="135" Y="51" />
+      <Point X="128" Y="51" />
+      <Point X="128" Y="51" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>
