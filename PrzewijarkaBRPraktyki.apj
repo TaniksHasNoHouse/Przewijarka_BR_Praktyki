@@ -2,7 +2,7 @@
 <?AutomationStudio Version="4.12.8.41 SP" WorkingVersion="4.12"?>
 <Project Version="1.00.0" Edition="Standard" EditionComment="Standard" xmlns="http://br-automation.co.at/AS/Project">
   <Communication>
-    <OnlineConfiguration Name="X20CP0483" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.2 /REPO=11159 /ANSL=1 /PT=11169" Description="" UserName="miste" />
+    <OnlineConfiguration Name="X20CP0483" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.2 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Communication>
   <ANSIC DefaultIncludes="true" />
   <IEC ExtendedConstants="true" IecExtendedComments="true" KeywordsAsStructureMembers="false" NamingConventions="true" Pointers="true" Preprocessor="false" />
@@ -10,7 +10,7 @@
   <Project StoreRuntimeInProject="false" />
   <Variables DefaultInitValue="0" DefaultRetain="false" DefaultVolatile="true" />
   <TechnologyPackages>
-    <mappMotion McDriveLog="5.29.0" Version="5.29.0" />
+    <mappMotion McAcpDrv="5.29.0" McAcpSim="5.29.0" McAcpSys="5.29.0" McDriveLog="5.29.0" Version="5.29.0" />
     <mappView Version="5.24.5" />
   </TechnologyPackages>
 </Project>

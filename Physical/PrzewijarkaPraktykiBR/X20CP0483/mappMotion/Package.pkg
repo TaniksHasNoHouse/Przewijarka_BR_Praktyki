@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="mappMotion" PackageType="mappMotion" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File">MotorLeft.axis</Object>
+    <Object Type="File">MotorMid.axis</Object>
+    <Object Type="File">MotorRight.axis</Object>
+  </Objects>
 </Package>
