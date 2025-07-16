@@ -2,8 +2,6 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Private="true">lPIDType.typ</Object>
-    <Object Type="File" Private="true">lPIDVar.var</Object>
-    <Object Type="Package">Actions</Object>
+    <Object Type="File">actAction.st</Object>
   </Objects>
 </Package>
