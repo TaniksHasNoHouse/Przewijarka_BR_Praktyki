@@ -1,4 +1,4 @@
 
-ACTION Action_9: 
+ACTION actClearing: 
 
 END_ACTION

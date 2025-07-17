@@ -1,4 +1,0 @@
-
-ACTION Action_6: 
-
-END_ACTION

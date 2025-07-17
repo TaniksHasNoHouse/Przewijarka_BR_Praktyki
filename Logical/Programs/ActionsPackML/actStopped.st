@@ -1,4 +1,4 @@
 
-ACTION Action: 
+ACTION actStopped: 
 
 END_ACTION

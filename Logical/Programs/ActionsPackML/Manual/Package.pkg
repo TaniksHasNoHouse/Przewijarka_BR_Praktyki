@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">actIdeMan.st</Object>
-    <Object Type="File">actResettingMan.st</Object>
+    <Object Type="File">actManIde.st</Object>
+    <Object Type="File">actManResetting.st</Object>
   </Objects>
 </Package>

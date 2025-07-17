@@ -1,0 +1,4 @@
+
+ACTION actManIdle: 
+
+END_ACTION

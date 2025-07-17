@@ -9,5 +9,6 @@
     <Object Type="Package">Documentation</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="File" Description="Global data types">Global.typ</Object>
+    <Object Type="Package">PackMLCore</Object>
   </Objects>
 </Package>

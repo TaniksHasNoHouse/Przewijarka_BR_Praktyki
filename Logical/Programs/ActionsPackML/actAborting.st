@@ -1,4 +1,4 @@
 
-ACTION Action_7: 
+ACTION actAborting: 
 
 END_ACTION
