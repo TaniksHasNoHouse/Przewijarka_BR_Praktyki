@@ -4,6 +4,7 @@
   <Objects>
     <Object Type="File" Private="true">gProgramsType.typ</Object>
     <Object Type="File" Private="true">gProgramsVar.var</Object>
-    <Object Type="Program" Language="IEC">AutoManual</Object>
+    <Object Type="Package">Actions</Object>
+    <Object Type="Program" Language="IEC">Auto</Object>
   </Objects>
 </Package>
