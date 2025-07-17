@@ -11,12 +11,9 @@
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="Terminal" Value="true" />
-    <Parameter ID="Startmode" Value="2" />
     <Parameter ID="PasswordVNC" Value="" />
-    <Parameter ID="SelectedFavoriteWeb" Value="192.168.0.2" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
-    <Parameter ID="ActivateOpcUaServer" Value="1" />
   </Module>
   <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" Version="2.5.0.0">
     <Connection Connector="PLK1" TargetModule="X20CP0483" TargetConnector="IF3" NodeNumber="1">
@@ -266,17 +263,14 @@
   <Module Name="8LVA13.B1030D000-0" Type="8LVA13.B1030D000-0" Version="2.2.0.3">
     <Connection Connector="EC" TargetModule="80VD100PD.C000-01" TargetConnector="EC1" />
     <Connection Connector="MT" TargetModule="80VD100PD.C000-01" TargetConnector="MT1" />
-    <Parameter ID="MOTOR_AMB_TEMP_RATED" Location="M1/MotorParameters" Value="40" />
   </Module>
   <Module Name="8LVA13.B1030D000-0a" Type="8LVA13.B1030D000-0" Version="2.2.0.3">
     <Connection Connector="EC" TargetModule="80VD100PD.C000-01a" TargetConnector="EC2" />
     <Connection Connector="MT" TargetModule="80VD100PD.C000-01a" TargetConnector="MT2" />
-    <Parameter ID="MOTOR_AMB_TEMP_RATED" Location="M1/MotorParameters" Value="40" />
   </Module>
   <Module Name="8LVA13.B1030D000-0b" Type="8LVA13.B1030D000-0" Version="2.2.0.3">
     <Connection Connector="EC" TargetModule="80VD100PD.C000-01a" TargetConnector="EC1" />
     <Connection Connector="MT" TargetModule="80VD100PD.C000-01a" TargetConnector="MT1" />
-    <Parameter ID="MOTOR_AMB_TEMP_RATED" Location="M1/MotorParameters" Value="40" />
   </Module>
   <Module Name="X20AI2437" Type="X20AI2437" Version="1.3.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
