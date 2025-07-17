@@ -4,5 +4,8 @@
   <Objects>
     <Object Type="File">T50Vis.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File">AlarmPageCurrContent.binding</Object>
+    <Object Type="File">AlarmPageContent.eventbinding</Object>
+    <Object Type="File">AlarmPageHistContent.binding</Object>
   </Objects>
 </Package>

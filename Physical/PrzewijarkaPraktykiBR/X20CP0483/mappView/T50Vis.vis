@@ -3,15 +3,23 @@
   <StartPage pageRefId="MainPage" />
   <Pages>
     <Page refId="MainPage" />
+    <Page refId="AlarmPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
-  <EventBindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="AlarmPageContent_eventbinding" />
+  </EventBindingsSets>
   <Dialogs />
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="ContentLeft" />
     <Content refId="ContentTop" />
+    <Content refId="AlarmPageCurrContent" />
+    <Content refId="AlarmPageHistContent" />
+    <Content refId="AlarmPageTabs" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
