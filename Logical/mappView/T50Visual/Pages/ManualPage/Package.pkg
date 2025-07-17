@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Page description">ManualPage.page</Object>
+    <Object Type="File">ManualContent.content</Object>
+    <Object Type="File">ManualLeftRight.content</Object>
+    <Object Type="File">ManualRegulators.content</Object>
+    <Object Type="File">ManualMoveMotor.content</Object>
+  </Objects>
+</Package>

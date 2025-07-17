@@ -3,6 +3,7 @@
   <StartPage pageRefId="MainPage" />
   <Pages>
     <Page refId="MainPage" />
+    <Page refId="ManualPage" />
   </Pages>
   <Navigations />
   <BindingsSets />
@@ -12,6 +13,10 @@
     <Content refId="MainPageContent" />
     <Content refId="ContentLeft" />
     <Content refId="ContentTop" />
+    <Content refId="ManualContent" />
+    <Content refId="ManualLeftRight" />
+    <Content refId="ManualRegulators" />
+    <Content refId="ManualMoveMotor" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
