@@ -13,14 +13,13 @@
     <Parameter ID="Terminal" Value="true" />
     <Parameter ID="Startmode" Value="2" />
     <Parameter ID="Mode" Value="Manual" />
-    <Parameter ID="InternetAddress" Value="192.168.0.2" />
+    <Parameter ID="InternetAddress" Value="192.168.0.12" />
     <Parameter ID="Subnetmask" Value="255.255.255.0" />
     <Parameter ID="PasswordVNC" Value="" />
     <Parameter ID="SelectedFavoriteWeb" Value="192.168.0.2" />
     <Parameter ID="Favorites_Web1" Value="webserver1" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
-    <Parameter ID="ActivateOpcUaServer" Value="1" />
   </Module>
   <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" Version="2.5.0.0">
     <Connection Connector="PLK1" TargetModule="X20CP0483" TargetConnector="IF3" NodeNumber="1">
