@@ -2,9 +2,9 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="Program" Language="IEC">Auto</Object>
     <Object Type="File" Private="true">gProgramsType.typ</Object>
     <Object Type="File" Private="true">gProgramsVar.var</Object>
     <Object Type="Package">ActionsPackML</Object>
-    <Object Type="Program" Language="IEC">Auto</Object>
   </Objects>
 </Package>
