@@ -2,13 +2,13 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gPackMLCore" Type="mppackmlcore">
-    <Group ID="Operation">
-      <Property ID="Mode" Value="0" />
-    </Group>
     <Group ID="Modes">
       <Group ID="Mode[1]">
         <Property ID="ModeID" Value="1" />
         <Property ID="Name" Value="Production" />
+      </Group>
+      <Group ID="Mode[2]">
+        <Property ID="Name" Value="Mode[3]" />
       </Group>
     </Group>
   </Element>
