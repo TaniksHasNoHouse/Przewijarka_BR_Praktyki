@@ -4,13 +4,14 @@
   <Pages>
     <Page refId="MainPage" />
     <Page refId="AlarmPage" />
+    <Page refId="page_1" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="AlarmPageCurrContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
-    <EventBindingsSet refId="AlarmPageContent_eventbinding" />
+    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs />
   <Contents>

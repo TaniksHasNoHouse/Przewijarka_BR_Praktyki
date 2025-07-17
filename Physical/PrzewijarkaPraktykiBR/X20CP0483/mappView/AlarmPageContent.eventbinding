@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EventBindingSet id="AlarmPageContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<EventBindingSet id="AlarmPageCurrContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-    <EventBinding id="AlarmPageContent.ButtonAck.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmPageContent" widgetRefId="ButtonAck" event="Click" />
+    <EventBinding id="AlarmPageCurrContent.ButtonAck.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmPageCurrContent" widgetRefId="ButtonAck" event="Click" />
       <EventHandler>
         <Action>
-          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmPageContent" widgetRefId="AlarmListWindow">
+          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmPageCurrContent" widgetRefId="AlarmListWindow">
             <Method xsi:type="widgets.brease.AlarmList.Action.Acknowledge" />
           </Target>
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="AlarmPageContent.ButtonAckAll.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmPageContent" widgetRefId="ButtonAckAll" event="Click" />
+    <EventBinding id="AlarmPageCurrContent.ButtonAckAll.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmPageCurrContent" widgetRefId="ButtonAckAll" event="Click" />
       <EventHandler>
         <Action>
-          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmPageContent" widgetRefId="AlarmListWindow">
+          <Target xsi:type="widgets.brease.AlarmList.Action" contentRefId="AlarmPageCurrContent" widgetRefId="AlarmListWindow">
             <Method xsi:type="widgets.brease.AlarmList.Action.AcknowledgeAll" />
           </Target>
         </Action>
