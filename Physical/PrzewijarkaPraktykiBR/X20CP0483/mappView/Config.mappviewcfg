@@ -4,9 +4,9 @@
   <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
     <Group ID="Server">
       <Selector ID="WebServerProtocol" Value="1">
-        <Property ID="WebServerPort" Value="81" />
+        <Property ID="WebServerPort" Value="82" />
       </Selector>
-      <Property ID="MaxClientConnections" Value="1" />
+      <Property ID="MaxClientConnections" Value="7" />
       <Property ID="MaxBRClientConnections" Value="0" />
       <Selector ID="AuthenticationMode" Value="AuthenticationModeRbac" />
       <Group ID="TcpProxyConf">
