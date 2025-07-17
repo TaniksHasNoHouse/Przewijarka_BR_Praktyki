@@ -6,7 +6,7 @@
     <Selector ID="BaseType" Value="LinearBounded">
       <Property ID="MeasurementUnit" Value="5066068" />
       <Property ID="MeasurementResolutionIsReadOnly" Value="0" />
-      <Property ID="MeasurementResolution" Value="0.01" />
+      <Property ID="MeasurementResolution" Value="0.1" />
       <Property ID="CountDirectionIsReadOnly" Value="0" />
       <Property ID="CountDirection" Value="Standard" />
     </Selector>
