@@ -5,6 +5,6 @@
     <Object Type="Package" Description="Layouts">Layouts</Object>
     <Object Type="Package" Description="Widgets">Widgets</Object>
     <Object Type="Package" Description="Resources">Resources</Object>
-    <Object Type="Package">VisuT50_7</Object>
+    <Object Type="Package">T50Visual</Object>
   </Objects>
 </Package>
