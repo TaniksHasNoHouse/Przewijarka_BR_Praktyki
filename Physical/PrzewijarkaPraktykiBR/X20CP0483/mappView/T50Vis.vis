@@ -4,10 +4,16 @@
   <Pages>
     <Page refId="MainPage" />
     <Page refId="ManualPage" />
+    <Page refId="AlarmPage" />
+    <Page refId="page_1" />
   </Pages>
   <Navigations />
-  <BindingsSets />
-  <EventBindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+  </EventBindingsSets>
   <Dialogs />
   <Contents>
     <Content refId="MainPageContent" />
@@ -17,6 +23,9 @@
     <Content refId="ManualLeftRight" />
     <Content refId="ManualRegulators" />
     <Content refId="ManualMoveMotor" />
+    <Content refId="AlarmPageCurrContent" />
+    <Content refId="AlarmPageHistContent" />
+    <Content refId="AlarmPageTabs" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
