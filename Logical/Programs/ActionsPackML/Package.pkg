@@ -8,6 +8,6 @@
     <Object Type="File">actClearing.st</Object>
     <Object Type="File">actStopping.st</Object>
     <Object Type="Package">Manual</Object>
-    <Object Type="Package">Automatic</Object>
+    <Object Type="Package">Production</Object>
   </Objects>
 </Package>
