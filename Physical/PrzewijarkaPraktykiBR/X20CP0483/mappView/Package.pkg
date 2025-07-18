@@ -8,5 +8,7 @@
     <Object Type="File">AlarmPageContent.eventbinding</Object>
     <Object Type="File">AlarmPageHistContent.binding</Object>
     <Object Type="File">ManualMoveMotor.binding</Object>
+    <Object Type="File">ContentTop.eventbinding</Object>
+    <Object Type="File">LoginDialogueContent.eventbinding</Object>
   </Objects>
 </Package>
