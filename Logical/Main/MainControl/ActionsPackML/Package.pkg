@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="STATE_STOPPED">actStopped.st</Object>
+    <Object Type="File" Description="STATE_STOPPING">actStopping.st</Object>
+    <Object Type="File" Description="STATE_ABORTING">actAborting.st</Object>
+    <Object Type="File" Description="STATE_ABORTED">actAborted.st</Object>
+    <Object Type="File" Description="STATE_CLEARING">actClearing.st</Object>
+    <Object Type="Package" Description="Actions specific to Manual mode">Manual</Object>
+    <Object Type="Package" Description="Actions specific to Production mode">Production</Object>
+  </Objects>
+</Package>
