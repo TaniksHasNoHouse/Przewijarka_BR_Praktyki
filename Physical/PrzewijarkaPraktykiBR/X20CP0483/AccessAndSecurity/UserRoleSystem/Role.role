@@ -4,7 +4,13 @@
   <Element ID="Administrators" Type="Role">
     <Property ID="RoleID" Value="1" />
   </Element>
-  <Element ID="Everyone" Type="Role" >
+  <Element ID="Everyone" Type="Role">
     <Property ID="RoleID" Value="2" />
+  </Element>
+  <Element ID="Operator" Type="Role">
+    <Property ID="RoleID" Value="3" />
+  </Element>
+  <Element ID="Service" Type="Role">
+    <Property ID="RoleID" Value="4" />
   </Element>
 </Configuration>

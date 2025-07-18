@@ -231,7 +231,7 @@
 		borderWidth="2px 2px 1px 1px" 
 		activeBorderWidth="2px 2px 1px 1px" 
 		borderColor="#FF8800" 
-		activeBorderColor="#FF8800" 
+		activeBorderColor="#FF8800"
 		fontSize="16px" 
 		backColor="#FFFFFF" 
 		activeBackColor="#EBEBEB" 
@@ -246,7 +246,7 @@
 		textColor="#474747" 
 		borderWidth="2px" 
 		fontSize="16px" 
-		backColor="transparent" 
+		backColor="transparent"
 		bold="true"
 		cornerRadius="5px"
 		shadow="4px 1px 3px 0px rgba(71, 71, 71, 0.75)" />
