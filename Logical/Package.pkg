@@ -10,5 +10,6 @@
     <Object Type="Package">Main</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Package">Documentation</Object>
+    <Object Type="Package">HMI</Object>
   </Objects>
 </Package>

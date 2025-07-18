@@ -12,6 +12,8 @@
     <Task Name="Axis3" Source="Control.Axis.Axis3.Axis3.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Axes" Source="Control.Axis.Axes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML" Source="PackMLCore.PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="AutoManual" Source="Programs.AutoManual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ManualPage" Source="HMI.ManualPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

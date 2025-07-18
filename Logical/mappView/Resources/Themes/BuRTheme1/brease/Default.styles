@@ -237,16 +237,19 @@
 		activeBackColor="#EBEBEB" 
 		activeTextColor="#555555" 
 		bold="true" 
-		shadow="4px 1px 3px 0px rgba(255, 113, 0, 0.75)" />
+		shadow="4px 1px 3px 0px rgba(255, 113, 0, 0.75)"
+		cornerRadius="5px" />
 	
 	<!--numeric output-->
 	
 	<Style id="default" xsi:type="widgets.brease.NumericOutput" 
 		textColor="#474747" 
-		borderWidth="0px" 
+		borderWidth="2px" 
 		fontSize="16px" 
 		backColor="transparent" 
-		bold="true" />
+		bold="true"
+		cornerRadius="5px"
+		shadow="4px 1px 3px 0px rgba(71, 71, 71, 0.75)" />
 	
 	<!--text input-->
 	

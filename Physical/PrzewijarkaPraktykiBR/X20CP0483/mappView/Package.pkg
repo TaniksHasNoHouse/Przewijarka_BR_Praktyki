@@ -7,5 +7,6 @@
     <Object Type="File">AlarmPageCurrContent.binding</Object>
     <Object Type="File">AlarmPageContent.eventbinding</Object>
     <Object Type="File">AlarmPageHistContent.binding</Object>
+    <Object Type="File">ManualMoveMotor.binding</Object>
   </Objects>
 </Package>

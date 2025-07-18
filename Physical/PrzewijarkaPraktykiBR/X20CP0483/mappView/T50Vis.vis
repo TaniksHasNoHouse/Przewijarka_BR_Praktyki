@@ -8,7 +8,9 @@
     <Page refId="ManualPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="ManualMoveMotor_binding" />
+  </BindingsSets>
   <EventBindingsSets />
   <Dialogs />
   <Contents>
