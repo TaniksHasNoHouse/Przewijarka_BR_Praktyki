@@ -17,7 +17,22 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	FOR i := 0 TO INDEX_NR_OF_ZONES DO
+		CASE Control.WorkStep[i] OF
+			WAIT_FOR_WORK_COMMAND:
+				IF TestAll THEN
+	  				Control.WorkStep[i] := TEST_COMMAND;
+				END_IF;
+			TEST_COMMAND:
+				Tension.TensionController[0].MoveVelocity := TRUE;
+				IF NOT TestAll THEN
+					Control.WorkStep[i] := WAIT_FOR_WORK_COMMAND;
+					Tension.TensionController[0].MoveVelocity := FALSE;
+				END_IF;
+		END_CASE;
+
+	END_FOR;
+	
     
 	Tension.TensionGroup();
   

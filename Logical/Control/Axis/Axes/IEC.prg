@@ -6,5 +6,6 @@
     <File>InitAxis.st</File>
     <File>PrepForWork.st</File>
     <File Private="true">AxesVar.var</File>
+    <File>actBlocksInit.st</File>
   </Files>
 </Program>

@@ -1,0 +1,4 @@
+VAR
+	TestAll : BOOL;
+	Control : ControlType;
+END_VAR
