@@ -6,5 +6,6 @@
     <Object Type="File">gAxisVar.var</Object>
     <Object Type="Package">Axis</Object>
     <Object Type="Package">PID</Object>
+    <Object Type="Package">Tension</Object>
   </Objects>
 </Package>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="5.24.2" SubType="Binary" Description="mapp Tension Library" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpTension.var</File>
+    <File>MpTension.typ</File>
+    <File>MpTensionError.typ</File>
+    <File>MpTensionAlarm.typ</File>
+    <File>MpTension.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpBase" FromVersion="5.24.0" ToVersion="5.24.8" />
+  </Dependencies>
+</Library>

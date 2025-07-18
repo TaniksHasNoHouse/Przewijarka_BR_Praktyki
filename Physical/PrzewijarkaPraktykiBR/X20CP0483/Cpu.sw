@@ -7,6 +7,7 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="PID" Source="Control.PID.PID.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AutoManual" Source="Programs.AutoManual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Tension" Source="Control.Tension.Tension.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -49,5 +50,7 @@
     <LibraryObject Name="CoTrace" Source="Libraries.CoTrace.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="AsZip" Source="Libraries.AsZip.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="MpRegMark" Source="Libraries.MpRegMark.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpTension" Source="Libraries.MpTension.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
