@@ -6,6 +6,7 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnMainPage" top="4" left="4" width="85" height="45" zIndex="0" multiLine="true" pageId="MainPage" text="Strona glowna" wordWrap="true" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnManualPage" top="58" left="4" width="85" height="45" zIndex="1" pageId="ManualPage" text="Manual" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAlarmPage" top="112" left="4" width="85" height="45" zIndex="2" pageId="AlarmPage" text="Alarmy" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnDiagnosticsPage" top="166" left="6" width="85" height="45" zIndex="3" pageId="DiagnosticsPage" text="Diag" fontSize="16px" />
       </Widgets>
     </Widget>
   </Widgets>
