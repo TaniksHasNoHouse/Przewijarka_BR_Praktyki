@@ -2,7 +2,7 @@
 <vdef:Visualization id="T50Vis" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
   <StartPage pageRefId="MainPage" />
   <Pages>
-    <Page refId="MainPage" />
+		<Page refId="MainPage" />
     <Page refId="ManualPage" />
     <Page refId="AlarmPage" />
     <Page refId="page_1" />
