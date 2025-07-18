@@ -1,8 +1,4 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	Axis : ARRAY[0..2] OF Axis;
+	i : BOOL;
 END_VAR

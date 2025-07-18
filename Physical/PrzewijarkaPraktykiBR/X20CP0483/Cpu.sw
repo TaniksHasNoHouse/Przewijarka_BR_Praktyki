@@ -6,8 +6,11 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="PID" Source="Control.PID.PID.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="AutoManual" Source="Programs.AutoManual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Tension" Source="Control.Tension.Tension.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Axis1" Source="Control.Axis.Axis1.Axis1.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Axis2" Source="Control.Axis.Axis2.Axis2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Axis3" Source="Control.Axis.Axis3.Axis3.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Axes" Source="Control.Axis.Axes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
