@@ -5,7 +5,7 @@
     <Property ID="ActivateVisualization" Value="TRUE" />
     <Property ID="FileDeviceName" />
     <Group ID="Permissions">
-      <Property ID="WriteAccessRole" Value="Administrators" />
+      <Property ID="WriteAccessRole" Value="Everyone" />
     </Group>
   </Element>
 </Configuration>

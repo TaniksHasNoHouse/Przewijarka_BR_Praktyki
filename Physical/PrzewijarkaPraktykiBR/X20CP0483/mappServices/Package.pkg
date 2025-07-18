@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">Config.mpalarmxcore</Object>
     <Object Type="File">Config_1.mpalarmxhistory</Object>
+    <Object Type="File">Config_PML.mppackmlcore</Object>
   </Objects>
 </Package>

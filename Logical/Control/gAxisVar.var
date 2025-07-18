@@ -1,4 +1,4 @@
 VAR
 	TestAll : BOOL;
-	Control : ControlType;
+	Control : ControlTypeTension;
 END_VAR

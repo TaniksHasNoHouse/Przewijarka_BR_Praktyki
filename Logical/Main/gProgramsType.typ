@@ -14,7 +14,7 @@ TYPE
 		STEP_ABORTED, (*STATE_ABORTED*)
 		STEP_CLEARING (*STATE_CLEARING*)
 	);
-	ControlType : 	STRUCT 
+	ControlTypeMain : 	STRUCT 
 		Cmd : ControlCmdType;
 		Parameter : ControlParType;
 		Status : ControlStatusType;

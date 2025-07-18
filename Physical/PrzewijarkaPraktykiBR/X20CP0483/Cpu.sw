@@ -11,6 +11,7 @@
     <Task Name="Axis2" Source="Control.Axis.Axis2.Axis2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Axis3" Source="Control.Axis.Axis3.Axis3.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Axes" Source="Control.Axis.Axes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="PackML" Source="PackMLCore.PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -55,5 +56,6 @@
     <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpRegMark" Source="Libraries.MpRegMark.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpTension" Source="Libraries.MpTension.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpPackML" Source="Libraries.MpPackML.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

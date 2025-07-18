@@ -18,5 +18,6 @@
     <Object Type="Library" Language="binary" Description="The FileIO library provides function blocks for file handling.">FileIO</Object>
     <Object Type="Library" Language="Binary" Description="Registration mark Control">MpRegMark</Object>
     <Object Type="Library" Language="Binary" Description="mapp Tension Library">MpTension</Object>
+    <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
   </Objects>
 </Package>

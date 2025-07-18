@@ -1,6 +1,6 @@
 
 TYPE
-	ControlType : 	STRUCT 
+	ControlTypeTension : 	STRUCT 
 		Step : ARRAY[0..2]OF InitState;
 		WorkStep : ARRAY[0..2]OF WorkState;
 	END_STRUCT;
