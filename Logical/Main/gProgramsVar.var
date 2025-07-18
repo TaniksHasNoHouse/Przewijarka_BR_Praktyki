@@ -1,0 +1,3 @@
+VAR
+	gControl : ControlType;
+END_VAR

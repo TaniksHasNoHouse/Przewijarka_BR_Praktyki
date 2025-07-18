@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="STATE_RESETTING [Production]">actProdResetting.st</Object>
+    <Object Type="File" Description="STATE_IDLE [Production]">actProdIdle.st</Object>
+    <Object Type="File" Description="STATE_STARTING [Production]">actProdStarting.st</Object>
+    <Object Type="File" Description="STATE_EXECUTE [Production]">actProdExecute.st</Object>
+    <Object Type="File" Description="STATE_COMPLETING [Production]">actProdCompleting.st</Object>
+    <Object Type="File" Description="STATE_COMPLETE [Production]">actProdComplete.st</Object>
+  </Objects>
+</Package>

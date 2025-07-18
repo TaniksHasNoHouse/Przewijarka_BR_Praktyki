@@ -1,0 +1,33 @@
+
+TYPE
+	StepEnum : 
+		(
+		STEP_STOPPED, (*STATE_STOPPED*)
+		STEP_RESETTING, (*STATE_RESETTING*)
+		STEP_IDLE, (*STATE_IDLE*)
+		STEP_STARTING, (*STATE_STARTING*)
+		STEP_EXECUTE, (*STATE_EXECUTE*)
+		STEP_COMPLETING, (*STATE_COMPLETING*)
+		STEP_COMPLETE, (*STATE_COMPLETE*)
+		STEP_STOPPING, (*STATE_STOPPING*)
+		STEP_ABORTING, (*STATE_ABORTING*)
+		STEP_ABORTED, (*STATE_ABORTED*)
+		STEP_CLEARING (*STATE_CLEARING*)
+	);
+	ControlType : 	STRUCT 
+		Cmd : ControlCmdType;
+		Parameter : ControlParType;
+		Status : ControlStatusType;
+		Step : StepEnum;
+	END_STRUCT;
+	ControlCmdType : 	STRUCT 
+		StartCycle : BOOL;
+	END_STRUCT;
+	ControlParType : 	STRUCT 
+		CyclesToDo : INT;
+	END_STRUCT;
+	ControlStatusType : 	STRUCT 
+		ActPosition : LREAL;
+		ActVelocity : REAL;
+	END_STRUCT;
+END_TYPE
