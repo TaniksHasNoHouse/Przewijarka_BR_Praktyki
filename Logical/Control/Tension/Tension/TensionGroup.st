@@ -1,10 +1,10 @@
 
 PROGRAM _INIT
-	(* Insert code here *)
+	actInitAxes;
     
 	Tension.TensionController[0].MpLink := ADR(gTensionCtrl_Unwinder);
 	Tension.TensionController[1].MpLink := ADR(gTensionCtrl_TransportDancer);
-	Tension.TensionController[4].MpLink := ADR(gTensionCtrl_Rewinder);
+	Tension.TensionController[2].MpLink := ADR(gTensionCtrl_Rewinder);
 	Tension.TensionGroup.MpLink := ADR(gTensionGroup_1);
   
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
@@ -17,23 +17,8 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	FOR i := 0 TO INDEX_NR_OF_ZONES DO
-		CASE Control.WorkStep[i] OF
-			WAIT_FOR_WORK_COMMAND:
-				IF TestAll THEN
-	  				Control.WorkStep[i] := TEST_COMMAND;
-				END_IF;
-			TEST_COMMAND:
-				Tension.TensionController[0].MoveVelocity := TRUE;
-				IF NOT TestAll THEN
-					Control.WorkStep[i] := WAIT_FOR_WORK_COMMAND;
-					Tension.TensionController[0].MoveVelocity := FALSE;
-				END_IF;
-		END_CASE;
-
-	END_FOR;
+	actPrepForWork;
 	
-    
 	Tension.TensionGroup();
   
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
@@ -41,7 +26,7 @@ PROGRAM _CYCLIC
 		Tension.TensionController[i]();
 
 	END_FOR;
-
+	actBlocksInit;
 END_PROGRAM
 
 PROGRAM _EXIT

@@ -8,5 +8,7 @@ ACTION actInitAxes:
 		Axis[i].AxisPar.Deafult.Distance := 20;
 		Axis[i].AxisPar.Deafult.Homing.Mode := mcHOMING_DIRECT;
 		Axis[i].AxisPar.Deafult.Homing.Position := 0;
+		Tension.TensionController[i].Control := TRUE;
+		Tension.TensionGroup.Control := TRUE;
 	END_FOR;
 END_ACTION

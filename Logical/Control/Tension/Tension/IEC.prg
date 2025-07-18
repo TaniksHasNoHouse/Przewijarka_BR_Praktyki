@@ -5,5 +5,8 @@
     <File Description="Local data types" Private="true">TensionTyp.typ</File>
     <File Description="Local variables" Private="true">TensionVar.var</File>
     <File Description="Init, cyclic, exit code">TensionGroup.st</File>
+    <File>actBlocksInit.st</File>
+    <File>PrepForWork.st</File>
+    <File>InitAxis.st</File>
   </Files>
 </Program>
