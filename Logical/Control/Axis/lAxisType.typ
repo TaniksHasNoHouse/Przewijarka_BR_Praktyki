@@ -1,6 +1,6 @@
 
 TYPE
-	Control : 	STRUCT 
+	ControlType : 	STRUCT 
 		Step : ARRAY[0..2]OF InitState;
 	END_STRUCT;
 	InitState : 
@@ -16,7 +16,7 @@ TYPE
 	AxisParType : 	STRUCT 
 		Deafult : MpAxisBasicParType;
 	END_STRUCT;
-	Axis : 	STRUCT 
+	AxisType : 	STRUCT 
 		AxisBasic : MpAxisBasic;
 		AxisPar : AxisParType;
 	END_STRUCT;

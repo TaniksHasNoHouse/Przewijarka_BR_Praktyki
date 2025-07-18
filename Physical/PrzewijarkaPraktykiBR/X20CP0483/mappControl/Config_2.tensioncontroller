@@ -78,12 +78,6 @@
       </Group>
     </Group>
   </Element>
-  <Element ID="gTensionCtrl_Master" Type="tensioncontroller">
-    <Group ID="TensionController">
-      <Selector ID="Utilization" Value="Transport" />
-      <Selector ID="Controller" Value="Master" />
-    </Group>
-  </Element>
   <Element ID="gTensionCtrl_TransportDancer" Type="tensioncontroller" Description="axis2">
     <Group ID="TensionController">
       <Selector ID="MotionSystem" Value="mappMotion">
@@ -111,16 +105,6 @@
       <Group ID="InputSignals">
         <Property ID="SetDancerPosition" Value="" />
       </Group>
-    </Group>
-  </Element>
-  <Element ID="gTensionCtrl_TransportTension" Type="tensioncontroller">
-    <Group ID="TensionController">
-      <Selector ID="Utilization" Value="Transport" />
-      <Selector ID="Controller">
-        <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
-        </Group>
-      </Selector>
     </Group>
   </Element>
 </Configuration>

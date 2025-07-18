@@ -4,7 +4,7 @@ ACTION actPrepForWork:
 		IF Axis[i].AxisBasic.Error THEN
 			Control.Step[i] := ERROR;
 		END_IF;
-		CASE Control.Step OF
+		CASE Control.Step[i] OF
 			COMMUNICATION:
 				IF Axis[i].AxisBasic.Info.CommunicationReady AND Axis[i].AxisBasic.Info.ReadyToPowerOn THEN
 	  				Control.Step[i] := HOME;
@@ -27,7 +27,7 @@ ACTION actPrepForWork:
 				Axis[i].AxisBasic.ErrorReset := TRUE;
 				IF Axis[i].AxisBasic.Error THEN
 					Axis[i].AxisBasic.ErrorReset := FALSE;
-					Control.Step[i] := COMMUNICATION
+					Control.Step[i] := COMMUNICATION;
 				END_IF;
 		END_CASE;
 	END_FOR;

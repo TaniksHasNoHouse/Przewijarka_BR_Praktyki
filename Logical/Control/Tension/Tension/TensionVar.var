@@ -1,5 +1,5 @@
 VAR
-	TensionVar : TensionTyp;
+	Tension : TensionTyp;
 END_VAR
 VAR CONSTANT
 	NR_OF_ZONES : USINT := 5;

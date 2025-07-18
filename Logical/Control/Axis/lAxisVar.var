@@ -1,4 +1,4 @@
 VAR
-	Axis : ARRAY[0..2] OF Axis;
-	i : BOOL;
+	Axis : ARRAY[0..2] OF AxisType;
+	i : USINT;
 END_VAR
