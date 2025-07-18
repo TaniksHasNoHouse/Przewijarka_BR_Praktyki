@@ -1,0 +1,3 @@
+VAR
+	HMI : HMIType;
+END_VAR

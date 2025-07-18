@@ -1,4 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualMoveMotor" height="380" width="690" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Motor1Label" top="25" left="145" zIndex="0" text="Silnik1" textAlign="center" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="Motor2Label" top="25" left="340" zIndex="1" text="Silnik2" textAlign="center" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="Motor3Label" top="25" left="535" zIndex="2" text="Silnik3" textAlign="center" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="HomePosLabel" top="140" left="5" width="100" height="65" zIndex="3" multiLine="true" text="Ustawienie pozycji początkowej" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.Label" id="ActivationLabel" top="80" left="5" width="95" zIndex="4" text="Aktywacja" />
+    <Widget xsi:type="widgets.brease.Label" id="DirectionLabel" top="305" left="5" width="95" zIndex="5" text="Kierunek" />
+    <Widget xsi:type="widgets.brease.Label" id="SpeedLabel" top="220" left="5" width="95" height="60" zIndex="6" multiLine="true" text="Predkość zadana [obr/s]" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot1Home" top="150" left="135" height="50" zIndex="7" text="Zatwierdz" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot2Home" top="150" left="330" height="50" zIndex="8" text="Zatwierdz" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot3Home" top="150" left="525" height="50" zIndex="9" text="Zatwierdz" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot1" top="70" left="135" height="50" zIndex="10" text="OFF" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot2" top="70" left="330" height="50" zIndex="11" text="OFF" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot3" top="70" left="525" height="50" zIndex="12" text="OFF" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="230" left="140" width="95" height="40" zIndex="13" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="230" left="335" width="95" height="40" zIndex="14" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="230" left="530" width="95" height="40" zIndex="15" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot1" top="295" left="120" width="50" height="50" zIndex="16" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot2" top="295" left="315" width="50" height="50" zIndex="17" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot3" top="295" left="510" width="50" height="50" zIndex="18" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot1" top="295" left="205" width="50" height="50" zIndex="19" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot2" top="295" left="400" width="50" height="50" zIndex="20" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot3" top="295" left="595" width="50" height="50" zIndex="21" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
+  </Widgets>
 </Content>
