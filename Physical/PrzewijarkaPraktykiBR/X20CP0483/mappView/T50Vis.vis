@@ -30,7 +30,6 @@
     <Content refId="AlarmPageCurrContent" />
     <Content refId="AlarmPageHistContent" />
     <Content refId="AlarmPageTabs" />
-    <Content refId="DiagnosticsPageContent" />
     <Content refId="LoginDialogueContent" />
   </Contents>
   <SnippetsSets />

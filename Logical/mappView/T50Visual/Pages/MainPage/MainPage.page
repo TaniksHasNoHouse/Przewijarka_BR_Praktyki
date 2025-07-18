@@ -3,5 +3,6 @@
   <Assignments>
     <Assignment type="Content" baseContentRefId="ContentLeft" areaRefId="AreaLeft" backColor="rgba(128, 128, 128, 1)" />
     <Assignment type="Content" baseContentRefId="MainPageContent" areaRefId="AreaMain" backColor="rgba(192, 192, 192, 1)" />
+    <Assignment type="Content" baseContentRefId="ContentTop" areaRefId="AreaTop" />
   </Assignments>
 </pdef:Page>
