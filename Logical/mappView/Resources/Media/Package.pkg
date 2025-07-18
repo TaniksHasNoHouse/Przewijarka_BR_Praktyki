@@ -3,5 +3,6 @@
 <Package SubType="MediaPackage" PackageType="MediaPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Package">Image</Object>
+    <Object Type="Package">SymbolLib</Object>
   </Objects>
 </Package>

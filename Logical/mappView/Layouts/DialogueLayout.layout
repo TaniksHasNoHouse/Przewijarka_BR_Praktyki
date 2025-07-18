@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ldef:Layout id="DialogueLayout" height="210" width="350" xmlns:ldef="http://www.br-automation.com/iat2015/layoutDefinition/v2">
+  <Areas>
+    <Area id="AreaDialogue" height="210" width="350" left="0" top="0" zIndex="0" />
+  </Areas>
+</ldef:Layout>

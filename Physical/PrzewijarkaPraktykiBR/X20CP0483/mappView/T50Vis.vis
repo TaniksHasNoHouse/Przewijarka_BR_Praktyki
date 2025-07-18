@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="T50Vis" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="MainPage" />
+  <StartPage pageRefId="DiagnosticsPage" />
   <Pages>
     <Page refId="MainPage" />
     <Page refId="ManualPage" />
     <Page refId="AlarmPage" />
-    <Page refId="page_1" />
+    <Page refId="DiagnosticsPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -13,8 +13,12 @@
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+    <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
   </EventBindingsSets>
-  <Dialogs />
+  <Dialogs>
+    <Dialog refId="LoginDialogue" />
+  </Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="ContentLeft" />
@@ -26,6 +30,8 @@
     <Content refId="AlarmPageCurrContent" />
     <Content refId="AlarmPageHistContent" />
     <Content refId="AlarmPageTabs" />
+    <Content refId="DiagnosticsPageContent" />
+    <Content refId="LoginDialogueContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

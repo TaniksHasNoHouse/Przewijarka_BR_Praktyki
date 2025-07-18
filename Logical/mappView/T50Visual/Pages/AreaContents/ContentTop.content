@@ -1,4 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentTop" height="60" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+  <Widgets>
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfoUser" top="10" left="280" width="230" zIndex="0" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelLoginInfo" top="10" left="150" width="140" zIndex="1" text="Zalogowano jako:" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageUser" top="10" left="120" width="30" height="30" zIndex="2" image="Media/SymbolLib/User/User.svg" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageLogin" top="10" left="530" width="40" height="40" zIndex="3" image="Media/SymbolLib/User/Login.svg" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageLogout" top="10" left="610" width="40" height="40" zIndex="4" image="Media/SymbolLib/User/Logout.svg" />
+  </Widgets>
 </Content>
