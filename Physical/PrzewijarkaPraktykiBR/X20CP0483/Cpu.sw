@@ -12,18 +12,20 @@
     <Task Name="Axis3" Source="Control.Axis.Axis3.Axis3.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Axes" Source="Control.Axis.Axes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML" Source="PackMLCore.PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="AutoManual" Source="Programs.AutoManual.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ManualPage" Source="HMI.ManualPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="MainContro" Source="Main.MainControl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8" />
+  <DataObjects>
+    <DataObject Name="McAcpSys" Source="" Memory="UserROM" Language="Binary" />
+  </DataObjects>
   <NcDataObjects>
     <NcDataObject Name="mcdrivelog" Source="" Memory="UserROM" Language="Binary" />
   </NcDataObjects>
   <Binaries>
-    <BinaryObject Name="Settings" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arcoal" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="mvLoader" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
@@ -32,6 +34,9 @@
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="mCoWebSc" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="McAcpDrv" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="McAcpSim" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Settings" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
@@ -40,12 +45,18 @@
     <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="Config_PML" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_3" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MotorMid" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_2" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MotorLeft" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="MotorRight" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="McBase" Source="Libraries.McBase.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpBase" Source="Libraries.MpBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="sys_lib" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpAxis" Source="Libraries.MpAxis.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="McAxis" Source="Libraries.McAxis.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="McAcpAx" Source="Libraries.McAcpAx.lby" Memory="UserROM" Language="binary" Debugging="true" />
@@ -59,5 +70,13 @@
     <LibraryObject Name="MpRegMark" Source="Libraries.MpRegMark.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpTension" Source="Libraries.MpTension.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpPackML" Source="Libraries.MpPackML.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="sys_lib" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="dataobj" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="asepl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="brsystem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
