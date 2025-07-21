@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">MpAudit/SysF/UserSignatur</prop>
+  </header>
+  <body>
+    <tu tuid="0">
+      <tuv xml:lang="de">
+        <seg>Elektronische Signatur wurde erfolgreich durchgeführt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Electronic signature performed successfully</seg>
+      </tuv>
+    </tu>
+    <tu tuid="1">
+      <tuv xml:lang="de">
+        <seg>Elektronische Signatur wurde beendet aufgrund einer falschen Eingabe (Benutzername oder Passwort)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Electronic signature exited due to incorrect input (username or password)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="de">
+        <seg>Elektronische Signatur wurde vom Benutzer abgebrochen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Electronic signature canceled by user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="3">
+      <tuv xml:lang="de">
+        <seg>Elektronische Signatur wurde beendet, da das Limit für falsche Eingaben (siehe Konfiguration des Benutzermanagements) überschritten wurde</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Electronic signature exited due to exceeded limit for incorrect input (see configuration of user management)</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

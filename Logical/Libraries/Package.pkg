@@ -19,5 +19,10 @@
     <Object Type="Library" Language="Binary" Description="Registration mark Control">MpRegMark</Object>
     <Object Type="Library" Language="Binary" Description="mapp Tension Library">MpTension</Object>
     <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
+    <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
+    <Object Type="Library" Language="binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
+    <Object Type="Library" Language="Binary" Description="File explorer for B+R file devices">MpFile</Object>
+    <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
+    <Object Type="Library" Language="Binary" Description="Centralized event audit trail">MpAudit</Object>
   </Objects>
 </Package>

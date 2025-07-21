@@ -9,8 +9,11 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
-      <Task Name="ManualPage">
-        <Variable Name="HMI" RecursiveEnable="2" />
+      <Task Name="RecipePage">
+        <Variable Name="UIConnect" RecursiveEnable="2" />
+        <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
+        <Variable Name="MaterialWindingRecipe" RecursiveEnable="2" />
+        <Variable Name="ImageDirectory" RecursiveEnable="2" />
       </Task>
     </Module>
   </DefaultView>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AlarmPageHistContent" height="370" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistoryWindow" top="30" left="40" zIndex="0">
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistoryWindow" top="10" left="10" width="660" height="350" zIndex="0">
       <Widgets />
     </Widget>
   </Widgets>

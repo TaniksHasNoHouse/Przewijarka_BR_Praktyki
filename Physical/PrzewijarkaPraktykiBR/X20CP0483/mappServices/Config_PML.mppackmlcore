@@ -5,6 +5,7 @@
     <Group ID="Core">
       <Property ID="StartupActiveMode" Value="1" />
       <Property ID="StartupActiveState" Value="2" />
+      <Selector ID="Auditing" Value="MpAudit" />
     </Group>
     <Group ID="Modes">
       <Group ID="Mode[1]">

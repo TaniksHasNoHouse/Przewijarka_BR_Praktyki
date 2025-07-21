@@ -13,17 +13,8 @@
 <Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Mot3Active" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot3" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Strings.Btn3" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot3" attribute="text" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Strings.Btn2" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot2" attribute="text" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Strings.Btn1" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot1" attribute="text" />
-</Binding>
+
+
+
 </Bindings>
 </BindingsSet>

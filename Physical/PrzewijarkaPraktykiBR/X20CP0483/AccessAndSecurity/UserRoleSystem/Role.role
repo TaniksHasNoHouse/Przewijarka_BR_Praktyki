@@ -10,7 +10,7 @@
   <Element ID="Operator" Type="Role">
     <Property ID="RoleID" Value="3" />
   </Element>
-  <Element ID="Service" Type="Role">
+  <Element ID="Supervisor" Type="Role">
     <Property ID="RoleID" Value="4" />
   </Element>
 </Configuration>

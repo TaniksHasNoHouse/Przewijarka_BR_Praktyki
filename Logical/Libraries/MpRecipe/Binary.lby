@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="5.24.5" SubType="Binary" Description="Recipe management" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpRecipe.typ</File>
+    <File>MpRecipeAlarm.typ</File>
+    <File>MpRecipeError.typ</File>
+    <File>MpRecipe.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpBase" FromVersion="5.24.1" ToVersion="5.24.8" />
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Library>

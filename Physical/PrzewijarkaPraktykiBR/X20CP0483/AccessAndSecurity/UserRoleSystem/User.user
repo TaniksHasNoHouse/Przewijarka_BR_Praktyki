@@ -9,7 +9,7 @@
   </Element>
   <Element ID="Admin" Type="User">
     <Property ID="UserID" Value="2" />
-    <Property ID="Password" Value="OUm98m5JmRYRR91Unh1j/VpBYp4VprbpM3zlSnUNqGJRMjGJJxk=" />
+    <Property ID="Password" Value="CM11au6TE5cvSd2IhemqhY7GEW+FYxry2erSYUxbqOefuoEyom0=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Administrators" />
     </Group>
@@ -21,11 +21,11 @@
       <Property ID="Role[1]" Value="Operator" />
     </Group>
   </Element>
-  <Element ID="ServiceUser" Type="User">
+  <Element ID="SupervisorUser" Type="User">
     <Property ID="UserID" Value="4" />
-    <Property ID="Password" Value="OTochkDx0TMEG+bT/GRVGOuCqPhl31ovB9O0N5rnTIT24mGsz2c=" />
+    <Property ID="Password" Value="tnijKVcWYmZxMcUIbjevCBx7xlIHyLcRHlSDFuQKlKE05FuBE/c=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Service" />
+      <Property ID="Role[1]" Value="Supervisor" />
     </Group>
   </Element>
 </Configuration>
