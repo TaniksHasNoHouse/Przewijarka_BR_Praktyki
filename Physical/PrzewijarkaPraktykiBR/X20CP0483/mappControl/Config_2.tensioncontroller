@@ -21,13 +21,13 @@
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]" />
         </Group>
-        <Property ID="MaximumVelocityCorrection" Value="1" />
+        <Property ID="MaximumVelocityCorrection" Value="10" />
         <Group ID="ToleranceBand">
           <Property ID="Lower" Value="4" />
           <Property ID="Upper" Value="4" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="1" />
+          <Property ID="MaximumLineVelocityCorrection" Value="10" />
         </Selector>
       </Selector>
       <Selector ID="Material">
@@ -65,7 +65,7 @@
           <Property ID="Upper" Value="4" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="1" />
+          <Property ID="MaximumLineVelocityCorrection" Value="10" />
         </Selector>
       </Selector>
       <Selector ID="Material">
