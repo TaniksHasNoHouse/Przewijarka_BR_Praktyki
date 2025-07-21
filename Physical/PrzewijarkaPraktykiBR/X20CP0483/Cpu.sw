@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
-  <TaskClass Name="Cyclic#1" />
+  <TaskClass Name="Cyclic#1">
+    <Task Name="Tension" Source="Control.Tension.Tension.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="PID" Source="Control.PID.PID.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Tension" Source="Control.Tension.Tension.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Axis1" Source="Control.Axis.Axis1.Axis1.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Axis2" Source="Control.Axis.Axis2.Axis2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Axis3" Source="Control.Axis.Axis3.Axis3.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Axes" Source="Control.Axis.Axes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML" Source="PackMLCore.PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ManualPage" Source="HMI.ManualPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MainContro" Source="Main.MainControl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -53,6 +50,7 @@
     <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="MotorRight" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_4" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="McBase" Source="Libraries.McBase.lby" Memory="UserROM" Language="binary" Debugging="true" />

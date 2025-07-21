@@ -2,7 +2,6 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="mappControl" PackageType="mappControl" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="Package">5ZoneWinderTensionControl</Object>
     <Object Type="File">Config_3.tensiongroup</Object>
     <Object Type="File">Config_2.tensioncontroller</Object>
   </Objects>

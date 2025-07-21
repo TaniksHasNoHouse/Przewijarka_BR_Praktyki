@@ -78,7 +78,7 @@
       </Group>
     </Group>
   </Element>
-  <Element ID="gTensionCtrl_TransportDancer" Type="tensioncontroller" Description="axis2">
+  <Element ID="gTensionCtrl_Master" Type="tensioncontroller" Description="axis2">
     <Group ID="TensionController">
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_2" />
@@ -89,15 +89,7 @@
         </Group>
       </Selector>
       <Selector ID="Utilization" Value="Transport" />
-      <Selector ID="Controller" Value="DancerControl">
-        <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
-        </Group>
-        <Property ID="Orientation" Value="1" />
-        <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="1" />
-        </Selector>
-      </Selector>
+      <Selector ID="Controller" Value="Master" />
       <Selector ID="Material">
         <Property ID="Length" Value="0.4" />
         <Property ID="TensionLimit" Value="300" />
