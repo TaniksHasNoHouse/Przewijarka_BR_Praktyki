@@ -310,9 +310,11 @@
       <Parameter ID="ChannelType1" Value="OCTET[24]" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="PrzewijarkaBRPraktyki_PrzewijarkaPraktykiBR" />
-    <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
-    <Parameter ID="Cyclic1Duration" Value="10000" />
-    <Parameter ID="Cyclic1Tolerance" Value="10000" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP0483.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />

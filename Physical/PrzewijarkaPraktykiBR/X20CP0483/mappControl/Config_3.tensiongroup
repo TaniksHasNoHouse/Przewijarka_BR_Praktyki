@@ -5,12 +5,11 @@
     <Group ID="Linking">
       <Group ID="Subnodes">
         <Property ID="Zone[0]" Value="gTensionCtrl_Unwinder" />
-        <Property ID="Zone[1]" Value="gTensionCtrl_TransportDancer" />
+        <Property ID="Zone[1]" Value="gTensionCtrl_Master" />
         <Property ID="Zone[2]" Value="gTensionCtrl_Rewinder" />
       </Group>
     </Group>
     <Group ID="TensionGroup">
-      <Property ID="Simulation" Value="1" />
       <Group ID="CommonZoneSettings">
         <Selector ID="Material">
           <Property ID="Width" Value="48" />
@@ -18,7 +17,7 @@
         </Selector>
       </Group>
       <Group ID="InputSignals">
-        <Property ID="GroupLineVelocity" Value="::Tension:TensionVar.GroupLineVelocity" />
+        <Property ID="GroupLineVelocity" Value="::Tension:GroupLineVelocity" />
       </Group>
       <Group ID="Features">
         <Property ID="FeatureRef[0]" Value="" />

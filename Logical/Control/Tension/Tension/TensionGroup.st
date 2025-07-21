@@ -1,7 +1,7 @@
 PROGRAM _INIT
     
 	TensionController[0].MpLink := ADR(gTensionCtrl_Unwinder);
-	TensionController[1].MpLink := ADR(gTensionCtrl_TransportDancer);
+	TensionController[1].MpLink := ADR(gTensionCtrl_Master);
 	TensionController[2].MpLink := ADR(gTensionCtrl_Rewinder);
 	TensionGroup.MpLink := ADR(gTensionGroup_1);
   
