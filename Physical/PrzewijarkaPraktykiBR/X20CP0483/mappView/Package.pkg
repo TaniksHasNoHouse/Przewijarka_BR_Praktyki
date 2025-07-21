@@ -4,11 +4,6 @@
   <Objects>
     <Object Type="File">T50Vis.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
-    <Object Type="File">AlarmPageCurrContent.binding</Object>
-    <Object Type="File">AlarmPageContent.eventbinding</Object>
-    <Object Type="File">AlarmPageHistContent.binding</Object>
-    <Object Type="File">ManualMoveMotor.binding</Object>
-    <Object Type="File">ContentTop.eventbinding</Object>
-    <Object Type="File">LoginDialogueContent.eventbinding</Object>
+    <Object Type="Package">Bindings</Object>
   </Objects>
 </Package>

@@ -6,10 +6,12 @@
     <Page refId="AlarmPage" />
     <Page refId="DiagnosticsPage" />
     <Page refId="ManualPage" />
+    <Page refId="RecepiePage" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
+    <BindingsSet refId="RecepieContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
@@ -31,6 +33,7 @@
     <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
     <Content refId="DiagnosticsPageContent" />
+    <Content refId="RecepieContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
