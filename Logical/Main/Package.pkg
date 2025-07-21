@@ -5,5 +5,6 @@
     <Object Type="File">gProgramsType.typ</Object>
     <Object Type="File">gProgramsVar.var</Object>
     <Object Type="Program" Language="IEC" Description="Main - control task">MainControl</Object>
+    <Object Type="File" Private="true">Constants.var</Object>
   </Objects>
 </Package>
