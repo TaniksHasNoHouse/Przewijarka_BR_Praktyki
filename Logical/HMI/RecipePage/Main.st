@@ -2,7 +2,7 @@
 PROGRAM _INIT
 	MpRecepieXml_0.Enable := TRUE;
 	MpRecepieXml_0.MpLink := ADR(MpLinkRecipes);
-	MpRecepieXml_0.DeviceName := ADR('Recipe');
+	MpRecepieXml_0.DeviceName := ADR('USER');
 	MpRecepieXml_0.FileName := ADR('RecipePage');
 	
 	MpRecipeRegPar_0.Enable := TRUE;

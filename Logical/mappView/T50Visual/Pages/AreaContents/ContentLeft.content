@@ -8,7 +8,7 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAlarmPage" top="112" left="2" width="96" height="45" zIndex="2" pageId="AlarmPage" text="Alarmy" fontSize="13px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnDiagnosticsPage" top="167" left="2" width="96" height="45" zIndex="3" pageId="DiagnosticsPage" text="Diagnostyka" fontSize="13px" bold="true" italic="false" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnRecepiePage" top="222" left="2" width="96" height="45" zIndex="4" pageId="RecepiePage" text="Receptury" fontSize="13px" bold="true" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAdminPage" top="276" left="2" width="96" height="45" zIndex="5" pageId="pageId1" text="Admin" fontSize="13px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAdminPage" top="276" left="2" width="96" height="45" zIndex="5" pageId="UserManagementPage" text="Admin" fontSize="13px" />
       </Widgets>
     </Widget>
   </Widgets>

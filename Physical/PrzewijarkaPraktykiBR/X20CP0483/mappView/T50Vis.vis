@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="T50Vis" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="UserManagementPage" />
+  <StartPage pageRefId="MainPage" />
   <Pages>
     <Page refId="MainPage" />
     <Page refId="AlarmPage" />
@@ -36,8 +36,7 @@
     <Content refId="ManualMoveMotor" />
     <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
-    <Content refId="DiagnosticsPageContent" />
-    <Content refId="RecepieContent" />
+	<Content refId="RecepieContent" />
     <Content refId="DiagnosticsPageTabs" />
     <Content refId="DiagnosticsPageSDM" />
     <Content refId="DiagnosticsPageAudit" />
