@@ -330,7 +330,7 @@
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="USER" />
-    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="FileDevicePath1" Value="C:\Temp" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.0.1" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />

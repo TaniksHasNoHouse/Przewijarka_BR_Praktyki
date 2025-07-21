@@ -15,6 +15,7 @@
       <Group ID="Export">
         <Property ID="RawData" Value="TRUE" />
         <Property ID="FileType" Value="2" />
+        <Property ID="Encrypt" Value="FALSE" />
       </Group>
     </Group>
     <Selector ID="Alarms" Value="MpAlarmX" />
