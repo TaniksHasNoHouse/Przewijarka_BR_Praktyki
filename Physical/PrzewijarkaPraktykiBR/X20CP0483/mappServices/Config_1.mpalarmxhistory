@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAlarmXHistory" Type="mpalarmxhistory" />
+  <Element ID="gAlarmXHistory" Type="mpalarmxhistory">
+    <Group ID="mapp.AlarmX.History">
+      <Selector ID="Auditing" Value="MpAudit" />
+    </Group>
+  </Element>
 </Configuration>

@@ -8,5 +8,6 @@
     <Object Type="Package">AlarmPage</Object>
     <Object Type="Package">DiagnosticsPage</Object>
     <Object Type="Package">RecepiePage</Object>
+    <Object Type="Package">UserManagementPage</Object>
   </Objects>
 </Package>

@@ -1,0 +1,11 @@
+VAR
+	AuditLanguage : STRING[20] := 'en|metric'; 
+	(*String which defines language and unit for display and export*)
+	MpAuditTrail_0 : MpAuditTrail;
+	MpAuditTrailUI_0 : MpAuditTrailUI;
+	AuditUIConnect : MpAuditTrailUIConnectType;
+ END_VAR
+
+VAR CONSTANT
+
+END_VAR

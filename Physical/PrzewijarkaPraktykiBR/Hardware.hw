@@ -310,6 +310,7 @@
       <Parameter ID="ChannelType1" Value="OCTET[24]" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="PrzewijarkaBRPraktyki_PrzewijarkaPraktykiBR" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
     <Parameter ID="Cyclic1Duration" Value="10000" />
     <Parameter ID="Cyclic1Tolerance" Value="10000" />
@@ -328,8 +329,8 @@
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
     <Group ID="FileDevice1" />
-    <Parameter ID="FileDeviceName1" Value="Recipe" />
-    <Parameter ID="FileDevicePath1" Value="C:\Temp\" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="C:\Temp" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.0.1" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />

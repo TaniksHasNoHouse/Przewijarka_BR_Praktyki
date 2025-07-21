@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AlarmPageCurrContent" height="370" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmListWindow" top="20" left="40" width="590" zIndex="0">
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmListWindow" top="10" left="10" width="660" height="310" zIndex="0">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemTimestamp" zIndex="0" columnType="timestamp" text="Timestamp" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemMessage" width="310" zIndex="1" text="Message" />

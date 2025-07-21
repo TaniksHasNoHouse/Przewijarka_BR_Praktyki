@@ -6,5 +6,7 @@
     <Object Type="File">Config_1.mpalarmxhistory</Object>
     <Object Type="File">Config_PML.mppackmlcore</Object>
     <Object Type="File">Config_4.mprecipexml</Object>
+    <Object Type="File">Config_4.mpuserx</Object>
+    <Object Type="File">Config_5.mpaudittrail</Object>
   </Objects>
 </Package>

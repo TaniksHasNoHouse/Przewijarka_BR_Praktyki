@@ -5,5 +5,8 @@
     <Object Type="File">T50Vis.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="Package">Bindings</Object>
+    <Object Type="File">DiagnosticsPageAudit.binding</Object>
+    <Object Type="File">UserManagementPageUsers.eventbinding</Object>
+    <Object Type="File">DiagnosticsPageAudit.eventbinding</Object>
   </Objects>
 </Package>

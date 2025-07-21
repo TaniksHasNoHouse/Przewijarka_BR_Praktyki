@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="UserManagementPageUsers" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.UserList" id="UserListWindow" top="10" left="10" width="680" height="350" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListUser" width="120" zIndex="0" text="Użytkownik" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListName" width="160" zIndex="1" columnType="FullName" text="Pełna nazwa" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListRole" width="110" zIndex="2" columnType="Roles" text="Rola" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListAdmin" width="90" zIndex="3" columnType="IsAdmin" text="Admin" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListLastLogin" width="180" zIndex="4" columnType="LastLogin" text="Ostatnie logowanie" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonAddUser" top="370" left="30" width="110" zIndex="1" text="Dodaj" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDeleteUser" top="370" left="160" width="110" zIndex="2" text="Usuń" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonModifyUser" top="370" left="290" width="110" zIndex="3" text="Zmodyfikuj" />
+  </Widgets>
+</Content>

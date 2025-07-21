@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="Program" Language="IEC">ManualPage</Object>
     <Object Type="Program" Language="IEC">RecipePage</Object>
+    <Object Type="Program" Language="IEC">AuditPage</Object>
   </Objects>
 </Package>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="UserMgmtX" Type="mpuserx">
+    <Group ID="Mgr">
+      <Property ID="EditSameLevel" Value="TRUE" />
+    </Group>
+    <Group ID="ServerSettings">
+      <Selector ID="Server">
+        <Group ID="AdditionalUserData">
+          <Property ID="[0]" Value="mail" />
+          <Property ID="[1]" Value="telephoneNumber" />
+        </Group>
+      </Selector>
+    </Group>
+    <Group ID="Users">
+      <Group ID="DefUser#1">
+        <Property ID="id" Value="Admin" />
+        <Property ID="name" Value="Administrators" />
+      </Group>
+      <Group ID="DefUser#2">
+        <Property ID="id" Value="Anonymous" />
+        <Property ID="name" Value="Everyone" />
+      </Group>
+      <Group ID="DefUser#3">
+        <Property ID="id" Value="OperatorUser" />
+        <Property ID="name" Value="Operator" />
+      </Group>
+      <Group ID="DefUser#4">
+        <Property ID="id" Value="SupervisorUser" />
+        <Property ID="name" Value="Supervisor" />
+      </Group>
+    </Group>
+    <Group ID="Groups">
+      <Group ID="DefGroup#1">
+        <Property ID="id" Value="Administrators" />
+        <Property ID="admin" Value="TRUE" />
+      </Group>
+      <Group ID="DefGroup#2">
+        <Property ID="id" Value="Everyone" />
+      </Group>
+      <Group ID="DefGroup#3">
+        <Property ID="id" Value="Operator" />
+      </Group>
+      <Group ID="DefGroup#4">
+        <Property ID="id" Value="Supervisor" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

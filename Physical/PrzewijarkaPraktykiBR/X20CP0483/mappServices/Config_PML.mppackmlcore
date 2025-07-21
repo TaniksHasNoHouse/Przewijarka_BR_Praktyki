@@ -2,6 +2,9 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gPackMLCore" Type="mppackmlcore">
+    <Group ID="Core">
+      <Selector ID="Auditing" Value="MpAudit" />
+    </Group>
     <Group ID="Modes">
       <Group ID="Mode[1]">
         <Property ID="ModeID" Value="1" />
