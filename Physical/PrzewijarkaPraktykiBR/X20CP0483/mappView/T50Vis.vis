@@ -1,19 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="T50Vis" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="MainPage" />
+  <StartPage pageRefId="UserManagementPage" />
   <Pages>
     <Page refId="MainPage" />
     <Page refId="AlarmPage" />
     <Page refId="DiagnosticsPage" />
     <Page refId="ManualPage" />
+    <Page refId="UserManagementPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
+    <BindingsSet refId="DiagnosticsPageAudit_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
+    <EventBindingsSet refId="UserManagementPageUsers_eventbinding" />
+    <EventBindingsSet refId="DiagnosticsPageAudit_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
@@ -30,7 +34,10 @@
     <Content refId="ManualMoveMotor" />
     <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
-    <Content refId="DiagnosticsPageContent" />
+    <Content refId="DiagnosticsPageTabs" />
+    <Content refId="DiagnosticsPageSDM" />
+    <Content refId="DiagnosticsPageAudit" />
+    <Content refId="UserManagementPageUsers" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

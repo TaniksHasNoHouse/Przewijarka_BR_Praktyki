@@ -10,5 +10,8 @@
     <Object Type="File">ManualMoveMotor.binding</Object>
     <Object Type="File">ContentTop.eventbinding</Object>
     <Object Type="File">LoginDialogueContent.eventbinding</Object>
+    <Object Type="File">DiagnosticsPageAudit.binding</Object>
+    <Object Type="File">UserManagementPageUsers.eventbinding</Object>
+    <Object Type="File">DiagnosticsPageAudit.eventbinding</Object>
   </Objects>
 </Package>

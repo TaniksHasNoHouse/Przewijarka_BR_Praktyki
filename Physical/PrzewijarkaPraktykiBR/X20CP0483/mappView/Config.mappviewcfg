@@ -8,7 +8,7 @@
       </Selector>
       <Property ID="MaxClientConnections" Value="7" />
       <Property ID="MaxBRClientConnections" Value="0" />
-      <Selector ID="AuthenticationMode" Value="AuthenticationModeRbac" />
+      <Selector ID="AuthenticationMode" Value="AuthenticationModeMpUserX" />
       <Group ID="TcpProxyConf">
         <Selector ID="InsecureMode" Value="1" />
       </Group>

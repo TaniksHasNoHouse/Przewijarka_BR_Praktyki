@@ -3,6 +3,8 @@
 <Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Page description">DiagnosticsPage.page</Object>
-    <Object Type="File">DiagnosticsPageContent.content</Object>
+    <Object Type="File">DiagnosticsPageTabs.content</Object>
+    <Object Type="File">DiagnosticsPageSDM.content</Object>
+    <Object Type="File">DiagnosticsPageAudit.content</Object>
   </Objects>
 </Package>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAuditTrail" Type="mpaudittrail">
+    <Group ID="Audit">
+      <Group ID="Events">
+        <Property ID="[0]" Value="16" />
+        <Property ID="[1]" Value="2" />
+        <Property ID="[2]" Value="18" />
+        <Property ID="[3]" Value="33" />
+        <Property ID="[4]" Value="64" />
+        <Property ID="[5]" Value="65" />
+        <Property ID="[6]" Value="48" />
+      </Group>
+      <Group ID="Export">
+        <Property ID="RawData" Value="TRUE" />
+        <Property ID="FileType" Value="2" />
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

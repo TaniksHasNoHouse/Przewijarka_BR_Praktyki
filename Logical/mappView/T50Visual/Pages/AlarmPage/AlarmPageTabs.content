@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AlarmPageTabs" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxTabs" top="0" left="0" width="700" height="480" zIndex="0">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAlarmTabs" top="0" left="0" width="720" height="450" zIndex="0">
       <Widgets>
-        <Widget xsi:type="widgets.brease.TabControl" id="AlarmTabs" top="9" left="9" width="681" height="461" zIndex="0">
+        <Widget xsi:type="widgets.brease.TabControl" id="AlarmTabs" top="9" left="9" width="681" height="401" zIndex="0">
           <Widgets>
             <Widget xsi:type="widgets.brease.TabItem" id="CurrentAlarms" left="0" width="150" zIndex="0" text="Current alarms">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlCurrAlarms" top="0" left="0" width="680" height="380" zIndex="0" contentId="AlarmPageCurrContent" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlCurrAlarms" top="0" left="0" width="680" height="370" zIndex="0" contentId="AlarmPageCurrContent" />
               </Widgets>
             </Widget>
             <Widget xsi:type="widgets.brease.TabItem" id="HistoryAlarms" left="0" width="150" zIndex="1" text="Alarm history">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlHistAlarms" top="0" left="0" width="680" height="380" zIndex="0" contentId="AlarmPageHistContent" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlHistAlarms" top="0" left="0" width="680" height="370" zIndex="0" contentId="AlarmPageHistContent" />
               </Widgets>
             </Widget>
           </Widgets>
