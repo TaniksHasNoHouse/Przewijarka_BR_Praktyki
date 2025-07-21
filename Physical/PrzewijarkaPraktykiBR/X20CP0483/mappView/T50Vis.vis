@@ -17,7 +17,7 @@
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
-  </Dialogs>
+	</Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />

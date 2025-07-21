@@ -2,14 +2,35 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gPackMLCore" Type="mppackmlcore">
+    <Group ID="Core">
+      <Property ID="StartupActiveMode" Value="1" />
+      <Property ID="StartupActiveState" Value="2" />
+    </Group>
     <Group ID="Modes">
       <Group ID="Mode[1]">
         <Property ID="ModeID" Value="1" />
         <Property ID="Name" Value="Production" />
+        <Selector ID="State[5]" Value="0" />
+        <Selector ID="State[10]" Value="0" />
+        <Selector ID="State[11]" Value="0" />
+        <Selector ID="State[12]" Value="0" />
+        <Selector ID="State[13]" Value="0" />
+        <Selector ID="State[14]" Value="0" />
       </Group>
       <Group ID="Mode[2]">
         <Property ID="ModeID" Value="2" />
         <Property ID="Name" Value="Mode[3]" />
+        <Selector ID="State[3]" Value="0" />
+        <Selector ID="State[5]" Value="0" />
+        <Selector ID="State[6]" Value="0" />
+        <Selector ID="State[10]" Value="0" />
+        <Selector ID="State[11]" Value="0" />
+        <Selector ID="State[12]" Value="0" />
+        <Selector ID="State[13]" Value="0" />
+        <Selector ID="State[14]" Value="0" />
+        <Selector ID="State[15]" Value="0" />
+        <Selector ID="State[16]" Value="0" />
+        <Selector ID="State[17]" Value="0" />
       </Group>
     </Group>
   </Element>

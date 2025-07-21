@@ -310,6 +310,7 @@
       <Parameter ID="ChannelType1" Value="OCTET[24]" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="PrzewijarkaBRPraktyki_PrzewijarkaPraktykiBR" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
     <Parameter ID="Cyclic1Duration" Value="10000" />
     <Parameter ID="Cyclic1Tolerance" Value="10000" />
