@@ -2,9 +2,8 @@
 TYPE
 	StoppedEnum : 
 		(
-		STEP_STOPPED, (*STATE_STOPPED*)
-		STEP_RESETTING (*STATE_RESETTING*)
-	);
+		STOPPED_IDLE (*STOPPED_IDLE*)
+		);
 	MainType : 	STRUCT 
 		PackMLStep : MainCmdType;
 	END_STRUCT;
