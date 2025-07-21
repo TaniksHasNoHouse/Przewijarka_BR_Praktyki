@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="DiagnosticsPageTabs" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxDiagnosticsTabs" top="0" left="0" width="700" height="420" zIndex="0">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxDiagnosticsTabs" top="0" left="0" width="700" height="420" zIndex="0" backColor="rgba(192, 192, 192, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="DiagnosticsTabs" top="9" left="9" width="681" height="401" zIndex="0">
           <Widgets>
