@@ -4,6 +4,5 @@
   <Objects>
     <Object Type="File">Config_3.tensiongroup</Object>
     <Object Type="File">Config_2.tensioncontroller</Object>
-    <Object Type="File">Config_4.regmarkdetection</Object>
   </Objects>
 </Package>
