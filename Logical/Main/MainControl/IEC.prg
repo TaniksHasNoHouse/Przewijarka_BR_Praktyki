@@ -6,5 +6,6 @@
     <Object Type="File" Description="Local data types" Private="true">lAutoType.typ</Object>
     <Object Type="File" Description="Local variables" Private="true">lAutoManualVar.var</Object>
     <Object Type="Package" Description="Actions for PackML">ActionsPackML</Object>
+    <Object Type="File" Private="true">Constants.var</Object>
   </Objects>
 </Program>

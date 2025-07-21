@@ -1,8 +1,7 @@
-
-VAR
-
-END_VAR
-
 VAR CONSTANT
-
+	PACKML_MODE_ALL : DINT := 0;
+END_VAR
+VAR
+	MpPackMLStateRequest : FUB_TYPE;
+	Main : MainType;
 END_VAR
