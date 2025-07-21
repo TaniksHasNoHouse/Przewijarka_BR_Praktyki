@@ -8,9 +8,16 @@
     <Page refId="ManualPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
-  <EventBindingsSets />
-  <Dialogs />
+  <BindingsSets>
+    <BindingsSet refId="ManualMoveMotor_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialogue" />
+  </Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />
@@ -22,6 +29,8 @@
     <Content refId="ManualLeftRight" />
     <Content refId="ManualMoveMotor" />
     <Content refId="ManualRegulators" />
+    <Content refId="LoginDialogueContent" />
+    <Content refId="DiagnosticsPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
