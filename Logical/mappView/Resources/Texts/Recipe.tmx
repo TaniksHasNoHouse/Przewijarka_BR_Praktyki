@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="0">
+      <tuv xml:lang="pl">
+        <seg>Rozpoczęto ładowanie receptury [%dev]:[%file]</seg>
+      </tuv>
       <tuv xml:lang="fr">
         <seg>Bonjour tout le monde!</seg>
       </tuv>
@@ -17,6 +20,9 @@
       </tuv>
     </tu>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Zakończonoładowanie receptury [%dev]:[%file]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ende Laden von Rezept</seg>
       </tuv>
@@ -25,6 +31,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Zapisano recepturę [%dev]:[%file]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Rezept [%dev]:[%file] gespeichert</seg>
       </tuv>
@@ -33,6 +42,9 @@
       </tuv>
     </tu>
     <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono nazwę receptury [%dev]:[%file]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Rezept [%dev]:[%old] umbenannt auf [%new]</seg>
       </tuv>
@@ -41,6 +53,9 @@
       </tuv>
     </tu>
     <tu tuid="4">
+      <tuv xml:lang="pl">
+        <seg>Usunięto recepturę [%dev]:[%file]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Rezept [%dev]:[%file] gelöscht</seg>
       </tuv>

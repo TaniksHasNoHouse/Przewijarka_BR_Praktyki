@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został utworzony</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde erstellt</seg>
       </tuv>
@@ -14,6 +17,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został nadpisany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde überschrieben</seg>
       </tuv>
@@ -22,6 +28,9 @@
       </tuv>
     </tu>
     <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został dodany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde hinzugefügt</seg>
       </tuv>
@@ -30,6 +39,9 @@
       </tuv>
     </tu>
     <tu tuid="4">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został usunięty</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde gelöscht</seg>
       </tuv>
@@ -38,6 +50,9 @@
       </tuv>
     </tu>
     <tu tuid="5">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono nazwę folderu/pliku </seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde umbenannt</seg>
       </tuv>
@@ -46,6 +61,9 @@
       </tuv>
     </tu>
     <tu tuid="6">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został wczytany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde gelesen</seg>
       </tuv>
@@ -54,6 +72,9 @@
       </tuv>
     </tu>
     <tu tuid="7">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde kopiert</seg>
       </tuv>
@@ -62,6 +83,9 @@
       </tuv>
     </tu>
     <tu tuid="8">
+      <tuv xml:lang="pl">
+        <seg>Wycięto folder/plik</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde ausgeschnitten</seg>
       </tuv>
@@ -70,6 +94,9 @@
       </tuv>
     </tu>
     <tu tuid="9">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany i wklejony. Utworzono nowy folder/plik</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde zuerst kopiert und wieder eingefügt. Ein neuer Ordner/Datei wurde erstellt</seg>
       </tuv>
@@ -78,6 +105,9 @@
       </tuv>
     </tu>
     <tu tuid="10">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany i wklejony. Istniejący folder/plik został nadpisany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde zuerst kopiert und wieder eingefügt. Der vorhandene Ordner/Datei wurde überschrieben</seg>
       </tuv>
@@ -86,6 +116,9 @@
       </tuv>
     </tu>
     <tu tuid="11">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został zablokowany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde gesperrt</seg>
       </tuv>
@@ -94,6 +127,9 @@
       </tuv>
     </tu>
     <tu tuid="12">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został odblokowany</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ordner/Datei wurde entsperrt</seg>
       </tuv>

@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>zalogował się</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Angemeldet</seg>
       </tuv>
@@ -14,6 +17,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>wylogował się</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Abgemeldet</seg>
       </tuv>
@@ -22,6 +28,9 @@
       </tuv>
     </tu>
     <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>został wylogowany (z powodu bezczynności)</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Abgemeldet (Timeout)</seg>
       </tuv>
@@ -30,6 +39,9 @@
       </tuv>
     </tu>
     <tu tuid="4">
+      <tuv xml:lang="pl">
+        <seg>dodał użytkownika {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} zugefügt</seg>
       </tuv>
@@ -38,6 +50,9 @@
       </tuv>
     </tu>
     <tu tuid="5">
+      <tuv xml:lang="pl">
+        <seg>usunął użytkownika {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} gelöscht</seg>
       </tuv>
@@ -46,6 +61,9 @@
       </tuv>
     </tu>
     <tu tuid="6">
+      <tuv xml:lang="pl">
+        <seg>zablokował użytkownika {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} gesperrt</seg>
       </tuv>
@@ -54,6 +72,9 @@
       </tuv>
     </tu>
     <tu tuid="7">
+      <tuv xml:lang="pl">
+        <seg>odblokował użytkownika {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} entsperrt</seg>
       </tuv>
@@ -62,6 +83,9 @@
       </tuv>
     </tu>
     <tu tuid="8">
+      <tuv xml:lang="pl">
+        <seg>został zablokowany (niepoprawne hasło)</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Gesperrt (inkorrektes Passwort)</seg>
       </tuv>
@@ -70,6 +94,9 @@
       </tuv>
     </tu>
     <tu tuid="9">
+      <tuv xml:lang="pl">
+        <seg>zmienił hasło</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Passwort geändert</seg>
       </tuv>
@@ -78,6 +105,9 @@
       </tuv>
     </tu>
     <tu tuid="10">
+      <tuv xml:lang="pl">
+        <seg>Wprowadzono nieprawidłową nazwę</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Falscher Name eingegeben</seg>
       </tuv>
@@ -86,6 +116,9 @@
       </tuv>
     </tu>
     <tu tuid="11">
+      <tuv xml:lang="pl">
+        <seg>Wprowadzono nieprawidłowe hasło</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Falsches Passwort eingegeben</seg>
       </tuv>
@@ -94,6 +127,9 @@
       </tuv>
     </tu>
     <tu tuid="12">
+      <tuv xml:lang="pl">
+        <seg>dodał nową rolę: {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Neue Rolle {&amp;usr} zugefügt</seg>
       </tuv>
@@ -102,6 +138,9 @@
       </tuv>
     </tu>
     <tu tuid="13">
+      <tuv xml:lang="pl">
+        <seg>usunął rolę: {%usr}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Rolle {&amp;usr} gelöscht</seg>
       </tuv>
@@ -110,6 +149,9 @@
       </tuv>
     </tu>
     <tu tuid="14">
+      <tuv xml:lang="pl">
+        <seg>Wprowadzono nieprawidłowe dane uwierzytelniające</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Ungültige Anmeldeinformationen wurden eingegeben</seg>
       </tuv>

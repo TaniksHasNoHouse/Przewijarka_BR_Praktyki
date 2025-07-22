@@ -6,6 +6,10 @@
   </header>
   <body>
     <tu tuid="0">
+      <tuv xml:lang="pl">
+        <seg>
+Podpis elektroniczny wykonany pomyślnie</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Elektronische Signatur wurde erfolgreich durchgeführt</seg>
       </tuv>
@@ -14,6 +18,9 @@
       </tuv>
     </tu>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Podpis elektroniczny został przerwany z powodu nieprawidłowego wprowadzenia nazwy użytkownika lub hasła</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Elektronische Signatur wurde beendet aufgrund einer falschen Eingabe (Benutzername oder Passwort)</seg>
       </tuv>
@@ -22,6 +29,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Podpis elektroniczny anulowany przez użytkownika</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Elektronische Signatur wurde vom Benutzer abgebrochen</seg>
       </tuv>
@@ -30,6 +40,10 @@
       </tuv>
     </tu>
     <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>
+Podpis elektroniczny został zakończony z powodu przekroczenia limitu nieprawidłowych danych (patrz: konfiguracja zarządzania użytkownikami)</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Elektronische Signatur wurde beendet, da das Limit für falsche Eingaben (siehe Konfiguration des Benutzermanagements) überschritten wurde</seg>
       </tuv>

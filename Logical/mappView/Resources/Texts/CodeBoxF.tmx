@@ -6,14 +6,20 @@
   </header>
   <body>
     <tu tuid="0">
+      <tuv xml:lang="pl">
+        <seg>Utworzono program</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Programm wurde erstellt</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>The programm was created</seg>
+        <seg>The program was created</seg>
       </tuv>
     </tu>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Usunięto program</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Programm wurde gelöscht</seg>
       </tuv>
@@ -22,6 +28,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono program</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Programm wurde geändert</seg>
       </tuv>
@@ -30,6 +39,9 @@
       </tuv>
     </tu>
     <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>Zaimportowano program</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Programm wurde importiert</seg>
       </tuv>

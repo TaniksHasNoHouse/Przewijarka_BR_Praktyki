@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="Root">
+      <tuv xml:lang="pl">
+        <seg>[%[TIME=%u%R]] [%op] [%ev$[TEXT=MpAudit/Event]]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>[%[TIME=%u%R]] [%op] [%ev$[TEXT=Texts/Event]]</seg>
       </tuv>
@@ -14,6 +17,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>[%act$[TEXT=Texts/User]]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>[%act$[TEXT=Texts/User]]</seg>
       </tuv>
@@ -22,6 +28,9 @@
       </tuv>
     </tu>
     <tu tuid="16">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono wartość: [%dpid$[TEXT=Texts/DP]] [%old] na [%new]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>hat Wert [%dpid$[TEXT=Texts/DP]] von [%old] auf [%new] geändert</seg>
       </tuv>
@@ -30,6 +39,9 @@
       </tuv>
     </tu>
     <tu tuid="17">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono wartość: [%dpid$[TEXT=Texts/DP]] z [%old] na [%new] [%unit]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>hat Wert [%dpid$[TEXT=Texts/DP]] von [%old] auf [%new] [%unit] geändert</seg>
       </tuv>
@@ -37,15 +49,10 @@
         <seg>changed value of [%dpid$[TEXT=Texts/DP]] from [%old] to [%new] [%unit]</seg>
       </tuv>
     </tu>
-    <tu tuid="18">
-      <tuv xml:lang="de">
-        <seg>[%typ$[TEXT=Texts/Custom]]</seg>
-      </tuv>
-      <tuv xml:lang="en">
-        <seg>[%typ$[TEXT=Texts/Custom]]</seg>
-      </tuv>
-    </tu>
     <tu tuid="19">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono wartość: [%dpid$[TEXT=Texts/DP]] z [%old] na [%new]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>hat Wert [%dpid$[TEXT=Texts/DP]] von [%old] auf [%new] geändert</seg>
       </tuv>
@@ -54,6 +61,9 @@
       </tuv>
     </tu>
     <tu tuid="33">
+      <tuv xml:lang="pl">
+        <seg>Alarm [%name] zmienił stan: [%stold] na [%stnew]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Der Alarm [%name] hat einen neuen Status: von [%stold] zu [%stnew]</seg>
       </tuv>
@@ -61,7 +71,21 @@
         <seg>alarm [%name] changed state: [%stold] to [%stnew]</seg>
       </tuv>
     </tu>
+    <tu tuid="18">
+      <tuv xml:lang="pl">
+        <seg>[%typ$[TEXT=Texts/Custom]]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>[%typ$[TEXT=Texts/Custom]]</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>[%typ$[TEXT=Texts/Custom]]</seg>
+      </tuv>
+    </tu>
     <tu tuid="48">
+      <tuv xml:lang="pl">
+        <seg>[%act$[TEXT=Texts/Recipe]]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>[%act$[TEXT=MpAudit/Recipe]]</seg>
       </tuv>
@@ -70,6 +94,9 @@
       </tuv>
     </tu>
     <tu tuid="64">
+      <tuv xml:lang="pl">
+        <seg>Zmiana trybu PackML: [%old] na [%new]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>PackML Modusänderung: von [%old] zu [%new]</seg>
       </tuv>
@@ -78,6 +105,9 @@
       </tuv>
     </tu>
     <tu tuid="65">
+      <tuv xml:lang="pl">
+        <seg>Zmiana stanu PackML: [%old] na [%new]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>PackML Zustandsänderung: von [%old] zu [%new]</seg>
       </tuv>
@@ -86,6 +116,9 @@
       </tuv>
     </tu>
     <tu tuid="66">
+      <tuv xml:lang="pl">
+        <seg>Zmiana stanu podrzędnego PackML: [%old] na [%new]</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>PackML Substatus-Änderung von [%old] zu [%new]</seg>
       </tuv>

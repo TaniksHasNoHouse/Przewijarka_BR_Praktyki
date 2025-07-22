@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Wiadomość została wysłana do: {&amp;rxn}</seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Nachricht wurde an {&amp;rxn} gesendet</seg>
       </tuv>
@@ -14,6 +17,9 @@
       </tuv>
     </tu>
     <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Otrzymano wiadomość od: {&amp;rxc} </seg>
+      </tuv>
       <tuv xml:lang="de">
         <seg>Nachricht von {&amp;rxc} wurde empfangen</seg>
       </tuv>
