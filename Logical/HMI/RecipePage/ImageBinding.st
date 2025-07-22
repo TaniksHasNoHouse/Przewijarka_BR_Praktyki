@@ -1,9 +1,9 @@
 
 ACTION actImageBinding: 
 	ImageDirectory.LeftArrow := 'Media/SymbolLib/Arrow/ArrowLeft.svg';
-	ImageDirectory.RightArrow := 'Media/SymbolLib/Arrow/ArrowLeft.svg';
+	ImageDirectory.RightArrow := 'Media/SymbolLib/Arrow/ArrowRight.svg';
 	ImageDirectory.On := 'Media/SymbolLib/Symbols/Accept.svg';
-	ImageDirectory.Off := 'Media/SymbolLib/Edit/Clos.svg';
+	ImageDirectory.Off := 'Media/SymbolLib/Edit/Close.svg';
 	
 	IF MaterialWindingRecipe.Direction = TRUE THEN
 		ImageDirectory.Current.CurrentArrow := ImageDirectory.RightArrow;

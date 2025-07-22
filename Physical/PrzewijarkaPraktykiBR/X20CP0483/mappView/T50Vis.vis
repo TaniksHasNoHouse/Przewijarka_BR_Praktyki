@@ -12,18 +12,28 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
-    <BindingsSet refId="RecepieContent_binding" />
     <BindingsSet refId="DiagnosticsPageAudit_binding" />
+    <BindingsSet refId="RecipeCurrContent_binding" />
+    <BindingsSet refId="RecipeAddEditRemoveContent_binding" />
+    <BindingsSet refId="RecipeAddDialogContent_binding" />
+    <BindingsSet refId="RecipeEditContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
     <EventBindingsSet refId="UserManagementPageUsers_eventbinding" />
     <EventBindingsSet refId="DiagnosticsPageAudit_eventbinding" />
+    <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
+    <EventBindingsSet refId="RecipeAddDialogContent_eventbinding" />
+    <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
+    <EventBindingsSet refId="RecipeEditContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
-	</Dialogs>
+    <Dialog refId="RecipeAddDialog" />
+    <Dialog refId="RecipeDeleteDialog" />
+    <Dialog refId="RecipeEditDialog" />
+  </Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />
@@ -36,14 +46,21 @@
     <Content refId="ManualMoveMotor" />
     <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
-	<Content refId="RecepieContent" />
+    <Content refId="RecepieContent" />
     <Content refId="DiagnosticsPageTabs" />
     <Content refId="DiagnosticsPageSDM" />
     <Content refId="DiagnosticsPageAudit" />
     <Content refId="UserManagementPageUsers" />
+    <Content refId="RecipeAddEditRemoveContent" />
+    <Content refId="RecipeCurrContent" />
+    <Content refId="RecipeAddDialogContent" />
+    <Content refId="RecipeDeleteContent" />
+    <Content refId="RecipeEditContent" />
   </Contents>
   <SnippetsSets />
-  <VariablesSets />
+  <VariablesSets>
+    <VariablesSet refId="SessionVariables" />
+  </VariablesSets>
   <ExpressionsSets />
   <StartTheme themeRefId="BuRTheme1" />
   <Themes>

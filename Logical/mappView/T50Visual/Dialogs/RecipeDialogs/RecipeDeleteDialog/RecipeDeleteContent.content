@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="RecipeDeleteContent" height="200" width="200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="15" left="10" width="180" height="45" zIndex="0" multiLine="true" text="Czy na pewno chcesz usunac recepture?" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnYes" top="160" left="0" width="95" zIndex="1" text="Tak" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnNo" top="160" left="105" width="95" zIndex="2" text="Nie" />
+  </Widgets>
+</Content>

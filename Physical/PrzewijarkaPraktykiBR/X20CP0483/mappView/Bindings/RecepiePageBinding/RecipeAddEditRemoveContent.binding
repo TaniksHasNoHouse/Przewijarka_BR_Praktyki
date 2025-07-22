@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="RecipeAddEditRemoveContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.Filter" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="FilterTextInput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:TableConfig" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTable" attribute="tableConfiguration" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.List.SelectedIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTable" attribute="selectedRow" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.List.Names" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeNameTableItem" attribute="stringValue" />
+</Binding>
+</Bindings>
+</BindingsSet>

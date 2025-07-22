@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ldef:Layout id="RecipeDeleteLayout" height="200" width="200" xmlns:ldef="http://www.br-automation.com/iat2015/layoutDefinition/v2">
+  <Areas>
+    <Area id="RecipeDeleteArea" height="200" width="200" left="0" top="0" zIndex="0" />
+  </Areas>
+</ldef:Layout>
