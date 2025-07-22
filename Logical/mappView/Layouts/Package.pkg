@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="File">MainLayout.layout</Object>
     <Object Type="File">DialogueLayout.layout</Object>
+    <Object Type="File">RecipeAddLayout.layout</Object>
+    <Object Type="File">RecipeDeleteLayout.layout</Object>
   </Objects>
 </Package>

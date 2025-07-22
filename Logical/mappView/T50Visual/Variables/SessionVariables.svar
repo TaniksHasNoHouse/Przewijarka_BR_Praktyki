@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariablesSet id="SessionVariables" xmlns="http://www.br-automation.com/iat2015/session/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Variables>
+
+		<Variable name="SelectedIndexLeftPackStat" xsi:type="ANY_INT" value="0" />
+		<Variable name="SelectedIndexRightPackStat" xsi:type="ANY_INT" value="0" />
+		<Variable name="SelectedIndexDataDropDown" xsi:type="ANY_INT" value="0" />
+		<Variable name="LoginErrorNumber" xsi:type="ANY_STRING" value="" />
+		<Variable name="ModuleName" xsi:type="ANY_STRING" value="" />
+		<Variable name="UpdateRecipe" scope="session"  xsi:type="ANY_STRING" value="" />
+		<Variable name="ErrorDelete" xsi:type="ANY_INT" value="-1" />
+		<Variable name="UserListErrorCode" xsi:type="ANY_INT" value="0" />
+
+  </Variables>
+</VariablesSet>

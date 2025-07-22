@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="RecipeCurrContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MpRecepieXml_0.Info.LastLoadedRecipe" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="CurRecTextOut" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:ImageDirectory.Current.CurrentOnOff" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DataRecordImage" attribute="image" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:ImageDirectory.Current.CurrentArrow" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DirectionImage" attribute="image" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="WindingSpeedNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.TensionLeft" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DancerLeftNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.TensionRight" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DancerRightNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollRight.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MinRollRightNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollRight.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MaxRollRightNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MinRollLeftNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MaxRollLeftNumOut" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

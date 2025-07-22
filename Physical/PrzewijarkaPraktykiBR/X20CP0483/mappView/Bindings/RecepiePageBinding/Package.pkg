@@ -2,6 +2,13 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">RecepieContent.binding</Object>
+    <Object Type="File">RecipeCurrContent.binding</Object>
+    <Object Type="File">RecipeAddEditRemoveContent.binding</Object>
+    <Object Type="File">RecipeAddEditRemoveContent.eventbinding</Object>
+    <Object Type="File">RecipeAddDialogContent.binding</Object>
+    <Object Type="File">RecipeAddDialogContent.eventbinding</Object>
+    <Object Type="File">RecipeDeleteContent.eventbinding</Object>
+    <Object Type="File">RecipeEditContent.binding</Object>
+    <Object Type="File">RecipeEditContent.eventbinding</Object>
   </Objects>
 </Package>

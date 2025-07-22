@@ -20,6 +20,7 @@ PROGRAM _CYCLIC
 	MpRecipeUI_0();
 	 
 	actImageBinding;
+	actRecipeMenage;
 END_PROGRAM
 
 PROGRAM _EXIT

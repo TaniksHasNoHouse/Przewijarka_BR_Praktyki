@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="File" Description="Page description">RecepiePage.page</Object>
     <Object Type="File">RecepieContent.content</Object>
+    <Object Type="File">RecipeAddEditRemove.content</Object>
+    <Object Type="File">RecipeCurr.content</Object>
   </Objects>
 </Package>

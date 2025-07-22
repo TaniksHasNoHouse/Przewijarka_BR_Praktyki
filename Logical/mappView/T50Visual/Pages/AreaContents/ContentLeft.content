@@ -11,5 +11,6 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAdminPage" top="276" left="2" width="96" height="45" zIndex="5" pageId="UserManagementPage" text="Admin" fontSize="13px" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelectorBtn" top="340" left="10" width="80" zIndex="1" />
   </Widgets>
 </Content>

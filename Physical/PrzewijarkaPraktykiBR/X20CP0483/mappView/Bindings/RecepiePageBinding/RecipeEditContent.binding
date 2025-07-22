@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="RecipeEditContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor3PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor3INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor3PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor3PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor2PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor2INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor2PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor2PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor1PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor1INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor1PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor1PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.DataRegistration" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="DataRecordSwitch" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Direction" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="WidningDirSwitch" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="WindingSpeedNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.TensionLeft" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="LeftDancerNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.TensionRight" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="RightDancerNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.RollRight.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MinRollRightNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.RollRight.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MaxRollRightNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.RollLeft.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MinRollLeftNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.RollLeft.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

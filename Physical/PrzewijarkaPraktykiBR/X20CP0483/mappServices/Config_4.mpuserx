@@ -23,11 +23,11 @@
         <Property ID="name" Value="Everyone" />
       </Group>
       <Group ID="DefUser#3">
-        <Property ID="id" Value="OperatorUser" />
+        <Property ID="id" Value="Operator" />
         <Property ID="name" Value="Operator" />
       </Group>
       <Group ID="DefUser#4">
-        <Property ID="id" Value="SupervisorUser" />
+        <Property ID="id" Value="Supervisor" />
         <Property ID="name" Value="Supervisor" />
       </Group>
     </Group>
@@ -40,10 +40,10 @@
         <Property ID="id" Value="Everyone" />
       </Group>
       <Group ID="DefGroup#3">
-        <Property ID="id" Value="Operator" />
+        <Property ID="id" Value="Operators" />
       </Group>
       <Group ID="DefGroup#4">
-        <Property ID="id" Value="Supervisor" />
+        <Property ID="id" Value="Supervisors" />
       </Group>
     </Group>
   </Element>

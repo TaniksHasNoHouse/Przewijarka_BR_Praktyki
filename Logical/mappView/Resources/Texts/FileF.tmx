@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">Texts/SysF/File</prop>
+  </header>
+  <body>
+    <tu tuid="1">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został utworzony</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde erstellt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was created</seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został nadpisany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde überschrieben</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was overwritten</seg>
+      </tuv>
+    </tu>
+    <tu tuid="3">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został dodany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde hinzugefügt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was added</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został usunięty</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde gelöscht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was deleted</seg>
+      </tuv>
+    </tu>
+    <tu tuid="5">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono nazwę folderu/pliku </seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde umbenannt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was renamed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="6">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został wczytany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde gelesen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was read</seg>
+      </tuv>
+    </tu>
+    <tu tuid="7">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde kopiert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was copied</seg>
+      </tuv>
+    </tu>
+    <tu tuid="8">
+      <tuv xml:lang="pl">
+        <seg>Wycięto folder/plik</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde ausgeschnitten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was cut</seg>
+      </tuv>
+    </tu>
+    <tu tuid="9">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany i wklejony. Utworzono nowy folder/plik</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde zuerst kopiert und wieder eingefügt. Ein neuer Ordner/Datei wurde erstellt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was first copied and then pasted. A new folder/file was created</seg>
+      </tuv>
+    </tu>
+    <tu tuid="10">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został skopiowany i wklejony. Istniejący folder/plik został nadpisany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde zuerst kopiert und wieder eingefügt. Der vorhandene Ordner/Datei wurde überschrieben</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was first copied and then pasted. The existing folder/file was overwritten</seg>
+      </tuv>
+    </tu>
+    <tu tuid="11">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został zablokowany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde gesperrt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was locked</seg>
+      </tuv>
+    </tu>
+    <tu tuid="12">
+      <tuv xml:lang="pl">
+        <seg>Folder/plik został odblokowany</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ordner/Datei wurde entsperrt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A folder/file was unlocked</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

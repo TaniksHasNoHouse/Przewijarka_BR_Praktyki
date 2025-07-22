@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="RecipeAddEditRemoveContent" height="390" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Table" id="RecipeTable" top="65" left="415" width="227" zIndex="0" fontSize="14px" headerFontSize="14px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="RecipeNameTableItem" zIndex="0" columnWidth="230" text="Nazwa" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="BtnMaxUpTabel" top="75" left="655" width="35" zIndex="1" image="Media/SymbolLib/Arrow/Up2.svg" backColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnMaxDownTabel" top="325" left="655" width="35" zIndex="2" image="Media/SymbolLib/Arrow/Down2.svg" />
+    <Widget xsi:type="widgets.brease.TextInput" id="FilterTextInput" top="20" left="489" width="149" zIndex="3" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="20" left="415" width="70" zIndex="4" text="Wyszukaj:" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.TextPad" id="RecipeTextPad" top="30" left="20" width="365" height="240" zIndex="5" />
+    <Widget xsi:type="widgets.brease.Button" id="SaveLoadBtn" top="295" left="10" width="80" height="80" zIndex="6" image="Media/SymbolLib/Edit/Save.svg" imageHeight="50" imageWidth="50" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnEdit" top="295" left="112" width="80" height="80" zIndex="7" image="Media/SymbolLib/Edit/Edit.svg" imageHeight="50" imageWidth="50" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnRemove" top="295" left="315" width="80" height="80" zIndex="8" image="Media/SymbolLib/Edit/Delete.svg" imageHeight="50" imageWidth="50" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnNewRecipe" top="295" left="213" width="80" height="80" zIndex="9" image="Media/SymbolLib/Edit/New.svg" imageHeight="50" imageWidth="50" />
+  </Widgets>
+</Content>
