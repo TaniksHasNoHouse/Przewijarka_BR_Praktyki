@@ -1,0 +1,3 @@
+VAR
+	gLineSpeed : REAL;
+END_VAR

@@ -1,4 +1,0 @@
-VAR
-	TestAll : BOOL;
-	Control : ControlTypeTension;
-END_VAR

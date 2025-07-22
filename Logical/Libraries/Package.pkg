@@ -28,5 +28,8 @@
     <Object Type="Library" Language="Binary" Description="Data recording and archiving">MpData</Object>
     <Object Type="Library" Language="binary" Description="The DataObj library can be used to dynamically create, dynamically delete and copy data objects, etc. ">DataObj</Object>
     <Object Type="Library" Language="binary" Description="The BRSystem library provides the user with a number of system functions for e.g. handling permanent memory, accessing exception information, etc.">brsystem</Object>
+    <Object Type="Library" Language="binary" Description="This mechatronics library contains different system datatypes and general error numbers.">MTTypes</Object>
+    <Object Type="Library" Language="binary" Description="This mechatronics library contains function blocks for controlling and simulating winder systems.">MTWinder</Object>
+    <Object Type="Library" Language="binary" Description="This library integrates mathematical functions such as angle functions, rounding off, etc. into the program.">AsBrMath</Object>
   </Objects>
 </Package>

@@ -17,17 +17,19 @@
           <Property ID="MaximumDiameter" Value="80" />
         </Selector>
       </Selector>
-      <Selector ID="Controller">
+      <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
+          <Group ID="OperatingPoint[1]">
+            <Property ID="ProportionalGain" Value="1.150000" />
+          </Group>
         </Group>
-        <Property ID="MaximumVelocityCorrection" Value="1" />
+        <Property ID="MaximumVelocityCorrection" Value="10" />
         <Group ID="ToleranceBand">
           <Property ID="Lower" Value="4" />
           <Property ID="Upper" Value="4" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="1" />
+          <Property ID="MaximumLineVelocityCorrection" Value="10" />
         </Selector>
       </Selector>
       <Selector ID="Material">
@@ -36,7 +38,7 @@
         <Property ID="TensionLimit" Value="300" />
       </Selector>
       <Group ID="InputSignals">
-        <Property ID="SetMaterialTension" Value="" />
+        <Property ID="SetMaterialTension" Value="15" />
       </Group>
     </Group>
   </Element>
@@ -56,16 +58,18 @@
           <Property ID="MaximumDiameter" Value="80" />
         </Selector>
       </Selector>
-      <Selector ID="Controller">
+      <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
+          <Group ID="OperatingPoint[1]">
+            <Property ID="ProportionalGain" Value="1.150000" />
+          </Group>
         </Group>
         <Group ID="ToleranceBand">
           <Property ID="Lower" Value="4" />
           <Property ID="Upper" Value="4" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="1" />
+          <Property ID="MaximumLineVelocityCorrection" Value="10" />
         </Selector>
       </Selector>
       <Selector ID="Material">
