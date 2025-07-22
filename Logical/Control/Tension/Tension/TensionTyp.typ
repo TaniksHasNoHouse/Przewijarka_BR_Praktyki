@@ -1,0 +1,12 @@
+
+TYPE
+	TESTstate : 
+		(
+		INIT,
+		POWER,
+		ERROR,
+		ERROR_RESET,
+		HOME,
+		WAIT_FOR_COMMAND
+		);
+END_TYPE
