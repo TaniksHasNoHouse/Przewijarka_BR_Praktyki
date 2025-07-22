@@ -1,3 +1,4 @@
+
 TYPE
 	StepEnum : 
 		(
@@ -12,15 +13,13 @@ TYPE
 		STEP_ABORTING, (*STATE_ABORTING*)
 		STEP_ABORTED, (*STATE_ABORTED*)
 		STEP_CLEARING (*STATE_CLEARING*)
-	);
-
+		);
 	PackMLModes : 
 		(
 		PACKML_MODE_PRODUCTION := 1,
 		PACKML_MODE_MANUAL := 2
-	);
-
-	MainLogicType : STRUCT 
+		);
+	MainLogicType : 	STRUCT 
 		Cmd : CmdType;
 		MotorMode : ModesType;
 		Step : StepEnum;
@@ -28,15 +27,13 @@ TYPE
 		Process : ProcessStatusType;
 		Diagnostics : DiagnosticsType;
 	END_STRUCT;
-
-	CmdType : STRUCT 
+	CmdType : 	STRUCT 
 		Reset : BOOL;
 		Start : BOOL;
 		Stop : BOOL;
 		Abort : BOOL;
 	END_STRUCT;
-
-	MotorProdCmdType : STRUCT 
+	MotorProdCmdType : 	STRUCT 
 		Enable : BOOL;
 		PowerOn : BOOL;
 		Home : BOOL;
@@ -49,8 +46,7 @@ TYPE
 		EmergencyStop : BOOL;
 		AcknowledgeAlarms : BOOL;
 	END_STRUCT;
-
-	MotorProdParType : STRUCT 
+	MotorProdParType : 	STRUCT 
 		Velocity : REAL;
 		Tension : REAL;
 		Distance : REAL;
@@ -63,15 +59,13 @@ TYPE
 		dirRight : BOOL;
 		dirLeft : BOOL;
 	END_STRUCT;
-
-	MotorProdStatusType : STRUCT 
+	MotorProdStatusType : 	STRUCT 
 		ActPosition : LREAL;
 		ActVelocity : REAL;
 		ActDistance : REAL;
 		ActDir : STRING[10];
 		ActualTension : REAL;
 		PowerReady : BOOL;
-		ServoReady : BOOL;
 		SystemReady : BOOL;
 		Moving : BOOL;
 		Stopped : BOOL;
@@ -81,8 +75,7 @@ TYPE
 		EmergencyStopped : BOOL;
 		ErrorCode : DINT;
 	END_STRUCT;
-
-	ProcessStatusType : STRUCT
+	ProcessStatusType : 	STRUCT 
 		TensionStabilityTimer : TIME;
 		CycleCount : DINT;
 		TotalDistance : REAL;
@@ -90,16 +83,14 @@ TYPE
 		ProductionRate : REAL;
 		CycleStartTime : DATE_AND_TIME;
 	END_STRUCT;
-
-	DiagnosticsType : STRUCT
-		StateExecutionTime : ARRAY[0..10] OF TIME;
+	DiagnosticsType : 	STRUCT 
+		StateExecutionTime : ARRAY[0..10]OF TIME;
 		LastError : STRING[80];
 		ErrorTimestamp : DATE_AND_TIME;
 		ManualCounter : DINT;
 		TotalRunTime : TIME;
 	END_STRUCT;
-
-	HMIInterfaceType : STRUCT
+	HMIInterfaceType : 	STRUCT 
 		RecipeNumber : INT;
 		RecipeName : STRING[40];
 		OperatorMessage : STRING[80];
@@ -108,45 +99,38 @@ TYPE
 		BadParts : DINT;
 		TotalParts : DINT;
 	END_STRUCT;
-
-	ModesType : STRUCT 
+	ModesType : 	STRUCT 
 		Production : MotorProdLogicType;
 		Manual : AxisSelectionType;
 	END_STRUCT;
-
-	MotorProdLogicType : STRUCT 
+	MotorProdLogicType : 	STRUCT 
 		Cmd : MotorProdCmdType;
 		Parameter : MotorProdParType;
 		Status : MotorProdStatusType;
 		HMI : HMIInterfaceType;
 	END_STRUCT;
-
-	AxisSelectionType : STRUCT 
+	AxisSelectionType : 	STRUCT 
 		Axis1 : Axis1LogicType;
 		Axis2 : Axis2LogicType;
 		Axis3 : Axis3LogicType;
 		JogWithTenReg : BOOL;
 	END_STRUCT;
-
-	Axis1LogicType : STRUCT 
+	Axis1LogicType : 	STRUCT 
 		Cmd : Axis1CmdType;
 		Parameter : Axis1ParType;
 		Status : Axis1StatusType;
 	END_STRUCT;
-
-	Axis2LogicType : STRUCT 
+	Axis2LogicType : 	STRUCT 
 		Cmd : Axis2CmdType;
 		Parameter : Axis2ParType;
 		Status : Axis2StatusType;
 	END_STRUCT;
-
-	Axis3LogicType : STRUCT 
+	Axis3LogicType : 	STRUCT 
 		Cmd : Axis3CmdType;
 		Parameter : Axis3ParType;
 		Status : Axis3StatusType;
 	END_STRUCT;
-
-	Axis1CmdType : STRUCT 
+	Axis1CmdType : 	STRUCT 
 		Enable : BOOL;
 		PowerOn : BOOL;
 		Home : BOOL;
@@ -155,22 +139,19 @@ TYPE
 		JogAxis : BOOL;
 		TensionReg : BOOL;
 	END_STRUCT;
-
-	Axis1ParType : STRUCT 
+	Axis1ParType : 	STRUCT 
 		CyclesToDo : INT;
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
 	END_STRUCT;
-
-	Axis1StatusType : STRUCT 
+	Axis1StatusType : 	STRUCT 
 		ActPosition : LREAL;
 		ActVelocity : REAL;
 		ActualTension : REAL;
 		Ready : BOOL;
 	END_STRUCT;
-
-	Axis2CmdType : STRUCT 
+	Axis2CmdType : 	STRUCT 
 		Enable : BOOL;
 		PowerOn : BOOL;
 		Home : BOOL;
@@ -179,22 +160,19 @@ TYPE
 		JogAxis : BOOL;
 		TensionReg : BOOL;
 	END_STRUCT;
-
-	Axis2ParType : STRUCT 
+	Axis2ParType : 	STRUCT 
 		CyclesToDo : INT;
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
 	END_STRUCT;
-
-	Axis2StatusType : STRUCT 
+	Axis2StatusType : 	STRUCT 
 		ActPosition : LREAL;
 		ActVelocity : REAL;
 		ActualTension : REAL;
 		Ready : BOOL;
 	END_STRUCT;
-
-	Axis3CmdType : STRUCT 
+	Axis3CmdType : 	STRUCT 
 		Enable : BOOL;
 		PowerOn : BOOL;
 		Home : BOOL;
@@ -203,19 +181,16 @@ TYPE
 		JogAxis : BOOL;
 		TensionReg : BOOL;
 	END_STRUCT;
-
-	Axis3ParType : STRUCT 
+	Axis3ParType : 	STRUCT 
 		CyclesToDo : INT;
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
 	END_STRUCT;
-
-	Axis3StatusType : STRUCT 
+	Axis3StatusType : 	STRUCT 
 		ActPosition : LREAL;
 		ActVelocity : REAL;
 		ActualTension : REAL;
 		Ready : BOOL;
 	END_STRUCT;
-
 END_TYPE

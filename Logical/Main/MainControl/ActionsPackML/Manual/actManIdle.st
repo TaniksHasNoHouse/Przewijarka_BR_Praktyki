@@ -1,7 +1,7 @@
 
 ACTION actManualIdle:
 // Everything can be done - individual axis jogging and tension regulation available
-	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_IDLE, PACKML_MODE_ALL) AND MainLogic.Mode = PACKML_MODE_MANUAL THEN
+	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_IDLE, PACKML_MODE_MANUAL) THEN
     
 		// Enable individual axis control capabilities
 		// Actual jogging commands come from HMI:

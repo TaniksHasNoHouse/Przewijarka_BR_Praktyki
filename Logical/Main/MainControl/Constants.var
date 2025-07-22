@@ -1,5 +1,3 @@
-VAR
+VAR CONSTANT
 	PACKML_MODE_ALL : USINT := 0;
-	b : USINT := 2;
-	a : USINT := 1;
 END_VAR

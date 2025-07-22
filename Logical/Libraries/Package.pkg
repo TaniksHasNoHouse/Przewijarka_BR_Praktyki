@@ -19,5 +19,6 @@
     <Object Type="Library" Language="Binary" Description="Registration mark Control">MpRegMark</Object>
     <Object Type="Library" Language="Binary" Description="mapp Tension Library">MpTension</Object>
     <Object Type="Library" Language="Binary" Description="OMAC PackML">MpPackML</Object>
+    <Object Type="Library" Language="binary" Description="This library contains standard function blocks and functions for IEC 61131-3.">standard</Object>
   </Objects>
 </Package>

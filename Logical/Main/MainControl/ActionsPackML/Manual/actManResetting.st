@@ -1,7 +1,7 @@
 
 ACTION actManResetting:
 // Nothing is powered, just go to IDLE
-	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_RESETTING, PACKML_MODE_ALL) AND MainLogic.Mode = PACKML_MODE_MANUAL THEN
+	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_RESETTING, PACKML_MODE_MANUAL) THEN
     
 		// Completely disable all axes
 		MainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn := FALSE;
