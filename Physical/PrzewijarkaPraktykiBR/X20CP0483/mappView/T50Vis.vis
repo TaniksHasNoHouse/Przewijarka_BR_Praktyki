@@ -13,8 +13,7 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
-    <BindingsSet refId="RecepieContent_binding" />
-    <BindingsSet refId="DiagnosticsPageAudit_binding" />
+	<BindingsSet refId="DiagnosticsPageAudit_binding" />
     <BindingsSet refId="RecipeAddDialogContent_binding" />
     <BindingsSet refId="RecipeAddEditRemoveContent_binding" />
     <BindingsSet refId="RecipeCurrContent_binding" />
