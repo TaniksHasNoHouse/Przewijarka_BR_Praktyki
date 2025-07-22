@@ -1,4 +1,10 @@
 VAR
 	MpPackMLCore_0 : MpPackMLCore;
 	MpPackMLMode_0 : MpPackMLMode;
+	MpPackMLMode_1 : MpPackMLMode;
 END_VAR
+
+VAR CONSTANT
+	
+END_VAR
+

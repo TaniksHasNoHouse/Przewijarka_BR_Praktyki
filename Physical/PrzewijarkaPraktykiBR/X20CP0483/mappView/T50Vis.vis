@@ -20,10 +20,11 @@
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
     <EventBindingsSet refId="UserManagementPageUsers_eventbinding" />
     <EventBindingsSet refId="DiagnosticsPageAudit_eventbinding" />
+    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
-	</Dialogs>
+  </Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />

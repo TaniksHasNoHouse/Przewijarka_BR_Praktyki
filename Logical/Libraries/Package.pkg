@@ -24,5 +24,6 @@
     <Object Type="Library" Language="Binary" Description="File explorer for B+R file devices">MpFile</Object>
     <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
     <Object Type="Library" Language="Binary" Description="Centralized event audit trail">MpAudit</Object>
+    <Object Type="Library" Language="binary" Description="This library contains standard function blocks and functions for IEC 61131-3.">standard</Object>
   </Objects>
 </Package>
