@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
@@ -90,5 +90,6 @@
     <LibraryObject Name="MTTypes" Source="Libraries.MTTypes.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MTWinder" Source="Libraries.MTWinder.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="AsBrMath" Source="Libraries.AsBrMath.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="AsBrStr" Source="HMI.AsBrStr.lby" Memory="UserROM" Language="binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

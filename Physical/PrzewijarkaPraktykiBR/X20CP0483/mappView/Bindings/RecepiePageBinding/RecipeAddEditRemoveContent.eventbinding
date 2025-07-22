@@ -84,7 +84,7 @@
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_1">
+    <EventBinding id="EventRecipeUpdate">
       <Source xsi:type="session.Event" refId="UpdateRecipe" event="ValueChanged" />
       <Operand datatype="ANY_STRING" name="Recipe">
         <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::RecipePage:LoadRecipe">
@@ -94,12 +94,12 @@
       <EventHandler>
         <Action>
           <Target xsi:type="widgets.brease.TextPad.Action" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTextPad">
-            <Method xsi:type="widgets.brease.TextPad.Action.Open" filePath="" />
+            <Method xsi:type="widgets.brease.TextPad.Action.Open" filePath="=Recipe" />
           </Target>
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_2">
+    <EventBinding id="EventContentLoad">
       <Source xsi:type="clientSystem.Event" event="ContentLoaded" />
       <Operand datatype="ANY_STRING" name="Recipe">
         <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::RecipePage:LoadRecipe">
@@ -109,12 +109,12 @@
       <EventHandler condition="contentId=&quot;RecepieAddEditRemoveContent&quot;">
         <Action>
           <Target xsi:type="widgets.brease.TextPad.Action" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTextPad">
-            <Method xsi:type="widgets.brease.TextPad.Action.Open" filePath="" />
+            <Method xsi:type="widgets.brease.TextPad.Action.Open" filePath="=Recipe" />
           </Target>
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_3">
+    <EventBinding id="EventSaveRecipe">
       <Source xsi:type="opcUa.Event" refId="::RecipePage:SaveRecipe" event="ValueChanged" />
       <Operand datatype="ANY_STRING" name="Recipe">
         <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::RecipePage:LoadRecipe">

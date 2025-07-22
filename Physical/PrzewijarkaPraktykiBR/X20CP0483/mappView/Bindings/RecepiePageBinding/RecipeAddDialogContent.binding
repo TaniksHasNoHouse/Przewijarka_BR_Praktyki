@@ -9,10 +9,7 @@
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MaxSize" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.NewFileName" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="NameTextIn" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollRight.MaxSize" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollRightNumIn" attribute="node" />
@@ -64,6 +61,10 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.I" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor3INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.New.FileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="NameTextIn" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

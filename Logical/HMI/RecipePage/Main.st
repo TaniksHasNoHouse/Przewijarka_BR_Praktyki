@@ -3,11 +3,10 @@ PROGRAM _INIT
 	MpRecepieXml_0.Enable := TRUE;
 	MpRecepieXml_0.MpLink := ADR(MpLinkRecipes);
 	MpRecepieXml_0.DeviceName := ADR('USER');
-	MpRecepieXml_0.FileName := ADR('RecipePage');
 	
 	MpRecipeRegPar_0.Enable := TRUE;
 	MpRecipeRegPar_0.MpLink := ADR(MpLinkRecipes);
-	MpRecipeRegPar_0.PVName := ADR('RecipePage:MaterialWindingRecipe');
+	MpRecipeRegPar_0.PVName := ADR('RecipePage:MaterialWindingRecipe');	
 	
 	MpRecipeUI_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(MpLinkRecipes);
@@ -16,6 +15,10 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	MpRecepieXml_0();
+	LoadRecipe := '';
+	brsstrcat(ADR(LoadRecipe), ADR('USER/'));
+	brsstrcat(ADR(LoadRecipe), ADR(MpRecepieXml_0.Info.LastLoadedRecipe));
+	
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
 	 
