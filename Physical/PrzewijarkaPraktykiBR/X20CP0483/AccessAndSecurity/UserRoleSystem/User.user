@@ -14,18 +14,18 @@
       <Property ID="Role[1]" Value="Administrators" />
     </Group>
   </Element>
-  <Element ID="OperatorUser" Type="User">
+  <Element ID="Operator" Type="User">
     <Property ID="UserID" Value="3" />
     <Property ID="Password" Value="M+nNrvTIQfxf2PMkEZUeceUovCJzXypPQUdxAKtE1YuKPBuVggM=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Operator" />
+      <Property ID="Role[1]" Value="Operators" />
     </Group>
   </Element>
-  <Element ID="SupervisorUser" Type="User">
+  <Element ID="Supervisor" Type="User">
     <Property ID="UserID" Value="4" />
     <Property ID="Password" Value="tnijKVcWYmZxMcUIbjevCBx7xlIHyLcRHlSDFuQKlKE05FuBE/c=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Supervisor" />
+      <Property ID="Role[1]" Value="Supervisors" />
     </Group>
   </Element>
 </Configuration>

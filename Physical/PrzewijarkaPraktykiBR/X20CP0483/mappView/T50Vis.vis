@@ -8,6 +8,7 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
+    <Page refId="DataPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -17,6 +18,8 @@
     <BindingsSet refId="RecipeAddEditRemoveContent_binding" />
     <BindingsSet refId="RecipeAddDialogContent_binding" />
     <BindingsSet refId="RecipeEditContent_binding" />
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
+    <BindingsSet refId="AlarmPageHistContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
@@ -56,6 +59,7 @@
     <Content refId="RecipeAddDialogContent" />
     <Content refId="RecipeDeleteContent" />
     <Content refId="RecipeEditContent" />
+    <Content refId="DataPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

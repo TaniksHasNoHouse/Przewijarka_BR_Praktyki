@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="TextConfig" Type="TextConfig">
+    <Group ID="Languages">
+      <Property ID="UserDefaultLanguage" Value="pl" />
+      <Property ID="UserFallbackLanguage" Value="en" />
+      <Group ID="TargetLanguages">
+        <Property ID="TargetLanguage[1]" Value="pl" />
+        <Property ID="TargetLanguage[2]" Value="en" />
+        <Property ID="TargetLanguage[3]" Value="de" />
+        <Property ID="TargetLanguage[4]" Value="fr" />
+      </Group>
+    </Group>
+    <Group ID="TargetFiles">
+      <Property ID="TargetFile[1]" Value="mappView.Resources.Texts.Event.tmx" />
+      <Property ID="TargetFile[2]" Value="mappView.Resources.Texts.Custom.tmx" />
+      <Property ID="TargetFile[3]" Value="mappView.Resources.Texts.Datapoints.tmx" />
+      <Property ID="TargetFile[4]" Value="mappView.Resources.Texts.User.tmx" />
+      <Property ID="TargetFile[5]" Value="mappView.Resources.Texts.Recipe.tmx" />
+      <Property ID="TargetFile[6]" Value="mappView.Resources.Texts.EventF.tmx" />
+      <Property ID="TargetFile[7]" Value="mappView.Resources.Texts.UserF.tmx" />
+      <Property ID="TargetFile[8]" Value="mappView.Resources.Texts.RecipeF.tmx" />
+      <Property ID="TargetFile[9]" Value="mappView.Resources.Texts.CodeBoxF.tmx" />
+      <Property ID="TargetFile[10]" Value="mappView.Resources.Texts.FileF.tmx" />
+      <Property ID="TargetFile[11]" Value="mappView.Resources.Texts.TweetF.tmx" />
+      <Property ID="TargetFile[12]" Value="mappView.Resources.Texts.UserSignaturF.tmx" />
+      <Property ID="TargetFile[13]" Value="mappView.Resources.Texts.BackupF.tmx" />
+    </Group>
+  </Element>
+</Configuration>
