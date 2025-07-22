@@ -1,26 +1,18 @@
 ACTION actProdResetting: 
-//// Auto mode: start regulator (power axes) and turn off outputs (so nothing moves)
-//	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_RESETTING, PACKML_MODE_ALL) THEN
-//    
-//		// Power up regulators/axes for auto mode
-//		Control.Cmd.PowerEnable := TRUE;
-//		Control.Cmd.ServoEnable := TRUE;
-//		Control.Cmd.AutoMode := TRUE;
-//		Control.Cmd.TensionEnable := FALSE;
-//    
-//		
-// Turn off all movement outputs (ensure nothing moves)
-//		Control.Parameters.Velocity := 0.0;
-//		Control.Parameters.StartWinding := FALSE;
-//		Control.Parameters.Distance := 0.0;
-//		Control.Parameters.Tension := 0.0;
-//		
-//		
-//    
-//		// Wait for system ready
-//		IF Control.Status.PowerReady AND Control.Status.ServoReady THEN
-//			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_0);
-//		END_IF;
-//    
-//	END_IF;
+// Auto mode: start regulator (power axes) and turn off outputs
+	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_RESETTING, PACKML_MODE_ALL) AND MainLogic.Mode = PACKML_MODE_PRODUCTION THEN
+    
+		MainLogic.MotorMode.Production.Cmd.PowerOn := TRUE;
+		MainLogic.MotorMode.Production.Cmd.Enable := TRUE;
+		MainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
+		MainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
+		MainLogic.MotorMode.Production.Parameter.Distance := 0.0;
+		MainLogic.MotorMode.Production.Parameter.Tension := 0.0;
+		MainLogic.MotorMode.Production.Cmd.TensionEnable := FALSE;
+    
+		IF MainLogic.MotorMode.Production.Status.PowerReady AND MainLogic.MotorMode.Production.Status.ServoReady THEN
+			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_0);
+		END_IF;
+    
+	END_IF;
 END_ACTION

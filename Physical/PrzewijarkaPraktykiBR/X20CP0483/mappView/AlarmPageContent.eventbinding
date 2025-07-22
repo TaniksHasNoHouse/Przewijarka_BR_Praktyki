@@ -10,7 +10,7 @@
           </Target>
         </Action>
       </EventHandler>
-    </EventBinding>
+		</EventBinding>
     <EventBinding id="AlarmPageCurrContent.ButtonAckAll.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="AlarmPageCurrContent" widgetRefId="ButtonAckAll" event="Click" />
       <EventHandler>
