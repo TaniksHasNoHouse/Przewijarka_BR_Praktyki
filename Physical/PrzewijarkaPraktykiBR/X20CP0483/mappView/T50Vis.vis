@@ -8,12 +8,15 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
+    <Page refId="DataPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
     <BindingsSet refId="RecepieContent_binding" />
     <BindingsSet refId="DiagnosticsPageAudit_binding" />
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
+    <BindingsSet refId="AlarmPageHistContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
@@ -23,7 +26,7 @@
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
-	</Dialogs>
+  </Dialogs>
   <Contents>
     <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />
@@ -36,11 +39,12 @@
     <Content refId="ManualMoveMotor" />
     <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
-	<Content refId="RecepieContent" />
+    <Content refId="RecepieContent" />
     <Content refId="DiagnosticsPageTabs" />
     <Content refId="DiagnosticsPageSDM" />
     <Content refId="DiagnosticsPageAudit" />
     <Content refId="UserManagementPageUsers" />
+    <Content refId="DataPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

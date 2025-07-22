@@ -8,5 +8,6 @@
     <Object Type="File">Config_4.mpuserx</Object>
     <Object Type="File">Config_5.mpaudittrail</Object>
     <Object Type="File">Config_6.mprecipexml</Object>
+    <Object Type="File">Config_7.mpdatarecorder</Object>
   </Objects>
 </Package>

@@ -9,5 +9,6 @@
     <Object Type="Package">DiagnosticsPage</Object>
     <Object Type="Package">RecepiePage</Object>
     <Object Type="Package">UserManagementPage</Object>
+    <Object Type="Package">DataPage</Object>
   </Objects>
 </Package>
