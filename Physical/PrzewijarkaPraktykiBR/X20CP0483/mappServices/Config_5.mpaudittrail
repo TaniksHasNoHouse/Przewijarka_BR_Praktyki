@@ -12,6 +12,9 @@
         <Property ID="[5]" Value="65" />
         <Property ID="[6]" Value="48" />
       </Group>
+      <Selector ID="TextSource" Value="TXT">
+        <Property ID="OutputFormat" Value="Texts/SysF/Event/Root" />
+      </Selector>
       <Group ID="Export">
         <Property ID="RawData" Value="TRUE" />
         <Property ID="FileType" Value="2" />

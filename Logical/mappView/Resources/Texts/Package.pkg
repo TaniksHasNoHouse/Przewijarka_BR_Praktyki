@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="TextsPackage" PackageType="TextsPackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File">Event.tmx</Object>
+    <Object Type="File">Custom.tmx</Object>
+    <Object Type="File">Datapoints.tmx</Object>
+    <Object Type="File">User.tmx</Object>
+    <Object Type="File">Recipe.tmx</Object>
+    <Object Type="File">EventF.tmx</Object>
+    <Object Type="File">UserF.tmx</Object>
+    <Object Type="File">RecipeF.tmx</Object>
+    <Object Type="File">CodeBoxF.tmx</Object>
+    <Object Type="File">FileF.tmx</Object>
+    <Object Type="File">TweetF.tmx</Object>
+    <Object Type="File">UserSignaturF.tmx</Object>
+    <Object Type="File">BackupF.tmx</Object>
+  </Objects>
 </Package>

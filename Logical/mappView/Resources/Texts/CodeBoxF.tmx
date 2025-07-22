@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">Texts/SysF/CodeBox</prop>
+  </header>
+  <body>
+    <tu tuid="0">
+      <tuv xml:lang="de">
+        <seg>Programm wurde erstellt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The programm was created</seg>
+      </tuv>
+    </tu>
+    <tu tuid="1">
+      <tuv xml:lang="de">
+        <seg>Programm wurde gelöscht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The program was deleted</seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="de">
+        <seg>Programm wurde geändert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The program was changed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="3">
+      <tuv xml:lang="de">
+        <seg>Programm wurde importiert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The program was imported</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

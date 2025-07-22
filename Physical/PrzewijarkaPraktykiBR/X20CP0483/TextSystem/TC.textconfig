@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="TextConfig" Type="TextConfig">
+    <Group ID="Languages">
+      <Property ID="UserDefaultLanguage" Value="en" />
+      <Property ID="UserFallbackLanguage" Value="en" />
+      <Group ID="TargetLanguages">
+        <Property ID="TargetLanguage[1]" Value="en" />
+        <Property ID="TargetLanguage[2]" Value="de" />
+        <Property ID="TargetLanguage[3]" Value="fr" />
+      </Group>
+    </Group>
+    <Group ID="TargetFiles">
+      <Property ID="TargetFile[1]" Value="Libraries.MpAudit.TxtEvent.tmx" />
+      <Property ID="TargetFile[2]" Value="Libraries.MpAudit.TxtCustom.tmx" />
+      <Property ID="TargetFile[3]" Value="Libraries.MpAudit.TxtDatapoints.tmx" />
+      <Property ID="TargetFile[4]" Value="Libraries.MpAudit.TxtUser.tmx" />
+      <Property ID="TargetFile[5]" Value="Libraries.MpAudit.TxtRecipe.tmx" />
+      <Property ID="TargetFile[6]" Value="Libraries.MpAudit.TxtEventF.tmx" />
+      <Property ID="TargetFile[7]" Value="Libraries.MpAudit.TxtUserF.tmx" />
+      <Property ID="TargetFile[8]" Value="Libraries.MpAudit.TxtRecipeF.tmx" />
+      <Property ID="TargetFile[9]" Value="Libraries.MpAudit.TxtCodeBoxF.tmx" />
+      <Property ID="TargetFile[10]" Value="Libraries.MpAudit.TxtFileF.tmx" />
+      <Property ID="TargetFile[11]" Value="Libraries.MpAudit.TxtTweetF.tmx" />
+      <Property ID="TargetFile[12]" Value="Libraries.MpAudit.TxtUserSignaturF.tmx" />
+      <Property ID="TargetFile[13]" Value="Libraries.MpAudit.TxtBackupF.tmx" />
+      <Property ID="TargetFile[14]" Value="mappView.Resources.Texts.Event.tmx" />
+      <Property ID="TargetFile[15]" Value="mappView.Resources.Texts.Custom.tmx" />
+      <Property ID="TargetFile[16]" Value="mappView.Resources.Texts.Datapoints.tmx" />
+      <Property ID="TargetFile[17]" Value="mappView.Resources.Texts.User.tmx" />
+      <Property ID="TargetFile[18]" Value="mappView.Resources.Texts.Recipe.tmx" />
+      <Property ID="TargetFile[19]" Value="mappView.Resources.Texts.EventF.tmx" />
+      <Property ID="TargetFile[20]" Value="mappView.Resources.Texts.UserF.tmx" />
+      <Property ID="TargetFile[21]" Value="mappView.Resources.Texts.RecipeF.tmx" />
+      <Property ID="TargetFile[22]" Value="mappView.Resources.Texts.CodeBoxF.tmx" />
+      <Property ID="TargetFile[23]" Value="mappView.Resources.Texts.FileF.tmx" />
+      <Property ID="TargetFile[24]" Value="mappView.Resources.Texts.TweetF.tmx" />
+      <Property ID="TargetFile[25]" Value="mappView.Resources.Texts.UserSignaturF.tmx" />
+      <Property ID="TargetFile[26]" Value="mappView.Resources.Texts.BackupF.tmx" />
+    </Group>
+  </Element>
+</Configuration>
