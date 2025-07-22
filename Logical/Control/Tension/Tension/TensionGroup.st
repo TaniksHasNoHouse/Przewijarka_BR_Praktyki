@@ -23,22 +23,26 @@ PROGRAM _CYCLIC
 	CASE step OF
 		INIT:
 			TensionGroup.Enable := TRUE;
+			TensionGroup.Home := FALSE;
+			TensionGroup.Power := FALSE;
 			step := HOME;
 		HOME:	
 			TensionGroup.Home := TRUE;
 			IF TensionGroup.IsHomed THEN
-	  			step := POWER;
+				TensionGroup.Home := FALSE;
+				step := POWER;
 			END_IF;
 		POWER:
 			TensionGroup.Power := TRUE;
 			IF TensionGroup.PowerOn THEN
-	  			step := WAIT_FOR_COMMAND;
+				step := WAIT_FOR_COMMAND;
 			END_IF;
 			
 		WAIT_FOR_COMMAND:
 			IF TensionGroup.InLineVelocity THEN
 	  			TensionGroup.Control := TRUE;
 			END_IF;
+			
 		ERROR:
 			TensionGroup.Power := FALSE;
 			step := ERROR_RESET;
@@ -51,7 +55,8 @@ PROGRAM _CYCLIC
 
 	END_CASE;
 	
-	
+	Analog1;
+	Analog2;
 		
 	TensionGroup();
   

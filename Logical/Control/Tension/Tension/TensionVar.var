@@ -1,5 +1,5 @@
 VAR
-	step : USINT;
+	step : TESTstate;
 END_VAR
 VAR CONSTANT
 	NR_OF_ZONES : USINT := 3;
@@ -10,4 +10,6 @@ VAR
 	GroupLineVelocity : REAL;
 	TensionController : ARRAY[0..INDEX_NR_OF_ZONES] OF MpTensionController;
 	TensionGroup : MpTensionGroup;
+	Analog1 : INT;
+	Analog2 : INT;
 END_VAR

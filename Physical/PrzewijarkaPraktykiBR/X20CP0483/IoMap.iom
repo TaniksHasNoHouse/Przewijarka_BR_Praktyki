@@ -1,4 +1,4 @@
-
 VAR_CONFIG
-
+	::Tension:Analog1 AT %IW."X20AI2437".AnalogInput01;
+	::Tension:Analog2 AT %IW."X20AI2437".AnalogInput02;
 END_VAR

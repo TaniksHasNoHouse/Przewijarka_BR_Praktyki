@@ -19,12 +19,14 @@
       </Selector>
       <Selector ID="Controller">
         <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
+          <Group ID="OperatingPoint[1]">
+            <Property ID="ProportionalGain" Value="1.150000" />
+          </Group>
         </Group>
         <Property ID="MaximumVelocityCorrection" Value="10" />
         <Group ID="ToleranceBand">
-          <Property ID="Lower" Value="4" />
-          <Property ID="Upper" Value="4" />
+          <Property ID="Lower" Value="15" />
+          <Property ID="Upper" Value="15" />
         </Group>
         <Selector ID="Initialization">
           <Property ID="MaximumLineVelocityCorrection" Value="10" />
@@ -36,7 +38,7 @@
         <Property ID="TensionLimit" Value="300" />
       </Selector>
       <Group ID="InputSignals">
-        <Property ID="SetMaterialTension" Value="" />
+        <Property ID="SetMaterialTension" Value="15" />
       </Group>
     </Group>
   </Element>
@@ -58,7 +60,9 @@
       </Selector>
       <Selector ID="Controller">
         <Group ID="PIDParameters">
-          <Group ID="OperatingPoint[1]" />
+          <Group ID="OperatingPoint[1]">
+            <Property ID="ProportionalGain" Value="1.150000" />
+          </Group>
         </Group>
         <Group ID="ToleranceBand">
           <Property ID="Lower" Value="4" />
