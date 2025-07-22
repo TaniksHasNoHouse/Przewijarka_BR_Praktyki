@@ -1,0 +1,72 @@
+(*Errors: Common*)
+VAR CONSTANT
+	mtWND_ERR_GEO_PAR_INVALID : DINT := -1058007184; (*Geometric parameter set for winder is invalid.*)
+	mtWND_ERR_AXIS_PAR_INVALID : DINT := -1058007183; (*Axis parameter set for winder is invalid.*)
+	mtWND_ERR_MATERIAL_BREAK : DINT := -1058007181; (*Material breakage detected.*)
+	mtWND_ERR_ACT_DIAMETER_INVALID : DINT := -1058007167; (*Actual diameter for winder is invalid.*)
+END_VAR
+(*Warnings: Common*)
+VAR CONSTANT
+	mtWND_WRN_GEO_PAR_INVALID : DINT := -2131749008; (*Geometric parameter set for winder is invalid.*)
+	mtWND_WRN_AXIS_PAR_INVALID : DINT := -2131749007; (*Axis parameter set for winder is invalid.*)
+	mtWND_WRN_ACT_DIAMETER_INVALID : DINT := -2131748994; (*Actual diameter for winder is invalid.*)
+END_VAR
+(*Errors: MTWinderAxisController*)
+VAR CONSTANT
+	mtWND_ERR_TORQUE_LIMITS_INVALID : DINT := -1058007173; (*Torque limits set for winder are invalid.*)
+	mtWND_ERR_INTERPOL_PAR_INVALID : DINT := -1058007172; (*Interpolation parameters are invalid.*)
+	mtWND_ERR_SET_MAT_TENSION_NEG : DINT := -1058007169; (*Set material tension is negative.*)
+END_VAR
+(*Warnings: MTWinderAxisController*)
+VAR CONSTANT
+	mtWND_WRN_TORQUE_LIMITS_INVALID : DINT := -2131749001; (*Torque limits set for winder are invalid.*)
+	mtWND_WRN_INTERPOL_PAR_INVALID : DINT := -2131749000; (*Interpolation parameters are invalid.*)
+	mtWND_WRN_SYNC_TIME_NEGATIVE : DINT := -2131748996; (*Synchronization time for winder is invalid.*)
+END_VAR
+(*Errors: MTWinderDancerController and MTWinderTensionController*)
+VAR CONSTANT
+	mtWND_ERR_MAX_CONTROL_ERROR_NEG : DINT := -1058007176; (*Max control error for material detection is negative.*)
+	mtWND_ERR_LINE_VEL_CORRECTION : DINT := -1058007166; (*Maximum line velocity correction is negative or equal to 0.*)
+END_VAR
+(*Warnings: MTWinderDancerController and MTWinderTensionController*)
+VAR CONSTANT
+	mtWND_WRN_MAX_CONTROL_ERROR_NEG : DINT := -2131749004; (*Max control error for material detection is negative.*)
+	mtWND_WRN_LINE_VEL_CORRECTION : DINT := -2131748993; (*Maximum line velocity correction is negative or equal to 0.*)
+END_VAR
+(*Errors: MTWinderDiameterEstimator*)
+VAR CONSTANT
+	mtWND_ERR_DIAMETER_EST_MODE : DINT := -1058007177; (*Mode for the diameter estimator is invalid.*)
+	mtWND_ERR_CYCLIC_EST_WINDOW : DINT := -1058007175; (*Cyclic estimation window for the diameter estimation is invalid.*)
+	mtWND_ERR_MAT_BREAK_THRESHOLD : DINT := -1058007168; (*Threshold for material break detection is invalid.*)
+END_VAR
+(*Warnings: MTWinderDiameterEstimator*)
+VAR CONSTANT
+	mtWND_WRN_DIAMETER_EST_MODE : DINT := -2131749005; (*Mode for the diameter estimator is invalid.*)
+	mtWND_WRN_CYCLIC_EST_WINDOW : DINT := -2131749003; (*Cyclic estimation window for the diameter estimator is invalid.*)
+	mtWND_WRN_MIN_DIAMETER_REACHED : DINT := -2131749002; (*The diameter estimator has reached the minimum diameter.*)
+	mtWND_WRN_MAT_BREAK_THRESHOLD : DINT := -2131748995; (*Threshold for material break detection is invalid.*)
+	mtWND_WRN_PRESET_DIAMETER : DINT := -2131748990; (*Preset diameter for the diameter estimator is invalid.*)
+END_VAR
+(*Errors: MTWinderSimulationModel*)
+VAR CONSTANT
+	mtWND_ERR_SIM_PAR_INVALID : DINT := -1058007182; (*Simulation parameter set for winder is invalid.*)
+	mtWND_ERR_MODEL_TYPE_INVALID : DINT := -1058007180; (*Type of model is invalid.*)
+	mtWND_ERR_TORQUE_MODE_INVALID : DINT := -1058007179; (*Torque mode of model is invalid.*)
+	mtWND_ERR_MODEL_TORQUE_INVALID : DINT := -1058007178; (*Torque mode for selected model type is invalid.*)
+END_VAR
+(*Warnings: MTWinderSimulationModel*)
+VAR CONSTANT
+	mtWND_WRN_SIM_PAR_INVALID : DINT := -2131749006; (*Simulation parameter set for winder is invalid.*)
+END_VAR
+(*Errors: MTWinderTaperTension*)
+VAR CONSTANT
+	mtWND_ERR_START_DIAMETER_INVALID : DINT := -1058007171; (*Start diameter for winder is invalid.*)
+	mtWND_ERR_MATERIAL_TENSION_LIMIT : DINT := -1058007165; (*The maximum and the minimum material tension is invalid.*)
+	mtWND_ERR_TAPER_TENSION_MODE : DINT := -1058007164; (*Mode for the taper tension is invalid.*)
+END_VAR
+(*Warnings: MTWinderTaperTension*)
+VAR CONSTANT
+	mtWND_WRN_START_DIAMETER_INVALID : DINT := -2131748999; (*Start diameter for winder is invalid.*)
+	mtWND_WRN_MATERIAL_TENSION_LIMIT : DINT := -2131748992; (*The maximum and the minimum material tension is invalid.*)
+	mtWND_WRN_TAPER_TENSION_MODE : DINT := -2131748991; (*Mode for the taper tension is invalid.*)
+END_VAR

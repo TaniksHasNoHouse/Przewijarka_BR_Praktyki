@@ -10,6 +10,6 @@ VAR
 	GroupLineVelocity : REAL;
 	TensionController : ARRAY[0..INDEX_NR_OF_ZONES] OF MpTensionController;
 	TensionGroup : MpTensionGroup;
-	Analog1 : INT;
 	Analog2 : INT;
+	Analog1 : INT;
 END_VAR

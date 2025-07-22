@@ -19,7 +19,7 @@ PROGRAM _CYCLIC
 	IF TensionGroup.Error THEN
 	  step := ERROR;
 	END_IF;
-	
+	GroupLineVelocity := gLineSpeed;
 	CASE step OF
 		INIT:
 			TensionGroup.Enable := TRUE;
@@ -42,9 +42,10 @@ PROGRAM _CYCLIC
 			IF TensionGroup.InLineVelocity THEN
 	  			TensionGroup.Control := TRUE;
 			END_IF;
-			
+			GroupLineVelocity := gLineSpeed;
 		ERROR:
 			TensionGroup.Power := FALSE;
+			TensionGroup.Home := FALSE;
 			step := ERROR_RESET;
 		ERROR_RESET:
 			TensionGroup.ErrorReset := TRUE;
@@ -52,12 +53,10 @@ PROGRAM _CYCLIC
 				TensionGroup.ErrorReset := FALSE;
 				step := INIT;
 			END_IF;
-
 	END_CASE;
 	
 	Analog1;
 	Analog2;
-		
 	TensionGroup();
   
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
