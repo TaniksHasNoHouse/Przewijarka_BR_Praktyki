@@ -10,6 +10,12 @@ VAR
 	GroupLineVelocity : REAL;
 	TensionController : ARRAY[0..INDEX_NR_OF_ZONES] OF MpTensionController;
 	TensionGroup : MpTensionGroup;
-	Analog2 : INT;
-	Analog1 : INT;
+	ActLeftDancerPos : INT;
+	ActLeftDancerPosScal : REAL;
+	SetRightDencerPos : REAL;
+	SetLeftDencerPos : REAL;
+	ActRightDancerPos : INT;
+	ActRightDancerPosScal : REAL;
+	TensionControllerConfig : ARRAY[0..2] OF MpTensionControllerConfig;
+	TEST : BOOL;
 END_VAR
