@@ -75,7 +75,7 @@ ACTION actRecipeMenage:
 				MaterialWindingRecipe.RollRight.MaxSize := 0;
 				MaterialWindingRecipe.RollRight.MinSize := 0;
 				MaterialWindingRecipe.DataRegistration := FALSE;
-				MpRecepieXml_0.FileName 				:= ADR('mappRecipe2Test.xml');
+				MpRecepieXml_0.FileName 			:= ADR('mappRecipe2Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_2;
 		

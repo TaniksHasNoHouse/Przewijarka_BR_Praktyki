@@ -7,6 +7,5 @@
     <Object Type="Program" Language="IEC">AuditPage</Object>
     <Object Type="Program" Language="IEC">AlarmPage</Object>
     <Object Type="Program" Language="IEC">DataPage</Object>
-    <Object Type="Library" Language="binary" Description="The AsBrStr Library contains FBKs for memory and character string handling.">AsBrStr</Object>
   </Objects>
 </Package>
