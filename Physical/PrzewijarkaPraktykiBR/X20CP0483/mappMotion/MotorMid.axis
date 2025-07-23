@@ -8,7 +8,7 @@
       <Property ID="MeasurementResolutionIsReadOnly" Value="0" />
       <Property ID="MeasurementResolution" Value="0.1" />
       <Property ID="CountDirectionIsReadOnly" Value="0" />
-      <Property ID="CountDirection" Value="Standard" />
+      <Property ID="CountDirection" Value="Inverse" />
     </Selector>
     <Property ID="MovementLimitsIsReadOnly" Value="0" />
     <Selector ID="MovementLimits" Value="Internal">

@@ -40,8 +40,8 @@ PROGRAM _INIT
 	END_FOR;
     
 	GroupLineVelocity := 0.0;
-	SetLeftDencerPos := 50.0;
-	SetRightDencerPos := 50.0;
+	SetLeftDencerPos := 10.0;
+	SetRightDencerPos := 10.0;
 	
 END_PROGRAM
 
