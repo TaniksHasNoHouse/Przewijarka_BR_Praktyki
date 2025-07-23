@@ -17,13 +17,14 @@
 <Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.List.Names" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeNameTableItem" attribute="stringValue" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:offsetRow" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTable" attribute="offsetRow" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MpRecepieXml_0.Info.LastLoadedRecipe" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="CurRecTextOut" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:RecipeControl.TableControl.Offset" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTable" attribute="offsetRow" />
 </Binding>
 </Bindings>
 </BindingsSet>

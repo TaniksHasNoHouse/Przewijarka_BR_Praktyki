@@ -44,7 +44,7 @@
     <EventBinding id="RecipeAddEditRemoveContent.SaveLoadBtn.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="RecipeAddEditRemoveContent" widgetRefId="SaveLoadBtn" event="Click" />
       <Operand datatype="ANY_STRING" name="Recipe">
-        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::RecipePage:LoadRecipe">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::RecipePage:RecipeControl.LoadRecipe">
           <Method xsi:type="opcUa.NodeAction.GetValue" />
         </ReadTarget>
       </Operand>
@@ -57,7 +57,7 @@
               </Target>
             </Action>
           </Step>
-          <Step order="1">
+          <Step order="2">
             <Action>
               <Target xsi:type="clientSystem.Action">
                 <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="Receptura została załadowana" header="UWAGA" />
@@ -90,7 +90,7 @@
           </Step>
           <Step order="1">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:DialogOpen">
+              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:RecipeControl.Edit.DialogOpen">
                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>

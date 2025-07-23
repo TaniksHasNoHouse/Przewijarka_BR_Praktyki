@@ -19,14 +19,18 @@ PROGRAM _CYCLIC
 	MpRecepieXml_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
-	
-	offsetRow := UIConnect.Recipe.List.SelectedIndex - 3; 
 	actRecipeManage;
 	
-	LoadRecipe := '';
-	brsstrcat(ADR(LoadRecipe), ADR('USER/'));
-	brsstrcat(ADR(LoadRecipe), ADR(MpRecepieXml_0.Info.LastLoadedRecipe));
+	RecipeControl.LoadRecipe := '';
+	brsstrcat(ADR(RecipeControl.LoadRecipe), ADR('USER/'));
+	brsstrcat(ADR(RecipeControl.LoadRecipe), ADR(MpRecepieXml_0.Info.LastLoadedRecipe));
 	 
+	IF UIConnect.Recipe.List.SelectedIndex >=3 THEN
+		RecipeControl.TableControl.Offset := UIConnect.Recipe.List.SelectedIndex - 3; 
+	ELSE
+		RecipeControl.TableControl.Offset := 0;
+	END_IF;
+	
 	actImageBinding;
 END_PROGRAM
 

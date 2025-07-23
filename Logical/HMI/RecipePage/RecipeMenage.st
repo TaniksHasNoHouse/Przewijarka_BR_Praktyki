@@ -2,7 +2,7 @@
 ACTION actRecipeManage: 
 
 		//Call TableConfiguration Variable
-		TableConfig;
+		RecipeControl.TableControl.Config;
 	
 		// create default recipes in case they don't exist yet on the target
 		// recipes are created by using the the MpRecipeXml instance interface
@@ -146,48 +146,47 @@ ACTION actRecipeManage:
 		
 		END_CASE;
 	
-		//Edit Recipe
-		IF DialogOpen = TRUE THEN
-			MaterialWidningEDITRecipe.TensionLeft := MaterialWindingRecipe.TensionLeft;
-			MaterialWidningEDITRecipe.TensionRight := MaterialWindingRecipe.TensionRight;
-			MaterialWidningEDITRecipe.Speed := MaterialWindingRecipe.Speed;
-			MaterialWidningEDITRecipe.Direction := MaterialWindingRecipe.Direction;
-			MaterialWidningEDITRecipe.Motor1PID.P := MaterialWindingRecipe.Motor1PID.P;
-			MaterialWidningEDITRecipe.Motor1PID.I := MaterialWindingRecipe.Motor1PID.I;
-			MaterialWidningEDITRecipe.Motor2PID.P := MaterialWindingRecipe.Motor2PID.P;
-			MaterialWidningEDITRecipe.Motor2PID.I := MaterialWindingRecipe.Motor2PID.I;
-			MaterialWidningEDITRecipe.Motor3PID.P := MaterialWindingRecipe.Motor3PID.P;
-			MaterialWidningEDITRecipe.Motor3PID.I := MaterialWindingRecipe.Motor3PID.I;
-			MaterialWidningEDITRecipe.RollLeft.MaxSize := MaterialWindingRecipe.RollLeft.MaxSize;
-			MaterialWidningEDITRecipe.RollLeft.MinSize := MaterialWindingRecipe.RollLeft.MinSize;
-			MaterialWidningEDITRecipe.RollRight.MaxSize := MaterialWindingRecipe.RollRight.MaxSize;
-			MaterialWidningEDITRecipe.RollRight.MinSize := MaterialWindingRecipe.RollRight.MinSize;
-			MaterialWidningEDITRecipe.DataRegistration := MaterialWindingRecipe.DataRegistration;
-			DialogOpen 							:= FALSE;
-		END_IF
-	
-		IF SaveRecipe = TRUE THEN
-			MaterialWindingRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
-			MaterialWindingRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
-			MaterialWindingRecipe.Speed := MaterialWidningEDITRecipe.Speed;
-			MaterialWindingRecipe.Direction := MaterialWidningEDITRecipe.Direction;
-			MaterialWindingRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
-			MaterialWindingRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
-			MaterialWindingRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
-			MaterialWindingRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
-			MaterialWindingRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
-			MaterialWindingRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
-			MaterialWindingRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
-			MaterialWindingRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
-			MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
-			MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
-			MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
-			UIConnect.Recipe.Save;
-			IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
-		  		SaveRecipe := FALSE;
-			END_IF;
-			
-		END_IF
+	//Edit Recipe
+	IF RecipeControl.Edit.DialogOpen = TRUE THEN
+		MaterialWidningEDITRecipe.TensionLeft := MaterialWindingRecipe.TensionLeft;
+		MaterialWidningEDITRecipe.TensionRight := MaterialWindingRecipe.TensionRight;
+		MaterialWidningEDITRecipe.Speed := MaterialWindingRecipe.Speed;
+		MaterialWidningEDITRecipe.Direction := MaterialWindingRecipe.Direction;
+		MaterialWidningEDITRecipe.Motor1PID.P := MaterialWindingRecipe.Motor1PID.P;
+		MaterialWidningEDITRecipe.Motor1PID.I := MaterialWindingRecipe.Motor1PID.I;
+		MaterialWidningEDITRecipe.Motor2PID.P := MaterialWindingRecipe.Motor2PID.P;
+		MaterialWidningEDITRecipe.Motor2PID.I := MaterialWindingRecipe.Motor2PID.I;
+		MaterialWidningEDITRecipe.Motor3PID.P := MaterialWindingRecipe.Motor3PID.P;
+		MaterialWidningEDITRecipe.Motor3PID.I := MaterialWindingRecipe.Motor3PID.I;
+		MaterialWidningEDITRecipe.RollLeft.MaxSize := MaterialWindingRecipe.RollLeft.MaxSize;
+		MaterialWidningEDITRecipe.RollLeft.MinSize := MaterialWindingRecipe.RollLeft.MinSize;
+		MaterialWidningEDITRecipe.RollRight.MaxSize := MaterialWindingRecipe.RollRight.MaxSize;
+		MaterialWidningEDITRecipe.RollRight.MinSize := MaterialWindingRecipe.RollRight.MinSize;
+		MaterialWidningEDITRecipe.DataRegistration := MaterialWindingRecipe.DataRegistration;
+		RecipeControl.Edit.DialogOpen							:= FALSE;
+	END_IF
+
+	IF RecipeControl.Edit.SaveRecipe = TRUE THEN
+		MaterialWindingRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
+		MaterialWindingRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
+		MaterialWindingRecipe.Speed := MaterialWidningEDITRecipe.Speed;
+		MaterialWindingRecipe.Direction := MaterialWidningEDITRecipe.Direction;
+		MaterialWindingRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
+		MaterialWindingRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
+		MaterialWindingRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
+		MaterialWindingRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
+		MaterialWindingRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
+		MaterialWindingRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
+		MaterialWindingRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
+		MaterialWindingRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
+		MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
+		MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
+		MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
+		UIConnect.Recipe.Save;
+		IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
+	  		RecipeControl.Edit.SaveRecipe := FALSE;
+		END_IF;	
+	END_IF
 	
 
 END_ACTION
