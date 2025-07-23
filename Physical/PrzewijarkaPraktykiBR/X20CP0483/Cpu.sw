@@ -15,6 +15,7 @@
     <Task Name="AuditPage" Source="HMI.AuditPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AlarmPage" Source="HMI.AlarmPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DataPage" Source="HMI.DataPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="TensionCon" Source="Control.Tension.TensionConfig.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
