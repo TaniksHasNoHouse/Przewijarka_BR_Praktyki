@@ -16,6 +16,5 @@ VAR
 	SetLeftDencerPos : REAL;
 	ActRightDancerPos : INT;
 	ActRightDancerPosScal : REAL;
-	TensionControllerConfig : ARRAY[0..2] OF MpTensionControllerConfig;
 	TEST : BOOL;
 END_VAR

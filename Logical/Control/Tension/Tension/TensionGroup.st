@@ -39,9 +39,9 @@ PROGRAM _INIT
 		
 	END_FOR;
     
-	GroupLineVelocity := 0.5;
-	SetLeftDencerPos := 10.0;
-	SetRightDencerPos := 10.0;
+	GroupLineVelocity := 0.0;
+	SetLeftDencerPos := 50.0;
+	SetRightDencerPos := 50.0;
 	
 END_PROGRAM
 
@@ -84,7 +84,13 @@ PROGRAM _CYCLIC
 			step := ERROR_RESET;
 		ERROR_RESET:
 			TensionGroup.ErrorReset := TRUE;
+			FOR i := 0 TO 2 DO
+				TensionController[i].ErrorReset := TRUE;
+			END_FOR;
 			IF NOT TensionGroup.Error THEN
+				FOR i := 0 TO 2 DO
+					TensionController[i].ErrorReset := FALSE;
+				END_FOR;
 				TensionGroup.ErrorReset := FALSE;
 				step := INIT;
 			END_IF;

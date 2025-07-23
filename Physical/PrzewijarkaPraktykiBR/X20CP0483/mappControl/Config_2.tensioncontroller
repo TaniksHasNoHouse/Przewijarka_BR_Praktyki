@@ -20,8 +20,10 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="5" />
-            <Property ID="IntegrationTime" Value="0" />
+            <Property ID="ProportionalGain" Value="3.0" />
+            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="DerivativeTime" Value="0" />
+            <Property ID="FilterTime" Value="0" />
           </Group>
         </Group>
         <Property ID="MaximumVelocityCorrection" Value="10" />
@@ -31,6 +33,7 @@
         </Group>
         <Selector ID="Initialization">
           <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
       <Selector ID="Material">
@@ -64,8 +67,10 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="5" />
-            <Property ID="IntegrationTime" Value="0" />
+            <Property ID="ProportionalGain" Value="3.0" />
+            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="DerivativeTime" Value="0" />
+            <Property ID="FilterTime" Value="0" />
           </Group>
         </Group>
         <Group ID="ToleranceBand">
@@ -74,6 +79,7 @@
         </Group>
         <Selector ID="Initialization">
           <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
       <Selector ID="Material">
