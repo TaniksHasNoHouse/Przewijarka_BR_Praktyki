@@ -12,9 +12,11 @@ VAR
 	TensionGroup : MpTensionGroup;
 	ActLeftDancerPos : INT;
 	ActLeftDancerPosScal : REAL;
-	SetRightDencerPos : REAL;
-	SetLeftDencerPos : REAL;
+	Distance : REAL;
+	SetRightDancerPos : REAL;
+	SetLeftDancerPos : REAL;
 	ActRightDancerPos : INT;
 	ActRightDancerPosScal : REAL;
+	MV_ABS : BOOL;
 	TEST : BOOL;
 END_VAR

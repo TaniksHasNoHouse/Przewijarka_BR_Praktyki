@@ -1,0 +1,12 @@
+VAR
+	TensionConfigType : ARRAY[0..2] OF MpTensionControllerConfigType;
+	TensionConfig : ARRAY[0..2] OF MpTensionControllerConfig;
+	gAxisString1 : STRING[32] := 'gAxis_1';
+	SetLeftDancerPos : STRING[255] := '::Tension:SetLeftDencerPos';
+	ActLeftDancerPosScal : STRING[255] := '::Tension:ActLeftDancerPosScal';
+	gAxisString3 : STRING[32] := 'gAxis_3';
+	SetRightDancerPos : STRING[255] := '::Tension:SetRightDencerPos';
+	ActRightDancerPosScal : STRING[255] := '::Tension:ActRightDancerPosScal';
+	gAxisString2 : STRING[32] := 'gAxis_2';
+	TensionController : BOOL;
+END_VAR

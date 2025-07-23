@@ -40,14 +40,20 @@ PROGRAM _INIT
 	END_FOR;
     
 	GroupLineVelocity := 0.0;
-	SetLeftDencerPos := 10.0;
-	SetRightDencerPos := 10.0;
+	SetLeftDancerPos := 10.0;
+	SetRightDancerPos := 10.0;
+	Distance := 1.0;
 	
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	IF TensionGroup.Error THEN
 		step := ERROR;
+	END_IF;
+	IF TensionGroup.InLineVelocity THEN
+		TensionGroup.Control := TRUE;
+	ELSE
+		TensionGroup.Control := FALSE;
 	END_IF;
 	CASE step OF
 		INIT:
@@ -68,13 +74,20 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		WAIT_FOR_COMMAND:
+			TensionGroup.MoveVelocity := FALSE;
 			IF TEST THEN
-				TensionGroup.MoveVelocity := TRUE;
-				IF TensionGroup.InLineVelocity THEN
-					TensionGroup.Control := TRUE;
-				END_IF;
-			ELSE
-				
+				step := STATE_TEST;
+			END_IF;
+			IF MV_ABS THEN
+	  			step := MOVE_ABSOLUTE;
+			END_IF;
+		STATE_TEST:
+			TensionGroup.MoveVelocity := TRUE;
+		MOVE_ABSOLUTE:
+			TensionGroup.MoveVelocity := TRUE;
+			IF TensionController[1].Info.ProcessedMaterial >= Distance THEN
+				TensionGroup.StopLine := TRUE;
+				step := WAIT_FOR_COMMAND;
 			END_IF;
 		ERROR:
 			TensionGroup.MoveVelocity := FALSE;

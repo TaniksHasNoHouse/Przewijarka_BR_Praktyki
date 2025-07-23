@@ -43,7 +43,7 @@
       </Selector>
       <Group ID="InputSignals">
         <Property ID="SetMaterialTension" Value="15" />
-        <Property ID="SetDancerPosition" Value="::Tension:SetLeftDencerPos" />
+        <Property ID="SetDancerPosition" Value="::Tension:SetLeftDancerPos" />
         <Property ID="ActualDancerPosition" Value="::Tension:ActLeftDancerPosScal" />
       </Group>
     </Group>
@@ -89,7 +89,7 @@
       </Selector>
       <Group ID="InputSignals">
         <Property ID="SetMaterialTension" Value="" />
-        <Property ID="SetDancerPosition" Value="::Tension:SetRightDencerPos" />
+        <Property ID="SetDancerPosition" Value="::Tension:SetRightDancerPos" />
         <Property ID="ActualDancerPosition" Value="::Tension:ActRightDancerPosScal" />
       </Group>
     </Group>
