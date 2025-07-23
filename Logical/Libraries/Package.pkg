@@ -31,5 +31,6 @@
     <Object Type="Library" Language="binary" Description="This mechatronics library contains different system datatypes and general error numbers.">MTTypes</Object>
     <Object Type="Library" Language="binary" Description="This mechatronics library contains function blocks for controlling and simulating winder systems.">MTWinder</Object>
     <Object Type="Library" Language="binary" Description="This library integrates mathematical functions such as angle functions, rounding off, etc. into the program.">AsBrMath</Object>
+    <Object Type="Library" Language="binary" Description="The AsBrStr Library contains FBKs for memory and character string handling.">AsBrStr</Object>
   </Objects>
 </Package>
