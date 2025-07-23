@@ -13,12 +13,12 @@ TYPE
 		STEP_ABORTING, (*STATE_ABORTING*)
 		STEP_ABORTED, (*STATE_ABORTED*)
 		STEP_CLEARING (*STATE_CLEARING*)
-		);
+	);
 	PackMLModes : 
 		(
 		PACKML_MODE_PRODUCTION := 1,
 		PACKML_MODE_MANUAL := 2
-		);
+	);
 	MainLogicType : 	STRUCT 
 		Cmd : CmdType;
 		MotorMode : ModesType;
@@ -144,6 +144,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis1StatusType : 	STRUCT 
 		ActPosition : LREAL;
@@ -165,6 +166,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis2StatusType : 	STRUCT 
 		ActPosition : LREAL;
@@ -186,11 +188,16 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis3StatusType : 	STRUCT 
 		ActPosition : LREAL;
 		ActVelocity : REAL;
 		ActualTension : REAL;
 		Ready : BOOL;
+	END_STRUCT;
+	Regulator : STRUCT
+		P : REAL;
+		I : REAL;
 	END_STRUCT;
 END_TYPE
