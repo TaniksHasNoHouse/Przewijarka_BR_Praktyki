@@ -20,6 +20,9 @@
         <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
         <Variable Name="DialogOpen" />
       </Task>
+      <Task Name="AuditPage">
+        <Variable Name="Export" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

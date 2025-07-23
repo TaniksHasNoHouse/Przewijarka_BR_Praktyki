@@ -40,7 +40,7 @@
     </tu>
     <tu tuid="4">
       <tuv xml:lang="pl">
-        <seg>dodał użytkownika {%usr}</seg>
+        <seg>dodał użytkownika {&amp;usr}</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} zugefügt</seg>
@@ -51,7 +51,7 @@
     </tu>
     <tu tuid="5">
       <tuv xml:lang="pl">
-        <seg>usunął użytkownika {%usr}</seg>
+        <seg>usunął użytkownika {&amp;usr}</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} gelöscht</seg>
@@ -62,7 +62,7 @@
     </tu>
     <tu tuid="6">
       <tuv xml:lang="pl">
-        <seg>zablokował użytkownika {%usr}</seg>
+        <seg>zablokował użytkownika {&amp;usr}</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Anwender {&amp;usr} gesperrt</seg>
@@ -128,7 +128,7 @@
     </tu>
     <tu tuid="12">
       <tuv xml:lang="pl">
-        <seg>dodał nową rolę: {%usr}</seg>
+        <seg>dodał nową rolę: {&amp;usr}</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Neue Rolle {&amp;usr} zugefügt</seg>
@@ -139,7 +139,7 @@
     </tu>
     <tu tuid="13">
       <tuv xml:lang="pl">
-        <seg>usunął rolę: {%usr}</seg>
+        <seg>usunął rolę: {&amp;usr}</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Rolle {&amp;usr} gelöscht</seg>

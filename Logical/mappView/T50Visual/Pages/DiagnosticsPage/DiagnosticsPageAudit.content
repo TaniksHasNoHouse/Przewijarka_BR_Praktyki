@@ -9,5 +9,6 @@
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="ButtonSort" top="320" left="30" height="40" zIndex="1" image="Media/SymbolLib/Edit/Sort.svg" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonFilter" top="320" left="150" height="40" zIndex="2" image="Media/Image/filter.png" imageHeight="30" imageWidth="30" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButtonExport" top="320" left="270" height="40" zIndex="3" image="Media/SymbolLib/File/Files.svg" />
   </Widgets>
 </Content>

@@ -15,5 +15,6 @@
     <Object Type="File">TweetF.tmx</Object>
     <Object Type="File">UserSignaturF.tmx</Object>
     <Object Type="File">BackupF.tmx</Object>
+    <Object Type="File">HMI.tmx</Object>
   </Objects>
 </Package>

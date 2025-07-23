@@ -21,6 +21,11 @@
         <Property ID="Encrypt" Value="FALSE" />
       </Group>
     </Group>
+    <Group ID="Monitor">
+      <Group ID="0">
+        <Property ID="pv" Value="::AuditPage:Export" />
+      </Group>
+    </Group>
     <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

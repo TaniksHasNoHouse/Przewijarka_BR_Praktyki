@@ -11,7 +11,7 @@
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_1">
+    <EventBinding id="AutoLogout">
       <Source xsi:type="clientSystem.Event" event="LoggedOut" />
       <EventHandler>
         <Action>

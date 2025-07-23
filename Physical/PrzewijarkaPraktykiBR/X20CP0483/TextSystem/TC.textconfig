@@ -26,6 +26,7 @@
       <Property ID="TargetFile[11]" Value="mappView.Resources.Texts.TweetF.tmx" />
       <Property ID="TargetFile[12]" Value="mappView.Resources.Texts.UserSignaturF.tmx" />
       <Property ID="TargetFile[13]" Value="mappView.Resources.Texts.BackupF.tmx" />
+      <Property ID="TargetFile[14]" Value="mappView.Resources.Texts.HMI.tmx" />
     </Group>
   </Element>
 </Configuration>

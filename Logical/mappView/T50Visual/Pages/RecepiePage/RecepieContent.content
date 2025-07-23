@@ -5,12 +5,12 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="EditAddRemoveRecipeTab" top="0" left="0" width="700" height="420" zIndex="0" backColor="rgba(192, 192, 192, 1)">
           <Widgets>
-            <Widget xsi:type="widgets.brease.TabItem" id="CurrRecipeTab" left="0" width="350" zIndex="0" text="Aktualna receptura">
+            <Widget xsi:type="widgets.brease.TabItem" id="CurrRecipeTab" left="0" width="350" zIndex="0" text="$IAT/HMI/ID_CurrRec">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="CCRecipeCurr" top="0" left="0" width="700" height="390" zIndex="0" contentId="RecipeCurrContent" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="350" zIndex="1" text="Edycja receptur">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="350" zIndex="1" text="$IAT/HMI/ID_EditRec">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="CCRecipeEdit" top="0" left="0" width="700" height="390" zIndex="0" contentId="RecipeAddEditRemoveContent" />
               </Widgets>
