@@ -40,8 +40,8 @@ PROGRAM _INIT
 	END_FOR;
     
 	GroupLineVelocity := 0.0;
-	SetLeftDencerPos := 50.0;
-	SetRightDencerPos := 50.0;
+	SetLeftDencerPos := 10.0;
+	SetRightDencerPos := 10.0;
 	
 END_PROGRAM
 
@@ -69,7 +69,7 @@ PROGRAM _CYCLIC
 			
 		WAIT_FOR_COMMAND:
 			IF TEST THEN
-	  			TensionGroup.MoveVelocity := TRUE;
+				TensionGroup.MoveVelocity := TRUE;
 				IF TensionGroup.InLineVelocity THEN
 					TensionGroup.Control := TRUE;
 				END_IF;
@@ -102,7 +102,8 @@ PROGRAM _CYCLIC
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
 		TensionController[i]();
 	END_FOR;
-	TensionGroup();  
+	TensionGroup();
+	
 END_PROGRAM
 
 PROGRAM _EXIT

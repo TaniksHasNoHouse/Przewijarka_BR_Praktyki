@@ -20,8 +20,8 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="3.0" />
-            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="ProportionalGain" Value="1" />
+            <Property ID="IntegrationTime" Value="0" />
             <Property ID="DerivativeTime" Value="0" />
             <Property ID="FilterTime" Value="0" />
           </Group>
@@ -67,8 +67,8 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="3.0" />
-            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="ProportionalGain" Value="1" />
+            <Property ID="IntegrationTime" Value="0" />
             <Property ID="DerivativeTime" Value="0" />
             <Property ID="FilterTime" Value="0" />
           </Group>
