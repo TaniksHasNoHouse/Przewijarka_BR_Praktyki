@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AlarmPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_Alarms">
+      <tuv xml:lang="pl">
+        <seg>Alarmy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alarm</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_History">
+      <tuv xml:lang="pl">
+        <seg>Historia</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alarmverlauf</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>History</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Time">
+      <tuv xml:lang="pl">
+        <seg>Czas</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timestamp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Message">
+      <tuv xml:lang="pl">
+        <seg>Informacja</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nachricht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Message</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_State">
+      <tuv xml:lang="pl">
+        <seg>Stan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zustand</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>State</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Ack">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bestätigen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_AckAll">
+      <tuv xml:lang="pl">
+        <seg>Potwierdź wszystko</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alle Bestätigen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge all</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

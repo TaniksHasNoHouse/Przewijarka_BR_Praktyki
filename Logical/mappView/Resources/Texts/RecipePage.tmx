@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/RecipePage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_CurrRec">
+      <tuv xml:lang="pl">
+        <seg>Aktualna receptura</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Aktuelles Rezept</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current recipe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_EditRec">
+      <tuv xml:lang="pl">
+        <seg>Edycja receptur</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Rezept bearbeiten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Edit recipe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Search">
+      <tuv xml:lang="pl">
+        <seg>Wyszukaj:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Suchen:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Search:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Name">
+      <tuv xml:lang="pl">
+        <seg>Nazwa:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Name:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Name:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_CurrRec:">
+      <tuv xml:lang="pl">
+        <seg>Aktualna receptura:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktuelles Rezept:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current recipe:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MaxLeft">
+      <tuv xml:lang="pl">
+        <seg>Maksymalna ilość materialu rolki lewej:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Maximale Materialmenge auf der linken Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Maximum amount of material for the left roll:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MinLeft">
+      <tuv xml:lang="pl">
+        <seg>Minimalna ilość materialu rolki lewej:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mindestmaterialmenge für die linke Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Minimum amount of material for the left roll:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MaxRight">
+      <tuv xml:lang="pl">
+        <seg>Maksymalna ilość materialu rolki prawej:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Maximale Materialmenge auf der rechten Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Maximum amount of material for the right roll:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MinRight">
+      <tuv xml:lang="pl">
+        <seg>Minimalna ilość materialu rolki prawej:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mindestmaterialmenge für die richtige Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Minimum amount of material for the right roll:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_TensRight">
+      <tuv xml:lang="pl">
+        <seg>Wysokość prawego napinacza:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Höhe des rechten Spanners:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Right tensioner height:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_TensLeft">
+      <tuv xml:lang="pl">
+        <seg>Wysokość lewego napinacza:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Höhe des linken Spanners:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Left tensioner height:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_WindSpeed">
+      <tuv xml:lang="pl">
+        <seg>Predkość nawijania:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wickelgeschwindigkeit:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Winding speed:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_WindDir">
+      <tuv xml:lang="pl">
+        <seg>Kierunek nawijania:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wickelrichtung:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Winding direction:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_SaveData">
+      <tuv xml:lang="pl">
+        <seg>Zapis danych:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Datenaufzeichnung:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save data:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Motor1">
+      <tuv xml:lang="pl">
+        <seg>Silnik 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Motor 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Motor 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Motor2">
+      <tuv xml:lang="pl">
+        <seg>Silnik 3</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Motor 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Motor 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Motor3">
+      <tuv xml:lang="pl">
+        <seg>Silnik 2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Motor 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Motor 3</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

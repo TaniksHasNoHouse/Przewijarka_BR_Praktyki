@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/ManualPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_CurrState">
+      <tuv xml:lang="pl">
+        <seg>Aktualny stan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktueller Stand</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Activate">
+      <tuv xml:lang="pl">
+        <seg>Aktywacja</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktivieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Activate</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_VSet">
+      <tuv xml:lang="pl">
+        <seg>Zadana prędkość taśmy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bandgeschwindigkeit einstellen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set belt speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_VCurr">
+      <tuv xml:lang="pl">
+        <seg>Aktualna prędkość taśmy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktuelle Bandgeschwindigkeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current belt speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MoveLeft">
+      <tuv xml:lang="pl">
+        <seg>Ruch w lewo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nach links bewegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move left</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MoveRight">
+      <tuv xml:lang="pl">
+        <seg>Ruch w prawo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nach rechts bewegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move right</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_LeftRight">
+      <tuv xml:lang="pl">
+        <seg>Przewijanie prawo/lewo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rechts-/Linkswicklung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Right/left winding</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_PID">
+      <tuv xml:lang="pl">
+        <seg>Nastawy regulatorów PI</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>PI-Reglereinstellungen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PI controller settings</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MotorMove">
+      <tuv xml:lang="pl">
+        <seg>Ruch silnikami</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Motorische Bewegung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Motor movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Autotune">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Autotune</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotune</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

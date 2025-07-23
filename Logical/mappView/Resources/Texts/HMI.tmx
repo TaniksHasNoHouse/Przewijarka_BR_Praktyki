@@ -161,5 +161,27 @@ Rezept bearbeiten</seg>
         <seg>Admin page</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Previous">
+      <tuv xml:lang="pl">
+        <seg>Poprzedni</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vorherige</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Previous</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Next">
+      <tuv xml:lang="pl">
+        <seg>Kolejny</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nächste</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Next</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
