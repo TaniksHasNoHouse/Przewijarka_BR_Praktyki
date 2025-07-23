@@ -41,5 +41,29 @@
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MaxSize" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MaxRollLeftNumOut" attribute="node" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor1PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor1PNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor1PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor1INumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor2PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor2PNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor2PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor2INumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor3PNumOut" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor3INumOut" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>
