@@ -1,5 +1,19 @@
 
 TYPE
+	TableControl_type : 	STRUCT 
+		Config : STRING[80] := '{"specRows": [{"from":11, "to":20, "visible":false}]}';
+		Offset : UINT;
+	END_STRUCT;
+	Edit_type : 	STRUCT 
+		SaveRecipe : BOOL;
+		DialogOpen : BOOL;
+	END_STRUCT;
+	RecipeControl_type : 	STRUCT 
+		Edit : Edit_type;
+		LoadRecipe : STRING[80] := '0';
+		TableControl : TableControl_type;
+		Save : BOOL;
+	END_STRUCT;
 	MaterialWindingRec_type : 	STRUCT 
 		TensionLeft : USINT := 0; (* Naci¹g lewy, zakres 0–14 cm *)
 		TensionRight : USINT := 0; (* Naci¹g prawy, zakres 0–14 cm *)

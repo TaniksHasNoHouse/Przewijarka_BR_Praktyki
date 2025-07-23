@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="DiagnosticsPageAudit_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-</Bindings>
+    <EventBinding id="DiagnosticsPageAudit.ButtonFilter.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DiagnosticsPageAudit" widgetRefId="ButtonFilter" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.AuditList.Action" contentRefId="DiagnosticsPageAudit" widgetRefId="AuditListWindow">
+            <Method xsi:type="widgets.brease.AuditList.Action.OpenConfiguration" type="Filtering" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="DiagnosticsPageAudit.ButtonSort.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DiagnosticsPageAudit" widgetRefId="ButtonSort" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.AuditList.Action" contentRefId="DiagnosticsPageAudit" widgetRefId="AuditListWindow">
+            <Method xsi:type="widgets.brease.AuditList.Action.OpenConfiguration" type="Sorting" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
 </EventBindingSet>

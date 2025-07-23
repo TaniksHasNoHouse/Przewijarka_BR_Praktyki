@@ -17,7 +17,9 @@
     <BindingsSet refId="RecipeAddDialogContent_binding" />
     <BindingsSet refId="RecipeAddEditRemoveContent_binding" />
     <BindingsSet refId="RecipeCurrContent_binding" />
-    <BindingsSet refId="RecipeEditContent_binding" />
+	<BindingsSet refId="RecipeEditContent_binding" />
+	<BindingsSet refId="AlarmPageCurrContent_binding" />
+	<BindingsSet refId="AlarmPageHistContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />

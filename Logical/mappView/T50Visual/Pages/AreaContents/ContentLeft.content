@@ -3,14 +3,14 @@
   <Widgets>
     <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="4" left="0" width="100" height="331" zIndex="0">
       <Widgets>
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnMainPage" top="4" left="2" width="96" height="45" zIndex="0" multiLine="true" pageId="MainPage" text="Strona glowna" wordWrap="true" fontSize="13px" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnManualPage" top="58" left="2" width="96" height="45" zIndex="1" pageId="ManualPage" text="Manual" fontSize="13px" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAlarmPage" top="112" left="2" width="96" height="45" zIndex="2" pageId="AlarmPage" text="Alarmy" fontSize="13px" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnDiagnosticsPage" top="167" left="2" width="96" height="45" zIndex="3" pageId="DiagnosticsPage" text="Diagnostyka" fontSize="13px" bold="true" italic="false" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnRecepiePage" top="222" left="2" width="96" height="45" zIndex="4" pageId="RecepiePage" text="Receptury" fontSize="13px" bold="true" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAdminPage" top="276" left="2" width="96" height="45" zIndex="5" pageId="UserManagementPage" text="Admin" fontSize="13px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnMainPage" top="4" left="2" width="96" height="45" zIndex="0" multiLine="true" pageId="MainPage" text="$IAT/HMI/ID_MainPage" wordWrap="true" fontSize="13px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnManualPage" top="58" left="2" width="96" height="45" zIndex="1" multiLine="true" pageId="ManualPage" text="$IAT/HMI/ID_ManualPage" wordWrap="true" fontSize="13px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAlarmPage" top="112" left="2" width="96" height="45" zIndex="2" multiLine="true" pageId="AlarmPage" text="$IAT/HMI/ID_Alarmpage" wordWrap="true" fontSize="13px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnDiagnosticsPage" top="167" left="2" width="96" height="45" zIndex="3" multiLine="true" pageId="DiagnosticsPage" text="$IAT/HMI/ID_DiagnosticsPage" wordWrap="true" fontSize="12px" bold="true" italic="false" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnRecepiePage" top="222" left="2" width="96" height="45" zIndex="4" multiLine="true" pageId="RecepiePage" text="$IAT/HMI/ID_RecipePage" wordWrap="true" fontSize="13px" bold="true" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NaviBtnAdminPage" top="276" left="2" width="96" height="45" zIndex="5" multiLine="true" pageId="UserManagementPage" text="$IAT/HMI/ID_AdminPage" wordWrap="true" fontSize="13px" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelectorBtn" top="340" left="10" width="80" zIndex="1" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelectorBtn" top="340" left="5" width="90" zIndex="1" />
   </Widgets>
 </Content>

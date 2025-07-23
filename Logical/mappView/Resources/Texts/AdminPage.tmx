@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AdminPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_User">
+      <tuv xml:lang="pl">
+        <seg>Użytkownik</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_FName">
+      <tuv xml:lang="pl">
+        <seg>Pełna nazwa</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Full name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Role">
+      <tuv xml:lang="pl">
+        <seg>Rola</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rolle</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Role</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Admin">
+      <tuv xml:lang="pl">
+        <seg>Admin</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Admin</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Admin</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_LastLogin">
+      <tuv xml:lang="pl">
+        <seg>Ostatnie logowanie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Letzte Anmeldung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Last login</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Add">
+      <tuv xml:lang="pl">
+        <seg>Dodaj</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hinzufügen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Add</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Delete">
+      <tuv xml:lang="pl">
+        <seg>Usuń</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Löschen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delete</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Modify">
+      <tuv xml:lang="pl">
+        <seg>Zmodyfikuj</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Modifizieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Modify</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

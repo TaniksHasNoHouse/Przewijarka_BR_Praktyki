@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/HMI</prop>
+  </header>
+  <body>
+    <tu tuid="ID_Start">
+      <tuv xml:lang="pl">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Stop">
+      <tuv xml:lang="pl">
+        <seg>Stop</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Stoppen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stop</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Reset">
+      <tuv xml:lang="pl">
+        <seg>Reset</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rücksetzen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Reset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Manual">
+      <tuv xml:lang="pl">
+        <seg>Manual</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Manual</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Auto">
+      <tuv xml:lang="pl">
+        <seg>Auto</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Auto</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Auto</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_CurrRec">
+      <tuv xml:lang="pl">
+        <seg>Aktualna receptura</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Aktuelles Rezept</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current recipe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_EditRec">
+      <tuv xml:lang="pl">
+        <seg>Edycja receptur</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Rezept bearbeiten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Edit recipe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Logged">
+      <tuv xml:lang="pl">
+        <seg>Zalogowano jako:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Angemeldet als:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logged in as:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_MainPage">
+      <tuv xml:lang="pl">
+        <seg>Strona główna</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hauptseite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Main page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_ManualPage">
+      <tuv xml:lang="pl">
+        <seg>Sterowanie ręczne</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Manuelle Steuerung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Alarmpage">
+      <tuv xml:lang="pl">
+        <seg>Strona alarmów</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alarmseite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarm page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_DiagnosticsPage">
+      <tuv xml:lang="pl">
+        <seg>Strona diagnostyki</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Diagnoseseite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Diagnostics page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_RecipePage">
+      <tuv xml:lang="pl">
+        <seg>Strona receptur</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rezeptseite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipe page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_AdminPage">
+      <tuv xml:lang="pl">
+        <seg>Zarządzanie kontami</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Admin-Seite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Admin page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Previous">
+      <tuv xml:lang="pl">
+        <seg>Poprzedni</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vorherige</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Previous</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Next">
+      <tuv xml:lang="pl">
+        <seg>Kolejny</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nächste</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Next</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

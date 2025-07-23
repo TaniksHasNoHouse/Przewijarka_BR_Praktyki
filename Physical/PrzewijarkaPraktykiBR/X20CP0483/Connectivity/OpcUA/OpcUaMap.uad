@@ -14,11 +14,12 @@
         <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
         <Variable Name="MaterialWindingRecipe" RecursiveEnable="2" />
         <Variable Name="ImageDirectory" RecursiveEnable="2" />
-        <Variable Name="TableConfig" />
-        <Variable Name="SaveRecipe" />
-        <Variable Name="LoadRecipe" />
         <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
-        <Variable Name="DialogOpen" />
+        <Variable Name="RecipeControl" RecursiveEnable="2" />
+        <Variable Name="MaterialWindingCURRRecipe" RecursiveEnable="2" />
+      </Task>
+      <Task Name="AuditPage">
+        <Variable Name="Export" />
       </Task>
     </Module>
   </DefaultView>

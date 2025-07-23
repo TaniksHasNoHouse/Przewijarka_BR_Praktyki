@@ -1,5 +1,5 @@
 VAR
-	SaveRecipe : BOOL;
+	MaterialWindingCURRRecipe : MaterialWindingRec_type;
 	MaterialWidningEDITRecipe : MaterialWindingRec_type;
 	MaterialWindingRecipe : MaterialWindingRec_type;
 	MpRecepieXml_0 : MpRecipeXml;
@@ -7,8 +7,6 @@ VAR
 	MpRecipeUI_0 : MpRecipeUI;
 	UIConnect : MpRecipeUIConnectType;
 	ImageDirectory : ImageDirectory_type;
-	TableConfig : STRING[80] := '{"specRows": [{"from":11, "to":20, "visible":false}]}';
-	LoadRecipe : STRING[80] := '0';
 	RecipeCreateStep : RecipeCreateSteps := IDLE; (*Internal variable for recipe creating state machine*)
-	DialogOpen : BOOL;
+	RecipeControl : RecipeControl_type;
 END_VAR
