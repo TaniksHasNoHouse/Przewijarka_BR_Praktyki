@@ -24,7 +24,6 @@
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
     <EventBindingsSet refId="UserManagementPageUsers_eventbinding" />
     <EventBindingsSet refId="DiagnosticsPageAudit_eventbinding" />
-    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
     <EventBindingsSet refId="RecipeAddDialogContent_eventbinding" />
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />

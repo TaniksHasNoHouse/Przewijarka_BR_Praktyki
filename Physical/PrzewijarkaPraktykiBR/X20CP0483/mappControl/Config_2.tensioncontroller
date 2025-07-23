@@ -20,7 +20,10 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="1.150000" />
+            <Property ID="ProportionalGain" Value="3.0" />
+            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="DerivativeTime" Value="0" />
+            <Property ID="FilterTime" Value="0" />
           </Group>
         </Group>
         <Property ID="MaximumVelocityCorrection" Value="10" />
@@ -30,6 +33,7 @@
         </Group>
         <Selector ID="Initialization">
           <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
       <Selector ID="Material">
@@ -39,6 +43,8 @@
       </Selector>
       <Group ID="InputSignals">
         <Property ID="SetMaterialTension" Value="15" />
+        <Property ID="SetDancerPosition" Value="::Tension:SetLeftDencerPos" />
+        <Property ID="ActualDancerPosition" Value="::Tension:ActLeftDancerPosScal" />
       </Group>
     </Group>
   </Element>
@@ -61,7 +67,10 @@
       <Selector ID="Controller" Value="DancerControl">
         <Group ID="PIDParameters">
           <Group ID="OperatingPoint[1]">
-            <Property ID="ProportionalGain" Value="1.150000" />
+            <Property ID="ProportionalGain" Value="3.0" />
+            <Property ID="IntegrationTime" Value="0.1" />
+            <Property ID="DerivativeTime" Value="0" />
+            <Property ID="FilterTime" Value="0" />
           </Group>
         </Group>
         <Group ID="ToleranceBand">
@@ -70,6 +79,7 @@
         </Group>
         <Selector ID="Initialization">
           <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
       <Selector ID="Material">
@@ -79,6 +89,8 @@
       </Selector>
       <Group ID="InputSignals">
         <Property ID="SetMaterialTension" Value="" />
+        <Property ID="SetDancerPosition" Value="::Tension:SetRightDencerPos" />
+        <Property ID="ActualDancerPosition" Value="::Tension:ActRightDancerPosScal" />
       </Group>
     </Group>
   </Element>

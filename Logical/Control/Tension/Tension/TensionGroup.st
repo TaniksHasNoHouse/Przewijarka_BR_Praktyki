@@ -32,22 +32,23 @@ PROGRAM _INIT
 	TensionController[1].MpLink := ADR(gTensionCtrl_Master);
 	TensionController[2].MpLink := ADR(gTensionCtrl_Rewinder);
 	TensionGroup.MpLink := ADR(gTensionGroup_1);
-  
+
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
     
 		TensionController[i].Enable := TRUE;
-
+		
 	END_FOR;
     
 	GroupLineVelocity := 0.0;
-  
+	SetLeftDencerPos := 50.0;
+	SetRightDencerPos := 50.0;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	IF TensionGroup.Error THEN
 		step := ERROR;
 	END_IF;
-	GroupLineVelocity := gLineSpeed;
 	CASE step OF
 		INIT:
 			TensionGroup.Enable := TRUE;
@@ -67,33 +68,41 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		WAIT_FOR_COMMAND:
-			IF TensionGroup.InLineVelocity THEN
-				TensionGroup.Control := TRUE;
+			IF TEST THEN
+	  			TensionGroup.MoveVelocity := TRUE;
+				IF TensionGroup.InLineVelocity THEN
+					TensionGroup.Control := TRUE;
+				END_IF;
+			ELSE
+				
 			END_IF;
-			GroupLineVelocity := gLineSpeed;
 		ERROR:
+			TensionGroup.MoveVelocity := FALSE;
+			TensionGroup.Control := FALSE;
 			TensionGroup.Power := FALSE;
 			TensionGroup.Home := FALSE;
 			step := ERROR_RESET;
 		ERROR_RESET:
 			TensionGroup.ErrorReset := TRUE;
+			FOR i := 0 TO 2 DO
+				TensionController[i].ErrorReset := TRUE;
+			END_FOR;
 			IF NOT TensionGroup.Error THEN
+				FOR i := 0 TO 2 DO
+					TensionController[i].ErrorReset := FALSE;
+				END_FOR;
 				TensionGroup.ErrorReset := FALSE;
 				step := INIT;
 			END_IF;
 	END_CASE;
-	
-	Analog1;
-	Analog2;
-	
+
+	ActLeftDancerPosScal :=  (INT_TO_REAL(ActLeftDancerPos) - 4060.0) *(1000.0/135534.0);
+	ActRightDancerPosScal := (INT_TO_REAL(ActRightDancerPos) - 4060.0) *(1000.0/135534.0);
 	
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
 		TensionController[i]();
 	END_FOR;
-	TensionGroup();
-  
-
-     
+	TensionGroup();  
 END_PROGRAM
 
 PROGRAM _EXIT
@@ -109,3 +118,4 @@ PROGRAM _EXIT
 	END_FOR;
      
 END_PROGRAM
+

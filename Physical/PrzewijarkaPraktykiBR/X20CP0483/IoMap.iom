@@ -1,4 +1,4 @@
 VAR_CONFIG
-	::Dencers:ActDancerPosition2 AT %IW."X20AI2437".AnalogInput01;
-	::Dencers:ActDancerPosition1 AT %IW."X20AI2437".AnalogInput02;
+	::Tension:ActRightDancerPos AT %IW."X20AI2437".AnalogInput01;
+	::Tension:ActLeftDancerPos AT %IW."X20AI2437".AnalogInput02;
 END_VAR
