@@ -1,5 +1,5 @@
 
-ACTION actRecipeMenage: 
+ACTION actRecipeManage: 
 
 		//Call TableConfiguration Variable
 		TableConfig;
@@ -12,21 +12,7 @@ ACTION actRecipeMenage:
 			
 				IF MpRecepieXml_0.Active = TRUE AND MpRecipeUI_0.Active = TRUE THEN
 				
-					// check for load error > triggers the default creation > if no error everything is ready to go
-					IF (UIConnect.Recipe.List.Names[0] = '') THEN
-						MpRecepieXml_0.Load 			:= FALSE;
-						MpRecepieXml_0.ErrorReset 	:= TRUE;
-						RecipeCreateStep 			:= CREATE_1;
-					
-					ELSE
-						UIConnect.Recipe.Load := TRUE;
-					END_IF
-				
-					// reset the load command from the init when recipe was loaded successfully
-					IF (UIConnect.Status = mpRECIPE_UI_STATUS_LOAD) AND (UIConnect.Recipe.Load = TRUE) THEN
-						UIConnect.Recipe.Load			:= FALSE;
-						RecipeCreateStep				:= ALL_DONE;
-					END_IF
+				RecipeCreateStep 			:= CREATE_1;
 
 				END_IF
 		
@@ -153,13 +139,15 @@ ACTION actRecipeMenage:
 					RecipeCreateStep 			:= ALL_DONE;
 					UIConnect.Recipe.Refresh 	:= FALSE;
 					UIConnect.Recipe.Load 		:= FALSE;
-				END_IF;		
+				END_IF;	
+			
+			ALL_DONE:
+				
 		
 		END_CASE;
 	
 		//Edit Recipe
-		IF DialogOpen THEN
-		
+		IF DialogOpen = TRUE THEN
 			MaterialWidningEDITRecipe.TensionLeft := MaterialWindingRecipe.TensionLeft;
 			MaterialWidningEDITRecipe.TensionRight := MaterialWindingRecipe.TensionRight;
 			MaterialWidningEDITRecipe.Speed := MaterialWindingRecipe.Speed;
@@ -178,24 +166,28 @@ ACTION actRecipeMenage:
 			DialogOpen 							:= FALSE;
 		END_IF
 	
-		IF SaveRecipe THEN
-		
-		MaterialWindingRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
-		MaterialWindingRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
-		MaterialWindingRecipe.Speed := MaterialWidningEDITRecipe.Speed;
-		MaterialWindingRecipe.Direction := MaterialWidningEDITRecipe.Direction;
-		MaterialWindingRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
-		MaterialWindingRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
-		MaterialWindingRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
-		MaterialWindingRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
-		MaterialWindingRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
-		MaterialWindingRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
-		MaterialWindingRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
-		MaterialWindingRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
-		MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
-		MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
-		MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
-
+		IF SaveRecipe = TRUE THEN
+			MaterialWindingRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
+			MaterialWindingRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
+			MaterialWindingRecipe.Speed := MaterialWidningEDITRecipe.Speed;
+			MaterialWindingRecipe.Direction := MaterialWidningEDITRecipe.Direction;
+			MaterialWindingRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
+			MaterialWindingRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
+			MaterialWindingRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
+			MaterialWindingRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
+			MaterialWindingRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
+			MaterialWindingRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
+			MaterialWindingRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
+			MaterialWindingRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
+			MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
+			MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
+			MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
+			UIConnect.Recipe.Save;
+			IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
+		  		SaveRecipe := FALSE;
+			END_IF;
+			
 		END_IF
+	
 
 END_ACTION

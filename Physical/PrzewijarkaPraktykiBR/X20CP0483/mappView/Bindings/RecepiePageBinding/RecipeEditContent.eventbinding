@@ -12,13 +12,6 @@
               </Target>
             </Action>
           </Step>
-          <Step order="1">
-            <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.Recipe.Save">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-              </Target>
-            </Action>
-          </Step>
           <Step order="2">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:SaveRecipe">

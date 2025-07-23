@@ -11,4 +11,7 @@ VAR
 	LoadRecipe : STRING[80] := '0';
 	RecipeCreateStep : RecipeCreateSteps := IDLE; (*Internal variable for recipe creating state machine*)
 	DialogOpen : BOOL;
+	PageDown : BOOL;
+	PageUp : BOOL;
+	offsetRow : UINT;
 END_VAR

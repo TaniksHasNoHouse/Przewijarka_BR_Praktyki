@@ -19,6 +19,9 @@
         <Variable Name="LoadRecipe" />
         <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
         <Variable Name="DialogOpen" />
+        <Variable Name="PageDown" />
+        <Variable Name="PageUp" />
+        <Variable Name="offsetRow" />
       </Task>
     </Module>
   </DefaultView>

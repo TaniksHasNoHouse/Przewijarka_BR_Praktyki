@@ -11,19 +11,23 @@ PROGRAM _INIT
 	MpRecipeUI_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(MpLinkRecipes);
 	MpRecipeUI_0.UIConnect := ADR(UIConnect);
+	
+	UIConnect.Recipe.Filter := '*.xml';
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	MpRecepieXml_0();
+	MpRecipeRegPar_0();
+	MpRecipeUI_0();
+	
+	offsetRow := UIConnect.Recipe.List.SelectedIndex - 3; 
+	actRecipeManage;
+	
 	LoadRecipe := '';
 	brsstrcat(ADR(LoadRecipe), ADR('USER/'));
 	brsstrcat(ADR(LoadRecipe), ADR(MpRecepieXml_0.Info.LastLoadedRecipe));
-	
-	MpRecipeRegPar_0();
-	MpRecipeUI_0();
 	 
 	actImageBinding;
-	actRecipeMenage;
 END_PROGRAM
 
 PROGRAM _EXIT
