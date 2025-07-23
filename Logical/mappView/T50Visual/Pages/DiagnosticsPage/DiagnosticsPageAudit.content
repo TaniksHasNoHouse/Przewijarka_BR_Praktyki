@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="DiagnosticsPageAudit" height="370" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AuditList" id="AuditListWindow" top="10" left="10" width="660" zIndex="0">
+    <Widget xsi:type="widgets.brease.AuditList" id="AuditListWindow" top="10" left="10" width="660" zIndex="0" nextText="$IAT/HMI/ID_Next" previousText="$IAT/HMI/ID_Previous">
       <Widgets>
-        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItemTimestamp" zIndex="0" columnType="timestamp" text="Czas" />
-        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItemEvent" width="460" zIndex="1" text="Wydarzenie" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItemTimestamp" zIndex="0" columnType="timestamp" text="$IAT/DiagnosticsPage/ID_Time" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItemEvent" width="460" zIndex="1" text="$IAT/DiagnosticsPage/ID_Event" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="ButtonSort" top="320" left="30" height="40" zIndex="1" image="Media/SymbolLib/Edit/Sort.svg" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonFilter" top="320" left="150" height="40" zIndex="2" image="Media/Image/filter.png" imageHeight="30" imageWidth="30" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButtonExport" top="320" left="270" height="40" zIndex="3" image="Media/SymbolLib/File/Files.svg" />
   </Widgets>
 </Content>

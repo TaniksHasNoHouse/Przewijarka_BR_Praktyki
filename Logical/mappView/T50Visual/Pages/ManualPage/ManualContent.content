@@ -5,17 +5,17 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="TabCtrManual" top="4" left="4" width="691" height="411" zIndex="0">
           <Widgets>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItLeftRight" left="0" width="230" zIndex="0" text="Przewijanie prawo/lewo">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItLeftRight" left="0" width="230" zIndex="0" text="$IAT/ManualPage/ID_LeftRight">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentCtrLeftRight" top="0" left="0" width="690" height="380" zIndex="0" contentId="ManualLeftRight" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItRegulators" left="0" width="230" zIndex="1" text="Nastawy regulatorow PI">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItRegulators" left="0" width="230" zIndex="1" text="$IAT/ManualPage/ID_PID">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentCtrRegulators" top="0" left="0" width="690" height="380" zIndex="0" contentId="ManualRegulators" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItMotorMove" left="0" width="230" zIndex="2" text="Ruch silnikami">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItMotorMove" left="0" width="230" zIndex="2" text="$IAT/ManualPage/ID_MotorMove">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" width="690" height="380" zIndex="0" contentId="ManualMoveMotor" />
               </Widgets>

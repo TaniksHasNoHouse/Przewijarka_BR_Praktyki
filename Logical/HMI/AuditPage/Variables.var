@@ -2,4 +2,6 @@ VAR
 	MpAuditTrail_0 : MpAuditTrail;
 	MpAuditTrailUI_0 : MpAuditTrailUI;
 	AuditUIConnect : MpAuditTrailUIConnectType;
+	Export : BOOL;
+	Timer : TON;
 END_VAR

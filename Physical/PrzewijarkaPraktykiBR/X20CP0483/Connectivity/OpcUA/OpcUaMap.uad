@@ -18,6 +18,9 @@
         <Variable Name="RecipeControl" RecursiveEnable="2" />
         <Variable Name="MaterialWindingCURRRecipe" RecursiveEnable="2" />
       </Task>
+      <Task Name="AuditPage">
+        <Variable Name="Export" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
