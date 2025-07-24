@@ -208,6 +208,14 @@
     <Parameter ID="Input" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Quickstop" Value="Trigger2" />
     <Parameter ID="SimulationModeOnPLC" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="SetValueGeneration" />
     <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="NotUsed" />
+    <Parameter ID="VirtualAxis" Location="DriveConfiguration/Channel[1]" Value="Used" />
+    <Parameter ID="AxisReference" Location="DriveConfiguration/Channel[1]/VirtualAxis" Value="" />
+    <Parameter ID="Mode" Location="DriveConfiguration/Channel[1]/VirtualAxis/Homing" Value="Direct" />
+    <Parameter ID="Position" Location="DriveConfiguration/Channel[1]/VirtualAxis/Homing/Mode" Value="0.0" />
+    <Parameter ID="RestorePositionVariable" Location="DriveConfiguration/Channel[1]/VirtualAxis/Homing" Value="" />
+    <Parameter ID="JerkFilterIsReadOnly" Location="DriveConfiguration/Channel[1]/VirtualAxis" Value="0" />
+    <Parameter ID="JerkFilter" Location="DriveConfiguration/Channel[1]/VirtualAxis" Value="NotUsed" />
+    <Parameter ID="ZeroVibrationFilter" Location="DriveConfiguration/Channel[1]/VirtualAxis" Value="NotUsed" />
     <Parameter ID="ExternalEncoderAxis" Location="DriveConfiguration/Channel[1]" Value="NotUsed" />
     <Parameter ID="AxisReference" Location="DriveConfiguration/Channel[2]/RealAxis" Value="gAxis_3" />
     <Parameter ID="MechanicalElementsIsInvisible" Location="DriveConfiguration/Channel[2]/RealAxis" Value="0" />

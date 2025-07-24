@@ -1,0 +1,5 @@
+VAR
+	VAxis : PureVAxisInterface;
+	MpAxisBasicMasterPar : MpAxisBasicParType;
+	MpAxisBasicMaster : MpAxisBasic;
+END_VAR

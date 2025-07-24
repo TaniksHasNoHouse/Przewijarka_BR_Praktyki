@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="PureVAxCfg" Type="purevaxcfg">
+    <Property ID="TypeID" Value="PureVAxConfig" />
+    <Group ID="PureVAxis">
+      <Property ID="AxisReference" Value="gAxisMaster" />
+      <Group ID="Homing">
+        <Selector ID="Mode" Value="Direct">
+          <Property ID="Position" Value="0.0" />
+          <Selector ID="ReferencePulse" Value="NotUsed" />
+        </Selector>
+        <Property ID="RestorePositionVariable" />
+      </Group>
+      <Selector ID="JerkFilter" Value="NotUsed" />
+      <Selector ID="ZeroVibrationFilter" Value="NotUsed" />
+      <Selector ID="GeneralPurposeAxisInterface" Value="Used">
+        <Group ID="Module">
+          <Property ID="ActivateModuleSimulationOnPLC" Value="On" />
+        </Group>
+        <Group ID="MechanicalElements">
+          <Group ID="Gearbox">
+            <Property ID="InputIsReadOnly" Value="0" />
+            <Property ID="Input" Value="3" />
+            <Property ID="OutputIsReadOnly" Value="0" />
+            <Property ID="Output" Value="1" />
+          </Group>
+          <Group ID="RotaryToLinearTransformation">
+            <Property ID="ReferenceDistanceIsReadOnly" Value="0" />
+            <Property ID="ReferenceDistance" Value="0.195" />
+          </Group>
+        </Group>
+        <Selector ID="EncoderLink" Value="NoEncoder" />
+        <Group ID="Controller">
+          <Property ID="ModeIsReadOnly" Value="0" />
+          <Selector ID="Mode" Value="NotUsed" />
+        </Group>
+        <Group ID="StopReaction">
+          <Selector ID="Quickstop" Value="DecelerationLimit" />
+          <Selector ID="DriveError" Value="DecelerationLimit" />
+        </Group>
+        <Group ID="MovementErrorLimits">
+          <Property ID="PositionError" Value="0.0" />
+        </Group>
+        <Group ID="DigitalInputs">
+          <Group ID="HomingSwitch">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.HomingSwitch" />
+            </Selector>
+            <Property ID="Level" Value="High" />
+          </Group>
+          <Group ID="PositiveLimitSwitch">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.PositiveLimitSwitch" />
+            </Selector>
+            <Property ID="Level" Value="High" />
+          </Group>
+          <Group ID="NegativeLimitSwitch">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.NegativeLimitSwitch" />
+            </Selector>
+            <Property ID="Level" Value="High" />
+          </Group>
+          <Group ID="Trigger1">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.Trigger1" />
+              <Selector ID="TimeStamp" Value="NotUsed" />
+            </Selector>
+            <Property ID="Level" Value="High" />
+          </Group>
+          <Group ID="Trigger2">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.Trigger2" />
+              <Selector ID="TimeStamp" Value="NotUsed" />
+            </Selector>
+            <Property ID="Level" Value="High" />
+          </Group>
+          <Group ID="Quickstop">
+            <Selector ID="Input" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.DigitalImputs.Quickstop" />
+            </Selector>
+          </Group>
+        </Group>
+        <Group ID="StatusInputs">
+          <Group ID="PoweredOn">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.PowerOn" />
+            </Selector>
+          </Group>
+          <Group ID="CommunicationReady">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.CommunicationReady" />
+            </Selector>
+          </Group>
+          <Group ID="ReadyForPowerOn">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.ReadyForPowerOn" />
+            </Selector>
+          </Group>
+          <Group ID="ErrorReactionActive">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.ErrorReactionActive" />
+            </Selector>
+          </Group>
+          <Group ID="Error">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.Error" />
+            </Selector>
+          </Group>
+          <Group ID="ErrorID">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.ErrorID" />
+            </Selector>
+          </Group>
+          <Group ID="Warning">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.Warning" />
+            </Selector>
+          </Group>
+          <Group ID="WarningID">
+            <Selector ID="Source" Value="InputPV">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Imputs.StatusImputs.WarnignID" />
+            </Selector>
+          </Group>
+        </Group>
+        <Group ID="ControlOutputs">
+          <Selector ID="PowerOn" Value="Used">
+            <Selector ID="Destination" Value="Variable">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Outputs.PowerOn" />
+            </Selector>
+          </Selector>
+          <Selector ID="ErrorReset" Value="Used">
+            <Selector ID="Destination" Value="Variable">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Outputs.ErrorReset" />
+            </Selector>
+          </Selector>
+          <Selector ID="BrakeControl" Value="Used">
+            <Selector ID="Destination" Value="Variable">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Outputs.BrakeControl" />
+            </Selector>
+            <Property ID="ActivationDelay" Value="0.0" />
+            <Property ID="ReleaseDelay" Value="0.0" />
+          </Selector>
+          <Selector ID="SetSpeed" Value="Used">
+            <Selector ID="Destination" Value="Variable">
+              <Property ID="PVmapping" Value="::VAxis:VAxis.Outputs.SetSpeed" />
+            </Selector>
+          </Selector>
+          <Selector ID="SetPosition" Value="NotUsed" />
+        </Group>
+        <Group ID="Simulation">
+          <Selector ID="LoadSimulationMode" Value="SetValueGeneration" />
+        </Group>
+      </Selector>
+    </Group>
+  </Element>
+</Configuration>

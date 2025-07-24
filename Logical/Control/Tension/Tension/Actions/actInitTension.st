@@ -14,7 +14,9 @@ ACTION actInitTension:
 		TensionController[i].Enable := TRUE;
 		
 	END_FOR;
-    
+	
+	TensionController[0].SetPresetDiameter := TRUE;
+	TensionController[2].SetPresetDiameter := TRUE;
 	GroupLineVelocity := 0.0;
 	SetLeftDancerPos := 30.0;
 	SetRightDancerPos := 30.0;

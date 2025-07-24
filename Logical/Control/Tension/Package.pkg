@@ -6,5 +6,6 @@
     <Object Type="Program" Language="IEC">TensionConfig</Object>
     <Object Type="File" Private="true">gTensiontype.typ</Object>
     <Object Type="File" Private="true">gTensionVar.var</Object>
+    <Object Type="Program" Language="IEC">VAxis</Object>
   </Objects>
 </Package>

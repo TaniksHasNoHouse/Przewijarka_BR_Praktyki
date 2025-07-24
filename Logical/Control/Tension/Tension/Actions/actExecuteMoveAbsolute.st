@@ -1,6 +1,6 @@
 
 ACTION actExecuteMoveAbsolute: 
-	GroupLineVelocity := 5.0;
+	GroupLineVelocity := gTension.GroupLineVelocity;
 	TensionGroup.MoveVelocity := TRUE;
 	IF TensionController[1].Info.ProcessedMaterial >= Distance THEN
 		TensionGroup.StopLine := TRUE;

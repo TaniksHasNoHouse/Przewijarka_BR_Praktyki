@@ -16,6 +16,7 @@
     <Task Name="AlarmPage" Source="HMI.AlarmPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DataPage" Source="HMI.DataPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="TensionCon" Source="Control.Tension.TensionConfig.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="VAxis" Source="Control.Tension.VAxis.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -95,5 +96,6 @@
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aseth" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="McPureVAx" Source="Libraries.McPureVAx.lby" Memory="UserROM" Language="binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
