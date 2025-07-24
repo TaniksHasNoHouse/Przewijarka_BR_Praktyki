@@ -8,5 +8,4 @@ VAR
 	SetRightDancerPos : STRING[255] := '::Tension:SetRightDencerPos';
 	ActRightDancerPosScal : STRING[255] := '::Tension:ActRightDancerPosScal';
 	gAxisString2 : STRING[32] := 'gAxis_2';
-	TensionController : BOOL;
 END_VAR

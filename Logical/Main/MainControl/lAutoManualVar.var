@@ -1,6 +1,4 @@
 VAR
 	Main : MainType;
-	TensionStabilityTimer : TON;
-	CompletingTimer : TON;
-	CompleteTimer : TON;
+	xd : BOOL := TRUE;
 END_VAR

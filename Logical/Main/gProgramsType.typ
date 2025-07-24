@@ -24,8 +24,6 @@ TYPE
 		MotorMode : ModesType;
 		Step : StepEnum;
 		Mode : PackMLModes;
-		Process : ProcessStatusType;
-		Diagnostics : DiagnosticsType;
 	END_STRUCT;
 	CmdType : 	STRUCT 
 		Reset : BOOL;
@@ -74,21 +72,6 @@ TYPE
 		AlarmsActive : BOOL;
 		EmergencyStopped : BOOL;
 		ErrorCode : DINT;
-	END_STRUCT;
-	ProcessStatusType : 	STRUCT 
-		TensionStabilityTimer : TIME;
-		CycleCount : DINT;
-		TotalDistance : REAL;
-		CycleTime : TIME;
-		ProductionRate : REAL;
-		CycleStartTime : DATE_AND_TIME;
-	END_STRUCT;
-	DiagnosticsType : 	STRUCT 
-		StateExecutionTime : ARRAY[0..10]OF TIME;
-		LastError : STRING[80];
-		ErrorTimestamp : DATE_AND_TIME;
-		ManualCounter : DINT;
-		TotalRunTime : TIME;
 	END_STRUCT;
 	HMIInterfaceType : 	STRUCT 
 		RecipeNumber : INT;

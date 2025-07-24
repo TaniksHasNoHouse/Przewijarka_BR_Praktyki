@@ -9,6 +9,9 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gMainLogic" RecursiveEnable="2" />
+      </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
         <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
@@ -20,6 +23,9 @@
       </Task>
       <Task Name="AuditPage">
         <Variable Name="Export" />
+      </Task>
+      <Task Name="MainContro">
+        <Variable Name="xd" />
       </Task>
     </Module>
   </DefaultView>

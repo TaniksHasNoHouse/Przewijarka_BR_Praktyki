@@ -5,5 +5,7 @@
     <Object Type="File">MotorLeft.axis</Object>
     <Object Type="File">MotorMid.axis</Object>
     <Object Type="File">MotorRight.axis</Object>
+    <Object Type="File">VAxisConf.purevaxcfg</Object>
+    <Object Type="File">PureVAxis.axis</Object>
   </Objects>
 </Package>
