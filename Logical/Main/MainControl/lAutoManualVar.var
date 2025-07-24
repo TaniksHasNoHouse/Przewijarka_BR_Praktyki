@@ -1,6 +1,3 @@
 VAR
 	Main : MainType;
-	TensionStabilityTimer : TON;
-	CompletingTimer : TON;
-	CompleteTimer : TON;
 END_VAR

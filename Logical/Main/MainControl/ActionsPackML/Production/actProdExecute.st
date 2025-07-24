@@ -11,7 +11,7 @@ ACTION actProdExecute:
     
 		// Check if target distance reached
 		IF gMainLogic.MotorMode.Production.Status.ActDistance >= gMainLogic.MotorMode.Production.Parameter.Distance THEN
-			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
+			gMainLogic.MotorMode.Production.Parameter.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity/2;
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION); 
 		END_IF;
     

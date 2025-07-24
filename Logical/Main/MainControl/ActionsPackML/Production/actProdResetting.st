@@ -11,7 +11,7 @@ ACTION actProdResetting:
 		gMainLogic.MotorMode.Production.Cmd.TensionEnable := FALSE;
 		gMainLogic.MotorMode.Production.Status.TensionStable := FALSE;
     
-		IF gMainLogic.MotorMode.Production.Status.PowerReady THEN
+		IF gMainLogic.MotorMode.Production.Status.PowerReady AND gMainLogic.MotorMode.Production.Status.TensionReady THEN
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
 		END_IF;
     
