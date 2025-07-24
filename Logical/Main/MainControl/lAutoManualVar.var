@@ -1,3 +1,4 @@
 VAR
 	Main : MainType;
+	xd : BOOL := TRUE;
 END_VAR
