@@ -26,14 +26,6 @@ TYPE
 		DataRegistration : BOOL := FALSE; (* Rejestracja danych: FALSE = wy³., TRUE = w³. *)
 		MaterialLength : REAL;
 	END_STRUCT;
-	MotorPID_type : 	STRUCT 
-		P : REAL := 0.0;
-		I : REAL := 0.0;
-	END_STRUCT;
-	MaxMinRollSize_type : 	STRUCT 
-		MaxSize : REAL := 0.0;
-		MinSize : REAL := 0.0;
-	END_STRUCT;
 	ImageDirectory_type : 	STRUCT 
 		LeftArrow : STRING[80];
 		RightArrow : STRING[80];

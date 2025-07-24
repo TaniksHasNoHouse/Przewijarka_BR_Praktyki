@@ -5,13 +5,13 @@ ACTION actImageBinding:
 	ImageDirectory.On := 'Media/SymbolLib/Symbols/Accept.svg';
 	ImageDirectory.Off := 'Media/SymbolLib/Edit/Close.svg';
 	
-	IF MaterialWindingRecipe.Direction = TRUE THEN
+	IF gHMI.Recipe.CurrentRecipe.Direction = TRUE THEN
 		ImageDirectory.Current.CurrentArrow := ImageDirectory.RightArrow;
 	ELSE 
 		ImageDirectory.Current.CurrentArrow := ImageDirectory.LeftArrow;
 	END_IF;
 	
-	IF MaterialWindingRecipe.DataRegistration = TRUE THEN
+	IF gHMI.Recipe.CurrentRecipe.Direction = TRUE THEN
 		ImageDirectory.Current.CurrentOnOff := ImageDirectory.On;
 	ELSE
 		ImageDirectory.Current.CurrentOnOff := ImageDirectory.Off;

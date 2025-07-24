@@ -9,6 +9,6 @@
     <Widget xsi:type="widgets.brease.Button" id="ButtonStartTop" top="10" left="10" width="90" zIndex="5" text="$IAT/HMI/ID_Start" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonStopTop" top="10" left="110" width="90" zIndex="6" text="$IAT/HMI/ID_Stop" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonResetTop" top="10" left="210" width="90" zIndex="7" text="$IAT/HMI/ID_Reset" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchManual" top="10" left="310" zIndex="8" mouseDownText="$IAT/HMI/ID_Manual" text="$IAT/HMI/ID_Auto" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchManual" top="10" left="310" zIndex="8" mouseDownText="$IAT/HMI/ID_Manual" text="$IAT/HMI/ID_Auto" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(241, 241, 241, 1)" fontSize="16px" />
   </Widgets>
 </Content>

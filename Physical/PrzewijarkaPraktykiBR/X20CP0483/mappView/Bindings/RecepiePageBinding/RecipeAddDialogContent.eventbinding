@@ -19,6 +19,13 @@
               </Target>
             </Action>
           </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.Recipe.Load">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
         </Sequence>
       </EventHandler>
     </EventBinding>

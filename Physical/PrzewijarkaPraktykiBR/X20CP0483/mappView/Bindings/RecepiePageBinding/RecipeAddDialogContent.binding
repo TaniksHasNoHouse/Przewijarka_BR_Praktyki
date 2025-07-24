@@ -1,74 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="RecipeAddDialogContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MinSize" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MinRollLeftNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollLeft.MaxSize" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
-</Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollRight.MaxSize" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollRightNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.RollRight.MinSize" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MinRollRightNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.TensionRight" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="RightDancerNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.TensionLeft" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="LeftDancerNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Speed" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WindingSpeedNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Direction" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WidningDirSwitch" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.DataRegistration" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="DataRecordSwitch" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor1PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor1PNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor1PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor1INumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor2PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor2PNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor2PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor2INumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor3PNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor3INumIn" attribute="node" />
-</Binding>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:UIConnect.New.FileName" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="NameTextIn" attribute="value" />
 </Binding>
+
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.MaterialLength" attribute="node" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor3PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor3INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor3PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor3PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor2PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor2INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor2PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor2PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor1PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor1INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Motor1PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="Motor1PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.MaterialLength" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaterialLenghtNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WindingSpeedNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.TensionLeft" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="LeftDancerNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.TensionRight" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="RightDancerNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.RollRight.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MinRollRightNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.RollRight.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollRightNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.RollLeft.MinSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MinRollLeftNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Direction" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WidningDirSwitch" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.DataRegistration" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="DataRecordSwitch" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

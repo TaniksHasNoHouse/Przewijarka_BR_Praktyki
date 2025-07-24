@@ -1,0 +1,3 @@
+VAR
+	gHMI : HMI_type;
+END_VAR

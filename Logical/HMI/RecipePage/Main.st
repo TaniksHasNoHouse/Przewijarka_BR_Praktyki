@@ -6,7 +6,7 @@ PROGRAM _INIT
 	
 	MpRecipeRegPar_0.Enable := TRUE;
 	MpRecipeRegPar_0.MpLink := ADR(MpLinkRecipes);
-	MpRecipeRegPar_0.PVName := ADR('RecipePage:MaterialWindingRecipe');	
+	MpRecipeRegPar_0.PVName := ADR('gHMI.Recipe.CurrentRecipe');	
 	
 	MpRecipeUI_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(MpLinkRecipes);

@@ -9,14 +9,15 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gHMI" RecursiveEnable="2" />
+      </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
         <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
-        <Variable Name="MaterialWindingRecipe" RecursiveEnable="2" />
         <Variable Name="ImageDirectory" RecursiveEnable="2" />
         <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
         <Variable Name="RecipeControl" RecursiveEnable="2" />
-        <Variable Name="MaterialWindingCURRRecipe" RecursiveEnable="2" />
       </Task>
       <Task Name="AuditPage">
         <Variable Name="Export" />
