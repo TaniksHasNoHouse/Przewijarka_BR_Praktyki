@@ -1,5 +1,6 @@
 
 ACTION actHandleError: 
+	GroupLineVelocity := 0.0;
 	TensionGroup.MoveVelocity := FALSE;
 	TensionGroup.Control := FALSE;
 	TensionGroup.Power := FALSE;
