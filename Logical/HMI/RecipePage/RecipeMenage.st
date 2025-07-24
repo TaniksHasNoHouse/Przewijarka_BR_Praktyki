@@ -34,6 +34,7 @@ ACTION actRecipeManage:
 				MaterialWindingRecipe.RollRight.MaxSize := 0;
 				MaterialWindingRecipe.RollRight.MinSize := 0;
 				MaterialWindingRecipe.DataRegistration := FALSE;
+				MaterialWindingRecipe.MaterialLength := 5;
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe1Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_1;
@@ -61,6 +62,7 @@ ACTION actRecipeManage:
 				MaterialWindingRecipe.RollRight.MaxSize := 0;
 				MaterialWindingRecipe.RollRight.MinSize := 0;
 				MaterialWindingRecipe.DataRegistration := FALSE;
+				MaterialWindingRecipe.MaterialLength := 5;
 				MpRecepieXml_0.FileName 			:= ADR('mappRecipe2Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_2;
@@ -88,6 +90,7 @@ ACTION actRecipeManage:
 				MaterialWindingRecipe.RollRight.MaxSize := 69;
 				MaterialWindingRecipe.RollRight.MinSize := 0;
 				MaterialWindingRecipe.DataRegistration := FALSE;
+				MaterialWindingRecipe.MaterialLength := 5;
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe3Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_3;
@@ -114,6 +117,7 @@ ACTION actRecipeManage:
 				MaterialWindingRecipe.RollRight.MaxSize := 0;
 				MaterialWindingRecipe.RollRight.MinSize := 68;
 				MaterialWindingRecipe.DataRegistration := FALSE;
+				MaterialWindingRecipe.MaterialLength := 5;
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe4Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= REFRESH;
@@ -163,6 +167,7 @@ ACTION actRecipeManage:
 		MaterialWidningEDITRecipe.RollRight.MaxSize := MaterialWindingRecipe.RollRight.MaxSize;
 		MaterialWidningEDITRecipe.RollRight.MinSize := MaterialWindingRecipe.RollRight.MinSize;
 		MaterialWidningEDITRecipe.DataRegistration := MaterialWindingRecipe.DataRegistration;
+		MaterialWidningEDITRecipe.MaterialLength := MaterialWindingRecipe.MaterialLength;
 		RecipeControl.Edit.DialogOpen							:= FALSE;
 	END_IF
 
@@ -182,6 +187,7 @@ ACTION actRecipeManage:
 		MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
 		MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
 		MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
+		MaterialWindingRecipe.MaterialLength := MaterialWidningEDITRecipe.MaterialLength;
 		UIConnect.Recipe.Save;
 		IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
 	  		RecipeControl.Edit.SaveRecipe := FALSE;

@@ -91,5 +91,9 @@
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.Motor3PID.I" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Motor3INumOut" attribute="node" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.MaterialLength" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MaterialWindingLenght" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

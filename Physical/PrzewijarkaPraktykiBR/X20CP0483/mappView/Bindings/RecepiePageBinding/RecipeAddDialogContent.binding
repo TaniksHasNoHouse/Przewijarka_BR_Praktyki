@@ -66,5 +66,9 @@
 <Source xsi:type="opcUa" refId="::RecipePage:UIConnect.New.FileName" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="NameTextIn" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWindingRecipe.MaterialLength" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaterialLenghtNumIn" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

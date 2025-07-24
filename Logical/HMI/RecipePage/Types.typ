@@ -12,7 +12,6 @@ TYPE
 		Edit : Edit_type;
 		LoadRecipe : STRING[80] := '0';
 		TableControl : TableControl_type;
-		Save : BOOL;
 	END_STRUCT;
 	MaterialWindingRec_type : 	STRUCT 
 		TensionLeft : USINT := 0; (* Naci¹g lewy, zakres 0–14 cm *)
@@ -25,6 +24,7 @@ TYPE
 		RollLeft : MaxMinRollSize_type;
 		RollRight : MaxMinRollSize_type;
 		DataRegistration : BOOL := FALSE; (* Rejestracja danych: FALSE = wy³., TRUE = w³. *)
+		MaterialLength : REAL;
 	END_STRUCT;
 	MotorPID_type : 	STRUCT 
 		P : REAL := 0.0;
