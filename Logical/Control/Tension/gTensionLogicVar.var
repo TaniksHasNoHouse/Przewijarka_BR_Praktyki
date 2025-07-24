@@ -1,0 +1,3 @@
+VAR
+	gTension : gTensionLogicType;
+END_VAR
