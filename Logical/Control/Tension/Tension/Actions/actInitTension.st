@@ -14,7 +14,8 @@ ACTION actInitTension:
 		TensionController[i].Enable := TRUE;
 		
 	END_FOR;
-	
+	TensionController[0].PresetDiameter := 80.0;
+	TensionController[2].PresetDiameter := 30.0;
 	TensionController[0].SetPresetDiameter := TRUE;
 	TensionController[2].SetPresetDiameter := TRUE;
 	GroupLineVelocity := 0.0;

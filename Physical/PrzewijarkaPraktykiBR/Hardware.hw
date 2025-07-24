@@ -324,6 +324,7 @@
     <Parameter ID="Cyclic1Duration" Value="2000" />
     <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Parameter ID="Cyclic1Stack" Value="30000" />
+    <Parameter ID="Cyclic1Output" Value="1" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />

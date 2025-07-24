@@ -12,6 +12,7 @@
     <Group ID="TensionGroup">
       <Group ID="CommonZoneSettings">
         <Selector ID="Material">
+          <Property ID="Thickness" Value="180" />
           <Property ID="Width" Value="48" />
           <Property ID="TensionLimit" Value="300" />
         </Selector>
