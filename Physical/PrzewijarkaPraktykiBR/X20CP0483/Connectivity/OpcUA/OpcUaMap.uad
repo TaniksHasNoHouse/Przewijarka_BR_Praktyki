@@ -11,21 +11,27 @@
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="gMainLogic" RecursiveEnable="2" />
+        <Variable Name="gHMI" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
         <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
-        <Variable Name="MaterialWindingRecipe" RecursiveEnable="2" />
         <Variable Name="ImageDirectory" RecursiveEnable="2" />
         <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
         <Variable Name="RecipeControl" RecursiveEnable="2" />
-        <Variable Name="MaterialWindingCURRRecipe" RecursiveEnable="2" />
       </Task>
       <Task Name="AuditPage">
         <Variable Name="Export" />
       </Task>
       <Task Name="MainContro">
         <Variable Name="xd" />
+      <Task Name="ChartsPage">
+        <Variable Name="Charts" RecursiveEnable="2" />
+        <Variable Name="Unit" />
+        <Variable Name="Description" />
+        <Variable Name="Name" />
+        <Variable Name="StartRecording" />
+        <Variable Name="StartTrigger" />
       </Task>
     </Module>
   </DefaultView>

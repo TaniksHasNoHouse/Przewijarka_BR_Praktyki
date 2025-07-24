@@ -26,5 +26,25 @@
 <Source xsi:type="opcUa" refId="::RecipePage:RecipeControl.TableControl.Offset" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="RecipeTable" attribute="offsetRow" />
 </Binding>
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.EnableEditing" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="BtnRemove" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.EnableEditing" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="BtnNewRecipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.EnableEditing" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="BtnEdit" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.EnableEditing" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeAddEditRemoveContent" widgetRefId="SaveLoadBtn" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -2,10 +2,12 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="File">gHmiVar.var</Object>
+    <Object Type="File">gHmiTypes.typ</Object>
     <Object Type="Program" Language="IEC">ManualPage</Object>
     <Object Type="Program" Language="IEC">RecipePage</Object>
     <Object Type="Program" Language="IEC">AuditPage</Object>
     <Object Type="Program" Language="IEC">AlarmPage</Object>
-    <Object Type="Program" Language="IEC">DataPage</Object>
+    <Object Type="Program" Language="IEC">ChartsDataPage</Object>
   </Objects>
 </Package>

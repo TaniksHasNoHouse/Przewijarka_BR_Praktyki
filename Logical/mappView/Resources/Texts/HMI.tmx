@@ -183,5 +183,16 @@ Rezept bearbeiten</seg>
         <seg>Next</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_DataPage">
+      <tuv xml:lang="pl">
+        <seg>Strona danych</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Datenseite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Data page</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
