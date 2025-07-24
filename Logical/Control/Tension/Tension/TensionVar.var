@@ -18,5 +18,4 @@ VAR
 	ActRightDancerPos : INT;
 	ActRightDancerPosScal : REAL;
 	MV_ABS : BOOL;
-	TEST : BOOL;
 END_VAR

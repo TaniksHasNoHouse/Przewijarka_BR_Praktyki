@@ -6,8 +6,8 @@
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_1" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.5" />
-          <Property ID="Deceleration" Value="0.5" />
+          <Property ID="Acceleration" Value="0.2" />
+          <Property ID="Deceleration" Value="0.2" />
           <Property ID="StopDeceleration" Value="2" />
         </Group>
       </Selector>
@@ -53,8 +53,8 @@
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_3" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.5" />
-          <Property ID="Deceleration" Value="0.5" />
+          <Property ID="Acceleration" Value="0.2" />
+          <Property ID="Deceleration" Value="0.2" />
           <Property ID="StopDeceleration" Value="2" />
         </Group>
       </Selector>
@@ -99,8 +99,8 @@
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_2" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.5" />
-          <Property ID="Deceleration" Value="0.5" />
+          <Property ID="Acceleration" Value="0.2" />
+          <Property ID="Deceleration" Value="0.2" />
           <Property ID="StopDeceleration" Value="2" />
         </Group>
       </Selector>
