@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="Program" Language="IEC">Tension</Object>
     <Object Type="Program" Language="IEC">TensionConfig</Object>
+    <Object Type="File" Private="true">gTensiontype.typ</Object>
+    <Object Type="File" Private="true">gTensionVar.var</Object>
   </Objects>
 </Package>
