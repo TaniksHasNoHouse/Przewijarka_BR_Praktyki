@@ -63,7 +63,7 @@
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MpRecepieXml_0.Info.LastLoadedRecipe" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="CurRecTextOut" attribute="value" />
+			<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="CurRecTextOut" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.MaterialLength" attribute="node" />

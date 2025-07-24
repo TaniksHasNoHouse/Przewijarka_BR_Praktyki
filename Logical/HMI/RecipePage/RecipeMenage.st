@@ -191,6 +191,12 @@ ACTION actRecipeManage:
 		gHMI.Recipe.CurrentRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
 		gHMI.Recipe.CurrentRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
 		gHMI.Recipe.CurrentRecipe.MaterialLength := MaterialWidningEDITRecipe.MaterialLength;
+		UIConnect.New.FileName := MpRecepieXml_0.Info.LastLoadedRecipe;
+		UIConnect.New.Create := TRUE;
+		IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
+			UIConnect.New.Create := FALSE;
+			RecipeControl.Edit.SaveRecipe := FALSE;
+		END_IF;
 		//MpRecepieXml_0.FileName := ADR(UIConnect.Recipe.List.Names[UIConnect.Recipe.List.SelectedIndex]);
 		//MpRecepieXml_0.Save	:= TRUE;
 
