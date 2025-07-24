@@ -4,6 +4,7 @@
   <Element ID="gDataRecorder" Type="mpdatarecorder">
     <Group ID="DataRecorder">
       <Property ID="MaxNumberOfFiles" Value="3" />
+      <Property ID="OverwriteOldestFile" Value="TRUE" />
     </Group>
   </Element>
 </Configuration>

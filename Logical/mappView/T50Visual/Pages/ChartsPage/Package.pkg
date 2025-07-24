@@ -10,5 +10,6 @@
     <Object Type="File">ChartsPageAxis1.content</Object>
     <Object Type="File">ChartsPageAxis2.content</Object>
     <Object Type="File">ChartsPageAxis3.content</Object>
+    <Object Type="File">ChartsPageData.content</Object>
   </Objects>
 </Package>

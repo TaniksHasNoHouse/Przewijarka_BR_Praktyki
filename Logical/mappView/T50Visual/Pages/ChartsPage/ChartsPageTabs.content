@@ -5,34 +5,39 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="TabControlCharts" top="9" left="9" width="681" height="401" zIndex="0">
           <Widgets>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemDancer1" left="0" width="170" zIndex="0" multiLine="true" text="Pozycja dancera 1" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemDancer1" left="0" height="35" zIndex="0" multiLine="true" text="Pozycja dancera 1" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlDAncer1" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageDancer1" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlDAncer1" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageDancer1" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemDancer2" left="0" width="170" zIndex="1" multiLine="true" text="Pozycja dancera 2" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemDancer2" left="0" height="35" zIndex="1" multiLine="true" text="Pozycja dancera 2" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlDancer2" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageDancer2" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlDancer2" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageDancer2" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemVtape" left="0" width="130" zIndex="2" multiLine="true" text="Prędkość linii" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemVtape" left="0" height="35" zIndex="2" multiLine="true" text="Prędkość linii" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlVtape" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageVtape" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlVtape" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageVtape" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis1" left="0" zIndex="3" multiLine="true" text="Prędkość osi 1" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis1" left="0" height="35" zIndex="3" multiLine="true" text="Prędkość osi 1" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis1" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageAxis1" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis1" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageAxis1" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis2" left="0" zIndex="4" multiLine="true" text="Prędkość osi 2" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis2" left="0" height="35" zIndex="4" multiLine="true" text="Prędkość osi 2" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis2" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageAxis2" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis2" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageAxis2" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis3" left="0" zIndex="5" multiLine="true" text="Prędkość osi 3" wordWrap="true">
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemAxis3" left="0" height="35" zIndex="5" multiLine="true" text="Prędkość osi 3" wordWrap="true">
               <Widgets>
-                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis3" top="0" left="0" width="680" height="370" zIndex="0" contentId="ChartsPageAxis3" />
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAxis3" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageAxis3" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.TabItem" id="TabItemRecording" left="0" height="35" zIndex="6" multiLine="true" text="Zapis danych" wordWrap="true">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" width="680" height="365" zIndex="0" contentId="ChartsPageData" />
               </Widgets>
             </Widget>
           </Widgets>

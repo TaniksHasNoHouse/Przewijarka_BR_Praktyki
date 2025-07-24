@@ -72,6 +72,7 @@
     <Content refId="ChartsPageAxis1" />
     <Content refId="ChartsPageAxis2" />
     <Content refId="ChartsPageAxis3" />
+    <Content refId="ChartsPageData" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

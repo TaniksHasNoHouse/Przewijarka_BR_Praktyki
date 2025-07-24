@@ -6,22 +6,24 @@ PROGRAM _INIT
 	Charts.Axis1;
 	Charts.Axis2;
 	Charts.Axis3;
+	StartRecording;
+	StartTrigger;
+	Name;
+	Unit;
+	Description;
 	
 	MpDataRecorder_0.MpLink := ADR(gDataRecorder); 
 	MpDataRecorder_0.Enable := TRUE;
 	MpDataRecorder_0.DeviceName := ADR('USER'); 
 	MpDataRecorder_0.RecordMode := mpDATA_RECORD_MODE_TRIGGER; 
 	MpDataRecorder_0.Record := StartRecording;
-	MpDataRecorder_0.Trigger := StartRecording;
+	MpDataRecorder_0.Trigger := StartTrigger;
 	
 	MpDataRegPar_0.MpLink := ADR(gDataRecorder);
 	MpDataRegPar_0.Enable := TRUE;
-	MpDataRegPar_0.PVName := ADR(Charts.Dancer1);
-	MpDataRegPar_0.PVName := ADR(Charts.Dancer2);
-	MpDataRegPar_0.PVName := ADR(Charts.Vtape);
-	MpDataRegPar_0.PVName := ADR(Charts.Axis1);
-	MpDataRegPar_0.PVName := ADR(Charts.Axis2);
-	MpDataRegPar_0.PVName := ADR(Charts.Axis3);
+	MpDataRegPar_0.PVName := ADR('ChartsDataPage:Charts.Axis1');
+	MpDataRegPar_0.Unit := ADR('ChartsDataPage:Unit');
+	MpDataRegPar_0.Description := ADR('ChartsDataPage:Description');
 END_PROGRAM
 
 PROGRAM _CYCLIC

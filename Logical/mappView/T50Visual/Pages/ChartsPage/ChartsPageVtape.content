@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="ChartsPageVtape" height="370" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+<Content id="ChartsPageVtape" height="365" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
-    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDAVtape" top="0" left="0" width="680" height="370" zIndex="0">
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDAVtape" top="0" left="0" width="680" height="365" zIndex="0">
       <Properties>
         <yAxis>
           <Element id="yAxis1" max="10" unit="{'metric':'2X','imperial':'M57','imperial-us':'M57'}" />
