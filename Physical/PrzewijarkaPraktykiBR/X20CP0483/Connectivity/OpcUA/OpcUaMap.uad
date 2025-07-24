@@ -21,6 +21,9 @@
       <Task Name="AuditPage">
         <Variable Name="Export" />
       </Task>
+      <Task Name="ChartsPage">
+        <Variable Name="Charts" RecursiveEnable="2" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
