@@ -21,5 +21,6 @@
     <Object Type="File">AlarmPage.tmx</Object>
     <Object Type="File">AdminPage.tmx</Object>
     <Object Type="File">ManualPage.tmx</Object>
+    <Object Type="File">DataPage.tmx</Object>
   </Objects>
 </Package>

@@ -8,6 +8,6 @@
     <Object Type="Program" Language="IEC">RecipePage</Object>
     <Object Type="Program" Language="IEC">AuditPage</Object>
     <Object Type="Program" Language="IEC">AlarmPage</Object>
-    <Object Type="Program" Language="IEC">DataPage</Object>
+    <Object Type="Program" Language="IEC">ChartsDataPage</Object>
   </Objects>
 </Package>

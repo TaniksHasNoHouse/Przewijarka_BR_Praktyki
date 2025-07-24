@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ChartsPageDancer2_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::ChartsPage:Charts.Dancer2" attribute="node" />
+<Target xsi:type="brease" contentRefId="ChartsPageDancer2" widgetRefId="OnlineChartHDADancer2" attribute="graph[Dancer2].node" />
+</Binding>
+</Bindings>
+</BindingsSet>

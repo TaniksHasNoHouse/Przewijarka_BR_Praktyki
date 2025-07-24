@@ -1,0 +1,10 @@
+VAR
+	Charts : ChartsType;
+	StartRecording : BOOL;
+	MpDataRegPar_0 : MpDataRegPar;
+	MpDataRecorder_0 : MpDataRecorder;
+	Unit : STRING[20] := 'mm';
+	Description : STRING[50] := 'Test';
+	Name : STRING[100] := 'Charts.Dancer1';
+	StartTrigger : BOOL;
+END_VAR
