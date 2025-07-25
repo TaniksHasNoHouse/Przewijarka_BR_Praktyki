@@ -1,6 +1,8 @@
-VAR
+VAR RETAIN
 	RightWinderDiameter : REAL;
 	LeftWinderDiameter : REAL;
+END_VAR
+VAR
 	step : TESTstate;
 END_VAR
 VAR CONSTANT
