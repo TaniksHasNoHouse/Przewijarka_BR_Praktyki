@@ -3,7 +3,6 @@
 TYPE
 	HMI_type : 	STRUCT 
 		Recipe : Recipe_type;
-		Main : Main_type;
 		Manual : Manual_type;
 		ControlBtn : ControlBtn_type;
 		Charts : Charts_type;
