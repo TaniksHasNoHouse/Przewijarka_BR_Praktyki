@@ -3,9 +3,9 @@ PROGRAM _INIT
 	MpAxisBasicMaster.MpLink := ADR(gAxisMaster);
 	MpAxisBasicMaster.Enable := TRUE;
 	MpAxisBasicMasterPar.Position := 100.0;
-	MpAxisBasicMasterPar.Velocity := 10.0;
-	MpAxisBasicMasterPar.Acceleration := 0.5;
-	MpAxisBasicMasterPar.Deceleration := 0.5;
+	MpAxisBasicMasterPar.Jog.Velocity := 10.0;
+	MpAxisBasicMasterPar.Jog.Acceleration := 0.2;
+	MpAxisBasicMasterPar.Jog.Deceleration := 0.2;
 	MpAxisBasicMaster.Parameters := ADR(MpAxisBasicMasterPar);
 END_PROGRAM
 

@@ -8,7 +8,7 @@
         <Group ID="AxisVelocityProfile">
           <Property ID="Acceleration" Value="0.2" />
           <Property ID="Deceleration" Value="0.2" />
-          <Property ID="StopDeceleration" Value="2" />
+          <Property ID="StopDeceleration" Value="10" />
         </Group>
       </Selector>
       <Selector ID="Utilization">
@@ -54,7 +54,7 @@
         <Group ID="AxisVelocityProfile">
           <Property ID="Acceleration" Value="0.2" />
           <Property ID="Deceleration" Value="0.2" />
-          <Property ID="StopDeceleration" Value="2" />
+          <Property ID="StopDeceleration" Value="10" />
         </Group>
       </Selector>
       <Selector ID="Utilization" Value="Rewind">
