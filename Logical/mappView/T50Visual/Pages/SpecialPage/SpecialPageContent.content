@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SpecialPageContent" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="10" left="10" width="230" height="400" zIndex="0" image="Media/Image/tenor.gif" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="10" left="460" width="230" height="400" zIndex="1" image="Media/Image/tenor.gif" />
+    <Widget xsi:type="widgets.brease.Image" id="Image3" top="10" left="250" width="200" height="200" zIndex="2" image="Media/Image/bombardiro-crocodilo.gif" />
+    <Widget xsi:type="widgets.brease.Image" id="Image4" top="220" left="260" width="180" height="190" zIndex="3" image="Media/Image/tung-tung-sahur.gif" />
+  </Widgets>
+</Content>

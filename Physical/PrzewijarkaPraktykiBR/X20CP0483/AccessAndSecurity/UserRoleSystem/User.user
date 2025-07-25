@@ -28,4 +28,11 @@
       <Property ID="Role[1]" Value="Supervisors" />
     </Group>
   </Element>
+  <Element ID="Special" Type="User">
+    <Property ID="UserID" Value="5" />
+    <Property ID="Password" Value="3JySsrH2V6iPVJ1bIYu7WtWV3bu8mVql1Mq3WaGJ187hulWKwoc=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Specials" />
+    </Group>
+  </Element>
 </Configuration>

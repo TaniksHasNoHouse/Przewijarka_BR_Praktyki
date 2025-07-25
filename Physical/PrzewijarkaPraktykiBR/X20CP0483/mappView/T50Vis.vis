@@ -8,6 +8,7 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
+    <Page refId="SpecialPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -74,6 +75,7 @@
     <Content refId="ChartsPageData" />
     <Content refId="ChartsPageTabs" />
     <Content refId="ChartsPageVtape" />
+    <Content refId="SpecialPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

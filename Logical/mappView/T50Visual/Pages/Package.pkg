@@ -10,5 +10,6 @@
     <Object Type="Package">RecepiePage</Object>
     <Object Type="Package">UserManagementPage</Object>
     <Object Type="Package">ChartsPage</Object>
+    <Object Type="Package">SpecialPage</Object>
   </Objects>
 </Package>

@@ -7,6 +7,7 @@ TYPE
 		Manual : Manual_type;
 		ControlBtn : ControlBtn_type;
 		Charts : Charts_type;
+		ModuleOK : ModuleOK_type;
 	END_STRUCT;
 END_TYPE
 
@@ -113,5 +114,16 @@ TYPE
 		Axis1 : REAL;
 		Axis2 : REAL;
 		Axis3 : REAL;
+	END_STRUCT;
+END_TYPE
+
+(*ModuleOk*)
+
+TYPE
+	ModuleOK_type : 	STRUCT 
+		PowerSupply : BOOL;
+		AnalogInput : BOOL;
+		SystemBusTransmitter : BOOL;
+		ControlKeypad : BOOL;
 	END_STRUCT;
 END_TYPE

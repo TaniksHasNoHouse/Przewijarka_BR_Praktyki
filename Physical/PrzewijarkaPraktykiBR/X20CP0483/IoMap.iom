@@ -9,4 +9,8 @@ VAR_CONFIG
 	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput07;
 	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput14;
 	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput12;
+	::gHMI.ModuleOK.PowerSupply AT %IX."X20PS9600".ModuleOk;
+	::gHMI.ModuleOK.AnalogInput AT %IX."X20AI2437".ModuleOk;
+	::gHMI.ModuleOK.SystemBusTransmitter AT %IX."X20BT9100".ModuleOk;
+	::gHMI.ModuleOK.ControlKeypad AT %IX."4XP0057.00-00W".ModuleOk;
 END_VAR

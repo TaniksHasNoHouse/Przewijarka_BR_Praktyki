@@ -1,5 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAlarmXCore" Type="mpalarmxcore" />
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="ModuleOKErrorPS" />
+        <Property ID="Message" Value="Power supply module uninstalled, not present or broken" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="ModuleOKErrorAI" />
+        <Property ID="Message" Value="Analog input module uninstalled, not present or broken" />
+        <Property ID="Code" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="ModuleOKErrorBT" />
+        <Property ID="Message" Value="System bus transmitter module uninstalled, not present or broken" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="ModuleOKError4XP" />
+        <Property ID="Message" Value="Control keypad module uninstalled, not present or broken" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+    </Group>
+  </Element>
 </Configuration>
