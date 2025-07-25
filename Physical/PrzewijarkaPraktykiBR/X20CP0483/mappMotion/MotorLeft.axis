@@ -7,7 +7,7 @@
       <Property ID="MeasurementUnitIsReadOnly" Value="0" />
       <Property ID="MeasurementUnit" Value="17476" />
       <Property ID="MeasurementResolutionIsReadOnly" Value="0" />
-      <Property ID="MeasurementResolution" Value="0.1" />
+      <Property ID="MeasurementResolution" Value="0.01" />
       <Property ID="CountDirectionIsReadOnly" Value="0" />
       <Property ID="CountDirection" Value="Standard" />
     </Selector>
@@ -22,19 +22,19 @@
       <Property ID="VelocityIsReadOnly" Value="0" />
       <Selector ID="Velocity">
         <Property ID="VelocityMax" Value="3.4E38" />
-        <Property ID="Velocity" Value="5000" />
+        <Property ID="Velocity" Value="5000.0" />
       </Selector>
       <Property ID="AccelerationIsReadOnly" Value="0" />
       <Selector ID="Acceleration">
         <Property ID="AccelerationMax" Value="3.4E38" />
-        <Property ID="Acceleration" Value="1000" />
+        <Property ID="Acceleration" Value="50000.0" />
       </Selector>
       <Property ID="DecelerationIsReadOnly" Value="0" />
       <Selector ID="Deceleration">
         <Property ID="DecelerationMax" Value="3.4E38" />
-        <Property ID="Deceleration" Value="1000" />
+        <Property ID="Deceleration" Value="50000.0" />
       </Selector>
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

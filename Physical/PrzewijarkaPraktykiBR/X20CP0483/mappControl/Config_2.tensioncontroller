@@ -6,9 +6,8 @@
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_1" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.2" />
-          <Property ID="Deceleration" Value="0.2" />
-          <Property ID="StopDeceleration" Value="10" />
+          <Property ID="Acceleration" Value="0.1" />
+          <Property ID="Deceleration" Value="0.1" />
         </Group>
       </Selector>
       <Selector ID="Utilization">
@@ -46,15 +45,15 @@
         <Property ID="ActualDancerPosition" Value="::Tension:ActLeftDancerPosScal" />
       </Group>
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gTensionCtrl_Rewinder" Type="tensioncontroller" Description="axis3">
     <Group ID="TensionController">
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_3" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.2" />
-          <Property ID="Deceleration" Value="0.2" />
-          <Property ID="StopDeceleration" Value="10" />
+          <Property ID="Acceleration" Value="0.1" />
+          <Property ID="Deceleration" Value="0.1" />
         </Group>
       </Selector>
       <Selector ID="Utilization" Value="Rewind">
@@ -93,15 +92,15 @@
         <Property ID="ActualDancerPosition" Value="::Tension:ActRightDancerPosScal" />
       </Group>
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
   <Element ID="gTensionCtrl_Master" Type="tensioncontroller" Description="axis2">
     <Group ID="TensionController">
       <Selector ID="MotionSystem" Value="mappMotion">
         <Property ID="AxisReference" Value="gAxis_2" />
         <Group ID="AxisVelocityProfile">
-          <Property ID="Acceleration" Value="0.2" />
-          <Property ID="Deceleration" Value="0.2" />
-          <Property ID="StopDeceleration" Value="2" />
+          <Property ID="Acceleration" Value="0.1" />
+          <Property ID="Deceleration" Value="0.1" />
         </Group>
       </Selector>
       <Selector ID="Utilization" Value="Transport" />
@@ -114,5 +113,6 @@
         <Property ID="SetDancerPosition" Value="" />
       </Group>
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

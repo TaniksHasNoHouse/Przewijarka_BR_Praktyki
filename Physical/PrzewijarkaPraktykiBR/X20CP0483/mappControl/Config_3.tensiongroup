@@ -11,9 +11,8 @@
     </Group>
     <Group ID="TensionGroup">
       <Group ID="LineVelocityProfile">
-        <Property ID="Acceleration" Value="0.2" />
-        <Property ID="Deceleration" Value="0.2" />
-        <Property ID="StopDeceleration" Value="10" />
+        <Property ID="Acceleration" Value="0.1" />
+        <Property ID="Deceleration" Value="0.1" />
       </Group>
       <Group ID="CommonZoneSettings">
         <Selector ID="Material">
@@ -23,11 +22,12 @@
         </Selector>
       </Group>
       <Group ID="InputSignals">
-        <Property ID="GroupLineVelocity" Value="::VAxis:MpAxisBasicMaster.Velocity" />
+        <Property ID="GroupLineVelocity" Value="::VAxis:LineVelocityInMeters" />
       </Group>
       <Group ID="Features">
         <Property ID="FeatureRef[0]" Value="" />
       </Group>
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

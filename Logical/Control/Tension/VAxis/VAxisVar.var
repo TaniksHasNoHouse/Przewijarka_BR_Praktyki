@@ -1,4 +1,5 @@
 VAR
 	MpAxisBasicMasterPar : MpAxisBasicParType;
 	MpAxisBasicMaster : MpAxisBasic;
+	LineVelocityInMeters : REAL;
 END_VAR

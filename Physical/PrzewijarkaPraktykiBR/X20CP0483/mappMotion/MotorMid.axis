@@ -4,9 +4,9 @@
   <Element ID="gAxis_2" Type="axis">
     <Property ID="BaseTypeIsReadOnly" Value="0" />
     <Selector ID="BaseType" Value="Linear">
-      <Property ID="MeasurementUnit" Value="5067858" />
+      <Property ID="MeasurementUnit" Value="5066068" />
       <Property ID="MeasurementResolutionIsReadOnly" Value="0" />
-      <Property ID="MeasurementResolution" Value="0.1" />
+      <Property ID="MeasurementResolution" Value="0.01" />
       <Property ID="CountDirectionIsReadOnly" Value="0" />
       <Property ID="CountDirection" Value="Inverse" />
     </Selector>
@@ -21,19 +21,19 @@
       <Property ID="VelocityIsReadOnly" Value="0" />
       <Selector ID="Velocity">
         <Property ID="VelocityMax" Value="3.4E38" />
-        <Property ID="Velocity" Value="10.0" />
+        <Property ID="Velocity" Value="10000.0" />
       </Selector>
       <Property ID="AccelerationIsReadOnly" Value="0" />
       <Selector ID="Acceleration">
         <Property ID="AccelerationMax" Value="3.4E38" />
-        <Property ID="Acceleration" Value="50.0" />
+        <Property ID="Acceleration" Value="100000.0" />
       </Selector>
       <Property ID="DecelerationIsReadOnly" Value="0" />
       <Selector ID="Deceleration">
         <Property ID="DecelerationMax" Value="3.4E38" />
-        <Property ID="Deceleration" Value="50.0" />
+        <Property ID="Deceleration" Value="100000.0" />
       </Selector>
     </Selector>
-    <Selector ID="Alarms" Value="None" />
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

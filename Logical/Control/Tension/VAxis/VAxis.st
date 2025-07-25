@@ -4,8 +4,8 @@ PROGRAM _INIT
 	MpAxisBasicMaster.Enable := TRUE;
 	MpAxisBasicMasterPar.Position := 100.0;
 	MpAxisBasicMasterPar.Jog.Velocity := 10.0;
-	MpAxisBasicMasterPar.Jog.Acceleration := 0.2;
-	MpAxisBasicMasterPar.Jog.Deceleration := 0.2;
+	MpAxisBasicMasterPar.Jog.Acceleration := 100.0;
+	MpAxisBasicMasterPar.Jog.Deceleration := 100.0;
 	MpAxisBasicMaster.Parameters := ADR(MpAxisBasicMasterPar);
 END_PROGRAM
 
@@ -19,6 +19,7 @@ PROGRAM _CYCLIC
 	IF MpAxisBasicMaster.IsHomed THEN
 		MpAxisBasicMaster.Home := FALSE;
 	END_IF;
+	LineVelocityInMeters := MpAxisBasicMasterPar.Jog.Velocity  * 60.0 / 1000.0;
 	MpAxisBasicMaster();
 	
 END_PROGRAM
