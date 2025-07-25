@@ -2,20 +2,23 @@
 TYPE
 	gTensionLogicType : 	STRUCT 
 		Mode : WorkModeType;
-		DancerPos : DancerPosLogicType;
+		Cmd : CommandTensionType;
+		Parameter : ParameterTensionType;
+		Status : StatusTensionType;
 		GroupLineVelocity : REAL;
 	END_STRUCT;
-	DancerPosLogicType : STRUCT
-		Cmd : DancerCmdType;
-		Status : DancerStatusType;
+	CommandTensionType : STRUCT
+		SetRightDancerPos : REAL;
+		SetLeftDancerPos : REAL;
 	END_STRUCT;
-	DancerCmdType : STRUCT
-		SetRightPos : REAL;
-		SetLeftPos : REAL;
+	ParameterTensionType : STRUCT 
+		a : BOOL;
 	END_STRUCT;
-	DancerStatusType : STRUCT 
-		ActRightPos : INT;
-		ActLeftPos : INT;
+	StatusTensionType : STRUCT 
+		ActRightDancerPos : INT;
+		ActLeftDancerPos : INT;
+		LeftWinderDiameter : REAL;
+		RightWinderDiameter : REAL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;

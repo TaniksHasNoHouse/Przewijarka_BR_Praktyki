@@ -19,7 +19,6 @@ ACTION actInitTension:
 	TensionController[2].PresetDiameter := 30.0;
 	TensionController[0].SetPresetDiameter := TRUE;
 	TensionController[2].SetPresetDiameter := TRUE;
-	gTensionLogic.DancerPos.Cmd.SetLeftPos := 30.0;
-	gTensionLogic.DancerPos.Cmd.SetRightPos := 30.0;
-	
+	gTensionLogic.Cmd.SetLeftDancerPos := 30.0;
+	gTensionLogic.Cmd.SetRightDancerPos := 30.0;
 END_ACTION
