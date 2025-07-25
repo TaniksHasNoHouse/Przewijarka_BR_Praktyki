@@ -5,5 +5,6 @@
     <Group ID="mapp.Recipe.Xml">
       <Selector ID="Auditing" Value="MpAudit" />
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

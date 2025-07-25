@@ -14,7 +14,7 @@
     <Widget xsi:type="widgets.brease.Ellipse" id="LeftOn" top="172" left="30" width="80" height="80" zIndex="10" backColor="rgba(0, 255, 0, 1)" visible="false" />
     <Widget xsi:type="widgets.brease.Ellipse" id="RightOn" top="272" left="30" width="80" height="80" zIndex="11" backColor="rgba(0, 255, 0, 1)" visible="false" />
     <Widget xsi:type="widgets.brease.Label" id="CurrStateLabel" top="112" left="30" height="36" zIndex="12" multiLine="true" text="$IAT/ManualPage/ID_CurrState" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ActivateTgBtn" top="30" left="105" width="120" height="50" zIndex="13" text="Aktywacja" />
-    <Widget xsi:type="widgets.brease.Label" id="MoveLabel" top="115" left="200" zIndex="14" text="Ruch linia" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ActivateTgBtn" top="30" left="105" width="120" height="50" zIndex="13" text="$IAT/ManualPage/ID_Activate" />
+    <Widget xsi:type="widgets.brease.Label" id="MoveLabel" top="115" left="175" width="130" zIndex="14" text="$IAT/ManualPage/ID_Line" />
   </Widgets>
 </Content>
