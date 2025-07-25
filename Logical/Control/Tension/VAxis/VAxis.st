@@ -26,6 +26,6 @@ END_PROGRAM
 
 PROGRAM _EXIT
 	MpAxisBasicMaster.Enable := FALSE;
-	 
+	MpAxisBasicMaster();
 END_PROGRAM
 

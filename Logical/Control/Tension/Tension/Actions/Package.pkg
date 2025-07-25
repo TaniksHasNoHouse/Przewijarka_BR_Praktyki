@@ -15,5 +15,7 @@
     <Object Type="File">actDoAlgebra.st</Object>
     <Object Type="File">actCallBlocks.st</Object>
     <Object Type="File">actExitTension.st</Object>
+    <Object Type="File">SetGlobals.st</Object>
+    <Object Type="File">ReadGlobals.st</Object>
   </Objects>
 </Package>
