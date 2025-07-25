@@ -20,6 +20,8 @@ PROGRAM _CYCLIC
 			actHandleError;
 		ERROR_RESET:
 			actExecuteErrorReset;
+		TEST:
+			
 	END_CASE;
 	actDoAlgebra;
 	actCallBlocks;

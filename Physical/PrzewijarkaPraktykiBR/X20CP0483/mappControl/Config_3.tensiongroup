@@ -18,7 +18,7 @@
         </Selector>
       </Group>
       <Group ID="InputSignals">
-        <Property ID="GroupLineVelocity" Value="::Tension:GroupLineVelocity" />
+        <Property ID="GroupLineVelocity" Value="::VAxis:MpAxisBasicMaster.Velocity" />
       </Group>
       <Group ID="Features">
         <Property ID="FeatureRef[0]" Value="" />
