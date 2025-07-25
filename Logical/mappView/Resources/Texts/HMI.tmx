@@ -97,13 +97,13 @@ Rezept bearbeiten</seg>
     </tu>
     <tu tuid="ID_MainPage">
       <tuv xml:lang="pl">
-        <seg>Strona główna</seg>
+        <seg>Główna</seg>
       </tuv>
       <tuv xml:lang="de">
         <seg>Hauptseite</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Main page</seg>
+        <seg>Main</seg>
       </tuv>
     </tu>
     <tu tuid="ID_ManualPage">
@@ -114,51 +114,51 @@ Rezept bearbeiten</seg>
         <seg>Manuelle Steuerung</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Manual page</seg>
+        <seg>Manual</seg>
       </tuv>
     </tu>
     <tu tuid="ID_Alarmpage">
       <tuv xml:lang="pl">
-        <seg>Strona alarmów</seg>
+        <seg>Alarmy</seg>
       </tuv>
       <tuv xml:lang="de">
-        <seg>Alarmseite</seg>
+        <seg>Alarm</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Alarm page</seg>
+        <seg>Alarms</seg>
       </tuv>
     </tu>
     <tu tuid="ID_DiagnosticsPage">
       <tuv xml:lang="pl">
-        <seg>Strona diagnostyki</seg>
+        <seg>Diagnostyka</seg>
       </tuv>
       <tuv xml:lang="de">
-        <seg>Diagnoseseite</seg>
+        <seg>Diagnostik</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Diagnostics page</seg>
+        <seg>Diagnostics </seg>
       </tuv>
     </tu>
     <tu tuid="ID_RecipePage">
       <tuv xml:lang="pl">
-        <seg>Strona receptur</seg>
+        <seg>Receptury</seg>
       </tuv>
       <tuv xml:lang="de">
-        <seg>Rezeptseite</seg>
+        <seg>Rezepte</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Recipe page</seg>
+        <seg>Recipes</seg>
       </tuv>
     </tu>
     <tu tuid="ID_AdminPage">
       <tuv xml:lang="pl">
-        <seg>Zarządzanie kontami</seg>
+        <seg>Admin</seg>
       </tuv>
       <tuv xml:lang="de">
-        <seg>Admin-Seite</seg>
+        <seg>Admin</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Admin page</seg>
+        <seg>Admin </seg>
       </tuv>
     </tu>
     <tu tuid="ID_Previous">
@@ -185,13 +185,13 @@ Rezept bearbeiten</seg>
     </tu>
     <tu tuid="ID_DataPage">
       <tuv xml:lang="pl">
-        <seg>Strona danych</seg>
+        <seg>Dane</seg>
       </tuv>
       <tuv xml:lang="de">
-        <seg>Datenseite</seg>
+        <seg>Daten</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Data page</seg>
+        <seg>Data </seg>
       </tuv>
     </tu>
   </body>

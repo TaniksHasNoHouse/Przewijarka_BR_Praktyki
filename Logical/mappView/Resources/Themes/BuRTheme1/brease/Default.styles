@@ -33,6 +33,51 @@
 		shadow="4px 4px 14px 0px rgba(62, 79, 92, 0.75)" 
 		mouseDownShadow="2px 2px 8px 0px rgba(62, 79, 92, 0.75)" />
 	
+	<Style id="working" xsi:type="widgets.brease.MomentaryPushButton" 
+		fontSize="16px" 
+		bold="true" 
+		textColor="#ffffff"
+		mouseDownTextColor="#ffffff" 
+		cornerRadius="30px" 
+		borderWidth="0px 0px 0px 0px" 
+		mouseDownBorderWidth="0px 0px 0px 0px" 
+		backGroundGradient="linear-gradient(to bottom,#5CB85C 0%,#4CAE4C 100%)" 
+		mouseDownBackGroundGradient="linear-gradient(to bottom, #449D44 0%,#398439 100%)" 
+		disabledBackGroundGradient="linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)" 
+		shadow="4px 4px 14px 0px rgba(62, 79, 92, 0.75)" 
+		mouseDownShadow="2px 2px 8px 0px rgba(62, 79, 92, 0.75)" />
+	
+	<Style id="stopped" xsi:type="widgets.brease.MomentaryPushButton" 
+		fontSize="16px" 
+		bold="true" 
+		textColor="#FFFFFF"
+		mouseDownTextColor="#FFFFFF" 
+		cornerRadius="30px" 
+		borderWidth="0px 0px 0px 0px" 
+		mouseDownBorderWidth="0px 0px 0px 0px" 
+		backGroundGradient="linear-gradient(to bottom, #D9534F 0%, #C9302C 100%)" 
+		mouseDownBackGroundGradient="linear-gradient(to bottom, #AC2925 0%, #761C19 100%)" 
+		disabledBackGroundGradient="linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)" 
+		shadow="4px 4px 14px 0px rgba(62, 79, 92, 0.75)" 
+		mouseDownShadow="2px 2px 8px 0px rgba(62, 79, 92, 0.75)" />
+	
+	<Style id="reset" xsi:type="widgets.brease.MomentaryPushButton" 
+		fontSize="16px" 
+		bold="true" 
+		textColor="#FFFFFF"
+		mouseDownTextColor="#FFFFFF" 
+		cornerRadius="30px" 
+		borderWidth="0px 0px 0px 0px" 
+		mouseDownBorderWidth="0px 0px 0px 0px" 
+		backGroundGradient="linear-gradient(to bottom, #5BC0DE 0%, #31B0D5 100%)" 
+		mouseDownBackGroundGradient="linear-gradient(to bottom, #269ABC 0%, #1B6D85 100%)" 
+		disabledBackGroundGradient="linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)" 
+		shadow="4px 4px 14px 0px rgba(62, 79, 92, 0.75)" 
+		mouseDownShadow="2px 2px 8px 0px rgba(62, 79, 92, 0.75)" />
+
+
+
+	
 	<!--navigation button-->
 		
 	<Style id="default" xsi:type="widgets.brease.NavigationButton" 
