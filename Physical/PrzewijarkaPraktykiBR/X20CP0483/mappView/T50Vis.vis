@@ -26,6 +26,10 @@
     <BindingsSet refId="ChartsPageAxis1_binding" />
     <BindingsSet refId="ChartsPageAxis2_binding" />
     <BindingsSet refId="ChartsPageAxis3_binding" />
+    <BindingsSet refId="MainPageContent_binding" />
+    <BindingsSet refId="ManualRegulators_binding" />
+    <BindingsSet refId="ManualLeftRight_binding" />
+    <BindingsSet refId="ContentTop_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />

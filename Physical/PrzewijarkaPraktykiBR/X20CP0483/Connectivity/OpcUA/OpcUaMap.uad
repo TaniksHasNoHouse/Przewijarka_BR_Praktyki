@@ -34,6 +34,9 @@
         <Variable Name="StartRecording" />
         <Variable Name="StartTrigger" />
       </Task>
+      <Task Name="MainPage">
+        <Variable Name="PackMLInfo" RecursiveEnable="2" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

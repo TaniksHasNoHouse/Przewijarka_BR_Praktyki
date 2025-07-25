@@ -1,0 +1,3 @@
+VAR
+	PackMLInfo : MpPackMLUIInfoType;
+END_VAR

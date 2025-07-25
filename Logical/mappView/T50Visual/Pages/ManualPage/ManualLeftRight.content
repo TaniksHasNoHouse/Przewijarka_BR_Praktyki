@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualLeftRight" height="380" width="690" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnLeft" top="100" left="130" width="170" height="55" zIndex="0" image="Media/SymbolLib/Arrow/ArrowLeft.svg" multiLine="true" text="$IAT/ManualPage/ID_MoveLeft" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnRight" top="250" left="130" width="170" height="55" zIndex="1" image="Media/SymbolLib/Arrow/ArrowRight.svg" imageAlign="right" multiLine="true" text="$IAT/ManualPage/ID_MoveRight" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumInLeftVel" top="100" left="350" width="110" height="55" zIndex="2" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" cornerRadius="5px" textAlign="right" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumInRightVel" top="250" left="350" width="110" height="55" zIndex="3" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" cornerRadius="5px" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.Label" id="ActiveLabel" top="33" left="175" zIndex="4" text="$IAT/ManualPage/ID_Activate" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="AssignFabricVelLabel" top="28" left="317" width="177" height="40" zIndex="5" multiLine="true" text="$IAT/ManualPage/ID_VSet" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="NumOutCurrLeftVel" top="105" left="525" width="110" height="55" zIndex="6" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="NumOutCurrRightVel" top="250" left="525" width="110" height="55" zIndex="7" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrentFablicVel" top="31" left="492" width="176" height="35" zIndex="8" multiLine="true" text="$IAT/ManualPage/ID_VCurr" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Ellipse" id="LeftOff" top="90" left="30" width="80" height="80" zIndex="9" backColor="rgba(255, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Ellipse" id="RightOFF" top="240" left="30" width="80" height="80" zIndex="10" backColor="rgba(255, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.Ellipse" id="LeftOn" top="90" left="30" width="80" height="80" zIndex="11" backColor="rgba(0, 255, 0, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Ellipse" id="RightOn" top="240" left="30" width="80" height="80" zIndex="12" backColor="rgba(0, 255, 0, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrStateLabel" top="30" left="30" height="36" zIndex="13" multiLine="true" text="$IAT/ManualPage/ID_CurrState" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnLeft" top="185" left="155" width="170" height="55" zIndex="0" image="Media/SymbolLib/Arrow/ArrowLeft.svg" multiLine="true" text="$IAT/ManualPage/ID_MoveLeft" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnRight" top="285" left="155" width="170" height="55" zIndex="1" image="Media/SymbolLib/Arrow/ArrowRight.svg" imageAlign="right" multiLine="true" text="$IAT/ManualPage/ID_MoveRight" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInLeftVel" top="185" left="370" width="110" height="55" zIndex="2" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" cornerRadius="5px" textAlign="right" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInRightVel" top="285" left="370" width="110" height="55" zIndex="3" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" cornerRadius="5px" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="ActiveLabel" top="40" left="20" zIndex="4" text="$IAT/ManualPage/ID_Activate" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="AssignFabricVelLabel" top="110" left="337" width="177" height="40" zIndex="5" multiLine="true" text="$IAT/ManualPage/ID_VSet" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumOutCurr" top="230" left="525" width="110" height="55" zIndex="6" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrentFablicVel" top="113" left="492" width="176" height="35" zIndex="7" multiLine="true" text="$IAT/ManualPage/ID_VCurr" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="LeftOff" top="172" left="30" width="80" height="80" zIndex="8" backColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="RightOFF" top="272" left="30" width="80" height="80" zIndex="9" backColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="LeftOn" top="172" left="30" width="80" height="80" zIndex="10" backColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="RightOn" top="272" left="30" width="80" height="80" zIndex="11" backColor="rgba(0, 255, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrStateLabel" top="112" left="30" height="36" zIndex="12" multiLine="true" text="$IAT/ManualPage/ID_CurrState" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ActivateTgBtn" top="30" left="105" width="120" height="50" zIndex="13" text="Aktywacja" />
+    <Widget xsi:type="widgets.brease.Label" id="MoveLabel" top="115" left="200" zIndex="14" text="Ruch linia" />
   </Widgets>
 </Content>

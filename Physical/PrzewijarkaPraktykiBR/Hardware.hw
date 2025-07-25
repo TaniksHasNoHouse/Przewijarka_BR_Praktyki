@@ -318,6 +318,7 @@
       <Parameter ID="ChannelType1" Value="OCTET[36]" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="PrzewijarkaBRPraktyki_PrzewijarkaPraktykiBR" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP0483.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="2000" />
