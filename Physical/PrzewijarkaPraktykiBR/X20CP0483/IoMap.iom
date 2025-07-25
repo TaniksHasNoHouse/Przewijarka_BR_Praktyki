@@ -1,6 +1,6 @@
 VAR_CONFIG
-	::Tension:ActRightDancerPos AT %IW."X20AI2437".AnalogInput01;
-	::Tension:ActLeftDancerPos AT %IW."X20AI2437".AnalogInput02;
+	::gTensionLogic.DancerPos.Status.ActRightPos AT %IW."X20AI2437".AnalogInput01;
+	::gTensionLogic.DancerPos.Status.ActLeftPos AT %IW."X20AI2437".AnalogInput02;
 	::gMainLogic.Cmd.Start AT %IX."4XP0057.00-00W".DigitalInput01;
 	::gMainLogic.Cmd.Stop AT %IX."4XP0057.00-00W".DigitalInput02;
 	::gMainLogic.Cmd.Reset AT %IX."4XP0057.00-00W".DigitalInput03;

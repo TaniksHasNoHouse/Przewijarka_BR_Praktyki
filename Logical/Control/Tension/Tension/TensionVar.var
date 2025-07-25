@@ -11,12 +11,8 @@ VAR
 	i : USINT;
 	TensionController : ARRAY[0..INDEX_NR_OF_ZONES] OF MpTensionController;
 	TensionGroup : MpTensionGroup;
-	ActLeftDancerPos : INT;
 	ActLeftDancerPosScal : REAL;
 	Distance : REAL;
-	SetRightDancerPos : REAL;
-	SetLeftDancerPos : REAL;
-	ActRightDancerPos : INT;
 	ActRightDancerPosScal : REAL;
 	MV_ABS : BOOL;
 END_VAR

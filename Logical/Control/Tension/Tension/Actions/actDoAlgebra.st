@@ -1,7 +1,7 @@
 
 ACTION actDoAlgebra: 
-	ActLeftDancerPosScal :=  (INT_TO_REAL(ActLeftDancerPos) - 4060.0) *(1000.0/135534.0);
-	ActRightDancerPosScal := (INT_TO_REAL(ActRightDancerPos) - 4060.0) *(1000.0/135534.0);
+	gTensionLogic.DancerPos.Status.ActLeftPos :=  REAL_TO_INT((INT_TO_REAL(gTensionLogic.DancerPos.Status.ActLeftPos) - 4060.0) *(1000.0/135534.0));
+	gTensionLogic.DancerPos.Status.ActRightPos := REAL_TO_INT((INT_TO_REAL(gTensionLogic.DancerPos.Status.ActRightPos) - 4060.0) *(1000.0/135534.0));
 	LeftWinderDiameter := TensionController[0].Info.DiameterEstimation.EstimatedDiameter;
 	RightWinderDiameter := TensionController[2].Info.DiameterEstimation.EstimatedDiameter;
 END_ACTION

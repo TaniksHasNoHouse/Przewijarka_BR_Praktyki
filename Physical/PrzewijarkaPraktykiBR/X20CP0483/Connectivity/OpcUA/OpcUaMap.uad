@@ -12,6 +12,7 @@
       <GlobalVariables Name="Global Variables">
         <Variable Name="gMainLogic" RecursiveEnable="2" />
         <Variable Name="gHMI" RecursiveEnable="2" />
+        <Variable Name="gTensionLogic" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
