@@ -1,11 +1,23 @@
 TYPE
 gTensionLogicType : STRUCT 
 	Mode : WorkModeType;
+	TensionController : TensionControllerType;	
 	GroupLineVelocity : REAL;
 END_STRUCT;
 WorkModeType : STRUCT
 	Production : ProdLogicType;
 	Manual : ManAxisSelectType;
+	END_STRUCT;	
+TensionControllerType : STRUCT
+	Cmd : TensionControllerCmdType
+	Parameter : TensionControllerParType;
+	Status : TensionControllerStatusType;
+END_STRUCT;
+TensionControllerCmdType : STRUCT
+END_STRUCT;
+TensionControllerParType : STRUCT
+END_STRUCT;
+TensionControllerStatusType : STRUCT
 END_STRUCT;
 ProdLogicType : STRUCT
 	Cmd : ProdCmdType;
