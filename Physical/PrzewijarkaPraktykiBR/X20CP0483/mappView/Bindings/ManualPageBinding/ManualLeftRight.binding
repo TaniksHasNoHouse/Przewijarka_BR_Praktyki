@@ -21,9 +21,6 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.SetBeltSpeedRight" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInRightVel" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.CurrSpeed" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumOutCurr" attribute="value" />
-</Binding>
+
 </Bindings>
 </BindingsSet>
