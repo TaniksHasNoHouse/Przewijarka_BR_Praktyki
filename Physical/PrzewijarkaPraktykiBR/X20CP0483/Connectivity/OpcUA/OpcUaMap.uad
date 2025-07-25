@@ -35,6 +35,7 @@
       </Task>
       <Task Name="MainPage">
         <Variable Name="PackMLInfo" RecursiveEnable="2" />
+        <Variable Name="ButtonStyles" RecursiveEnable="2" />
       </Task>
     </Module>
   </DefaultView>

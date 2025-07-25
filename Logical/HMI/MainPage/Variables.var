@@ -1,3 +1,6 @@
 VAR
+	ButtonStates : ButtonStates_type;
+	ButtonStyles : ButtonStyles_type;
 	PackMLInfo : MpPackMLUIInfoType;
+	ResetBtnTimer : TON;
 END_VAR

@@ -17,5 +17,18 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Start" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="value" />
 </Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Start" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="style" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Stop" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStopTop" attribute="style" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Reset" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
+</Binding>
 </Bindings>
 </BindingsSet>
