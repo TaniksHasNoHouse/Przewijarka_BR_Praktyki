@@ -5,7 +5,30 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+//	IF gHMI.ControlBtn.Start = TRUE THEN
+//		ButtonStates := STATE_WORKING;
+//	END_IF;
+//	
+//	IF gHMI.ControlBtn.Reset = TRUE THEN
+//		ButtonStyles.Start := 'default';
+//		ButtonStyles.Stop := 'stopped';
+//	END_IF;
+	
+	CASE ButtonStates OF
+//		STATE_IDLE:
+//			ButtonStyles.Start := 'default';
+//			ButtonStyles.Stop := 'default';
+//			ButtonStyles.Reset := 'default';
+//			IF gHMI.ControlBtn.Start = TRUE THEN
+//				ButtonStates := STATE_WORKING;
+//			END_IF;
+//			
+//		STATE_WORKING:
+//			ButtonStyles.Start := 'working';
+//			ButtonStyles.Stop := 'default';
+		  
+
+	END_CASE;
 	 
 END_PROGRAM
 
