@@ -19,7 +19,7 @@ PROGRAM _CYCLIC
 	IF MpAxisBasicMaster.IsHomed THEN
 		MpAxisBasicMaster.Home := FALSE;
 	END_IF;
-	LineVelocityInMeters := MpAxisBasicMasterPar.Jog.Velocity  * 60.0 / 1000.0;
+	LineVelocityInMeters := MpAxisBasicMaster.Velocity * 60.0 / 1000.0;
 	MpAxisBasicMaster();
 	
 END_PROGRAM
