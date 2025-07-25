@@ -60,7 +60,7 @@
     <Content refId="RecipeAddDialogContent" />
     <Content refId="RecipeDeleteContent" />
     <Content refId="RecipeEditContent" />
-	<Content refId="RecipeAddEditRemoveContent" />
+		<Content refId="RecipeAddEditRemoveContent" />
     <Content refId="RecipeCurrContent" />
     <Content refId="ChartsPageAxis1" />
     <Content refId="ChartsPageAxis2" />

@@ -10,6 +10,11 @@
       </Group>
     </Group>
     <Group ID="TensionGroup">
+      <Group ID="LineVelocityProfile">
+        <Property ID="Acceleration" Value="0.2" />
+        <Property ID="Deceleration" Value="0.2" />
+        <Property ID="StopDeceleration" Value="10" />
+      </Group>
       <Group ID="CommonZoneSettings">
         <Selector ID="Material">
           <Property ID="Thickness" Value="180" />
