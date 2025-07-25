@@ -19,11 +19,17 @@ TYPE
 		Reset : BOOL;
 		AutoManual : BOOL;
 	END_STRUCT;
+	New_Datatype : 	STRUCT 
+	END_STRUCT;
 END_TYPE
 
 (*Recipe*)
 
 TYPE
+	DencerPI_type : 	STRUCT 
+		P : REAL;
+		I : REAL;
+	END_STRUCT;
 	Recipe_type : 	STRUCT 
 		CurrentRecipe : CurrentRecipe_type;
 		EnableEditing : BOOL;
@@ -40,6 +46,8 @@ TYPE
 		RollRight : MaxMinRollSize_type;
 		DataRegistration : BOOL := FALSE; (* Rejestracja danych: FALSE = wy³., TRUE = w³. *)
 		MaterialLength : REAL;
+		Dencer1PID : DencerPI_type;
+		Dencer2PID : DencerPI_type;
 	END_STRUCT;
 	MotorPID_type : 	STRUCT 
 		P : REAL := 0.0;
@@ -48,18 +56,6 @@ TYPE
 	MaxMinRollSize_type : 	STRUCT 
 		MaxSize : REAL := 0.0;
 		MinSize : REAL := 0.0;
-	END_STRUCT;
-END_TYPE
-
-(*Main page*)
-
-TYPE
-	Main_type : 	STRUCT 
-		CurrDenserLeft : USINT;
-		CurrDenserRight : USINT;
-		CurrSpeed : USINT;
-		CurrRollLeft : USINT;
-		CurrRollRight : USINT;
 	END_STRUCT;
 END_TYPE
 
@@ -77,7 +73,6 @@ TYPE
 		JogRight : BOOL;
 		SetBeltSpeedRight : USINT;
 		SetBeltSpeedLeft : USINT;
-		CurrSpeed : USINT;
 	END_STRUCT;
 	JogMotors_type : 	STRUCT 
 		Motor1 : manMotor_type;
@@ -98,8 +93,6 @@ TYPE
 	END_STRUCT;
 	manTuneMotor_type : 	STRUCT 
 		Autotune : BOOL;
-		P : REAL;
-		I : REAL;
 	END_STRUCT;
 END_TYPE
 
