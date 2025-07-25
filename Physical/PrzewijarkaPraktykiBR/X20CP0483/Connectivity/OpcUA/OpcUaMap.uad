@@ -27,7 +27,6 @@
         <Variable Name="xd" />
       </Task>
       <Task Name="ChartsPage">
-        <Variable Name="Charts" RecursiveEnable="2" />
         <Variable Name="Unit" />
         <Variable Name="Description" />
         <Variable Name="Name" />

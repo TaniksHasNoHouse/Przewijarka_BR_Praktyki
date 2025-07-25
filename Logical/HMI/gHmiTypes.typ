@@ -6,6 +6,7 @@ TYPE
 		Main : Main_type;
 		Manual : Manual_type;
 		ControlBtn : ControlBtn_type;
+		Charts : Charts_type;
 	END_STRUCT;
 END_TYPE
 
@@ -99,5 +100,18 @@ TYPE
 		Autotune : BOOL;
 		P : REAL;
 		I : REAL;
+	END_STRUCT;
+END_TYPE
+
+(*Charts*)
+
+TYPE
+	Charts_type : 	STRUCT 
+		Dancer1 : REAL;
+		Dancer2 : REAL;
+		Vtape : REAL;
+		Axis1 : REAL;
+		Axis2 : REAL;
+		Axis3 : REAL;
 	END_STRUCT;
 END_TYPE
