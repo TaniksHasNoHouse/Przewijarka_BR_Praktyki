@@ -1,20 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="ManualMoveMotor_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
+
+
+
+
+
+
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Mot1Active" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Mot2Active" attribute="value" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor2.Activate" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot2" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::ManualPage:HMI.ManualPage.Buttons.Mot3Active" attribute="value" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor1.Right" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnRightMot1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor1.Left" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnLeftMot1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor1.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="Motor1Speed" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor1.Home" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnMot1Home" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor1.Activate" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor2.Home" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnMot2Home" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor2.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="Motor2Speed" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor2.Left" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnLeftMot2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor2.Right" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnRightMot2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Activate" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="TogBtnMot3" attribute="value" />
 </Binding>
-
-
-
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Home" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnMot3Home" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Speed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="Motor3Speed" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Left" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnLeftMot3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Right" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnRightMot3" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -6,5 +6,6 @@
       <Property ID="MaxNumberOfFiles" Value="3" />
       <Property ID="OverwriteOldestFile" Value="TRUE" />
     </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
   </Element>
 </Configuration>

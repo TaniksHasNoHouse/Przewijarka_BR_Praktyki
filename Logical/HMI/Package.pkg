@@ -9,5 +9,6 @@
     <Object Type="Program" Language="IEC">AuditPage</Object>
     <Object Type="Program" Language="IEC">AlarmPage</Object>
     <Object Type="Program" Language="IEC">ChartsDataPage</Object>
+    <Object Type="Program" Language="IEC">MainPage</Object>
   </Objects>
 </Package>

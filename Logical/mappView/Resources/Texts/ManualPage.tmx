@@ -115,5 +115,60 @@
         <seg>Autotune</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Line">
+      <tuv xml:lang="pl">
+        <seg>Ruch linii</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Linienbewegung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Line movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Set">
+      <tuv xml:lang="pl">
+        <seg>Ustawienie pozycji początkowej</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ausgangsposition festlegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Setting the starting position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_SetV">
+      <tuv xml:lang="pl">
+        <seg>Zadana prędkość</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Geschwindigkeit einstellen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Confirm">
+      <tuv xml:lang="pl">
+        <seg>Zatwierdź</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bestätigen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Confirm</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Direction">
+      <tuv xml:lang="pl">
+        <seg>Kierunek</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Richtung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Direction</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
