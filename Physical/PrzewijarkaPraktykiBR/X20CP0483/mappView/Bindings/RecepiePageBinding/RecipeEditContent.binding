@@ -61,5 +61,13 @@
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.RollLeft.MaxSize" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MpRecepieXml_0.Info.LastLoadedRecipe" attribute="value" />
+			<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="CurRecTextOut" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.MaterialLength" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MaterialLenghtNumIn" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

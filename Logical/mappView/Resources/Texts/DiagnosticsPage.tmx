@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/DiagnosticsPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_Audit">
+      <tuv xml:lang="pl">
+        <seg>Audyt</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Prüfung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Audit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Time">
+      <tuv xml:lang="pl">
+        <seg>Czas</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Event">
+      <tuv xml:lang="pl">
+        <seg>Wydarzenie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ereignis</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Event</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -26,6 +26,13 @@
       <Property ID="TargetFile[11]" Value="mappView.Resources.Texts.TweetF.tmx" />
       <Property ID="TargetFile[12]" Value="mappView.Resources.Texts.UserSignaturF.tmx" />
       <Property ID="TargetFile[13]" Value="mappView.Resources.Texts.BackupF.tmx" />
+      <Property ID="TargetFile[14]" Value="mappView.Resources.Texts.HMI.tmx" />
+      <Property ID="TargetFile[15]" Value="mappView.Resources.Texts.RecipePage.tmx" />
+      <Property ID="TargetFile[16]" Value="mappView.Resources.Texts.DiagnosticsPage.tmx" />
+      <Property ID="TargetFile[17]" Value="mappView.Resources.Texts.AlarmPage.tmx" />
+      <Property ID="TargetFile[18]" Value="mappView.Resources.Texts.AdminPage.tmx" />
+      <Property ID="TargetFile[19]" Value="mappView.Resources.Texts.ManualPage.tmx" />
+      <Property ID="TargetFile[20]" Value="mappView.Resources.Texts.DataPage.tmx" />
     </Group>
   </Element>
 </Configuration>

@@ -3,24 +3,35 @@ PROGRAM _INIT
 	MpRecepieXml_0.Enable := TRUE;
 	MpRecepieXml_0.MpLink := ADR(MpLinkRecipes);
 	MpRecepieXml_0.DeviceName := ADR('USER');
-	MpRecepieXml_0.FileName := ADR('RecipePage');
 	
 	MpRecipeRegPar_0.Enable := TRUE;
 	MpRecipeRegPar_0.MpLink := ADR(MpLinkRecipes);
-	MpRecipeRegPar_0.PVName := ADR('RecipePage:MaterialWindingRecipe');
+	MpRecipeRegPar_0.PVName := ADR('gHMI.Recipe.CurrentRecipe');	
 	
 	MpRecipeUI_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(MpLinkRecipes);
 	MpRecipeUI_0.UIConnect := ADR(UIConnect);
+	
+	UIConnect.Recipe.Filter := '*.xml';
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	MpRecepieXml_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
+	actRecipeManage;
+	
+	RecipeControl.LoadRecipe := '';
+	brsstrcat(ADR(RecipeControl.LoadRecipe), ADR('USER/'));
+	brsstrcat(ADR(RecipeControl.LoadRecipe), ADR(MpRecepieXml_0.Info.LastLoadedRecipe));
 	 
+	IF UIConnect.Recipe.List.SelectedIndex >=3 THEN
+		RecipeControl.TableControl.Offset := UIConnect.Recipe.List.SelectedIndex - 3; 
+	ELSE
+		RecipeControl.TableControl.Offset := 0;
+	END_IF;
+	
 	actImageBinding;
-	actRecipeMenage;
 END_PROGRAM
 
 PROGRAM _EXIT

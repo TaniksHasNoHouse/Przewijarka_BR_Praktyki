@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/DataPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_Charts">
+      <tuv xml:lang="pl">
+        <seg>Wykresy</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Diagramme</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Charts</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Data">
+      <tuv xml:lang="pl">
+        <seg>Dane</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Daten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Data</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

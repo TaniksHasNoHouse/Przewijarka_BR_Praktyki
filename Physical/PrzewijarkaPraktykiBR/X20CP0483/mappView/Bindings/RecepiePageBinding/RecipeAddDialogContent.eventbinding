@@ -12,16 +12,16 @@
               </Target>
             </Action>
           </Step>
-          <Step order="1">
+          <Step order="2">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.MessageBox.Confirm">
+              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.New.Create">
                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>
           </Step>
-          <Step order="2">
+          <Step order="3">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.New.Create">
+              <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:UIConnect.Recipe.Load">
                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>

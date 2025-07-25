@@ -1,5 +1,0 @@
-VAR
-	MpDataRecorder_0 : MpDataRecorder;
-	StartRecording : BOOL;
-	MpDataRegPar_0 : MpDataRegPar;
-END_VAR

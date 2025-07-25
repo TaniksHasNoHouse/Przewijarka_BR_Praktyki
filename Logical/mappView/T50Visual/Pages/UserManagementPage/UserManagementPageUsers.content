@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="UserManagementPageUsers" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.UserList" id="UserListWindow" top="10" left="10" width="680" height="350" zIndex="0">
+    <Widget xsi:type="widgets.brease.UserList" id="UserListWindow" top="10" left="10" width="680" height="350" zIndex="0" nextText="$IAT/HMI/ID_Next" previousText="$IAT/HMI/ID_Previous">
       <Widgets>
-        <Widget xsi:type="widgets.brease.UserListItem" id="UserListUser" width="120" zIndex="0" text="Użytkownik" />
-        <Widget xsi:type="widgets.brease.UserListItem" id="UserListName" width="160" zIndex="1" columnType="FullName" text="Pełna nazwa" />
-        <Widget xsi:type="widgets.brease.UserListItem" id="UserListRole" width="110" zIndex="2" columnType="Roles" text="Rola" />
-        <Widget xsi:type="widgets.brease.UserListItem" id="UserListAdmin" width="90" zIndex="3" columnType="IsAdmin" text="Admin" />
-        <Widget xsi:type="widgets.brease.UserListItem" id="UserListLastLogin" width="180" zIndex="4" columnType="LastLogin" text="Ostatnie logowanie" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListUser" width="120" zIndex="0" text="$IAT/AdminPage/ID_User" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListName" width="160" zIndex="1" columnType="FullName" text="$IAT/AdminPage/ID_FName" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListRole" width="110" zIndex="2" columnType="Roles" text="$IAT/AdminPage/ID_Role" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListAdmin" width="90" zIndex="3" columnType="IsAdmin" text="$IAT/AdminPage/ID_Admin" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListLastLogin" width="180" zIndex="4" columnType="LastLogin" text="$IAT/AdminPage/ID_LastLogin" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="ButtonAddUser" top="370" left="30" width="110" zIndex="1" text="Dodaj" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonDeleteUser" top="370" left="160" width="110" zIndex="2" text="Usuń" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonModifyUser" top="370" left="290" width="110" zIndex="3" text="Zmodyfikuj" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonAddUser" top="370" left="30" width="120" zIndex="1" text="$IAT/AdminPage/ID_Add" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDeleteUser" top="370" left="160" width="120" zIndex="2" text="$IAT/AdminPage/ID_Delete" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonModifyUser" top="370" left="290" width="120" zIndex="3" text="$IAT/AdminPage/ID_Modify" />
   </Widgets>
 </Content>

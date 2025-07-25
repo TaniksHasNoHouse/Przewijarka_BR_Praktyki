@@ -10,7 +10,7 @@
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlSDM" top="0" left="0" width="680" height="370" zIndex="0" contentId="DiagnosticsPageSDM" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="Audit" left="0" zIndex="1" text="Audyt">
+            <Widget xsi:type="widgets.brease.TabItem" id="Audit" left="0" zIndex="1" text="$IAT/DiagnosticsPage/ID_Audit">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAudit" top="0" left="0" width="680" height="370" zIndex="0" contentId="DiagnosticsPageAudit" />
               </Widgets>

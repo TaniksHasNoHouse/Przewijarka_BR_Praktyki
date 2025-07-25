@@ -15,5 +15,12 @@
     <Object Type="File">TweetF.tmx</Object>
     <Object Type="File">UserSignaturF.tmx</Object>
     <Object Type="File">BackupF.tmx</Object>
+    <Object Type="File">HMI.tmx</Object>
+    <Object Type="File">RecipePage.tmx</Object>
+    <Object Type="File">DiagnosticsPage.tmx</Object>
+    <Object Type="File">AlarmPage.tmx</Object>
+    <Object Type="File">AdminPage.tmx</Object>
+    <Object Type="File">ManualPage.tmx</Object>
+    <Object Type="File">DataPage.tmx</Object>
   </Objects>
 </Package>

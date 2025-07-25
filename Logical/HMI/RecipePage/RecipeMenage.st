@@ -1,8 +1,8 @@
 
-ACTION actRecipeMenage: 
+ACTION actRecipeManage: 
 
 		//Call TableConfiguration Variable
-		TableConfig;
+		RecipeControl.TableControl.Config;
 	
 		// create default recipes in case they don't exist yet on the target
 		// recipes are created by using the the MpRecipeXml instance interface
@@ -12,42 +12,30 @@ ACTION actRecipeMenage:
 			
 				IF MpRecepieXml_0.Active = TRUE AND MpRecipeUI_0.Active = TRUE THEN
 				
-					// check for load error > triggers the default creation > if no error everything is ready to go
-					IF (UIConnect.Recipe.List.Names[0] = '') THEN
-						MpRecepieXml_0.Load 			:= FALSE;
-						MpRecepieXml_0.ErrorReset 	:= TRUE;
-						RecipeCreateStep 			:= CREATE_1;
-					
-					ELSE
-						UIConnect.Recipe.Load := TRUE;
-					END_IF
-				
-					// reset the load command from the init when recipe was loaded successfully
-					IF (UIConnect.Status = mpRECIPE_UI_STATUS_LOAD) AND (UIConnect.Recipe.Load = TRUE) THEN
-						UIConnect.Recipe.Load			:= FALSE;
-						RecipeCreateStep				:= ALL_DONE;
-					END_IF
+				RecipeCreateStep 			:= CREATE_1;
 
 				END_IF
 		
 			CREATE_1:	// create the first recipe with default values, file name and a known picture index (Bitmap Group in the HMI) 
 				MpRecepieXml_0.ErrorReset 			:= FALSE;
 			
-				MaterialWindingRecipe.TensionLeft := 0;
-				MaterialWindingRecipe.TensionRight := 15;
-				MaterialWindingRecipe.Speed := 5;
-				MaterialWindingRecipe.Direction := FALSE;
-				MaterialWindingRecipe.Motor1PID.P := 0;
-				MaterialWindingRecipe.Motor1PID.I := 0;
-				MaterialWindingRecipe.Motor2PID.P := 0;
-				MaterialWindingRecipe.Motor2PID.I := 0;
-				MaterialWindingRecipe.Motor3PID.P := 0;
-				MaterialWindingRecipe.Motor3PID.I := 0;
-				MaterialWindingRecipe.RollLeft.MaxSize := 0;
-				MaterialWindingRecipe.RollLeft.MinSize := 0;
-				MaterialWindingRecipe.RollRight.MaxSize := 0;
-				MaterialWindingRecipe.RollRight.MinSize := 0;
-				MaterialWindingRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
+				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe1Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_1;
@@ -59,23 +47,24 @@ ACTION actRecipeMenage:
 				END_IF;
 		
 			CREATE_2:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI) 
-			
-				MaterialWindingRecipe.TensionLeft := 0;
-				MaterialWindingRecipe.TensionRight := 15;
-				MaterialWindingRecipe.Speed := 5;
-				MaterialWindingRecipe.Direction := FALSE;
-				MaterialWindingRecipe.Motor1PID.P := 0;
-				MaterialWindingRecipe.Motor1PID.I := 0;
-				MaterialWindingRecipe.Motor2PID.P := 3;
-				MaterialWindingRecipe.Motor2PID.I := 0;
-				MaterialWindingRecipe.Motor3PID.P := 0;
-				MaterialWindingRecipe.Motor3PID.I := 0;
-				MaterialWindingRecipe.RollLeft.MaxSize := 26;
-				MaterialWindingRecipe.RollLeft.MinSize := 0;
-				MaterialWindingRecipe.RollRight.MaxSize := 0;
-				MaterialWindingRecipe.RollRight.MinSize := 0;
-				MaterialWindingRecipe.DataRegistration := FALSE;
-				MpRecepieXml_0.FileName 				:= ADR('mappRecipe2Test.xml');
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
+				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+
+				MpRecepieXml_0.FileName 			:= ADR('mappRecipe2Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_2;
 		
@@ -86,22 +75,24 @@ ACTION actRecipeMenage:
 				END_IF;
 		
 			CREATE_3:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI)
-			
-				MaterialWindingRecipe.TensionLeft := 0;
-				MaterialWindingRecipe.TensionRight := 15;
-				MaterialWindingRecipe.Speed := 5;
-				MaterialWindingRecipe.Direction := FALSE;
-				MaterialWindingRecipe.Motor1PID.P := 0;
-				MaterialWindingRecipe.Motor1PID.I := 0;
-				MaterialWindingRecipe.Motor2PID.P := 0;
-				MaterialWindingRecipe.Motor2PID.I := 0;
-				MaterialWindingRecipe.Motor3PID.P := 0;
-				MaterialWindingRecipe.Motor3PID.I := 0;
-				MaterialWindingRecipe.RollLeft.MaxSize := 0;
-				MaterialWindingRecipe.RollLeft.MinSize := 0;
-				MaterialWindingRecipe.RollRight.MaxSize := 69;
-				MaterialWindingRecipe.RollRight.MinSize := 0;
-				MaterialWindingRecipe.DataRegistration := FALSE;
+				
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
+				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe3Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= DONE_3;
@@ -113,21 +104,23 @@ ACTION actRecipeMenage:
 				END_IF;
 			CREATE_4:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI)
 			
-				MaterialWindingRecipe.TensionLeft := 0;
-				MaterialWindingRecipe.TensionRight := 23;
-				MaterialWindingRecipe.Speed := 5;
-				MaterialWindingRecipe.Direction := FALSE;
-				MaterialWindingRecipe.Motor1PID.P := 0;
-				MaterialWindingRecipe.Motor1PID.I := 0;
-				MaterialWindingRecipe.Motor2PID.P := 0;
-				MaterialWindingRecipe.Motor2PID.I := 0;
-				MaterialWindingRecipe.Motor3PID.P := 0;
-				MaterialWindingRecipe.Motor3PID.I := 0;
-				MaterialWindingRecipe.RollLeft.MaxSize := 0;
-				MaterialWindingRecipe.RollLeft.MinSize := 0;
-				MaterialWindingRecipe.RollRight.MaxSize := 0;
-				MaterialWindingRecipe.RollRight.MinSize := 68;
-				MaterialWindingRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
+				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe4Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
 				RecipeCreateStep 					:= REFRESH;
@@ -153,49 +146,61 @@ ACTION actRecipeMenage:
 					RecipeCreateStep 			:= ALL_DONE;
 					UIConnect.Recipe.Refresh 	:= FALSE;
 					UIConnect.Recipe.Load 		:= FALSE;
-				END_IF;		
+				END_IF;	
+			
+			ALL_DONE:
+				
 		
 		END_CASE;
 	
-		//Edit Recipe
-		IF DialogOpen THEN
-		
-			MaterialWidningEDITRecipe.TensionLeft := MaterialWindingRecipe.TensionLeft;
-			MaterialWidningEDITRecipe.TensionRight := MaterialWindingRecipe.TensionRight;
-			MaterialWidningEDITRecipe.Speed := MaterialWindingRecipe.Speed;
-			MaterialWidningEDITRecipe.Direction := MaterialWindingRecipe.Direction;
-			MaterialWidningEDITRecipe.Motor1PID.P := MaterialWindingRecipe.Motor1PID.P;
-			MaterialWidningEDITRecipe.Motor1PID.I := MaterialWindingRecipe.Motor1PID.I;
-			MaterialWidningEDITRecipe.Motor2PID.P := MaterialWindingRecipe.Motor2PID.P;
-			MaterialWidningEDITRecipe.Motor2PID.I := MaterialWindingRecipe.Motor2PID.I;
-			MaterialWidningEDITRecipe.Motor3PID.P := MaterialWindingRecipe.Motor3PID.P;
-			MaterialWidningEDITRecipe.Motor3PID.I := MaterialWindingRecipe.Motor3PID.I;
-			MaterialWidningEDITRecipe.RollLeft.MaxSize := MaterialWindingRecipe.RollLeft.MaxSize;
-			MaterialWidningEDITRecipe.RollLeft.MinSize := MaterialWindingRecipe.RollLeft.MinSize;
-			MaterialWidningEDITRecipe.RollRight.MaxSize := MaterialWindingRecipe.RollRight.MaxSize;
-			MaterialWidningEDITRecipe.RollRight.MinSize := MaterialWindingRecipe.RollRight.MinSize;
-			MaterialWidningEDITRecipe.DataRegistration := MaterialWindingRecipe.DataRegistration;
-			DialogOpen 							:= FALSE;
-		END_IF
-	
-		IF SaveRecipe THEN
-		
-		MaterialWindingRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
-		MaterialWindingRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
-		MaterialWindingRecipe.Speed := MaterialWidningEDITRecipe.Speed;
-		MaterialWindingRecipe.Direction := MaterialWidningEDITRecipe.Direction;
-		MaterialWindingRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
-		MaterialWindingRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
-		MaterialWindingRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
-		MaterialWindingRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
-		MaterialWindingRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
-		MaterialWindingRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
-		MaterialWindingRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
-		MaterialWindingRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
-		MaterialWindingRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
-		MaterialWindingRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
-		MaterialWindingRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
+	//Edit Recipe
+	IF RecipeControl.Edit.DialogOpen = TRUE THEN
+		MaterialWidningEDITRecipe.TensionLeft := gHMI.Recipe.CurrentRecipe.TensionLeft;
+		MaterialWidningEDITRecipe.TensionRight := gHMI.Recipe.CurrentRecipe.TensionRight;
+		MaterialWidningEDITRecipe.Speed := gHMI.Recipe.CurrentRecipe.Speed;
+		MaterialWidningEDITRecipe.Direction := gHMI.Recipe.CurrentRecipe.Direction;
+		MaterialWidningEDITRecipe.Motor1PID.P := gHMI.Recipe.CurrentRecipe.Motor1PID.P;
+		MaterialWidningEDITRecipe.Motor1PID.I := gHMI.Recipe.CurrentRecipe.Motor1PID.I;
+		MaterialWidningEDITRecipe.Motor2PID.P := gHMI.Recipe.CurrentRecipe.Motor2PID.P;
+		MaterialWidningEDITRecipe.Motor2PID.I := gHMI.Recipe.CurrentRecipe.Motor2PID.I;
+		MaterialWidningEDITRecipe.Motor3PID.P := gHMI.Recipe.CurrentRecipe.Motor3PID.P;
+		MaterialWidningEDITRecipe.Motor3PID.I := gHMI.Recipe.CurrentRecipe.Motor3PID.I;
+		MaterialWidningEDITRecipe.RollLeft.MaxSize := gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize;
+		MaterialWidningEDITRecipe.RollLeft.MinSize := gHMI.Recipe.CurrentRecipe.RollLeft.MinSize;
+		MaterialWidningEDITRecipe.RollRight.MaxSize := gHMI.Recipe.CurrentRecipe.RollRight.MaxSize;
+		MaterialWidningEDITRecipe.RollRight.MinSize := gHMI.Recipe.CurrentRecipe.RollRight.MinSize;
+		MaterialWidningEDITRecipe.DataRegistration := gHMI.Recipe.CurrentRecipe.DataRegistration;
+		MaterialWidningEDITRecipe.MaterialLength := gHMI.Recipe.CurrentRecipe.MaterialLength;
+		RecipeControl.Edit.DialogOpen							:= FALSE;
+	END_IF
 
-		END_IF
+	IF RecipeControl.Edit.SaveRecipe = TRUE THEN
+		gHMI.Recipe.CurrentRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
+		gHMI.Recipe.CurrentRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
+		gHMI.Recipe.CurrentRecipe.Speed := MaterialWidningEDITRecipe.Speed;
+		gHMI.Recipe.CurrentRecipe.Direction := MaterialWidningEDITRecipe.Direction;
+		gHMI.Recipe.CurrentRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
+		gHMI.Recipe.CurrentRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
+		gHMI.Recipe.CurrentRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
+		gHMI.Recipe.CurrentRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
+		gHMI.Recipe.CurrentRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
+		gHMI.Recipe.CurrentRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
+		gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
+		gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
+		gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
+		gHMI.Recipe.CurrentRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
+		gHMI.Recipe.CurrentRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
+		gHMI.Recipe.CurrentRecipe.MaterialLength := MaterialWidningEDITRecipe.MaterialLength;
+		UIConnect.New.FileName := MpRecepieXml_0.Info.LastLoadedRecipe;
+		UIConnect.New.Create := TRUE;
+		IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN
+			UIConnect.New.Create := FALSE;
+			RecipeControl.Edit.SaveRecipe := FALSE;
+		END_IF;
+		//MpRecepieXml_0.FileName := ADR(UIConnect.Recipe.List.Names[UIConnect.Recipe.List.SelectedIndex]);
+		//MpRecepieXml_0.Save	:= TRUE;
+
+	END_IF
+	
 
 END_ACTION
