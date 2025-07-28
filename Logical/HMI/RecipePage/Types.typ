@@ -12,6 +12,7 @@ TYPE
 		Edit : Edit_type;
 		LoadRecipe : STRING[80] := '0';
 		TableControl : TableControl_type;
+		Error : BOOL;
 	END_STRUCT;
 	ImageDirectory_type : 	STRUCT 
 		LeftArrow : STRING[80];

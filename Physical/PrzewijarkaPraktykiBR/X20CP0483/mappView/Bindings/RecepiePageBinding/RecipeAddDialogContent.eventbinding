@@ -21,6 +21,13 @@
           </Step>
         </Sequence>
       </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:RecipeControl.Error">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
     </EventBinding>
     <EventBinding id="RecipeAddDialogContent.BtnCancel.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="RecipeAddDialogContent" widgetRefId="BtnCancel" event="Click" />

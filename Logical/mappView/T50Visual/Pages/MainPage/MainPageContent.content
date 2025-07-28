@@ -1,20 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="MainPageContent" height="420" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Image" id="Image1" top="75" left="5" width="690" height="170" zIndex="0" image="Media/Image/g12.png" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrSizeLeftLabel" top="235" left="15" width="105" height="31" zIndex="1" multiLine="true" text="Aktualny rozmiar rolki" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrSizeRightLabel" top="235" left="580" width="105" zIndex="2" multiLine="true" text="Aktualny rozmiar rolki" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrLeftSizeNumOut" top="270" left="20" zIndex="3" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrRightSizeNumOut" top="270" left="580" zIndex="4" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="LeftDencerLabel" top="245" left="180" width="85" height="36" zIndex="5" multiLine="true" text="Wysokosc napinacza" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="RightDencerLabel" top="245" left="435" width="85" height="36" zIndex="6" multiLine="true" text="Wysokosc napinacza" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="DenserLeftNumOut" top="285" left="173" zIndex="7" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="DenserRightNumOut" top="285" left="428" zIndex="8" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="65" left="5" width="690" height="170" zIndex="0" image="Media/Image/g12.png" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrSizeLeftLabel" top="225" left="15" width="105" height="31" zIndex="1" multiLine="true" text="Aktualny rozmiar rolki" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrSizeRightLabel" top="225" left="580" width="105" zIndex="2" multiLine="true" text="Aktualny rozmiar rolki" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrLeftSizeNumOut" top="260" left="20" zIndex="3" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrRightSizeNumOut" top="260" left="580" zIndex="4" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="LeftDencerLabel" top="235" left="180" width="85" height="36" zIndex="5" multiLine="true" text="Wysokosc napinacza" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="RightDencerLabel" top="235" left="435" width="85" height="36" zIndex="6" multiLine="true" text="Wysokosc napinacza" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DenserLeftNumOut" top="275" left="173" zIndex="7" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DenserRightNumOut" top="275" left="428" zIndex="8" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" textAlign="center" />
     <Widget xsi:type="widgets.brease.Label" id="CurrPackMLState" top="20" left="5" width="170" zIndex="9" text="Aktualny stan PackML:" />
     <Widget xsi:type="widgets.brease.TextOutput" id="PackMLStateTextOut" top="20" left="180" width="510" zIndex="10" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrLaneSpeedLabel" top="205" left="309" height="35" zIndex="11" multiLine="true" text="Aktualna predkosc" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrLaneSpeedNumOut" top="245" left="290" width="120" zIndex="12" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrLaneSpeedLabel" top="195" left="309" height="35" zIndex="11" multiLine="true" text="Aktualna predkosc" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrLaneSpeedNumOut" top="235" left="290" width="120" zIndex="12" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" textAlign="center" />
     <Widget xsi:type="widgets.brease.ProgressBar" id="WindingProgressBar" top="375" left="25" width="649" zIndex="13" />
     <Widget xsi:type="widgets.brease.Label" id="WingingProgressLabel" top="340" left="277" width="145" height="20" zIndex="14" text="Postep przewijania" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollLeftSize" top="295" left="20" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollRightSize" top="295" left="580" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="SaveAdjRollLeft" top="335" left="20" zIndex="17" text="Zapisz" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="SaveAdjRollRight" top="335" left="580" zIndex="18" text="Zapisz" />
   </Widgets>
 </Content>

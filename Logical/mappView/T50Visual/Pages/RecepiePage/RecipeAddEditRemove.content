@@ -15,6 +15,7 @@
     <Widget xsi:type="widgets.brease.Button" id="BtnRemove" top="295" left="315" width="80" height="80" zIndex="7" image="Media/SymbolLib/Edit/Delete.svg" imageHeight="50" imageWidth="50" />
     <Widget xsi:type="widgets.brease.Button" id="BtnNewRecipe" top="295" left="213" width="80" height="80" zIndex="8" image="Media/SymbolLib/Edit/New.svg" imageHeight="50" imageWidth="50" />
     <Widget xsi:type="widgets.brease.Label" id="CurrRecLabel" top="305" left="485" width="130" height="15" zIndex="9" text="Aktualna receptura:" fontSize="15px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="CurRecTextOut" top="340" left="420" width="260" height="25" zIndex="10" textAlign="center" fontSize="15px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="CurRecTextOut" top="345" left="420" width="260" height="25" zIndex="10" textAlign="center" fontSize="15px" />
+    <Widget xsi:type="widgets.brease.Label" id="ErrorLabel" top="320" left="419" width="262" height="25" zIndex="11" text="WCZYTAJ RECEPTURE!" textColor="rgba(255, 0, 0, 1)" textAlign="center" fontSize="20px" bold="true" visible="false" />
   </Widgets>
 </Content>

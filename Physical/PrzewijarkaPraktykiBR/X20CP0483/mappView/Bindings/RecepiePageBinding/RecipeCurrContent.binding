@@ -106,5 +106,10 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Dencer1PID.P" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="Dencer1PNumOut" attribute="node" />
 </Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:RecipeControl.Error" attribute="value" />
+<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="ErrorLabel" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

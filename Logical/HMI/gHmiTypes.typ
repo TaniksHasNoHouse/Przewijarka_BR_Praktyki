@@ -7,6 +7,21 @@ TYPE
 		ControlBtn : ControlBtn_type;
 		Charts : Charts_type;
 		ModuleOK : ModuleOK_type;
+		Main : MainPage_type;
+	END_STRUCT;
+END_TYPE
+
+(*Main page*)
+
+TYPE
+	RollAdj_type : 	STRUCT 
+		Left : BOOL;
+		Right : BOOL;
+		LeftNum : REAL;
+		RightNum : REAL;
+	END_STRUCT;
+	MainPage_type : 	STRUCT 
+		RollAdj : RollAdj_type;
 	END_STRUCT;
 END_TYPE
 
@@ -33,9 +48,9 @@ TYPE
 		EnableEditing : BOOL;
 	END_STRUCT;
 	CurrentRecipe_type : 	STRUCT 
-		TensionLeft : USINT := 0; (* Naci¹g lewy, zakres 0–14 cm *)
-		TensionRight : USINT := 0; (* Naci¹g prawy, zakres 0–14 cm *)
-		Speed : USINT := 0; (* Prêdkoœæ taœmy w m/s *)
+		TensionLeft : REAL := 0.0; (* Naci¹g lewy, zakres 0–14 cm *)
+		TensionRight : REAL := 0.0; (* Naci¹g prawy, zakres 0–14 cm *)
+		Speed : REAL := 0.0; (* Prêdkoœæ taœmy w m/s *)
 		Direction : BOOL := FALSE; (* Kierunek ruchu: FALSE = lewo, TRUE = prawo *)
 		RollLeft : MaxMinRollSize_type;
 		RollRight : MaxMinRollSize_type;
@@ -62,8 +77,8 @@ TYPE
 		Activate : BOOL;
 		JogLeft : BOOL;
 		JogRight : BOOL;
-		SetBeltSpeedRight : USINT;
-		SetBeltSpeedLeft : USINT;
+		SetBeltSpeedRight : REAL;
+		SetBeltSpeedLeft : REAL;
 	END_STRUCT;
 	JogMotors_type : 	STRUCT 
 		Motor1 : manMotor_type;
@@ -78,7 +93,7 @@ TYPE
 	manMotor_type : 	STRUCT 
 		Activate : BOOL;
 		Home : BOOL;
-		Speed : USINT;
+		Speed : REAL;
 		Left : BOOL;
 		Right : BOOL;
 	END_STRUCT;

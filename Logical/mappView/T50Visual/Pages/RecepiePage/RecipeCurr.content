@@ -32,5 +32,6 @@
     <Widget xsi:type="widgets.brease.Image" id="DataRecordImage" top="330" left="600" width="45" height="45" zIndex="28" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="MaterialWindingLenght" top="213" left="565" width="120" zIndex="29" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" fontSize="14px" />
     <Widget xsi:type="widgets.brease.Label" id="Speedlabel1" top="215" left="380" width="155" height="26" zIndex="30" text="Długość do przewinięcia:" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="ErrorLabel" top="5" left="430" width="262" height="25" zIndex="31" text="WCZYTAJ RECEPTURE!" textColor="rgba(255, 0, 0, 1)" textAlign="center" fontSize="20px" bold="true" visible="false" />
   </Widgets>
 </Content>
