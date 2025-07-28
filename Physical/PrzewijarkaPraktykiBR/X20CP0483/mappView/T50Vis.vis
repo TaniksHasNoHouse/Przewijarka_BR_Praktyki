@@ -30,7 +30,6 @@
     <BindingsSet refId="ManualRegulators_binding" />
   </BindingsSets>
   <EventBindingsSets>
-    <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
     <EventBindingsSet refId="UserManagementPageUsers_eventbinding" />
     <EventBindingsSet refId="DiagnosticsPageAudit_eventbinding" />
@@ -38,6 +37,7 @@
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
     <EventBindingsSet refId="RecipeEditContent_eventbinding" />
+    <EventBindingsSet refId="ContentTop_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />

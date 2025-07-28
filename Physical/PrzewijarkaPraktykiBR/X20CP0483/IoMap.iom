@@ -1,9 +1,6 @@
 VAR_CONFIG
 	::gTensionLogic.Status.ActRightDancerPos AT %IW."X20AI2437".AnalogInput01;
 	::gTensionLogic.Status.ActLeftDancerPos AT %IW."X20AI2437".AnalogInput02;
-	::gHMI.ControlBtn.Start AT %IX."4XP0057.00-00W".DigitalInput01;
-	::gHMI.ControlBtn.Stop AT %IX."4XP0057.00-00W".DigitalInput02;
-	::gHMI.ControlBtn.Reset AT %IX."4XP0057.00-00W".DigitalInput03;
 	::gMainLogic.Cmd.Abort AT %IX."4XP0057.00-00W".DigitalInput04;
 	::gHMI.ModuleOK.PowerSupply AT %IX."X20PS9600".ModuleOk;
 	::gHMI.ModuleOK.AnalogInput AT %IX."X20AI2437".ModuleOk;

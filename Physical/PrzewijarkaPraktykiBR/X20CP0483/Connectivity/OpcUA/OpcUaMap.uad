@@ -4,21 +4,127 @@
   <Aliases>
     <ACLAliases />
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">110</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="2">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">10</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="3">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">150</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="4">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">50</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="5">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">15</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="6">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">1.5</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="7">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">800</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="gMainLogic" RecursiveEnable="2" />
-        <Variable Name="gHMI" RecursiveEnable="2" />
+        <Variable Name="gHMI" RecursiveEnable="2">
+          <Variable Name="Recipe">
+            <Variable Name="CurrentRecipe">
+              <Variable Name="TensionLeft" EURangesId="1" />
+              <Variable Name="TensionRight" EURangesId="1" />
+              <Variable Name="Speed" EURangesId="2" />
+              <Variable Name="RollLeft">
+                <Variable Name="MaxSize" EURangesId="3" />
+                <Variable Name="MinSize" EURangesId="4" />
+              </Variable>
+              <Variable Name="RollRight">
+                <Variable Name="MaxSize" EURangesId="3" />
+                <Variable Name="MinSize" EURangesId="4" />
+              </Variable>
+              <Variable Name="MaterialLength" EURangesId="2" />
+              <Variable Name="Dencer1PID">
+                <Variable Name="P" EURangesId="5" />
+                <Variable Name="I" EURangesId="6" />
+              </Variable>
+              <Variable Name="Dencer2PID">
+                <Variable Name="P" EURangesId="5" />
+                <Variable Name="I" EURangesId="6" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Manual">
+            <Variable Name="JogLeftRight">
+              <Variable Name="SetBeltSpeedRight" EURangesId="2" />
+              <Variable Name="SetBeltSpeedLeft" EURangesId="2" />
+            </Variable>
+            <Variable Name="JogMotors">
+              <Variable Name="Motor1">
+                <Variable Name="Speed" EURangesId="7" />
+              </Variable>
+              <Variable Name="Motor2">
+                <Variable Name="Speed" EURangesId="7" />
+              </Variable>
+              <Variable Name="Motor3">
+                <Variable Name="Speed" EURangesId="7" />
+              </Variable>
+            </Variable>
+          </Variable>
+        </Variable>
         <Variable Name="gTensionLogic" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
         <Variable Name="MpRecepieXml_0" RecursiveEnable="2" />
         <Variable Name="ImageDirectory" RecursiveEnable="2" />
-        <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2" />
+        <Variable Name="MaterialWidningEDITRecipe" RecursiveEnable="2">
+          <Variable Name="TensionLeft" EURangesId="1" />
+          <Variable Name="TensionRight" EURangesId="1" />
+          <Variable Name="Speed" EURangesId="2" />
+          <Variable Name="RollLeft">
+            <Variable Name="MaxSize" EURangesId="3" />
+            <Variable Name="MinSize" EURangesId="4" />
+          </Variable>
+          <Variable Name="RollRight">
+            <Variable Name="MaxSize" EURangesId="3" />
+            <Variable Name="MinSize" EURangesId="3" />
+          </Variable>
+          <Variable Name="MaterialLength" EURangesId="2" />
+          <Variable Name="Dencer1PID">
+            <Variable Name="P" EURangesId="5" />
+            <Variable Name="I" EURangesId="6" />
+          </Variable>
+          <Variable Name="Dencer2PID">
+            <Variable Name="P" EURangesId="5" />
+            <Variable Name="I" EURangesId="6" />
+          </Variable>
+        </Variable>
         <Variable Name="RecipeControl" RecursiveEnable="2" />
       </Task>
       <Task Name="AuditPage">
