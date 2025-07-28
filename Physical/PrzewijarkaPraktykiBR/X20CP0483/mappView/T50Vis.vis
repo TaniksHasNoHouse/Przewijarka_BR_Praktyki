@@ -9,8 +9,7 @@
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
     <Page refId="DataPage" />
-    <Page refId="SpecialPage" />
-  </Pages>
+	</Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />
@@ -79,8 +78,7 @@
     <Content refId="ChartsPageData" />
     <Content refId="ChartsPageTabs" />
     <Content refId="ChartsPageVtape" />
-    <Content refId="SpecialPageContent" />
-  </Contents>
+	</Contents>
   <SnippetsSets />
   <VariablesSets>
     <VariablesSet refId="SessionVariables" />

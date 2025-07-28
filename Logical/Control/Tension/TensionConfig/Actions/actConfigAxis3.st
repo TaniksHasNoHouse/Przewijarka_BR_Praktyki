@@ -11,7 +11,6 @@ ACTION actConfigAxis3:
 	TensionConfigType[2].Utilization.Winder.MinimumDiameter := 30.0;
 	TensionConfigType[2].Utilization.Winder.MaximumDiameter := 80.0;
 	TensionConfigType[2].Utilization.Winder.Winding := mpTENSION_WINDING_FROM_TOP;
-	TensionConfigType[2].Utilization.DiameterEstimation.EstimationWindow := mpTENSION_EST_MODE_POSITION;
 	
 	TensionConfigType[2].Controller.Type := mpTENSION_CONTROL_DANCER;
 	TensionConfigType[2].Controller.Mode := mpTENSION_CONTROL_CLOSED_LOOP;

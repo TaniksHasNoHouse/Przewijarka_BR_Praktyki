@@ -14,8 +14,8 @@ TYPE
 		GroupLineVelocity : REAL; (*in m/min*)
 	END_STRUCT;
 	StatusTensionType : 	STRUCT 
-		ActRightDancerPos : INT;
-		ActLeftDancerPos : INT;
+		ActRightDancerPos : REAL;
+		ActLeftDancerPos : REAL;
 		LeftWinderDiameter : REAL;
 		RightWinderDiameter : REAL;
 		LineIsInMove : BOOL;
