@@ -23,12 +23,10 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
 				gHMI.Recipe.CurrentRecipe.Speed := 5;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
@@ -51,12 +49,10 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
 				gHMI.Recipe.CurrentRecipe.Speed := 5;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
@@ -80,12 +76,10 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
 				gHMI.Recipe.CurrentRecipe.Speed := 5;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
@@ -108,12 +102,10 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
 				gHMI.Recipe.CurrentRecipe.Speed := 5;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Motor3PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
@@ -159,12 +151,10 @@ ACTION actRecipeManage:
 		MaterialWidningEDITRecipe.TensionRight := gHMI.Recipe.CurrentRecipe.TensionRight;
 		MaterialWidningEDITRecipe.Speed := gHMI.Recipe.CurrentRecipe.Speed;
 		MaterialWidningEDITRecipe.Direction := gHMI.Recipe.CurrentRecipe.Direction;
-		MaterialWidningEDITRecipe.Motor1PID.P := gHMI.Recipe.CurrentRecipe.Motor1PID.P;
-		MaterialWidningEDITRecipe.Motor1PID.I := gHMI.Recipe.CurrentRecipe.Motor1PID.I;
-		MaterialWidningEDITRecipe.Motor2PID.P := gHMI.Recipe.CurrentRecipe.Motor2PID.P;
-		MaterialWidningEDITRecipe.Motor2PID.I := gHMI.Recipe.CurrentRecipe.Motor2PID.I;
-		MaterialWidningEDITRecipe.Motor3PID.P := gHMI.Recipe.CurrentRecipe.Motor3PID.P;
-		MaterialWidningEDITRecipe.Motor3PID.I := gHMI.Recipe.CurrentRecipe.Motor3PID.I;
+		MaterialWidningEDITRecipe.Dencer1PID.P := gHMI.Recipe.CurrentRecipe.Dencer1PID.P;
+		MaterialWidningEDITRecipe.Dencer1PID.I := gHMI.Recipe.CurrentRecipe.Dencer1PID.I;
+		MaterialWidningEDITRecipe.Dencer2PID.P := gHMI.Recipe.CurrentRecipe.Dencer2PID.P;
+		MaterialWidningEDITRecipe.Dencer2PID.I := gHMI.Recipe.CurrentRecipe.Dencer2PID.I;
 		MaterialWidningEDITRecipe.RollLeft.MaxSize := gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize;
 		MaterialWidningEDITRecipe.RollLeft.MinSize := gHMI.Recipe.CurrentRecipe.RollLeft.MinSize;
 		MaterialWidningEDITRecipe.RollRight.MaxSize := gHMI.Recipe.CurrentRecipe.RollRight.MaxSize;
@@ -179,12 +169,10 @@ ACTION actRecipeManage:
 		gHMI.Recipe.CurrentRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
 		gHMI.Recipe.CurrentRecipe.Speed := MaterialWidningEDITRecipe.Speed;
 		gHMI.Recipe.CurrentRecipe.Direction := MaterialWidningEDITRecipe.Direction;
-		gHMI.Recipe.CurrentRecipe.Motor1PID.P := MaterialWidningEDITRecipe.Motor1PID.P;
-		gHMI.Recipe.CurrentRecipe.Motor1PID.I := MaterialWidningEDITRecipe.Motor1PID.I;
-		gHMI.Recipe.CurrentRecipe.Motor2PID.P := MaterialWidningEDITRecipe.Motor2PID.P;
-		gHMI.Recipe.CurrentRecipe.Motor2PID.I := MaterialWidningEDITRecipe.Motor2PID.I;
-		gHMI.Recipe.CurrentRecipe.Motor3PID.P := MaterialWidningEDITRecipe.Motor3PID.P;
-		gHMI.Recipe.CurrentRecipe.Motor3PID.I := MaterialWidningEDITRecipe.Motor3PID.I;
+		gHMI.Recipe.CurrentRecipe.Dencer1PID.P := MaterialWidningEDITRecipe.Dencer1PID.P;
+		gHMI.Recipe.CurrentRecipe.Dencer1PID.I := MaterialWidningEDITRecipe.Dencer1PID.I;
+		gHMI.Recipe.CurrentRecipe.Dencer2PID.P := MaterialWidningEDITRecipe.Dencer2PID.P;
+		gHMI.Recipe.CurrentRecipe.Dencer2PID.I := MaterialWidningEDITRecipe.Dencer2PID.I;
 		gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := MaterialWidningEDITRecipe.RollLeft.MaxSize;
 		gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := MaterialWidningEDITRecipe.RollLeft.MinSize;
 		gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
@@ -197,10 +185,8 @@ ACTION actRecipeManage:
 			UIConnect.New.Create := FALSE;
 			RecipeControl.Edit.SaveRecipe := FALSE;
 		END_IF;
-		//MpRecepieXml_0.FileName := ADR(UIConnect.Recipe.List.Names[UIConnect.Recipe.List.SelectedIndex]);
-		//MpRecepieXml_0.Save	:= TRUE;
 
 	END_IF
-	
+
 
 END_ACTION

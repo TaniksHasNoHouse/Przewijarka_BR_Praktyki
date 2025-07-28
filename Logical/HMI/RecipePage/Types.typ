@@ -13,19 +13,6 @@ TYPE
 		LoadRecipe : STRING[80] := '0';
 		TableControl : TableControl_type;
 	END_STRUCT;
-	MaterialWindingRec_type : 	STRUCT 
-		TensionLeft : USINT := 0; (* Naci¹g lewy, zakres 0–14 cm *)
-		TensionRight : USINT := 0; (* Naci¹g prawy, zakres 0–14 cm *)
-		Speed : USINT := 0; (* Prêdkoœæ taœmy w m/s *)
-		Direction : BOOL := FALSE; (* Kierunek ruchu: FALSE = lewo, TRUE = prawo *)
-		Motor1PID : MotorPID_type;
-		Motor2PID : MotorPID_type;
-		Motor3PID : MotorPID_type;
-		RollLeft : MaxMinRollSize_type;
-		RollRight : MaxMinRollSize_type;
-		DataRegistration : BOOL := FALSE; (* Rejestracja danych: FALSE = wy³., TRUE = w³. *)
-		MaterialLength : REAL;
-	END_STRUCT;
 	ImageDirectory_type : 	STRUCT 
 		LeftArrow : STRING[80];
 		RightArrow : STRING[80];

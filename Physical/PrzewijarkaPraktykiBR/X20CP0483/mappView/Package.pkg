@@ -11,6 +11,5 @@
     <Object Type="File">ChartsPageAxis1.binding</Object>
     <Object Type="File">ChartsPageAxis2.binding</Object>
     <Object Type="File">ChartsPageAxis3.binding</Object>
-    <Object Type="File">MainPageContent.binding</Object>
   </Objects>
 </Package>
