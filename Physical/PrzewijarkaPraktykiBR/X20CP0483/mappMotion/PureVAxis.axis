@@ -21,7 +21,7 @@
       <Property ID="VelocityIsReadOnly" Value="0" />
       <Selector ID="Velocity">
         <Property ID="VelocityMax" Value="3.4E38" />
-        <Property ID="Velocity" Value="500.0" />
+        <Property ID="Velocity" Value="10000" />
       </Selector>
       <Property ID="AccelerationIsReadOnly" Value="0" />
       <Selector ID="Acceleration">

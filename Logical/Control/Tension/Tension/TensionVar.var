@@ -15,6 +15,9 @@ VAR
 	TensionGroup : MpTensionGroup;
 	ActLeftDancerPosScal : REAL;
 	Distance : REAL;
+	SetRightDancerPos : REAL := 50.0;
+	SetLeftDancerPos : REAL := 50.0;
 	ActRightDancerPosScal : REAL;
 	MV_ABS : BOOL;
+	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
 END_VAR

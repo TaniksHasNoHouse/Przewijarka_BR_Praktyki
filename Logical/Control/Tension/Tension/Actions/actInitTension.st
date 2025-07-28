@@ -12,6 +12,7 @@ ACTION actInitTension:
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
     
 		TensionController[i].Enable := TRUE;
+		MpAxisBasicFB[i].Enable := TRUE;
 		
 	END_FOR;
 	
@@ -19,4 +20,9 @@ ACTION actInitTension:
 	TensionController[2].PresetDiameter := RightWinderDiameter;
 	TensionController[0].SetPresetDiameter := TRUE;
 	TensionController[2].SetPresetDiameter := TRUE;
+	
+	MpAxisBasicFB[0].MpLink := ADR(gAxis_1);
+	MpAxisBasicFB[1].MpLink := ADR(gAxis_2);
+	MpAxisBasicFB[2].MpLink := ADR(gAxis_3);
+	
 END_ACTION
