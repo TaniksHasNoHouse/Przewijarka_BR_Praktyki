@@ -1,5 +1,5 @@
 VAR
-	MaterialWidningEDITRecipe : MaterialWindingRec_type;
+	MaterialWidningEDITRecipe : CurrentRecipe_type;
 	MpRecepieXml_0 : MpRecipeXml;
 	MpRecipeRegPar_0 : MpRecipeRegPar;
 	MpRecipeUI_0 : MpRecipeUI;

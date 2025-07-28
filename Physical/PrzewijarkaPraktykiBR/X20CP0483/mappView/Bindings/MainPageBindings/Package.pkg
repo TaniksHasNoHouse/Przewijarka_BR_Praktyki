@@ -2,8 +2,6 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">ManualMoveMotor.binding</Object>
-    <Object Type="File">ManualLeftRight.binding</Object>
-    <Object Type="File">ManualRegulators.binding</Object>
+    <Object Type="File">MainPageContent.binding</Object>
   </Objects>
 </Package>

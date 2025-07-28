@@ -12,29 +12,26 @@
     <Widget xsi:type="widgets.brease.Label" id="Speedlabel" top="273" left="0" width="140" height="26" zIndex="8" text="Predkosc nawijania:" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="DirectionLabel" top="35" left="360" width="120" height="26" zIndex="9" text="Kierunek nawijania:" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="RecordDataLabel1" top="75" left="360" width="105" height="26" zIndex="10" text="Zapis danych:" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="Motor1Label" top="240" left="390" width="45" height="26" zIndex="11" text="Silnik1" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="Motor2Label" top="240" left="463" width="45" height="26" zIndex="12" text="Silnik2" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="Motor3Label" top="240" left="535" width="45" height="26" zIndex="13" text="Silnik3" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="RegPLabel" top="275" left="365" width="20" height="26" zIndex="14" text="P" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="RegILabel" top="314" left="365" width="20" height="26" zIndex="15" text="I" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollLeftNumIn" top="35" left="240" width="115" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollLeftNumIn" top="75" left="240" width="115" zIndex="17" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollRightNumIn" top="115" left="240" width="115" zIndex="18" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollRightNumIn" top="154" left="240" width="115" zIndex="19" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="RightDancerNumIn" top="193" left="240" width="115" zIndex="20" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="LeftDancerNumIn" top="232" left="240" width="115" zIndex="21" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="WindingSpeedNumIn" top="271" left="240" width="115" zIndex="22" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor1PNumIn" top="271" left="385" width="60" zIndex="23" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor2PNumIn" top="271" left="458" width="60" zIndex="24" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor3PNumIn" top="271" left="530" width="60" zIndex="25" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor1INumIn" top="310" left="385" width="60" zIndex="26" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor2INumIn" top="310" left="458" width="60" zIndex="27" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor3INumIn" top="310" left="530" width="60" zIndex="28" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WidningDirSwitch" top="33" left="485" zIndex="29" mouseDownText="Prawo" text="Lewo" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="DataRecordSwitch" top="73" left="485" zIndex="30" mouseDownText="ON" text="OFF" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="355" left="175" zIndex="31" text="Zapisz" />
-    <Widget xsi:type="widgets.brease.Button" id="BtnCancel" top="355" left="300" zIndex="32" text="Anuluj" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaterialLenghtNumIn" top="310" left="240" width="115" zIndex="33" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.Label" id="MaterialWindingLenghtLabel" top="312" left="0" width="200" height="26" zIndex="34" text="Długość materialu do nawinięcia:" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="Dencer1Label" top="240" left="415" width="55" height="26" zIndex="11" text="Dencer1" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="Dencer2Label" top="240" left="500" width="57" height="26" zIndex="12" text="Dencer2" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="RegPLabel" top="274" left="385" width="20" height="26" zIndex="13" text="P" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="RegILabel" top="313" left="385" width="20" height="26" zIndex="14" text="I" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollLeftNumIn" top="35" left="240" width="115" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollLeftNumIn" top="75" left="240" width="115" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollRightNumIn" top="115" left="240" width="115" zIndex="17" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollRightNumIn" top="154" left="240" width="115" zIndex="18" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="RightDancerNumIn" top="193" left="240" width="115" zIndex="19" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="LeftDancerNumIn" top="232" left="240" width="115" zIndex="20" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="WindingSpeedNumIn" top="271" left="240" width="115" zIndex="21" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dancer1PNumIn" top="270" left="405" width="75" zIndex="22" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2PNumIn" top="270" left="490" width="75" zIndex="23" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer1INumIn" top="309" left="405" width="75" zIndex="24" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2INumIn" top="309" left="490" width="75" zIndex="25" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WidningDirSwitch" top="33" left="485" zIndex="26" mouseDownText="Prawo" text="Lewo" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="DataRecordSwitch" top="73" left="485" zIndex="27" mouseDownText="ON" text="OFF" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="355" left="175" zIndex="28" text="Zapisz" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnCancel" top="355" left="300" zIndex="29" text="Anuluj" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MaterialLenghtNumIn" top="310" left="240" width="115" zIndex="30" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.Label" id="MaterialWindingLenghtLabel" top="312" left="0" width="200" height="26" zIndex="31" text="Długość materialu do nawinięcia:" fontSize="13px" />
   </Widgets>
 </Content>

@@ -1,12 +1,12 @@
 VAR_CONFIG
 	::gTensionLogic.Status.ActRightDancerPos AT %IW."X20AI2437".AnalogInput01;
 	::gTensionLogic.Status.ActLeftDancerPos AT %IW."X20AI2437".AnalogInput02;
-	::gMainLogic.Cmd.Start AT %IX."4XP0057.00-00W".DigitalInput01;
-	::gMainLogic.Cmd.Stop AT %IX."4XP0057.00-00W".DigitalInput02;
-	::gMainLogic.Cmd.Reset AT %IX."4XP0057.00-00W".DigitalInput03;
+	::gHMI.ControlBtn.Start AT %IX."4XP0057.00-00W".DigitalInput01;
+	::gHMI.ControlBtn.Stop AT %IX."4XP0057.00-00W".DigitalInput02;
+	::gHMI.ControlBtn.Reset AT %IX."4XP0057.00-00W".DigitalInput03;
 	::gMainLogic.Cmd.Abort AT %IX."4XP0057.00-00W".DigitalInput04;
-	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput01;
-	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput07;
-	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput14;
-	::MainContro:xd AT %QX."4XP0057.00-00W".DigitalOutput12;
+	::gHMI.ModuleOK.PowerSupply AT %IX."X20PS9600".ModuleOk;
+	::gHMI.ModuleOK.AnalogInput AT %IX."X20AI2437".ModuleOk;
+	::gHMI.ModuleOK.SystemBusTransmitter AT %IX."X20BT9100".ModuleOk;
+	::gHMI.ModuleOK.ControlKeypad AT %IX."4XP0057.00-00W".ModuleOk;
 END_VAR

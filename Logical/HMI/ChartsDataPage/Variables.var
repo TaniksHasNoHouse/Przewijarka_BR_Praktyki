@@ -1,9 +1,8 @@
 VAR
-	StartRecording : BOOL;
-	MpDataRegPar_0 : MpDataRegPar;
 	MpDataRecorder_0 : MpDataRecorder;
-	Unit : STRING[20] := 'mm';
-	Description : STRING[50] := 'Test';
-	Name : STRING[100] := 'Charts.Dancer1';
-	StartTrigger : BOOL;
+	MpDataRegPar_0 : MpDataRegPar;
+	MpDataRegPar_1 : MpDataRegPar;
+	MpDataRegPar_2 : MpDataRegPar;
+	MpDataRegPar_3 : MpDataRegPar;
+	MpDataRegPar_4 : MpDataRegPar;
 END_VAR

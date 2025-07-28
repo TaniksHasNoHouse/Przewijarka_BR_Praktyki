@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainPageContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Main.RollAdj.Left" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="SaveAdjRollLeft" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Main.RollAdj.Right" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="SaveAdjRollRight" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Main.RollAdj.LeftNum" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="AdjustAccRollLeftSize" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Main.RollAdj.RightNum" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="AdjustAccRollRightSize" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

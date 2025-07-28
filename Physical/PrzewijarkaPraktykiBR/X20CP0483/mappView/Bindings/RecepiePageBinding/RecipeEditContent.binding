@@ -1,30 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="RecipeEditContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor3PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor3INumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor3PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor3PNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor2PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor2INumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor2PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor2PNumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor1PID.I" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor1INumIn" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Motor1PID.P" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Motor1PNumIn" attribute="node" />
-</Binding>
+
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.DataRegistration" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="DataRecordSwitch" attribute="value" />
@@ -68,6 +49,23 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.MaterialLength" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="MaterialLenghtNumIn" attribute="node" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Dencer2PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Dencer2INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Dencer2PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Dencer2PNumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Dencer1PID.I" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Dencer1INumIn" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::RecipePage:MaterialWidningEDITRecipe.Dencer1PID.P" attribute="node" />
+<Target xsi:type="brease" contentRefId="RecipeEditContent" widgetRefId="Dencer1PNumIn" attribute="node" />
 </Binding>
 </Bindings>
 </BindingsSet>
