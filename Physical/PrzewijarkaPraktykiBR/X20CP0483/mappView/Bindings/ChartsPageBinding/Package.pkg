@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">ChartsPageDancer1.binding</Object>
+    <Object Type="File">ChartsPageDancer2.binding</Object>
+    <Object Type="File">ChartsPageVtape.binding</Object>
+    <Object Type="File">ChartsPageAxis1.binding</Object>
+    <Object Type="File">ChartsPageAxis2.binding</Object>
+    <Object Type="File">ChartsPageAxis3.binding</Object>
+    <Object Type="File">ChartsPageData.binding</Object>
+  </Objects>
+</Package>

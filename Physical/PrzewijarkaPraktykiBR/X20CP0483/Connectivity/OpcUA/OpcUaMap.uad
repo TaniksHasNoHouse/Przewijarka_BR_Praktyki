@@ -27,13 +27,7 @@
       <Task Name="MainContro">
         <Variable Name="xd" />
       </Task>
-      <Task Name="ChartsPage">
-        <Variable Name="Unit" />
-        <Variable Name="Description" />
-        <Variable Name="Name" />
-        <Variable Name="StartRecording" />
-        <Variable Name="StartTrigger" />
-      </Task>
+      <Task Name="ChartsPage" />
       <Task Name="MainPage">
         <Variable Name="PackMLInfo" RecursiveEnable="2" />
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
