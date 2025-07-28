@@ -7,14 +7,14 @@ TYPE
 		Status : StatusTensionType;
 		GroupLineVelocity : REAL;
 	END_STRUCT;
-	CommandTensionType : STRUCT
+	CommandTensionType : 	STRUCT 
 		SetRightDancerPos : REAL;
 		SetLeftDancerPos : REAL;
 	END_STRUCT;
-	ParameterTensionType : STRUCT 
+	ParameterTensionType : 	STRUCT 
 		a : BOOL;
 	END_STRUCT;
-	StatusTensionType : STRUCT 
+	StatusTensionType : 	STRUCT 
 		ActRightDancerPos : INT;
 		ActLeftDancerPos : INT;
 		LeftWinderDiameter : REAL;
@@ -62,7 +62,18 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
-		a : BOOL;
+		Axis1DancerPara : Axis1ParaDancerPID;
+		Axis1PID : Axis1ParaPID;
+	END_STRUCT;
+	Axis1ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis1ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
 		a : BOOL;
@@ -71,7 +82,12 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
-		a : BOOL;
+		Axis2PID : Axis2ParaPID;
+	END_STRUCT;
+	Axis2ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
 		a : BOOL;
@@ -80,7 +96,18 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
-		a : BOOL;
+		Axis3DancerPara : Axis3ParaDancerPID;
+		Axis3PID : Axis3ParaPID;
+	END_STRUCT;
+	Axis3ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis3ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
 		a : BOOL;
