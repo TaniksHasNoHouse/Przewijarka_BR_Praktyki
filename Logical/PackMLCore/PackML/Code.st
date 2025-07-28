@@ -2,7 +2,8 @@
 PROGRAM _INIT
 	(* Insert code here *)
 	MpPackMLCore_0(MpLink := ADR(gPackMLCore), Enable := TRUE);
-	MpPackMLMode_0(MpLink := ADR(gPackMLCore), Enable := TRUE);
+	MpPackMLMode_0(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_PRODUCTION);
+	MpPackMLMode_1(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_MANUAL);
 END_PROGRAM
 
 PROGRAM _CYCLIC
