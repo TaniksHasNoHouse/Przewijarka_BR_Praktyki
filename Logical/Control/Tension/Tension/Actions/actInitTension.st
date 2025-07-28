@@ -16,10 +16,10 @@ ACTION actInitTension:
 		
 	END_FOR;
 	
-	//TensionController[0].PresetDiameter := LeftWinderDiameter;
-	//TensionController[2].PresetDiameter := RightWinderDiameter;
-	//TensionController[0].SetPresetDiameter := TRUE;
-	//TensionController[2].SetPresetDiameter := TRUE;
+	TensionController[0].PresetDiameter := LeftWinderDiameter;
+	TensionController[2].PresetDiameter := RightWinderDiameter;
+	TensionController[0].SetPresetDiameter := TRUE;
+	TensionController[2].SetPresetDiameter := TRUE;
 	
 	MpAxisBasicFB[0].MpLink := ADR(gAxis_1);
 	MpAxisBasicFB[1].MpLink := ADR(gAxis_2);
