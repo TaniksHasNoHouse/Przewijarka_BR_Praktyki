@@ -16,15 +16,15 @@ ACTION actStopping:
         
 		ELSIF gMainLogic.Mode = PACKML_MODE_MANUAL THEN
 			// Manual mode stopping - stop all axes
-			MainLogic.MotorMode.Manual.Axis1.Cmd.JogAxis := FALSE;
-			MainLogic.MotorMode.Manual.Axis2.Cmd.JogAxis := FALSE;
-			MainLogic.MotorMode.Manual.Axis3.Cmd.JogAxis := FALSE;
-			MainLogic.MotorMode.Manual.JogWithTenReg := FALSE;
+			gMainLogic.MotorMode.Manual.Axis1.Cmd.JogAxis := FALSE;
+			gMainLogic.MotorMode.Manual.Axis2.Cmd.JogAxis := FALSE;
+			gMainLogic.MotorMode.Manual.Axis3.Cmd.JogAxis := FALSE;
+			gMainLogic.MotorMode.Manual.JogWithTenReg := FALSE;
         
 			// Complete when all axes ready (stopped)
-			IF MainLogic.MotorMode.Manual.Axis1.Status.Ready AND 
-				MainLogic.MotorMode.Manual.Axis2.Status.Ready AND 
-				MainLogic.MotorMode.Manual.Axis3.Status.Ready THEN
+			IF gMainLogic.MotorMode.Manual.Axis1.Status.Ready AND 
+				gMainLogic.MotorMode.Manual.Axis2.Status.Ready AND 
+				gMainLogic.MotorMode.Manual.Axis3.Status.Ready THEN
 				MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 			END_IF;
 		END_IF;

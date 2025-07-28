@@ -6,6 +6,12 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	actStopped;
+	actStopping;
+	actAborting;
+	actAborted;
+	actClearing;
+	
 	 
 END_PROGRAM
 

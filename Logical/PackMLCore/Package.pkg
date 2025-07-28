@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="File" Private="true">PackML_IF.typ</Object>
     <Object Type="Program" Language="IEC">PackML</Object>
+    <Object Type="File" Private="true">gPackML.var</Object>
+    <Object Type="File" Private="true">gPackML.typ</Object>
   </Objects>
 </Package>

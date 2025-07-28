@@ -15,5 +15,6 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Manual.Axis3.Cmd.Enable := FALSE;
 			IF gMainLogic.Cmd.Reset = TRUE THEN
 	  			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
-			END_IF;
+		END_IF;
+	END_IF;
 END_ACTION
