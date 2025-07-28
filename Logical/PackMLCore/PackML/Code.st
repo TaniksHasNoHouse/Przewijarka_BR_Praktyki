@@ -10,6 +10,7 @@ PROGRAM _CYCLIC
 	MpPackMLCore_0(); 
 	MpPackMLMode_0(MpLink := ADR(gPackMLCore), Enable := TRUE);
 	actGetStatus;
+	actInterface;
 END_PROGRAM
 
 PROGRAM _EXIT
