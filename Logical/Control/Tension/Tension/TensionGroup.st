@@ -3,6 +3,7 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	actReadGlobals;
 	actCatchError;
 	actLineInGroupVelocity;
 	CASE step OF
@@ -25,6 +26,7 @@ PROGRAM _CYCLIC
 	END_CASE;
 	actDoAlgebra;
 	actCallBlocks;
+	actSetGlogals;
 END_PROGRAM
 
 PROGRAM _EXIT

@@ -4,4 +4,7 @@ ACTION actDoAlgebra:
 	ActRightDancerPosScal := brmfloor(((INT_TO_REAL(gTensionLogic.Status.ActRightDancerPos) - 4060.0) *(1000.0/135534.0)));
 	gTensionLogic.Status.LeftWinderDiameter := TensionController[0].Info.DiameterEstimation.EstimatedDiameter;
 	gTensionLogic.Status.RightWinderDiameter := TensionController[2].Info.DiameterEstimation.EstimatedDiameter;
+	IF  THEN
+	  
+	END_IF;
 END_ACTION

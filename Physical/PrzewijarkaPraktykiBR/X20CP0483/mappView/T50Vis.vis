@@ -8,6 +8,8 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
+    <Page refId="DataPage" />
+    <Page refId="SpecialPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -27,6 +29,8 @@
     <BindingsSet refId="MainPageContent_binding" />
     <BindingsSet refId="ManualLeftRight_binding" />
     <BindingsSet refId="ManualRegulators_binding" />
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
+    <BindingsSet refId="AlarmPageHistContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
@@ -37,6 +41,7 @@
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
     <EventBindingsSet refId="RecipeEditContent_eventbinding" />
+    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
@@ -74,6 +79,7 @@
     <Content refId="ChartsPageData" />
     <Content refId="ChartsPageTabs" />
     <Content refId="ChartsPageVtape" />
+    <Content refId="SpecialPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
@@ -88,8 +94,8 @@
     <Configuration key="activityCount" value="false" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
+			<SystemGesture2 touchPoints="2" />
+			<SystemGesture3 touchPoints="2" />-->
     </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->

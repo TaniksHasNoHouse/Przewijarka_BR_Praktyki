@@ -19,5 +19,7 @@ VAR
 	SetLeftDancerPos : REAL := 50.0;
 	ActRightDancerPosScal : REAL;
 	MV_ABS : BOOL;
+	ProgressBarProcent : REAL;
+	IsLineInMotion : BOOL;
 	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
 END_VAR

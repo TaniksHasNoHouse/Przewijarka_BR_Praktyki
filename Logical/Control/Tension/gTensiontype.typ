@@ -18,6 +18,8 @@ TYPE
 		ActLeftDancerPos : INT;
 		LeftWinderDiameter : REAL;
 		RightWinderDiameter : REAL;
+		LineIsInMove : BOOL;
+		ProgressBarProcent : REAL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
@@ -76,7 +78,7 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 	Axis2CMDType : 	STRUCT 
 		a : BOOL;
@@ -91,7 +93,7 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 	Axis3CMDType : 	STRUCT 
 		a : BOOL;
@@ -112,6 +114,6 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 END_TYPE
