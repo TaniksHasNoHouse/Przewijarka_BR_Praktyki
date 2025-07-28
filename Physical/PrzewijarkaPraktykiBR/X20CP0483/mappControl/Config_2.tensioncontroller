@@ -23,13 +23,13 @@
             <Property ID="IntegrationTime" Value="1.0" />
           </Group>
         </Group>
-        <Property ID="MaximumVelocityCorrection" Value="10" />
+        <Property ID="MaximumVelocityCorrection" Value="60" />
         <Group ID="ToleranceBand">
-          <Property ID="Lower" Value="4" />
-          <Property ID="Upper" Value="4" />
+          <Property ID="Lower" Value="10" />
+          <Property ID="Upper" Value="10" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="MaximumLineVelocityCorrection" Value="60" />
           <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
@@ -69,12 +69,13 @@
             <Property ID="IntegrationTime" Value="1.0" />
           </Group>
         </Group>
+        <Property ID="MaximumVelocityCorrection" Value="60" />
         <Group ID="ToleranceBand">
-          <Property ID="Lower" Value="4" />
-          <Property ID="Upper" Value="4" />
+          <Property ID="Lower" Value="10" />
+          <Property ID="Upper" Value="10" />
         </Group>
         <Selector ID="Initialization">
-          <Property ID="MaximumLineVelocityCorrection" Value="10" />
+          <Property ID="MaximumLineVelocityCorrection" Value="60" />
           <Property ID="TimeOut" Value="1000.0" />
         </Selector>
       </Selector>
