@@ -12,13 +12,17 @@ ACTION actInitTension:
 	FOR i := 0 TO INDEX_NR_OF_ZONES DO
     
 		TensionController[i].Enable := TRUE;
+		MpAxisBasicFB[i].Enable := TRUE;
 		
 	END_FOR;
 	
-	TensionController[0].PresetDiameter := 80.0;
-	TensionController[2].PresetDiameter := 30.0;
+	TensionController[0].PresetDiameter := LeftWinderDiameter;
+	TensionController[2].PresetDiameter := RightWinderDiameter;
 	TensionController[0].SetPresetDiameter := TRUE;
 	TensionController[2].SetPresetDiameter := TRUE;
-	gTensionLogic.Cmd.SetLeftDancerPos := 30.0;
-	gTensionLogic.Cmd.SetRightDancerPos := 30.0;
+	
+	MpAxisBasicFB[0].MpLink := ADR(gAxis_1);
+	MpAxisBasicFB[1].MpLink := ADR(gAxis_2);
+	MpAxisBasicFB[2].MpLink := ADR(gAxis_3);
+	
 END_ACTION
