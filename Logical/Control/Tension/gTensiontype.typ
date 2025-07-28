@@ -5,20 +5,21 @@ TYPE
 		Cmd : CommandTensionType;
 		Parameter : ParameterTensionType;
 		Status : StatusTensionType;
-		GroupLineVelocity : REAL;
 	END_STRUCT;
-	CommandTensionType : STRUCT
+	CommandTensionType : 	STRUCT 
 		SetRightDancerPos : REAL;
 		SetLeftDancerPos : REAL;
 	END_STRUCT;
-	ParameterTensionType : STRUCT 
-		a : BOOL;
+	ParameterTensionType : 	STRUCT 
+		GroupLineVelocity : REAL; (*in m/min*)
 	END_STRUCT;
-	StatusTensionType : STRUCT 
-		ActRightDancerPos : INT;
-		ActLeftDancerPos : INT;
+	StatusTensionType : 	STRUCT 
+		ActRightDancerPos : REAL;
+		ActLeftDancerPos : REAL;
 		LeftWinderDiameter : REAL;
 		RightWinderDiameter : REAL;
+		LineIsInMove : BOOL;
+		ProgressBarProcent : REAL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
@@ -62,27 +63,57 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
-		a : BOOL;
+		RotarySpeed : REAL;
+		Axis1DancerPara : Axis1ParaDancerPID;
+		Axis1PID : Axis1ParaPID;
+	END_STRUCT;
+	Axis1ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis1ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 	Axis2CMDType : 	STRUCT 
 		a : BOOL;
 	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
-		a : BOOL;
+		LinearSpeed : REAL;
+		Axis2PID : Axis2ParaPID;
+	END_STRUCT;
+	Axis2ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 	Axis3CMDType : 	STRUCT 
 		a : BOOL;
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
-		a : BOOL;
+		RotarySpeed : REAL;
+		Axis3DancerPara : Axis3ParaDancerPID;
+		Axis3PID : Axis3ParaPID;
+	END_STRUCT;
+	Axis3ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis3ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL;
 	END_STRUCT;
 END_TYPE

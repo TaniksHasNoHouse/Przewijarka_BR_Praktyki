@@ -6,6 +6,18 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	actStopped;
+	actStopping;
+	actAborting;
+	actAborted;
+	actClearing;
+	actProdResetting;
+	actProdIdle;
+	actProdStarting;
+	actProdExecute;
+	actProdCompleting;
+	actProdComplete;
+	
 	 
 END_PROGRAM
 

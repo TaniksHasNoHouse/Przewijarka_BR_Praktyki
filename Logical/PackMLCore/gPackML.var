@@ -1,0 +1,3 @@
+VAR
+	Status : StatusType;
+END_VAR

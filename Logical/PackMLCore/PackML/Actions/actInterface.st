@@ -1,4 +1,7 @@
-
-ACTION actInterface: 
-
+ACTION actInterface:
+	IF gHMI.ControlBtn.AutoManual THEN
+		MpPackMLMode_0.ModeID := PACKML_MODE_MANUAL;
+	ELSE
+		MpPackMLMode_0.ModeID := PACKML_MODE_PRODUCTION;
+	END_IF;
 END_ACTION

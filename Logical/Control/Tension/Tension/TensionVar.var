@@ -1,5 +1,10 @@
+VAR RETAIN
+	RightWinderDiameter : REAL := 80.0;
+	LeftWinderDiameter : REAL := 30.0;
+END_VAR
 VAR
 	step : TESTstate;
+	TensionGroup : MpTensionGroup;
 END_VAR
 VAR CONSTANT
 	NR_OF_ZONES : USINT := 3;
@@ -8,9 +13,13 @@ END_VAR
 VAR
 	i : USINT;
 	TensionController : ARRAY[0..INDEX_NR_OF_ZONES] OF MpTensionController;
-	TensionGroup : MpTensionGroup;
+	ActLeftDancerPos : INT;
 	ActLeftDancerPosScal : REAL;
 	Distance : REAL;
+	SetRightDancerPos : REAL := 20.0;
+	SetLeftDancerPos : REAL := 20.0;
 	ActRightDancerPosScal : REAL;
-	MV_ABS : BOOL;
+	ProgressBarProcent : REAL;
+	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
+	ActRightDancerPos : INT;
 END_VAR

@@ -4,7 +4,7 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Production.Cmd.Enable := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.TensionEnable := FALSE;
-			gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;		
+			gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;	
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 
 			gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn := FALSE;
@@ -15,5 +15,6 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Manual.Axis3.Cmd.Enable := FALSE;
 			IF gMainLogic.Cmd.Reset = TRUE THEN
 	  			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
-			END_IF;
+		END_IF;
+	END_IF;
 END_ACTION

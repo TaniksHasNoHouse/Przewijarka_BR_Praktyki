@@ -2,20 +2,19 @@
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
+    <Task Name="TensionCon" Source="Control.Tension.TensionConfig.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VAxis" Source="Control.Tension.VAxis.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Tension" Source="Control.Tension.Tension.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="PID" Source="Control.PID.PID.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="PackML" Source="PackMLCore.PackML.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ManualPage" Source="HMI.ManualPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MainContro" Source="Main.MainControl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RecipePage" Source="HMI.RecipePage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AuditPage" Source="HMI.AuditPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AlarmPage" Source="HMI.AlarmPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="TensionCon" Source="Control.Tension.TensionConfig.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ChartsPage" Source="HMI.ChartsDataPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MainPage" Source="HMI.MainPage.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -94,6 +93,7 @@
     <LibraryObject Name="brsystem" Source="Libraries.brsystem.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="AsBrMath" Source="Libraries.AsBrMath.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="McPureVAx" Source="Libraries.McPureVAx.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="AsBrStr" Source="Libraries.AsBrStr.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asepl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -103,6 +103,5 @@
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aseth" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="AsBrStr" Source="Libraries.AsBrStr.lby" Memory="UserROM" Language="binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
