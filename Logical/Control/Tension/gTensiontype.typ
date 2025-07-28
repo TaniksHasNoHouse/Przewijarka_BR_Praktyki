@@ -62,6 +62,18 @@ TYPE
 	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
 		RotarySpeed : REAL;
+		Axis1DancerPara : Axis1ParaDancerPID;
+		Axis1PID : Axis1ParaPID;
+	END_STRUCT;
+	Axis1ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis1ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
 		a : BOOL;
@@ -71,6 +83,12 @@ TYPE
 	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
 		LinearSpeed : REAL;
+		Axis2PID : Axis2ParaPID;
+	END_STRUCT;
+	Axis2ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
 		a : BOOL;
@@ -80,6 +98,18 @@ TYPE
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
 		RotarySpeed : REAL;
+		Axis3DancerPara : Axis3ParaDancerPID;
+		Axis3PID : Axis3ParaPID;
+	END_STRUCT;
+	Axis3ParaDancerPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
+	END_STRUCT;
+	Axis3ParaPID : 	STRUCT 
+		P : REAL;
+		I : REAL;
+		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
 		a : BOOL;
