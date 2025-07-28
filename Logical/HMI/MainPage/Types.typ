@@ -14,10 +14,20 @@ TYPE
 		STATE_IDLE,
 		STATE_ESTOPPED
 		);
-	PhysicalBtn : 	STRUCT 
-		Start : BOOL;
-		Stop : BOOL;
-		Estop : BOOL;
-		Reset : BOOL;
+	Buttons_type : 	STRUCT 
+		State : BOOL;
+		ColorON : BOOL;
+		ColorOFF : BOOL;
+	END_STRUCT;
+	PhysicalBtn_type : 	STRUCT 
+		Start : Buttons_type;
+		Stop : ButtonStop_type;
+		Reset : Buttons_type;
+	END_STRUCT;
+	ButtonStop_type : 	STRUCT 
+		State : BOOL;
+		ColorON : BOOL;
+		ColorOFF : BOOL;
+		ColorEstop : BOOL;
 	END_STRUCT;
 END_TYPE

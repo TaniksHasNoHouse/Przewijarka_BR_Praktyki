@@ -2,4 +2,5 @@ VAR
 	ButtonStates : ButtonStates_type;
 	ButtonStyles : ButtonStyles_type;
 	ResetBtnTimer : TON;
+	PhysicalBtn : PhysicalBtn_type;
 END_VAR
