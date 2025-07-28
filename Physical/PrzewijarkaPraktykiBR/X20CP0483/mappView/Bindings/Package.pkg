@@ -10,5 +10,6 @@
     <Object Type="Package">DiagnosticsPageBinding</Object>
     <Object Type="Package">UserManagementPageBinding</Object>
     <Object Type="Package">MainPageBindings</Object>
+    <Object Type="Package">ChartsPageBinding</Object>
   </Objects>
 </Package>

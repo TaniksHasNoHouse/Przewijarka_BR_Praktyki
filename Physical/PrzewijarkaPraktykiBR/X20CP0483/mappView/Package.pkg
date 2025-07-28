@@ -5,11 +5,5 @@
     <Object Type="File">T50Vis.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="Package">Bindings</Object>
-    <Object Type="File">ChartsPageDancer1.binding</Object>
-    <Object Type="File">ChartsPageDancer2.binding</Object>
-    <Object Type="File">ChartsPageVtape.binding</Object>
-    <Object Type="File">ChartsPageAxis1.binding</Object>
-    <Object Type="File">ChartsPageAxis2.binding</Object>
-    <Object Type="File">ChartsPageAxis3.binding</Object>
   </Objects>
 </Package>

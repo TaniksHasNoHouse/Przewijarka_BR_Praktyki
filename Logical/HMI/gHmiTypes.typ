@@ -105,6 +105,13 @@ END_TYPE
 (*Charts*)
 
 TYPE
+	Record_type : 	STRUCT 
+		Dancer1 : BOOL;
+		Dancer2 : BOOL;
+		Axis1 : BOOL;
+		Axis2 : BOOL;
+		Axis3 : BOOL;
+	END_STRUCT;
 	Charts_type : 	STRUCT 
 		Dancer1 : REAL;
 		Dancer2 : REAL;
@@ -112,6 +119,7 @@ TYPE
 		Axis1 : REAL;
 		Axis2 : REAL;
 		Axis3 : REAL;
+		Record : Record_type;
 	END_STRUCT;
 END_TYPE
 
