@@ -11,6 +11,12 @@ PROGRAM _CYCLIC
 	actAborting;
 	actAborted;
 	actClearing;
+	actProdResetting;
+	actProdIdle;
+	actProdStarting;
+	actProdExecute;
+	actProdCompleting;
+	actProdComplete;
 	
 	 
 END_PROGRAM
