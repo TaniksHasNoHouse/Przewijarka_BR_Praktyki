@@ -6,12 +6,11 @@
         <Widget xsi:type="widgets.brease.TableItem" id="TableItemDataFlies" zIndex="0" columnWidth="660" text="TableItem1" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxDancer1" top="50" left="10" width="170" zIndex="1" text="Pozycja dancera 1" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBox2" top="90" left="10" width="170" zIndex="2" text="Pozycja dancera 2" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis1" top="50" left="200" zIndex="3" text="Prędkość osi 1" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis2" top="90" left="200" zIndex="4" text="Prędkość osi 2" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis3" top="50" left="380" zIndex="5" text="Prędkość osi 3" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelChooseData" top="10" left="20" width="190" zIndex="6" text="Wybierz dane do zapisu:" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="90" left="410" zIndex="7" text="ToggleSwitch1" value="true" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelChooseData" top="10" left="20" width="190" zIndex="1" text="Wybierz dane do zapisu:" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxDancer1" top="50" left="30" width="170" zIndex="2" text="Pozycja dancera 1" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxDancer2" top="50" left="265" width="170" zIndex="3" text="Pozycja dancera 2" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis1" top="50" left="500" zIndex="4" text="Prędkość osi 1" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis2" top="100" left="120" zIndex="5" text="Prędkość osi 2" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis3" top="100" left="430" zIndex="6" text="Prędkość osi 3" />
   </Widgets>
 </Content>

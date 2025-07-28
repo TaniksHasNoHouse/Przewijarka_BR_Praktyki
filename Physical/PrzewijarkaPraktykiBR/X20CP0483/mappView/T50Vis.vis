@@ -25,6 +25,7 @@
 		<BindingsSet refId="ChartsPageDancer1_binding" />
 		<BindingsSet refId="ChartsPageDancer2_binding" />
 		<BindingsSet refId="ChartsPageVtape_binding" />
+		<BindingsSet refId="ChartsPageData_binding" />
 		<BindingsSet refId="ContentTop_binding" />
 		<BindingsSet refId="MainPageContent_binding" />
 		<BindingsSet refId="ManualLeftRight_binding" />
