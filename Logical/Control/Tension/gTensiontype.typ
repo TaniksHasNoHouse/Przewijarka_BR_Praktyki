@@ -20,6 +20,9 @@ TYPE
 		RightWinderDiameter : REAL;
 		LineIsInMove : BOOL;
 		ProgressBarProcent : REAL;
+		EnableAxis1 : BOOL;
+		EnableAxis2 : BOOL;
+		EnableAxis3 : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
