@@ -1,5 +1,5 @@
 
-ACTION actManualIdle:
+ACTION actManIdle:
 // Everything can be done - individual axis jogging and tension regulation available
 	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_IDLE, PACKML_MODE_MANUAL) THEN
     
