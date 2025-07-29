@@ -21,4 +21,5 @@ ACTION actSetGlogals:
 		gTensionLogic.Status.LineIsPoweredOn := FALSE;
 	END_IF;
 	gMainLogic.MotorMode.Production.Status.ActDistance := TensionController[1].Info.ProcessedMaterial;
+	
 END_ACTION
