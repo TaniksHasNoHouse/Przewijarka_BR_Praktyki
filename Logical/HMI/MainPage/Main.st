@@ -49,7 +49,7 @@ PROGRAM _CYCLIC
 		PhysicalBtn.Stop.ColorEstop := TRUE;
 	END_IF;
 	
-	IF Status.StateCurrent = 'Stopping' THEN
+	IF Status.StateCurrent = 'Stopped' THEN
 		IF Status.ModeCurrent = 'Manual' THEN
 			PhysicalBtn.Start.ColorOFF := FALSE;
 			PhysicalBtn.Stop.ColorOFF := FALSE;
@@ -84,6 +84,7 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	IF Status.StateCurrent = 'Idle' THEN
+		PhysicalBtn.Stop.ColorON := FALSE;
 		PhysicalBtn.Stop.ColorOFF := TRUE;
 	END_IF;
 	
