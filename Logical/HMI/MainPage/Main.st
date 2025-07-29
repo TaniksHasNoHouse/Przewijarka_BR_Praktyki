@@ -34,12 +34,6 @@ PROGRAM _CYCLIC
 	CASE ButtonStates OF
 		STATE_IDLE:
 			PhysicalBtn.Stop.ColorOFF := TRUE;
-			IF gHMI.ControlBtn.Start = TRUE THEN
-				ButtonStates := STATE_WORKING;
-			END_IF;
-			IF gHMI.ControlBtn.Stop = TRUE THEN
-				ButtonStates := STATE_STOPPED;
-			END_IF;
 			
 		STATE_WORKING:
 			gHMI.ControlBtn.Start := FALSE;
@@ -48,23 +42,15 @@ PROGRAM _CYCLIC
 			PhysicalBtn.Stop.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorOFF := TRUE;
 			PhysicalBtn.Start.ColorON := TRUE;
-			IF gHMI.ControlBtn.Stop = TRUE THEN
-				ButtonStates := STATE_STOPPED;
-			END_IF;
-			IF Status.StateCurrent = 'Complete' THEN
-				ButtonStates := STATE_STOPPED;
-			END_IF;
 			
 		
 		STATE_STOPPED:
+			ManualOff := TRUE;
 			gHMI.ControlBtn.Stop := FALSE;
 			PhysicalBtn.Stop.ColorOFF := FALSE;
 			PhysicalBtn.Start.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorON := TRUE;
 			ButtonStyles.Stop := 'stopped';
-			IF gHMI.ControlBtn.Reset = TRUE THEN
-				ButtonStates := STATE_RESETING;
-			END_IF;
 			
 			
 		STATE_ESTOPPED:
@@ -73,47 +59,11 @@ PROGRAM _CYCLIC
 			PhysicalBtn.Start.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorEstop := TRUE;
-			IF gHMI.ControlBtn.Reset = TRUE THEN
-				ButtonStates := STATE_RESETING;
-			END_IF;
 		
 		STATE_RESETING:
 			gHMI.ControlBtn.Reset := FALSE;
-			ResetBtnTimer.PT := T#2s;
-			ResetBtnTimer.IN := TRUE;
-			BlinkTimer.PT    := T#250ms;
-			BlinkTimer.IN    := TRUE;
-
-			IF BlinkTimer.Q THEN
-				BlinkTimer.IN  := FALSE;
-				BlinkToggle    := NOT BlinkToggle;
-			END_IF;
-			BlinkTimer.IN := TRUE;
-
-			IF BlinkToggle THEN
-				PhysicalBtn.Reset.ColorON  := TRUE;    // niebieski
-				PhysicalBtn.Reset.ColorOFF := FALSE;
-				ButtonStyles.Reset := 'reset';
-			ELSE
-				PhysicalBtn.Reset.ColorON  := FALSE;   // zielony (miganie)
-				PhysicalBtn.Reset.ColorOFF := TRUE;
-				ButtonStyles.Reset := 'working';
-			END_IF;
-
-			ButtonStyles.Stop := 'Estopped'; // zachowaj wygl¹d Estop
-
-			IF ResetBtnTimer.Q THEN
-				ResetBtnTimer.IN := FALSE;
-				BlinkTimer.IN    := FALSE;
-				BlinkToggle      := FALSE;
-
-				PhysicalBtn.Reset.ColorON  := TRUE;
-				PhysicalBtn.Reset.ColorOFF := FALSE;
-				PhysicalBtn.Stop.ColorEstop := FALSE;
-
-				ButtonStyles.Stop := 'default';
-				
-				ButtonStates := STATE_IDLE;
+			ButtonStyles.Stop := 'Estopped';
+			ButtonStyles.Reset := 'working';
 			END_IF;
 		
 		STATE_MANUAL:
@@ -121,10 +71,6 @@ PROGRAM _CYCLIC
 			PhysicalBtn.Stop.ColorOFF := FALSE;
 			PhysicalBtn.Start.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorON := FALSE;
-			
-			IF gHMI.ControlBtn.Reset = TRUE THEN
-				ButtonStates := STATE_RESETING;
-			END_IF;
 			PhysicalBtn.Manual.Left.ColorOFF := TRUE;
 			PhysicalBtn.Manual.Right.ColorOFF := TRUE;
 			gHMI.Manual.JogLeftRight.JogLeft := FALSE;
@@ -139,10 +85,6 @@ PROGRAM _CYCLIC
 				PhysicalBtn.Manual.Right.ColorOFF := FALSE;
 				PhysicalBtn.Manual.Right.ColorON := TRUE;
 			END_IF;
-			
-			IF gHMI.ControlBtn.AutoManual = FALSE THEN
-				ButtonStates := STATE_IDLE;
-			END_IF;
 	END_CASE;
 	
 	IF Status.StateCurrent = 'Aborting' THEN
@@ -150,13 +92,18 @@ PROGRAM _CYCLIC
 	END_IF;
 	IF Status.StateCurrent = 'Stopped' THEN
 		ButtonStates := STATE_STOPPED;
-		ManualOff := TRUE;
 	END_IF;
-	
-	IF ButtonStates <> STATE_ESTOPPED OR ButtonStates <> STATE_RESETING THEN
-		IF gHMI.ControlBtn.AutoManual = TRUE THEN
-			ButtonStates := STATE_MANUAL;
-		END_IF;
+	IF Status.StateCurrent = 'Idle' THEN
+	  ButtonStates := STATE_IDLE;
+	END_IF;
+	IF Status.StateCurrent = 'Resetting' THEN
+		ButtonStates := STATE_RESETING
+	END_IF;
+	IF Status.ModeCurrent = 'Manual' THEN
+		ButtonStates := STATE_MANUAL
+	END_IF;
+	IF Status.StateCurrent = 'Starting' THEN
+		ButtonStates := STATE_WORKING;
 	END_IF;
 	
 	
