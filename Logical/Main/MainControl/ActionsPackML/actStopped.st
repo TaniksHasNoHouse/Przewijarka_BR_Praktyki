@@ -13,6 +13,9 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Manual.Axis1.Cmd.Enable := FALSE;
 			gMainLogic.MotorMode.Manual.Axis2.Cmd.Enable := FALSE;
 			gMainLogic.MotorMode.Manual.Axis3.Cmd.Enable := FALSE;
+		
+			// cala linia zeby ruszyc -> enable -> home -> power on -> start winding 
+		
 			IF gMainLogic.Cmd.Reset = TRUE THEN
 	  			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 		END_IF;
