@@ -14,10 +14,31 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	
 	MpAxisBasicMaster.Enable := gMainLogic.MotorMode.Production.Cmd.Enable;
 	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
-	MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
+	CASE PowerState OF
+
+		POWER_INIT:
+			MpAxisBasicMaster.Power := FALSE;
+			PowerState := POWER_REQUEST_ON;
+
+		POWER_REQUEST_ON:
+			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
+			IF MpAxisBasicMaster.Power THEN
+				PowerState := POWER_CHECK_ON;
+			END_IF;
+			
+		POWER_CHECK_ON:
+			IF MpAxisBasicMaster.PowerOn THEN
+				PowerState := POWER_DONE;
+			ELSE
+				MpAxisBasicMaster.Power := NOT MpAxisBasicMaster.Power;
+			END_IF;
+			
+		POWER_DONE:
+			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
+
+	END_CASE
 	MpAxisBasicMaster.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	MpAxisBasicMaster.MoveAdditive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	MpAxisBasicMaster.Stop := gMainLogic.MotorMode.Production.Cmd.EmergencyStop;
