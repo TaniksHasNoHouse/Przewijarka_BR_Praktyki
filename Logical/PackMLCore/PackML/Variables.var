@@ -2,4 +2,7 @@ VAR
 	MpPackMLMode_0 : MpPackMLMode;
 	MpPackMLMode_1 : MpPackMLMode;
 	MpPackMLBasicUI_0 : MpPackMLBasicUI;
+	prevBtn : BOOL := FALSE; (* poprzedni stan przycisku *)
+	step : INT := 0; (* maszyna stanów *)
+	MpPackMLBasicUIConnect : MpPackMLBasicUIConnectType;
 END_VAR
