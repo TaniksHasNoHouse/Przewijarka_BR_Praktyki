@@ -195,5 +195,27 @@ Suchen:</seg>
         <seg>Motor 3</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_LOAD">
+      <tuv xml:lang="pl">
+        <seg>WCZYTAJ RECEPTURĘ!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>REZEPT LADEN!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>LOAD RECIPE!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Length">
+      <tuv xml:lang="pl">
+        <seg>Długość do przewinięcia:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Länge zum Zurückspulen:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Length to rewind:</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

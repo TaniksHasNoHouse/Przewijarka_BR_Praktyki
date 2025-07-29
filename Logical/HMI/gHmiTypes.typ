@@ -114,6 +114,8 @@ TYPE
 		Axis2 : BOOL;
 		Axis3 : BOOL;
 	END_STRUCT;
+	Data_type : 	STRUCT 
+	END_STRUCT;
 	Charts_type : 	STRUCT 
 		Dancer1 : REAL;
 		Dancer2 : REAL;
