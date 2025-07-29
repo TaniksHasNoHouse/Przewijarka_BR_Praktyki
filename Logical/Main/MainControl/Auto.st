@@ -6,6 +6,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	// do wyjebania tension enable
 	actStopped;
 	actStopping;
 	actAborting;

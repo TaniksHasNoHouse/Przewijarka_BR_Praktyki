@@ -46,7 +46,8 @@ TYPE
 	END_STRUCT;
 	MotorProdParType : 	STRUCT 
 		Velocity : REAL;
-		Tension : REAL;
+		DancerPos1 : REAL;
+		DancerPos2 : REAL;
 		Distance : REAL;
 		TensionTolerance : REAL;
 		StabilityTime : TIME;
@@ -127,6 +128,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		Dir : BOOL;
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis1StatusType : 	STRUCT 
@@ -149,6 +151,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		Dir : BOOL;
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis2StatusType : 	STRUCT 
@@ -171,6 +174,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
+		Dir : BOOL;
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis3StatusType : 	STRUCT 
