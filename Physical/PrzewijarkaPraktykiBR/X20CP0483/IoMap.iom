@@ -19,4 +19,6 @@ VAR_CONFIG
 	::MainPage:PhysicalBtn.Manual.Right.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput16;
 	::MainPage:PhysicalBtn.Manual.Left.State AT %IX."4XP0057.00-00W".DigitalInput03;
 	::MainPage:PhysicalBtn.Manual.Right.State AT %IX."4XP0057.00-00W".DigitalInput04;
+	::Tension:ActRightDancerPos AT %IW."X20AI2437".AnalogInput01;
+	::Tension:ActLeftDancerPos AT %IW."X20AI2437".AnalogInput02;
 END_VAR
