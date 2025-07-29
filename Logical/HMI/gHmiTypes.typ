@@ -143,6 +143,6 @@ END_TYPE
 
 TYPE
 	Alarms_type : 	STRUCT 
-		PendingAlarms : UDINT;
+		PendingAlarms : BOOL;
 	END_STRUCT;
 END_TYPE

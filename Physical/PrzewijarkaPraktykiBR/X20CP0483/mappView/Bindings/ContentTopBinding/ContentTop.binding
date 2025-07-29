@@ -30,5 +30,9 @@
 <Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Reset" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Alarms.PendingAlarms" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ImageAlarm" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

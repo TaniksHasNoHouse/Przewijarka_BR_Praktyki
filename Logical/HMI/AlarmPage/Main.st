@@ -41,7 +41,7 @@ PROGRAM _CYCLIC
 	
 	MpAlarmXCore_0();
 	
-	gHMI.Alarms.PendingAlarms := MpAlarmXCore_0.PendingAlarms;
+	gHMI.Alarms.PendingAlarms := UDINT_TO_BOOL(MpAlarmXCore_0.PendingAlarms);
 END_PROGRAM
 
 PROGRAM _EXIT
