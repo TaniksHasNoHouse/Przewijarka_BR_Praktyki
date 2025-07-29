@@ -25,13 +25,13 @@
     <BindingsSet refId="ChartsPageDancer1_binding" />
     <BindingsSet refId="ChartsPageDancer2_binding" />
     <BindingsSet refId="ChartsPageVtape_binding" />
+    <BindingsSet refId="ChartsPageData_binding" />
     <BindingsSet refId="ContentTop_binding" />
     <BindingsSet refId="MainPageContent_binding" />
     <BindingsSet refId="ManualLeftRight_binding" />
     <BindingsSet refId="ManualRegulators_binding" />
     <BindingsSet refId="AlarmPageCurrContent_binding" />
     <BindingsSet refId="AlarmPageHistContent_binding" />
-    <BindingsSet refId="ChartsPageData_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
@@ -43,6 +43,7 @@
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
     <EventBindingsSet refId="RecipeEditContent_eventbinding" />
     <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+    <EventBindingsSet refId="ChartsPageData_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
@@ -51,6 +52,7 @@
     <Dialog refId="RecipeEditDialog" />
   </Dialogs>
   <Contents>
+    <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />
     <Content refId="AlarmPageHistContent" />
     <Content refId="AlarmPageTabs" />
@@ -76,11 +78,10 @@
     <Content refId="ChartsPageAxis3" />
     <Content refId="ChartsPageDancer1" />
     <Content refId="ChartsPageDancer2" />
+    <Content refId="ChartsPageData" />
     <Content refId="ChartsPageTabs" />
     <Content refId="ChartsPageVtape" />
     <Content refId="SpecialPageContent" />
-    <Content refId="ChartsPageData" />
-    <Content refId="MainPageContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

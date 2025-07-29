@@ -19,20 +19,20 @@ ACTION actRecipeManage:
 			CREATE_1:	// create the first recipe with default values, file name and a known picture index (Bitmap Group in the HMI) 
 				MpRecepieXml_0.ErrorReset 			:= FALSE;
 			
-				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
-				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
-				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 50;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 50;
+				gHMI.Recipe.CurrentRecipe.Speed := 10;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 30;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 1;
 
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe1Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -45,18 +45,18 @@ ACTION actRecipeManage:
 				END_IF;
 		
 			CREATE_2:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI) 
-				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
-				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
-				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 70;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 70;
+				gHMI.Recipe.CurrentRecipe.Speed := 20;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 30;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
 				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
 
@@ -72,20 +72,20 @@ ACTION actRecipeManage:
 		
 			CREATE_3:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI)
 				
-				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
-				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
-				gHMI.Recipe.CurrentRecipe.Speed := 5;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 90;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 90;
+				gHMI.Recipe.CurrentRecipe.Speed := 40;
 				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 30;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
+				gHMI.Recipe.CurrentRecipe.MaterialLength := 10;
 
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe3Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -98,18 +98,18 @@ ACTION actRecipeManage:
 				END_IF;
 			CREATE_4:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI)
 			
-				gHMI.Recipe.CurrentRecipe.TensionLeft := 0;
-				gHMI.Recipe.CurrentRecipe.TensionRight := 15;
-				gHMI.Recipe.CurrentRecipe.Speed := 5;
-				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 0;
-				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 0;
-				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 0;
+				gHMI.Recipe.CurrentRecipe.TensionLeft := 70;
+				gHMI.Recipe.CurrentRecipe.TensionRight := 70;
+				gHMI.Recipe.CurrentRecipe.Speed := 20;
+				gHMI.Recipe.CurrentRecipe.Direction := TRUE;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
+				gHMI.Recipe.CurrentRecipe.Dencer2PID.I := 1;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollLeft.MinSize := 30;
+				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
+				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
 				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
 
