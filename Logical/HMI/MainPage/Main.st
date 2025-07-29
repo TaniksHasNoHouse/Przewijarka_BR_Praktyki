@@ -25,7 +25,7 @@ PROGRAM _CYCLIC
 	IF Status.StateCurrent = 'Aborting' THEN
 		ButtonStates := STATE_ESTOPPED;
 	END_IF;
-	IF Status.StateCurrent = 'Stopped' THEN
+	IF Status.StateCurrent = 'Stopping' THEN
 		IF Status.ModeCurrent = 'Manual' THEN
 			ButtonStates := STATE_MANUAL;
 		END_IF;
@@ -93,11 +93,9 @@ PROGRAM _CYCLIC
 			PhysicalBtn.Stop.ColorEstop := TRUE;
 		
 		STATE_RESETING:
-			gHMI.ControlBtn.Reset := FALSE;
-			PhysicalBtn.Stop.ColorEstop := TRUE;
+			gHMI.ControlBtn.Reset := FALSE;	
 			PhysicalBtn.Reset.ColorOFF := TRUE;
 			PhysicalBtn.Reset.ColorON := FALSE;
-			ButtonStyles.Stop := 'Estopped';
 			ButtonStyles.Reset := 'working';
 		
 		STATE_MANUAL:
