@@ -128,7 +128,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
-		Dir : BOOL;
+		Dir : BOOL; (*1- positive jog  0-negative jog*)
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis1StatusType : 	STRUCT 

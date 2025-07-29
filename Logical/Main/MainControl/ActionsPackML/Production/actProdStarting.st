@@ -8,7 +8,7 @@ ACTION actProdStarting:
 		gMainLogic.MotorMode.Production.Parameter.TensionTolerance := 5.0;
     
 		// Check tension stability
-//		IF ABS(gMainLogic.MotorMode.Production.Status.ActualTension - gMainLogic.MotorMode.Production.Parameter.Tension) <= gMainLogic.MotorMode.Production.Parameter.TensionTolerance THEN
+		//		IF ABS(gMainLogic.MotorMode.Production.Status.ActualTension - gMainLogic.MotorMode.Production.Parameter.Tension) <= gMainLogic.MotorMode.Production.Parameter.TensionTolerance THEN
 		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
 //		END_IF;
     
