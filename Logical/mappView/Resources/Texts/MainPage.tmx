@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/MainPage</prop>
+  </header>
+  <body>
+    <tu tuid="ID_PackML">
+      <tuv xml:lang="pl">
+        <seg>Aktualny stan PackML:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>
+Aktueller Status von PackML:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current PackML state:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Roll">
+      <tuv xml:lang="pl">
+        <seg>Aktualny rozmiar rolki</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktuelle Rollengröße</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current roll size</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Position">
+      <tuv xml:lang="pl">
+        <seg>Pozycja napinacza</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Spannposition</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dancer position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Velocity">
+      <tuv xml:lang="pl">
+        <seg>Aktualna prędkość</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktuelle Geschwindigkeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Progress">
+      <tuv xml:lang="pl">
+        <seg>Postęp przewijania</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Scrollen Sie durch den Fortschritt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Winding progress</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Save">
+      <tuv xml:lang="pl">
+        <seg>Zapisz</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Speichern</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

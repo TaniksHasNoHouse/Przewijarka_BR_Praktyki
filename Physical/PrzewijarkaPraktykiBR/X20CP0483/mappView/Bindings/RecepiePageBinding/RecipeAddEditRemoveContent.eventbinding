@@ -67,7 +67,7 @@
           <Step order="3">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::RecipePage:RecipeControl.Error">
-                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
               </Target>
             </Action>
           </Step>

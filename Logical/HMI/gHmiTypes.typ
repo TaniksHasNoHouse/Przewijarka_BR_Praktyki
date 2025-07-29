@@ -79,6 +79,8 @@ TYPE
 		JogRight : BOOL;
 		SetBeltSpeedRight : REAL;
 		SetBeltSpeedLeft : REAL;
+		JogLeftTemp : BOOL;
+		JogRightTemp : BOOL;
 	END_STRUCT;
 	JogMotors_type : 	STRUCT 
 		Motor1 : manMotor_type;
@@ -111,6 +113,8 @@ TYPE
 		Axis1 : BOOL;
 		Axis2 : BOOL;
 		Axis3 : BOOL;
+	END_STRUCT;
+	Data_type : 	STRUCT 
 	END_STRUCT;
 	Charts_type : 	STRUCT 
 		Dancer1 : REAL;

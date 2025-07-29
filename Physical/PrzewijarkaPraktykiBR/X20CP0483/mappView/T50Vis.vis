@@ -38,6 +38,7 @@
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
     <EventBindingsSet refId="RecipeEditContent_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="ChartsPageData_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
