@@ -2,9 +2,8 @@
 PROGRAM _INIT
 	MpDataRecorder_0.MpLink := ADR(gDataRecorder); 
 	MpDataRecorder_0.Enable := TRUE;
-	MpDataRecorder_0.DeviceName := ADR('USER'); 
-	MpDataRecorder_0.RecordMode := mpDATA_RECORD_MODE_VALUE; 
-	
+	MpDataRecorder_0.DeviceName := ADR('DATA'); 
+	MpDataRecorder_0.RecordMode := mpDATA_RECORD_MODE_VALUE;
 	MpDataRegPar_0.MpLink := ADR(gDataRecorder);
 	MpDataRegPar_0.Enable := TRUE;
 	MpDataRegPar_0.PVName := ADR('gHMI.Charts.Axis1');
@@ -82,6 +81,8 @@ PROGRAM _CYCLIC
 	MpDataRegPar_2();
 	MpDataRegPar_3();
 	MpDataRegPar_4();
+	
+	actDisplayFiles;
 END_PROGRAM
 
 PROGRAM _EXIT
