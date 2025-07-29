@@ -12,5 +12,6 @@
     <Object Type="Package">Documentation</Object>
     <Object Type="Package">HMI</Object>
     <Object Type="File">Project.language</Object>
+    <Object Type="Package">UserPartition</Object>
   </Objects>
 </Package>

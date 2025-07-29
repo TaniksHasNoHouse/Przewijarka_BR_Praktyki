@@ -341,8 +341,19 @@
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="USER" />
-    <Parameter ID="FileDevicePath1" Value="C:\Temp" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="RECIPE" />
+    <Parameter ID="FileDevicePath2" Value="USER_PATH/Recipe" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="DATA" />
+    <Parameter ID="FileDevicePath3" Value="USER_PATH/Data" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.0.1" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="AdminFTP" />
+    <Parameter ID="FtpUserPassword1" Value="6YI7hPEHEUgPCGBGJ1BSV9dcZzKYXQvWVp6sNHSerZA=" Description="Admin123" />
+    <Parameter ID="FtpUserSalt1" Value="/B0I6o9l" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>

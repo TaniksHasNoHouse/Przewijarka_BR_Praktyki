@@ -5,14 +5,8 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.Activate" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="ActivateTgBtn" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogLeft" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnLeft" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogRight" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnRight" attribute="value" />
-</Binding>
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.SetBeltSpeedLeft" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInLeftVel" attribute="value" />
@@ -22,5 +16,13 @@
 <Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInRightVel" attribute="value" />
 </Binding>
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogLeftTemp" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnLeft" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogRightTemp" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnRight" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>
