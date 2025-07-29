@@ -5,4 +5,5 @@ VAR
 	PhysicalBtn : PhysicalBtn_type;
 	BlinkTimer : TON;
 	BlinkToggle : BOOL;
+	ManualOff : BOOL;
 END_VAR

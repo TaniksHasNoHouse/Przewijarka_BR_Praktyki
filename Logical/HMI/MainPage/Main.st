@@ -50,7 +50,7 @@ PROGRAM _CYCLIC
 			IF gHMI.ControlBtn.Stop = TRUE THEN
 				ButtonStates := STATE_STOPPED;
 			END_IF;
-			IF MpPackMLCore_0.StateCurrent = mpPACKML_STATE_COMPLETE THEN
+			IF Status.StateCurrent = 'Complete' THEN
 				ButtonStates := STATE_STOPPED;
 			END_IF;
 			
@@ -61,12 +61,13 @@ PROGRAM _CYCLIC
 			PhysicalBtn.Start.ColorON := FALSE;
 			PhysicalBtn.Stop.ColorON := TRUE;
 			ButtonStyles.Stop := 'stopped';
-			IF gHMI.ControlBtn.Start = TRUE THEN
-				ButtonStates := STATE_WORKING;
+			IF gHMI.ControlBtn.Reset = TRUE THEN
+				ButtonStates := STATE_RESETING;
 			END_IF;
 			
 			
 		STATE_ESTOPPED:
+			ManualOff := TRUE;
 			ButtonStyles.Stop := 'Estopped';
 			PhysicalBtn.Stop.ColorOFF := FALSE;
 			PhysicalBtn.Start.ColorON := FALSE;
@@ -78,7 +79,7 @@ PROGRAM _CYCLIC
 		
 		STATE_RESETING:
 			gHMI.ControlBtn.Reset := FALSE;
-
+			ManualOff := TRUE;
 			ResetBtnTimer.PT := T#2s;
 			ResetBtnTimer.IN := TRUE;
 			BlinkTimer.PT    := T#250ms;
@@ -145,8 +146,11 @@ PROGRAM _CYCLIC
 			END_IF;
 	END_CASE;
 	
-	IF MpPackMLCore_0.StateCurrent = mpPACKML_STATE_ABORTING THEN
+	IF Status.StateCurrent = 'Aborting' THEN
 		ButtonStates := STATE_ESTOPPED;
+	END_IF;
+	IF Status.StateCurrent = 'Stopped' THEN
+	  
 	END_IF;
 	
 	IF ButtonStates <> STATE_ESTOPPED OR ButtonStates <> STATE_RESETING THEN
@@ -154,11 +158,7 @@ PROGRAM _CYCLIC
 			ButtonStates := STATE_MANUAL;
 		END_IF;
 	END_IF;
-//	
-//	IF MpPackMLCore_0.StateCurrent <> mpPACKML_STATE_STOPPED THEN
-//	  
-//	END_IF;
-//	
+	
 	
 	BlinkTimer();
 	ResetBtnTimer();
