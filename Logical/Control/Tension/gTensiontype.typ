@@ -20,6 +20,8 @@ TYPE
 		RightWinderDiameter : REAL;
 		LineIsInMove : BOOL;
 		ProgressBarProcent : REAL;
+		LineIsHomed : BOOL;
+		LineIsPoweredOn : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;

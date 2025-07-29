@@ -16,16 +16,16 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	
 	MpAxisBasicMaster.Enable := gMainLogic.MotorMode.Production.Cmd.Enable;
-	MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
+	MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 	MpAxisBasicMaster.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
-	MpAxisBasicMaster.JogPositive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
+	MpAxisBasicMaster.MoveAdditive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	MpAxisBasicMaster.Stop := gMainLogic.MotorMode.Production.Cmd.EmergencyStop;
 	
 	LineVelocityInMeters := MpAxisBasicMaster.Velocity * 60.0 / 1000.0;
 	
 	gTensionLogic.Parameter.GroupLineVelocity := LineVelocityInMeters;
-	
+	gMainLogic.MotorMode.Production.Status.ActVelocity := LineVelocityInMeters;
 	MpAxisBasicMaster();
 	
 END_PROGRAM

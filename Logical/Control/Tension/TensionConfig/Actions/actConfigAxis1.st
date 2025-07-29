@@ -2,6 +2,7 @@ ACTION actConfigAxis1:
 	
 	CASE StepPID1 OF
 		START_PID1:
+			
 			gHMI.Recipe.CurrentRecipe.Dencer1PID.P := TensionConfigType[0].Controller.PIDParameters.OperatingPoint1.ProportionalGain;
 			gHMI.Recipe.CurrentRecipe.Dencer1PID.I := TensionConfigType[0].Controller.PIDParameters.OperatingPoint1.IntegrationTime;
 			TensionConfig[0].Load := TRUE;

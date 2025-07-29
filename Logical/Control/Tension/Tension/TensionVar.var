@@ -20,7 +20,6 @@ VAR
 	SetRightDancerPos : REAL := 20.0;
 	SetLeftDancerPos : REAL := 20.0;
 	ActRightDancerPosScal : REAL;
-	ProgressBarProcent : REAL;
 	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
 	MpAxisBasicParams : ARRAY[0..2] OF MpAxisBasicParType;
 	ActRightDancerPos : INT;

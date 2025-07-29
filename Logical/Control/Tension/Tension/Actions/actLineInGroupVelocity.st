@@ -5,4 +5,5 @@ ACTION actLineInGroupVelocity:
 	ELSE
 		TensionGroup.Control := FALSE;
 	END_IF;
+	
 END_ACTION

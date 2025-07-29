@@ -10,4 +10,15 @@ ACTION actSetGlogals:
 	gTensionLogic.Mode.Manual.Axis1.Status.IsInMotion := MpAxisBasicFB[0].MoveActive;
 	gTensionLogic.Mode.Manual.Axis2.Status.IsInMotion := MpAxisBasicFB[1].MoveActive;
 	gTensionLogic.Mode.Manual.Axis3.Status.IsInMotion := MpAxisBasicFB[2].MoveActive;
+	IF TensionGroup.IsHomed THEN
+		gTensionLogic.Status.LineIsHomed := TRUE;
+	ELSE
+		gTensionLogic.Status.LineIsHomed := FALSE;
+	END_IF;
+	IF TensionGroup.PowerOn THEN
+		gTensionLogic.Status.LineIsPoweredOn := TRUE;
+	ELSE
+		gTensionLogic.Status.LineIsPoweredOn := FALSE;
+	END_IF;
+	gMainLogic.MotorMode.Production.Status.ActDistance := TensionController[1].Info.ProcessedMaterial;
 END_ACTION
