@@ -79,6 +79,8 @@ TYPE
 		JogRight : BOOL;
 		SetBeltSpeedRight : REAL;
 		SetBeltSpeedLeft : REAL;
+		JogLeftTemp : BOOL;
+		JogRightTemp : BOOL;
 	END_STRUCT;
 	JogMotors_type : 	STRUCT 
 		Motor1 : manMotor_type;

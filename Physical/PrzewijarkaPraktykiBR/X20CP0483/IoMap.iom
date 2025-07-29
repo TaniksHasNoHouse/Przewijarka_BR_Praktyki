@@ -1,5 +1,4 @@
 VAR_CONFIG
-	::gMainLogic.Cmd.Abort AT %IX."4XP0057.00-00W".DigitalInput04;
 	::gHMI.ModuleOK.PowerSupply AT %IX."X20PS9600".ModuleOk;
 	::gHMI.ModuleOK.AnalogInput AT %IX."X20AI2437".ModuleOk;
 	::gHMI.ModuleOK.SystemBusTransmitter AT %IX."X20BT9100".ModuleOk;
@@ -14,4 +13,10 @@ VAR_CONFIG
 	::MainPage:PhysicalBtn.Stop.ColorEstop AT %QX."4XP0057.00-00W".DigitalOutput07;
 	::MainPage:PhysicalBtn.Stop.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput08;
 	::MainPage:PhysicalBtn.Reset.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput17;
+	::MainPage:PhysicalBtn.Manual.Left.ColorON AT %QX."4XP0057.00-00W".DigitalOutput09;
+	::MainPage:PhysicalBtn.Manual.Right.ColorON AT %QX."4XP0057.00-00W".DigitalOutput13;
+	::MainPage:PhysicalBtn.Manual.Left.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput12;
+	::MainPage:PhysicalBtn.Manual.Right.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput16;
+	::MainPage:PhysicalBtn.Manual.Left.State AT %IX."4XP0057.00-00W".DigitalInput03;
+	::MainPage:PhysicalBtn.Manual.Right.State AT %IX."4XP0057.00-00W".DigitalInput04;
 END_VAR

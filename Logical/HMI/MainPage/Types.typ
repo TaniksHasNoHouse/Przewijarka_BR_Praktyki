@@ -1,5 +1,9 @@
 
 TYPE
+	ManualBtn_type : 	STRUCT 
+		Left : Buttons_type;
+		Right : Buttons_type;
+	END_STRUCT;
 	ButtonStyles_type : 	STRUCT 
 		Start : STRING[80];
 		Stop : STRING[80];
@@ -12,7 +16,8 @@ TYPE
 		STATE_STOPPED,
 		STATE_RESETING,
 		STATE_IDLE,
-		STATE_ESTOPPED
+		STATE_ESTOPPED,
+		STATE_MANUAL
 		);
 	Buttons_type : 	STRUCT 
 		State : BOOL;
@@ -23,6 +28,7 @@ TYPE
 		Start : Buttons_type;
 		Stop : ButtonStop_type;
 		Reset : Buttons_type;
+		Manual : ManualBtn_type;
 	END_STRUCT;
 	ButtonStop_type : 	STRUCT 
 		State : BOOL;
