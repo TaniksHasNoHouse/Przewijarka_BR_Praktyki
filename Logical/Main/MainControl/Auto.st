@@ -17,6 +17,8 @@ PROGRAM _CYCLIC
 	actProdExecute;
 	actProdCompleting;
 	actProdComplete;
+	actManResetting;
+	actManIdle;
 	
 	 
 END_PROGRAM
