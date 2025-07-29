@@ -22,6 +22,19 @@ PROGRAM _CYCLIC
 	MpAxisBasicMaster.JogPositive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	MpAxisBasicMaster.Stop := gMainLogic.MotorMode.Production.Cmd.EmergencyStop;
 	
+	IF (MpAxisBasicMasterPar.Velocity <> PrevVelocity) OR (MpAxisBasicMasterPar.Distance <> PrevDistance) THEN
+		UpdateTrigger := TRUE;
+	ELSE
+		UpdateTrigger := FALSE;
+	END_IF
+
+	UpdateEdge := UpdateTrigger AND NOT UpdateEdge;
+	
+	MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
+	MpAxisBasicMasterPar.Distance := gMainLogic.MotorMode.Production.Parameter.Distance;
+	
+	MpAxisBasicMaster.Update := UpdateEdge;
+	
 	LineVelocityInMeters := MpAxisBasicMaster.Velocity * 60.0 / 1000.0;
 	
 	gTensionLogic.Parameter.GroupLineVelocity := LineVelocityInMeters;

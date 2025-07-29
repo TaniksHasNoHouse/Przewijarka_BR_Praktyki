@@ -2,4 +2,8 @@ VAR
 	MpAxisBasicMasterPar : MpAxisBasicParType;
 	MpAxisBasicMaster : MpAxisBasic;
 	LineVelocityInMeters : REAL;
+	PrevVelocity : REAL;
+	PrevDistance : REAL;
+	UpdateEdge : BOOL;
+	UpdateTrigger : BOOL;
 END_VAR
