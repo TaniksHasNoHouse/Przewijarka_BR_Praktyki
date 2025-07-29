@@ -16,8 +16,8 @@
     <Widget xsi:type="widgets.brease.NumericOutput" id="CurrLaneSpeedNumOut" top="235" left="290" width="120" zIndex="12" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" textAlign="center" />
     <Widget xsi:type="widgets.brease.ProgressBar" id="WindingProgressBar" top="375" left="25" width="649" zIndex="13" />
     <Widget xsi:type="widgets.brease.Label" id="WingingProgressLabel" top="340" left="277" width="145" height="20" zIndex="14" text="$IAT/MainPage/ID_Progress" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollLeftSize" top="295" left="20" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" permissionOperate="['Operators', 'Supervisors']" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollRightSize" top="295" left="580" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" permissionOperate="['Operators', 'Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollLeftSize" top="295" left="20" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" permissionOperate="['Operators', 'Supervisors']" permissionView="['Operators', 'Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="AdjustAccRollRightSize" top="295" left="580" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" permissionOperate="['Operators', 'Supervisors']" permissionView="['Operators', 'Supervisors']" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="SaveAdjRollLeft" top="335" left="20" zIndex="17" text="$IAT/MainPage/ID_Save" permissionOperate="['Operators', 'Supervisors']" permissionView="['Operators', 'Supervisors']" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="SaveAdjRollRight" top="335" left="580" zIndex="18" text="$IAT/MainPage/ID_Save" permissionOperate="['Operators', 'Supervisors']" permissionView="['Operators', 'Supervisors']" />
   </Widgets>
