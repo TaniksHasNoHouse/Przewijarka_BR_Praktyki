@@ -20,12 +20,13 @@ PROGRAM _CYCLIC
 	
 	ButtonStyles.Start := 'default';
 	ButtonStyles.Stop := 'default';
-	ButtonStyles.Reset := 'default';
+	ButtonStyles.Reset := 'reset';
 	PhysicalBtn.Start.ColorOFF := TRUE;
-	PhysicalBtn.Stop.ColorOFF := TRUE;
+	PhysicalBtn.Reset.ColorON := TRUE;
 	
 	CASE ButtonStates OF
 		STATE_IDLE:
+			PhysicalBtn.Stop.ColorOFF := TRUE;
 			IF gHMI.ControlBtn.Start = TRUE THEN
 				ButtonStates := STATE_WORKING;
 			END_IF;
@@ -38,6 +39,7 @@ PROGRAM _CYCLIC
 			ButtonStyles.Start := 'working';
 			PhysicalBtn.Start.ColorOFF := FALSE;
 			PhysicalBtn.Stop.ColorON := FALSE;
+			PhysicalBtn.Stop.ColorOFF := TRUE;
 			PhysicalBtn.Start.ColorON := TRUE;
 			IF gHMI.ControlBtn.Stop = TRUE THEN
 				ButtonStates := STATE_STOPPED;
@@ -69,19 +71,43 @@ PROGRAM _CYCLIC
 		
 		STATE_RESETING:
 			gHMI.ControlBtn.Reset := FALSE;
-			PhysicalBtn.Reset.ColorON := TRUE;
-			PhysicalBtn.Stop.ColorOFF := FALSE;
-			ResetBtnTimer.IN := TRUE;
+
 			ResetBtnTimer.PT := T#2s;
-			ButtonStyles.Reset := 'reset';
-			ButtonStyles.Stop := 'Estopped';
-			IF ResetBtnTimer.Q = TRUE THEN
-				PhysicalBtn.Stop.ColorEstop := FALSE;
-				PhysicalBtn.Reset.ColorON := FALSE;
+			ResetBtnTimer.IN := TRUE;
+			BlinkTimer.PT    := T#250ms;
+			BlinkTimer.IN    := TRUE;
+
+			IF BlinkTimer.Q THEN
+				BlinkTimer.IN  := FALSE;
+				BlinkToggle    := NOT BlinkToggle;
+			END_IF;
+			BlinkTimer.IN := TRUE;
+
+			IF BlinkToggle THEN
+				PhysicalBtn.Reset.ColorON  := TRUE;    // niebieski
+				PhysicalBtn.Reset.ColorOFF := FALSE;
+				ButtonStyles.Reset := 'reset';
+			ELSE
+				PhysicalBtn.Reset.ColorON  := FALSE;   // zielony (miganie)
+				PhysicalBtn.Reset.ColorOFF := TRUE;
+				ButtonStyles.Reset := 'working';
+			END_IF;
+
+			ButtonStyles.Stop := 'Estopped'; // zachowaj wygl¹d Estop
+
+			IF ResetBtnTimer.Q THEN
 				ResetBtnTimer.IN := FALSE;
+				BlinkTimer.IN    := FALSE;
+				BlinkToggle      := FALSE;
+
+				PhysicalBtn.Reset.ColorON  := TRUE;
+				PhysicalBtn.Reset.ColorOFF := FALSE;
+				PhysicalBtn.Stop.ColorEstop := FALSE; // ‹ Estop gasimy dopiero tutaj
+
 				ButtonStyles.Stop := 'default';
 				ButtonStates := STATE_IDLE;
 			END_IF;
+
 		  
 
 	END_CASE;
@@ -89,7 +115,7 @@ PROGRAM _CYCLIC
 	IF MpPackMLCore_0.StateCurrent = mpPACKML_STATE_ABORTING THEN
 		ButtonStates := STATE_ESTOPPED;
 	END_IF;
-	
+	BlinkTimer();
 	 ResetBtnTimer();
 END_PROGRAM
 

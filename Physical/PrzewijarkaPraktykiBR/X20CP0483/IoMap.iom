@@ -12,5 +12,6 @@ VAR_CONFIG
 	::MainPage:PhysicalBtn.Start.ColorON AT %QX."4XP0057.00-00W".DigitalOutput01;
 	::MainPage:PhysicalBtn.Stop.ColorON AT %QX."4XP0057.00-00W".DigitalOutput06;
 	::MainPage:PhysicalBtn.Stop.ColorEstop AT %QX."4XP0057.00-00W".DigitalOutput07;
-	::MainPage:PhysicalBtn.Stop.ColorON AT %QX."4XP0057.00-00W".DigitalOutput08;
+	::MainPage:PhysicalBtn.Stop.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput08;
+	::MainPage:PhysicalBtn.Reset.ColorOFF AT %QX."4XP0057.00-00W".DigitalOutput17;
 END_VAR
