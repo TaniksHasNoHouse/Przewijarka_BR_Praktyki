@@ -2,14 +2,14 @@
 TYPE
 	ConfigPID2 : 
 		(
-		FINISH,
-		START,
-		WAIT
+		FINISH_PID2,
+		START_PID2,
+		WAIT_PID2
 		);
 	ConfigPID1 : 
 		(
-		FINISH,
-		START,
-		WAIT
+		FINISH_PID1,
+		START_PID1,
+		WAIT_PID1
 		);
 END_TYPE
