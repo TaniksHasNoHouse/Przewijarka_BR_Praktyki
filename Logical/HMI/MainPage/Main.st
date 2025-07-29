@@ -77,8 +77,8 @@ PROGRAM _CYCLIC
 		gHMI.ControlBtn.Stop := FALSE;
 		ButtonStyles.Stop := 'stopped';
 			
-		PhysicalBtn.Stop.ColorOFF := FALSE;
-		PhysicalBtn.Stop.ColorON := TRUE;
+		PhysicalBtn.Stop.ColorOFF := TRUE;
+		PhysicalBtn.Stop.ColorON := FALSE;
 			
 		PhysicalBtn.Start.ColorON := FALSE;
 	END_IF;
@@ -86,6 +86,8 @@ PROGRAM _CYCLIC
 	IF Status.StateCurrent = 'Idle' THEN
 		PhysicalBtn.Stop.ColorON := FALSE;
 		PhysicalBtn.Stop.ColorOFF := TRUE;
+		PhysicalBtn.Reset.ColorOFF := TRUE;
+		PhysicalBtn.Reset.ColorON := FALSE;
 	END_IF;
 	
 	IF Status.StateCurrent = 'Resetting' THEN
