@@ -6,7 +6,7 @@
     <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfoUser" top="30" left="438" width="125" height="15" zIndex="2" textAlign="center" />
     <Widget xsi:type="widgets.brease.Button" id="LoginButton" top="5" left="565" width="60" height="50" zIndex="3" image="Media/SymbolLib/User/Login.svg" imageHeight="40" imageWidth="40" />
     <Widget xsi:type="widgets.brease.LogoutButton" id="LogoutButton" top="5" left="635" width="60" height="50" zIndex="4" image="Media/SymbolLib/User/Logout.svg" imageHeight="40" imageWidth="40" cornerRadius="30px" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchManual" top="10" left="310" height="40" zIndex="5" mouseDownText="$IAT/HMI/ID_Manual" text="$IAT/HMI/ID_Auto" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(241, 241, 241, 1)" fontSize="16px" visible="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchManual" top="10" left="310" height="40" zIndex="5" mouseDownText="$IAT/HMI/ID_Manual" text="$IAT/HMI/ID_Auto" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(241, 241, 241, 1)" fontSize="16px" enable="false" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="ButtonStartTop" top="10" left="5" width="90" height="40" zIndex="6" text="$IAT/HMI/ID_Start" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="ButtonStopTop" top="10" left="107" width="90" height="40" zIndex="7" text="$IAT/HMI/ID_Stop" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="ButtonResetTop" top="10" left="208" width="90" height="40" zIndex="8" text="$IAT/HMI/ID_Reset" />

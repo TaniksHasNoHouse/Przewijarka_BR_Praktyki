@@ -23,7 +23,7 @@ PROGRAM _CYCLIC
 	ButtonStyles.Start := 'default';
 	ButtonStyles.Stop := 'default';
 	ButtonStyles.Reset := 'reset';
-	ManualOff = FALSE;
+	ManualOff := FALSE;
 	PhysicalBtn.Start.ColorOFF := TRUE;
 	PhysicalBtn.Reset.ColorON := TRUE;
 	PhysicalBtn.Manual.Left.ColorOFF := FALSE;
@@ -150,7 +150,7 @@ PROGRAM _CYCLIC
 	END_IF;
 	IF Status.StateCurrent = 'Stopped' THEN
 		ButtonStates := STATE_STOPPED;
-		ManualOff = TRUE;
+		ManualOff := TRUE;
 	END_IF;
 	
 	IF ButtonStates <> STATE_ESTOPPED OR ButtonStates <> STATE_RESETING THEN
