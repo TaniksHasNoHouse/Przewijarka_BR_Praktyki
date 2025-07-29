@@ -133,7 +133,9 @@
       <Task Name="MainContro">
         <Variable Name="xd" />
       </Task>
-      <Task Name="ChartsPage" />
+      <Task Name="ChartsPage">
+        <Variable Name="UIConnectData" RecursiveEnable="2" />
+      </Task>
       <Task Name="MainPage">
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
       </Task>

@@ -30,5 +30,71 @@
         <seg>Data</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Dancer1">
+      <tuv xml:lang="pl">
+        <seg>Pozycja dancera 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Spannerposition 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dancer 1 position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Dancer2">
+      <tuv xml:lang="pl">
+        <seg>Pozycja dancera 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Spannerposition 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dancer 2 position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Axis1">
+      <tuv xml:lang="pl">
+        <seg>Prędkość osi 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Geschwindigkeit Achse 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 1 speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Axis2">
+      <tuv xml:lang="pl">
+        <seg>Prędkość osi 2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Geschwindigkeit Achse 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 2 speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Axis3">
+      <tuv xml:lang="pl">
+        <seg>Prędkość osi 3</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Geschwindigkeit Achse 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 3 speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Choose">
+      <tuv xml:lang="pl">
+        <seg>Wybierz dane do zapisu:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wählen Sie die zu speichernden Daten aus:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose data to save:</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
