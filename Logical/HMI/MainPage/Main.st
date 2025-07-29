@@ -5,6 +5,10 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
+
+	IF gTensionLogic.Status.EnableAxis1 = FALSE OR gTensionLogic.Status.EnableAxis2 = FALSE OR gTensionLogic.Status.EnableAxis3 = FALSE THEN
+		aBORT := TRUE;
+	END_IF;
 	
 	IF PhysicalBtn.Start.State = TRUE THEN
 		gHMI.ControlBtn.Start := TRUE;
