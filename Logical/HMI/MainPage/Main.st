@@ -91,6 +91,9 @@ PROGRAM _CYCLIC
 		ButtonStates := STATE_ESTOPPED;
 	END_IF;
 	IF Status.StateCurrent = 'Stopped' THEN
+		IF Status.ModeCurrent = 'Manual' THEN
+			ButtonStates := STATE_MANUAL
+		END_IF;
 		ButtonStates := STATE_STOPPED;
 	END_IF;
 	IF Status.StateCurrent = 'Idle' THEN
@@ -98,9 +101,6 @@ PROGRAM _CYCLIC
 	END_IF;
 	IF Status.StateCurrent = 'Resetting' THEN
 		ButtonStates := STATE_RESETING
-	END_IF;
-	IF Status.ModeCurrent = 'Manual' THEN
-		ButtonStates := STATE_MANUAL
 	END_IF;
 	IF Status.StateCurrent = 'Starting' THEN
 		ButtonStates := STATE_WORKING;
