@@ -6,8 +6,8 @@ ACTION actProdExecute:
 		// Start winding material
 //		gMainLogic.MotorMode.Production.Cmd.Enable := TRUE;
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := TRUE;
-		gMainLogic.MotorMode.Production.Parameter.Distance := 0.9; // 0.9m target
-		gMainLogic.MotorMode.Production.Parameter.Velocity := 10.0; // Set winding velocity
+		gMainLogic.MotorMode.Production.Parameter.Distance := 900; // 0.9m target
+		gMainLogic.MotorMode.Production.Parameter.Velocity := 100.0; // Set winding velocity (mm/s)
     
 		// Check if target distance reached
 		IF gMainLogic.MotorMode.Production.Status.ActDistance >= gMainLogic.MotorMode.Production.Parameter.Distance THEN

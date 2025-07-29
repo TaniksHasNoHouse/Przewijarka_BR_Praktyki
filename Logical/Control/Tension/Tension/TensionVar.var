@@ -3,7 +3,8 @@ VAR RETAIN
 	LeftWinderDiameter : REAL := 30.0;
 END_VAR
 VAR
-	step : TESTstate;
+	Step : StepEnum;
+	PackMLMode : PackMLModes;
 	TensionGroup : MpTensionGroup;
 END_VAR
 VAR CONSTANT
@@ -21,5 +22,6 @@ VAR
 	ActRightDancerPosScal : REAL;
 	ProgressBarProcent : REAL;
 	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
+	MpAxisBasicParams : ARRAY[0..2] OF MpAxisBasicParType;
 	ActRightDancerPos : INT;
 END_VAR
