@@ -2,4 +2,7 @@ VAR
 	ButtonStates : ButtonStates_type;
 	ButtonStyles : ButtonStyles_type;
 	ResetBtnTimer : TON;
+	PhysicalBtn : PhysicalBtn_type;
+	BlinkTimer : TON;
+	BlinkToggle : BOOL;
 END_VAR
