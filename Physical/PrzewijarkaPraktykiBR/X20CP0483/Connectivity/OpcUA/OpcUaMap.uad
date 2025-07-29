@@ -98,6 +98,7 @@
           </Variable>
         </Variable>
         <Variable Name="gTensionLogic" RecursiveEnable="2" />
+        <Variable Name="Status" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
@@ -140,6 +141,7 @@
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
         <Variable Name="ManualOff" />
       </Task>
+      <Task Name="PackML" />
     </Module>
   </DefaultView>
 </OpcUaSource>
