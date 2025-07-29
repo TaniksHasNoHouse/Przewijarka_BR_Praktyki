@@ -3,15 +3,7 @@
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File">actInitTension.st</Object>
-    <Object Type="File">actCatchError.st</Object>
     <Object Type="File">actLineInGroupVelocity.st</Object>
-    <Object Type="File">actInitTensionGroup.st</Object>
-    <Object Type="File">actHomeTensionGroup.st</Object>
-    <Object Type="File">actPowerOnTensionGroup.st</Object>
-    <Object Type="File">actWaitForCommand.st</Object>
-    <Object Type="File">actExecuteMoveAbsolute.st</Object>
-    <Object Type="File">actHandleError.st</Object>
-    <Object Type="File">actExecuteErrorReset.st</Object>
     <Object Type="File">actDoAlgebra.st</Object>
     <Object Type="File">actCallBlocks.st</Object>
     <Object Type="File">actExitTension.st</Object>

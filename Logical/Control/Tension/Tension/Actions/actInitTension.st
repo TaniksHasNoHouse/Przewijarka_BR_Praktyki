@@ -25,4 +25,8 @@ ACTION actInitTension:
 	MpAxisBasicFB[1].MpLink := ADR(gAxis_2);
 	MpAxisBasicFB[2].MpLink := ADR(gAxis_3);
 	
+	MpAxisBasicFB[0].Parameters := ADR(MpAxisBasicParams[0]);
+	MpAxisBasicFB[1].Parameters := ADR(MpAxisBasicParams[1]);
+	MpAxisBasicFB[2].Parameters := ADR(MpAxisBasicParams[2]);
+	
 END_ACTION
