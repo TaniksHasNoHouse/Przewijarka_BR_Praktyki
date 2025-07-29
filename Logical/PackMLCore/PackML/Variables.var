@@ -1,4 +1,5 @@
 VAR
 	MpPackMLMode_0 : MpPackMLMode;
 	MpPackMLMode_1 : MpPackMLMode;
+	MpPackMLBasicUI_0 : MpPackMLBasicUI;
 END_VAR
