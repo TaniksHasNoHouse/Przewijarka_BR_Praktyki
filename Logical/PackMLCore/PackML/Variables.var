@@ -5,4 +5,5 @@ VAR
 	prevBtn : BOOL := FALSE; (* poprzedni stan przycisku *)
 	step : INT := 0; (* maszyna stanów *)
 	MpPackMLBasicUIConnect : MpPackMLBasicUIConnectType;
+	MpPackMLCore_0 : MpPackMLCore;
 END_VAR
