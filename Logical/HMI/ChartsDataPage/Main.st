@@ -76,8 +76,6 @@ PROGRAM _CYCLIC
 	MpDataRegPar_2();
 	MpDataRegPar_3();
 	MpDataRegPar_4();
-	
-	actDisplayFiles;
 END_PROGRAM
 
 PROGRAM _EXIT
