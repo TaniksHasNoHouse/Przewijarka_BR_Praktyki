@@ -19,5 +19,6 @@ PROGRAM _EXIT
 	(* Insert code here *)
 	MpPackMLCore_0(Enable := FALSE);
 	MpPackMLMode_0(Enable := FALSE);
+	MpPackMLMode_1(Enable := FALSE);
 END_PROGRAM
 

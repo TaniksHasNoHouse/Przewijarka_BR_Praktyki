@@ -2,4 +2,6 @@ VAR
 	MpPackMLCore_0 : MpPackMLCore;
 	MpPackMLMode_0 : MpPackMLMode;
 	MpPackMLMode_1 : MpPackMLMode;
+	prevBtn    : BOOL := FALSE;   (* poprzedni stan przycisku *)
+	step       : INT := 0;        (* maszyna stanów *)
 END_VAR
