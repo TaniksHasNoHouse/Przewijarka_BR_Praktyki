@@ -150,7 +150,7 @@ PROGRAM _CYCLIC
 		ButtonStates := STATE_ESTOPPED;
 	END_IF;
 	IF Status.StateCurrent = 'Stopped' THEN
-	  
+	 	ButtonStates := STATE_STOPPED;
 	END_IF;
 	
 	IF ButtonStates <> STATE_ESTOPPED OR ButtonStates <> STATE_RESETING THEN
