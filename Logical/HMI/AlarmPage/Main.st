@@ -40,6 +40,8 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	MpAlarmXCore_0();
+	
+	gHMI.Alarms.PendingAlarms := MpAlarmXCore_0.PendingAlarms;
 END_PROGRAM
 
 PROGRAM _EXIT

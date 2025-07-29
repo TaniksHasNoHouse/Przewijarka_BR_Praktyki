@@ -8,6 +8,7 @@ TYPE
 		Charts : Charts_type;
 		ModuleOK : ModuleOK_type;
 		Main : MainPage_type;
+		Alarms : Alarms_type;
 	END_STRUCT;
 END_TYPE
 
@@ -135,5 +136,13 @@ TYPE
 		AnalogInput : BOOL;
 		SystemBusTransmitter : BOOL;
 		ControlKeypad : BOOL;
+	END_STRUCT;
+END_TYPE
+
+(*Alarms*)
+
+TYPE
+	Alarms_type : 	STRUCT 
+		PendingAlarms : UDINT;
 	END_STRUCT;
 END_TYPE
