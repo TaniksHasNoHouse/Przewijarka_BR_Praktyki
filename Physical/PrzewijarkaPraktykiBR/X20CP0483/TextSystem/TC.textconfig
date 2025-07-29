@@ -33,6 +33,7 @@
       <Property ID="TargetFile[18]" Value="mappView.Resources.Texts.AdminPage.tmx" />
       <Property ID="TargetFile[19]" Value="mappView.Resources.Texts.ManualPage.tmx" />
       <Property ID="TargetFile[20]" Value="mappView.Resources.Texts.DataPage.tmx" />
+      <Property ID="TargetFile[21]" Value="mappView.Resources.Texts.MainPage.tmx" />
     </Group>
   </Element>
 </Configuration>

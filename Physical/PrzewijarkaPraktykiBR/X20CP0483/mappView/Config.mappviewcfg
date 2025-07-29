@@ -13,7 +13,9 @@
         <Selector ID="InsecureMode" Value="1" />
       </Group>
       <Group ID="DiagnosticPageConf">
-        <Selector ID="DiagnosticPageSelection" Value="1" />
+        <Selector ID="DiagnosticPageSelection" Value="2">
+          <Property ID="DiagnosticPageRole[1]" Value="Everyone" />
+        </Selector>
       </Group>
       <Selector ID="Deployment" Value="DeploymentPLC" />
     </Group>
