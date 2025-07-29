@@ -6,7 +6,6 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	MpAlarmXCore_0(MpLink := ADR(gAlarmXCore), Enable := TRUE);
 	//Power supply alarm
 	IF gHMI.ModuleOK.PowerSupply = FALSE THEN
 	  MpAlarmXSet(gAlarmXCore, 'ModuleOKErrorPS');
