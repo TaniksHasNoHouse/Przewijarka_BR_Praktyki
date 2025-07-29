@@ -4,7 +4,7 @@ ACTION actProdIdle:
     
 		gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
-		gMainLogic.MotorMode.Production.Parameter.Tension := 0.0;
+//		gMainLogic.MotorMode.Production.Parameter.Tension := 0.0;
 		
 		IF gMainLogic.Cmd.Start = TRUE THEN
 	  		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
