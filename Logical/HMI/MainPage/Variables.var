@@ -2,6 +2,5 @@ VAR
 	ButtonStates : ButtonStates_type;
 	ButtonStyles : ButtonStyles_type;
 	PhysicalBtn : PhysicalBtn_type;
-	BlinkToggle : BOOL;
 	ManualOff : BOOL;
 END_VAR
