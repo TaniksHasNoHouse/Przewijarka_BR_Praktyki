@@ -13,12 +13,12 @@ TYPE
 		STEP_ABORTING, (*STATE_ABORTING*)
 		STEP_ABORTED, (*STATE_ABORTED*)
 		STEP_CLEARING (*STATE_CLEARING*)
-	);
+		);
 	PackMLModes : 
 		(
 		PACKML_MODE_PRODUCTION := 1,
 		PACKML_MODE_MANUAL := 2
-	);
+		);
 	MainLogicType : 	STRUCT 
 		Cmd : CmdType;
 		MotorMode : ModesType;
@@ -179,7 +179,7 @@ TYPE
 		ActualTension : REAL;
 		Ready : BOOL;
 	END_STRUCT;
-	Regulator : STRUCT
+	Regulator : 	STRUCT 
 		P : REAL;
 		I : REAL;
 	END_STRUCT;
