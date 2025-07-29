@@ -7,7 +7,7 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxDancer1" top="50" left="10" width="170" zIndex="1" text="Pozycja dancera 1" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBox2" top="90" left="10" width="170" zIndex="2" text="Pozycja dancera 2" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxDancer2" top="90" left="10" width="170" zIndex="2" text="Pozycja dancera 2" />
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis1" top="50" left="200" zIndex="3" text="Prędkość osi 1" />
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis2" top="90" left="200" zIndex="4" text="Prędkość osi 2" />
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis3" top="50" left="380" zIndex="5" text="Prędkość osi 3" />
