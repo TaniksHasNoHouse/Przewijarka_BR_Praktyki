@@ -25,6 +25,8 @@ PROGRAM _CYCLIC
 	LineVelocityInMeters := MpAxisBasicMaster.Velocity * 60.0 / 1000.0;
 	
 	gTensionLogic.Parameter.GroupLineVelocity := LineVelocityInMeters;
+	gTensionLogic.Status.MasterIsHomed := MpAxisBasicMaster.IsHomed;
+	gTensionLogic.Status.MasterIsPowerOn := MpAxisBasicMaster.PowerOn;
 	gMainLogic.MotorMode.Production.Status.ActVelocity := LineVelocityInMeters;
 	MpAxisBasicMaster();
 	

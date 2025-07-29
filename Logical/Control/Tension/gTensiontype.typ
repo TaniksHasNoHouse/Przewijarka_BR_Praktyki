@@ -22,6 +22,8 @@ TYPE
 		ProgressBarProcent : REAL;
 		LineIsHomed : BOOL;
 		LineIsPoweredOn : BOOL;
+		MasterIsPowerOn : BOOL;
+		MasterIsHomed : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
