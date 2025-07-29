@@ -11,26 +11,27 @@ PROGRAM _INIT
 	MpAxisBasicMasterPar.Jog.Acceleration := 10.0;
 	MpAxisBasicMasterPar.Jog.Deceleration := 10.0;
 	MpAxisBasicMaster.Parameters := ADR(MpAxisBasicMasterPar);
+	PowerStep := POWER_INIT;
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	MpAxisBasicMaster.Enable := gMainLogic.MotorMode.Production.Cmd.Enable;
 	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
-	CASE PowerState OF
+	CASE PowerStep OF
 
 		POWER_INIT:
 			MpAxisBasicMaster.Power := FALSE;
-			PowerState := POWER_REQUEST_ON;
+			PowerStep := POWER_REQUEST_ON;
 
 		POWER_REQUEST_ON:
 			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 			IF MpAxisBasicMaster.Power THEN
-				PowerState := POWER_CHECK_ON;
+				PowerStep := POWER_CHECK_ON;
 			END_IF;
 			
 		POWER_CHECK_ON:
 			IF MpAxisBasicMaster.PowerOn THEN
-				PowerState := POWER_DONE;
+				PowerStep := POWER_DONE;
 			ELSE
 				MpAxisBasicMaster.Power := NOT MpAxisBasicMaster.Power;
 			END_IF;
