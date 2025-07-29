@@ -30,5 +30,9 @@
 <Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Reset" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainPage:ManualOff" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

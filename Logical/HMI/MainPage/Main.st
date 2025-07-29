@@ -23,6 +23,7 @@ PROGRAM _CYCLIC
 	ButtonStyles.Start := 'default';
 	ButtonStyles.Stop := 'default';
 	ButtonStyles.Reset := 'reset';
+	ManualOff = FALSE;
 	PhysicalBtn.Start.ColorOFF := TRUE;
 	PhysicalBtn.Reset.ColorON := TRUE;
 	PhysicalBtn.Manual.Left.ColorOFF := FALSE;
@@ -67,7 +68,6 @@ PROGRAM _CYCLIC
 			
 			
 		STATE_ESTOPPED:
-			ManualOff := TRUE;
 			ButtonStyles.Stop := 'Estopped';
 			PhysicalBtn.Stop.ColorOFF := FALSE;
 			PhysicalBtn.Start.ColorON := FALSE;
@@ -79,7 +79,6 @@ PROGRAM _CYCLIC
 		
 		STATE_RESETING:
 			gHMI.ControlBtn.Reset := FALSE;
-			ManualOff := TRUE;
 			ResetBtnTimer.PT := T#2s;
 			ResetBtnTimer.IN := TRUE;
 			BlinkTimer.PT    := T#250ms;
@@ -150,7 +149,8 @@ PROGRAM _CYCLIC
 		ButtonStates := STATE_ESTOPPED;
 	END_IF;
 	IF Status.StateCurrent = 'Stopped' THEN
-	 	ButtonStates := STATE_STOPPED;
+		ButtonStates := STATE_STOPPED;
+		ManualOff = TRUE;
 	END_IF;
 	
 	IF ButtonStates <> STATE_ESTOPPED OR ButtonStates <> STATE_RESETING THEN
