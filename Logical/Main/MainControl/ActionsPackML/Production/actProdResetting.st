@@ -7,7 +7,7 @@ ACTION actProdResetting:
 		gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 		gMainLogic.MotorMode.Production.Parameter.Distance := 0.0;
-		gMainLogic.MotorMode.Production.Parameter.Tension := 0.0;
+//		gMainLogic.MotorMode.Production.Parameter.Tension := 0.0;
 		gMainLogic.MotorMode.Production.Cmd.TensionEnable := FALSE;
 		gMainLogic.MotorMode.Production.Status.TensionStable := FALSE;
     
