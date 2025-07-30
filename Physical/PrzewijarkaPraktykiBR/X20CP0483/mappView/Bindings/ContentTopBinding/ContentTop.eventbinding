@@ -21,5 +21,15 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="ContentTop.LogoutButton.Click">
+      <Source xsi:type="widgets.brease.LogoutButton.Event" contentRefId="ContentTop" widgetRefId="LogoutButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Navigate" pageId="MainPage" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

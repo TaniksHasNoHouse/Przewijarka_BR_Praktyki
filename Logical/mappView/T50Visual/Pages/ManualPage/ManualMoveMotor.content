@@ -8,20 +8,20 @@
     <Widget xsi:type="widgets.brease.Label" id="ActivationLabel" top="80" left="5" width="95" zIndex="4" text="$IAT/ManualPage/ID_Activate" />
     <Widget xsi:type="widgets.brease.Label" id="DirectionLabel" top="305" left="5" width="95" zIndex="5" text="$IAT/ManualPage/ID_Direction" />
     <Widget xsi:type="widgets.brease.Label" id="SpeedLabel" top="220" left="5" width="95" height="60" zIndex="6" multiLine="true" text="$IAT/ManualPage/ID_SetV" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot1Home" top="148" left="135" height="50" zIndex="7" text="$IAT/ManualPage/ID_Confirm" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot2Home" top="148" left="330" height="50" zIndex="8" text="$IAT/ManualPage/ID_Confirm" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot3Home" top="148" left="525" height="50" zIndex="9" text="$IAT/ManualPage/ID_Confirm" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot1" top="70" left="135" height="50" zIndex="10" mouseDownText="ON" text="OFF" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot2" top="70" left="330" height="50" zIndex="11" mouseDownText="ON" text="OFF" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot3" top="70" left="525" height="50" zIndex="12" mouseDownText="ON" text="OFF" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor1Speed" top="225" left="135" height="50" zIndex="13" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor2Speed" top="225" left="330" height="50" zIndex="14" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Motor3Speed" top="225" left="525" height="50" zIndex="15" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot1" top="295" left="120" width="50" height="50" zIndex="16" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot2" top="295" left="315" width="50" height="50" zIndex="17" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot3" top="295" left="510" width="50" height="50" zIndex="18" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot1" top="295" left="205" width="50" height="50" zIndex="19" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot2" top="295" left="400" width="50" height="50" zIndex="20" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot3" top="295" left="595" width="50" height="50" zIndex="21" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot1Home" top="148" left="135" height="50" zIndex="7" text="$IAT/ManualPage/ID_Confirm" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot2Home" top="148" left="330" height="50" zIndex="8" text="$IAT/ManualPage/ID_Confirm" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnMot3Home" top="148" left="525" height="50" zIndex="9" text="$IAT/ManualPage/ID_Confirm" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot1" top="70" left="135" height="50" zIndex="10" mouseDownText="ON" text="OFF" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot2" top="70" left="330" height="50" zIndex="11" mouseDownText="ON" text="OFF" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnMot3" top="70" left="525" height="50" zIndex="12" mouseDownText="ON" text="OFF" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Motor1Speed" top="225" left="135" height="50" zIndex="13" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Motor2Speed" top="225" left="330" height="50" zIndex="14" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Motor3Speed" top="225" left="525" height="50" zIndex="15" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot1" top="295" left="120" width="50" height="50" zIndex="16" image="Media/SymbolLib/Arrow/ArrowLeft.svg" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot2" top="295" left="315" width="50" height="50" zIndex="17" image="Media/SymbolLib/Arrow/ArrowLeft.svg" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnLeftMot3" top="295" left="510" width="50" height="50" zIndex="18" image="Media/SymbolLib/Arrow/ArrowLeft.svg" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot1" top="295" left="205" width="50" height="50" zIndex="19" image="Media/SymbolLib/Arrow/ArrowRight.svg" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot2" top="295" left="400" width="50" height="50" zIndex="20" image="Media/SymbolLib/Arrow/ArrowRight.svg" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnRightMot3" top="295" left="595" width="50" height="50" zIndex="21" image="Media/SymbolLib/Arrow/ArrowRight.svg" permissionOperate="['Supervisors']" />
   </Widgets>
 </Content>

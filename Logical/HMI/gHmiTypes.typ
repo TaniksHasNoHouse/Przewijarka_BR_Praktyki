@@ -9,6 +9,7 @@ TYPE
 		ModuleOK : ModuleOK_type;
 		Main : MainPage_type;
 		Alarms : Alarms_type;
+		Data : Data_type;
 	END_STRUCT;
 END_TYPE
 
@@ -116,6 +117,7 @@ TYPE
 		Axis3 : BOOL;
 	END_STRUCT;
 	Data_type : 	STRUCT 
+		isSaving : STRING[80];
 	END_STRUCT;
 	Charts_type : 	STRUCT 
 		Dancer1 : REAL;

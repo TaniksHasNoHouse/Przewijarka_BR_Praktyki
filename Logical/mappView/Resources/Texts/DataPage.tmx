@@ -96,5 +96,27 @@
         <seg>Choose data to save:</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Localization">
+      <tuv xml:lang="pl">
+        <seg>Lokalizacja zapisanych danych:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Speicherort der Daten:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Localization of saved data:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Save">
+      <tuv xml:lang="pl">
+        <seg>Zapis danych:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Datenaufzeichnung:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save data:</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

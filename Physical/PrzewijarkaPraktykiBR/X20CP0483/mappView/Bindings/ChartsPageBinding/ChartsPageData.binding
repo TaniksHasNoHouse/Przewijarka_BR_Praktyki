@@ -17,18 +17,18 @@
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Charts.Record.Axis1" attribute="value" />
 			<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="CheckBoxAxis1" attribute="value" />
 		</Binding>
-		
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::RecipePage:UIConnect.Recipe.List.Names" attribute="value" />
-			<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TableItemDataFlies" attribute="stringValue" />
-		</Binding>
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::ChartsPage:UIConnectData.Recipe.Filter" attribute="value" />
-			<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextInput1" attribute="value" />
-		</Binding>
+
 	<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Charts.Record.Axis3" attribute="value" />
 <Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="CheckBoxAxis3" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::ChartsPage:MpDataRecorder_0.Info.CurrentFileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextOutput1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Data.isSaving" attribute="value" />
+<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextOutputIsSaved" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

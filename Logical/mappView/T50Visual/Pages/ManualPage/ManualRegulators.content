@@ -12,8 +12,8 @@
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="208" left="314" width="105" height="45" zIndex="8" textAlign="center" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="108" left="549" width="105" height="45" zIndex="9" textAlign="center" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput6" top="208" left="549" width="105" height="45" zIndex="10" textAlign="center" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot1" top="290" left="65" width="132" height="55" zIndex="11" text="$IAT/ManualPage/ID_Autotune" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot2" top="290" left="301" width="132" height="55" zIndex="12" text="$IAT/ManualPage/ID_Autotune" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot3" top="290" left="535" width="132" height="55" zIndex="13" text="$IAT/ManualPage/ID_Autotune" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot1" top="290" left="65" width="132" height="55" zIndex="11" text="$IAT/ManualPage/ID_Autotune" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot2" top="290" left="301" width="132" height="55" zIndex="12" text="$IAT/ManualPage/ID_Autotune" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomBtnAutotuneMot3" top="290" left="535" width="132" height="55" zIndex="13" text="$IAT/ManualPage/ID_Autotune" permissionOperate="['Supervisors']" />
   </Widgets>
 </Content>
