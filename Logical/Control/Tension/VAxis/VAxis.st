@@ -53,11 +53,7 @@ PROGRAM _CYCLIC
 
 	UpdateEdge := UpdateTrigger AND NOT UpdateEdge;
 	
-	IF gMainLogic.MotorMode.Production.Parameter.Distance >= 0.0 OR gMainLogic.MotorMode.Manual.Axis2.Parameter.Dir >=0 THEN
-		MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
-	ELSIF gMainLogic.MotorMode.Production.Parameter.Distance <= 0.0 OR gMainLogic.MotorMode.Manual.Axis2.Parameter.Dir <=0 THEN
-		MpAxisBasicMasterPar.Velocity := - gMainLogic.MotorMode.Production.Parameter.Velocity;
-	END_IF;
+	MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
 	MpAxisBasicMasterPar.Distance := gMainLogic.MotorMode.Production.Parameter.Distance;
 	
 	MpAxisBasicMaster.Update := UpdateEdge;

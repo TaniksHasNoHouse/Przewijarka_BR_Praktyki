@@ -57,7 +57,10 @@ ACTION actReadGlobals:
 			MpAxisBasicFB[2].JogNegative := gMainLogic.MotorMode.Manual.Axis3.Cmd.JogAxis;
 		END_IF;
 	END_IF;
+	IF gTensionLogic.Status.SetDancers THEN
+	  	SetLeftDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos1;
+		SetRightDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos2;
+		gTensionLogic.Status.SetDancers := FALSE;
+	END_IF;
 	
-	SetLeftDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos1;
-	SetRightDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos2;
 END_ACTION

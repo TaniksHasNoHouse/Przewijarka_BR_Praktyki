@@ -28,6 +28,7 @@ TYPE
 		EnableAxis3 : BOOL; (*chacks if right axis is enabled*)
 		ProgressBarProcent : REAL; (*procent for progress bar*)
 		ErrorExist : BOOL;
+		SetDancers : BOOL; (*force dancers to set position on riseing edge*)
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
