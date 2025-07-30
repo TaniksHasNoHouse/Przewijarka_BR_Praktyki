@@ -1,8 +1,15 @@
 ACTION actProdIdle:
-// Waiting for next button press
+// Waiting for START button press
 	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_IDLE, PACKML_MODE_PRODUCTION) THEN
-		IF gMainLogic.Cmd.Start = TRUE THEN
-	  		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
+        
+		gMainLogic.MotorMode.Production.Parameter.Velocity := gHMI.Recipe.CurrentRecipe.Speed;
+		gMainLogic.MotorMode.Production.Parameter.DancerPos1 := gHMI.Recipe.CurrentRecipe.TensionLeft;
+		gMainLogic.MotorMode.Production.Parameter.DancerPos2 := gHMI.Recipe.CurrentRecipe.TensionRight;
+        
+		IF gHMI.Recipe.CurrentRecipe.Direction THEN
+			gMainLogic.MotorMode.Production.Parameter.Distance := gHMI.Recipe.CurrentRecipe.MaterialLength;
+		ELSE
+			gMainLogic.MotorMode.Production.Parameter.Distance := -gHMI.Recipe.CurrentRecipe.MaterialLength;
 		END_IF;
     
 	END_IF;
