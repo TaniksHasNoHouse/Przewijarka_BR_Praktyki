@@ -15,7 +15,7 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	MpAxisBasicMaster.Enable := gMainLogic.MotorMode.Production.Cmd.Enable;
+	MpAxisBasicMaster.Enable := TRUE;
 	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	CASE PowerStep OF
 

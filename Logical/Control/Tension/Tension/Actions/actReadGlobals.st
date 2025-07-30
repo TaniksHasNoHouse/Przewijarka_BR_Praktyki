@@ -1,6 +1,6 @@
 
 ACTION actReadGlobals: 
-	TensionGroup.Enable := gMainLogic.MotorMode.Production.Cmd.Enable;
+	TensionGroup.Enable := TRUE;
 	TensionGroup.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 	TensionGroup.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
