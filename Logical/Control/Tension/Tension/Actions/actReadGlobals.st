@@ -4,7 +4,9 @@ ACTION actReadGlobals:
 	TensionGroup.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 	TensionGroup.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
-	TensionGroup.MoveVelocity := gMainLogic.MotorMode.Production.Cmd.StartWinding;
+	IF TensionGroup.PowerOn AND gTensionLogic.Status.MasterIsPowerOn THEN
+	  	TensionGroup.MoveVelocity := TRUE;
+	END_IF;
 	
 	MpAxisBasicFB[0].Home := gMainLogic.MotorMode.Manual.Axis1.Cmd.Home; 
 	MpAxisBasicFB[0].Power := gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn;
