@@ -22,7 +22,7 @@
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="SaveAdjRollRight" top="300" left="580" zIndex="18" text="$IAT/MainPage/ID_Save" permissionOperate="['Operators', 'Supervisors']" permissionView="['Operators', 'Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="LenghtLabel" top="380" left="25" width="190" zIndex="19" text="$IAT/RecipePage/ID_Length" />
     <Widget xsi:type="widgets.brease.Label" id="DirectionLabel" top="380" left="385" width="185" zIndex="20" text="$IAT/RecipePage/ID_WindDir" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="LengthToWindNumIn" top="380" left="220" width="130" zIndex="21" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WidningDirSwitch" top="380" left="575" zIndex="22" mouseDownText="$IAT/RecipePage/ID_Right" text="$IAT/RecipePage/ID_Left" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="LengthToWindNumIn" top="380" left="220" width="130" zIndex="21" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" permissionOperate="['Operators', 'Supervisors']" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WidningDirSwitch" top="380" left="575" zIndex="22" mouseDownText="$IAT/RecipePage/ID_Right" text="$IAT/RecipePage/ID_Left" fontSize="12px" permissionOperate="['Operators', 'Supervisors']" />
   </Widgets>
 </Content>
