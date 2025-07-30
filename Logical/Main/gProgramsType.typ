@@ -48,7 +48,7 @@ TYPE
 		Velocity : REAL;
 		DancerPos1 : REAL;
 		DancerPos2 : REAL;
-		Distance : REAL;
+		Distance : REAL; (*mm of material to be processed. given as negative line will move in opposite dir*)
 		TensionTolerance : REAL;
 		StabilityTime : TIME;
 		SettlingTime : TIME;
@@ -68,8 +68,8 @@ TYPE
 		SystemReady : BOOL;
 		Moving : BOOL;
 		Stopped : BOOL;
-		TensionStable : BOOL;
-		TensionReady : BOOL;
+		TensionStable : BOOL; (*checks if  dancers are in position*)
+		TensionReady : BOOL; (*chchecks if dancers try to stable*)
 		AlarmsActive : BOOL;
 		EmergencyStopped : BOOL;
 		ErrorCode : DINT;
@@ -151,7 +151,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
-		Dir : BOOL;
+		Dir : BOOL; (*1- positive jog  0-negative jog*)
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis2StatusType : 	STRUCT 
@@ -174,7 +174,7 @@ TYPE
 		TensionSetpoint : REAL;
 		SpeedRatio : REAL;
 		TensionOffset : REAL;
-		Dir : BOOL;
+		Dir : BOOL; (*1- positive jog  0-negative jog*)
 		RegulatorValues : Regulator;
 	END_STRUCT;
 	Axis3StatusType : 	STRUCT 

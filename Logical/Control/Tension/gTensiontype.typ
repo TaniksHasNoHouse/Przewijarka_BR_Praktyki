@@ -7,26 +7,25 @@ TYPE
 		Status : StatusTensionType;
 	END_STRUCT;
 	CommandTensionType : 	STRUCT 
-		SetRightDancerPos : REAL;
-		SetLeftDancerPos : REAL;
+		SetRightDancerPos : REAL; (*sets position of right dancer in mm*)
+		SetLeftDancerPos : REAL; (*sets position of left dancer in mm*)
 	END_STRUCT;
 	ParameterTensionType : 	STRUCT 
 		GroupLineVelocity : REAL; (*in m/min*)
 	END_STRUCT;
 	StatusTensionType : 	STRUCT 
-		ActRightDancerPos : REAL;
-		ActLeftDancerPos : REAL;
-		LeftWinderDiameter : REAL;
-		RightWinderDiameter : REAL;
-		LineIsInMove : BOOL;
-		ProgressBarProcent : REAL;
-		LineIsHomed : BOOL;
-		LineIsPoweredOn : BOOL;
-		MasterIsPowerOn : BOOL;
-		MasterIsHomed : BOOL;
-		EnableAxis1 : BOOL;
-		EnableAxis2 : BOOL;
-		EnableAxis3 : BOOL;
+		ActRightDancerPos : REAL; (*actual right dancer position in mm*)
+		ActLeftDancerPos : REAL; (*actual left dancer position in mmm*)
+		LeftWinderDiameter : REAL; (*diameter on left winder*)
+		RightWinderDiameter : REAL; (*diameter on right winder*)
+		LineIsInMove : BOOL; (*checks if line is moving*)
+		LineIsHomed : BOOL; (*checks if line is homed*)
+		LineIsPoweredOn : BOOL; (*checks if line is powered on*)
+		MasterIsPowerOn : BOOL; (*inside variable to communicate beatween programs*)
+		MasterIsHomed : BOOL; (*inside variable to communicate beatween programs*)
+		EnableAxis1 : BOOL; (*chacks if left axis is enabled*)
+		EnableAxis2 : BOOL; (*chacks if middle axis is enabled*)
+		EnableAxis3 : BOOL; (*chacks if right axis is enabled*)
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
@@ -85,7 +84,7 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
-		IsInMotion : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 	Axis2CMDType : 	STRUCT 
 		a : BOOL;
@@ -100,7 +99,7 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
-		IsInMotion : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 	Axis3CMDType : 	STRUCT 
 		a : BOOL;
@@ -121,6 +120,6 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
-		IsInMotion : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 END_TYPE
