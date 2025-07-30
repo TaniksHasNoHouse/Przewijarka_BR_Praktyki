@@ -97,7 +97,7 @@
 		shadow="4px 4px 14px 0px rgba(62, 79, 92, 0.75)" 
 		mouseDownShadow="2px 2px 8px 0px rgba(62, 79, 92, 0.75)" />	
 	
-	<Style id="red" xsi:type="widgets.brease.NavigationButton" 
+	<Style id="orange" xsi:type="widgets.brease.NavigationButton" 
 		fontSize="16px" 
 		bold="true" 
 		textColor="#FFFFFF" 
@@ -105,14 +105,15 @@
 		cornerRadius="30px" 
 		borderWidth="0px 0px 0px 0px" 
 		mouseDownBorderWidth="0px 0px 0px 0px" 
-		borderColor="#CC0000 #990000 #990000 #CC0000" 
-		mouseDownBorderColor="#FF0000 #990000 #990000 #FF0000" 
-		backGroundGradient="linear-gradient(to bottom, rgba(204,0,0,1) 0%,rgba(153,0,0,1) 100%)" 
-		mouseDownBackGroundGradient="linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(204,0,0,1) 100%)" 
-		checkedBackGroundGradient="linear-gradient(to bottom, rgba(204,0,0,1) 0%,rgba(153,0,0,1) 100%)" 
-		disabledBackGroundGradient="linear-gradient(to bottom, #cccccc 0%, #bbbbbb 50%, #aaaaaa 100%)"  
-		shadow="4px 4px 14px 0px rgba(92, 0, 0, 0.75)" 
-		mouseDownShadow="2px 2px 8px 0px rgba(92, 0, 0, 0.75)" />
+		borderColor="#FF9900 #CC6600 #CC6600 #FF9900" 
+		mouseDownBorderColor="#FFB84D #FF8000 #FF8000 #FFB84D" 
+		backGroundGradient="linear-gradient(to bottom, rgba(255,153,0,1) 0%,rgba(204,102,0,1) 100%)" 
+		mouseDownBackGroundGradient="linear-gradient(to bottom, rgba(255,184,77,1) 0%,rgba(255,128,0,1) 100%)" 
+		checkedBackGroundGradient="linear-gradient(to bottom, rgba(255,153,0,1) 0%,rgba(204,102,0,1) 100%)" 
+		disabledBackGroundGradient="linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%)"  
+		shadow="4px 4px 14px 0px rgba(128, 64, 0, 0.6)" 
+		mouseDownShadow="2px 2px 8px 0px rgba(128, 64, 0, 0.6)" />
+
 
 
 	<!--automatic navigation button-->

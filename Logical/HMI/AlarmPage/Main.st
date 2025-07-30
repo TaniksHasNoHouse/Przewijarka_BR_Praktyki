@@ -38,6 +38,12 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore, 'ModuleOKError4XP');
 	END_IF;
 	
+	IF gHMI.Alarms.PendingAlarms THEN
+		Style := 'orange';
+	ELSE
+		Style := 'default';
+	END_IF;
+	
 	MpAlarmXCore_0();
 	
 	gHMI.Alarms.PendingAlarms := UDINT_TO_BOOL(MpAlarmXCore_0.PendingAlarms);

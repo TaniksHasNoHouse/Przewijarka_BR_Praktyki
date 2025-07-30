@@ -8,8 +8,8 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
-	<Page refId="SpecialPage" />
-	<Page refId="ChartsDataPage" />
+    <Page refId="SpecialPage" />
+    <Page refId="ChartsDataPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -24,14 +24,15 @@
     <BindingsSet refId="ChartsPageAxis3_binding" />
     <BindingsSet refId="ChartsPageDancer1_binding" />
     <BindingsSet refId="ChartsPageDancer2_binding" />
-	<BindingsSet refId="ChartsPageVtape_binding" />
-	<BindingsSet refId="ChartsPageData_binding" />
+    <BindingsSet refId="ChartsPageVtape_binding" />
+    <BindingsSet refId="ChartsPageData_binding" />
     <BindingsSet refId="ManualLeftRight_binding" />
     <BindingsSet refId="ManualRegulators_binding" />
     <BindingsSet refId="AlarmPageCurrContent_binding" />
     <BindingsSet refId="AlarmPageHistContent_binding" />
     <BindingsSet refId="MainPageContent_binding" />
     <BindingsSet refId="ContentTop_binding" />
+    <BindingsSet refId="ContentLeft_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />

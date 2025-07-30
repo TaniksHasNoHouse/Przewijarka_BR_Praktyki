@@ -1,3 +1,4 @@
 VAR
 	MpAlarmXCore_0 : MpAlarmXCore;
+	Style : STRING[80];
 END_VAR

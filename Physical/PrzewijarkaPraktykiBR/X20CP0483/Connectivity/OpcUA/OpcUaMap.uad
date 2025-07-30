@@ -138,6 +138,9 @@
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
       </Task>
       <Task Name="PackML" />
+      <Task Name="AlarmPage">
+        <Variable Name="Style" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
