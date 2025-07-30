@@ -76,6 +76,13 @@ PROGRAM _CYCLIC
 	MpDataRegPar_2();
 	MpDataRegPar_3();
 	MpDataRegPar_4();
+	
+	IF gHMI.Recipe.CurrentRecipe.DataRegistration THEN
+		gHMI.Data.isSaving := 'TRUE';
+	ELSE
+		gHMI.Data.isSaving := 'FALSE';
+	END_IF;
+	
 END_PROGRAM
 
 PROGRAM _EXIT

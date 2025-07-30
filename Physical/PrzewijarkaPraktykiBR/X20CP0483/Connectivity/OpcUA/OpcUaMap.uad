@@ -68,7 +68,6 @@
                 <Variable Name="MaxSize" EURangesId="3" />
                 <Variable Name="MinSize" EURangesId="4" />
               </Variable>
-              <Variable Name="MaterialLength" EURangesId="2" />
               <Variable Name="Dencer1PID">
                 <Variable Name="P" EURangesId="5" />
                 <Variable Name="I" EURangesId="6" />
@@ -80,10 +79,7 @@
             </Variable>
           </Variable>
           <Variable Name="Manual">
-            <Variable Name="JogLeftRight">
-              <Variable Name="SetBeltSpeedRight" EURangesId="2" />
-              <Variable Name="SetBeltSpeedLeft" EURangesId="2" />
-            </Variable>
+            <Variable Name="JogLeftRight" />
             <Variable Name="JogMotors">
               <Variable Name="Motor1">
                 <Variable Name="Speed" EURangesId="7" />
@@ -116,7 +112,6 @@
             <Variable Name="MaxSize" EURangesId="3" />
             <Variable Name="MinSize" EURangesId="3" />
           </Variable>
-          <Variable Name="MaterialLength" EURangesId="2" />
           <Variable Name="Dencer1PID">
             <Variable Name="P" EURangesId="5" />
             <Variable Name="I" EURangesId="6" />
@@ -134,12 +129,19 @@
       <Task Name="MainContro">
         <Variable Name="xd" />
       </Task>
-      <Task Name="ChartsPage" />
+      <Task Name="ChartsPage">
+        <Variable Name="MpDataRecorder_0">
+          <Variable Name="Info" RecursiveEnable="2" />
+        </Variable>
+      </Task>
       <Task Name="MainPage">
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
-        <Variable Name="ManualOff" />
+        <Variable Name="PhysicalBtn" RecursiveEnable="2" />
       </Task>
       <Task Name="PackML" />
+      <Task Name="AlarmPage">
+        <Variable Name="Style" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

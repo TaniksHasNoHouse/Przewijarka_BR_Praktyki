@@ -9,6 +9,7 @@
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
     <Page refId="SpecialPage" />
+    <Page refId="ChartsDataPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -24,12 +25,14 @@
     <BindingsSet refId="ChartsPageDancer1_binding" />
     <BindingsSet refId="ChartsPageDancer2_binding" />
     <BindingsSet refId="ChartsPageVtape_binding" />
+    <BindingsSet refId="ChartsPageData_binding" />
     <BindingsSet refId="ManualLeftRight_binding" />
     <BindingsSet refId="ManualRegulators_binding" />
     <BindingsSet refId="AlarmPageCurrContent_binding" />
     <BindingsSet refId="AlarmPageHistContent_binding" />
     <BindingsSet refId="MainPageContent_binding" />
     <BindingsSet refId="ContentTop_binding" />
+    <BindingsSet refId="ContentLeft_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
@@ -38,9 +41,9 @@
     <EventBindingsSet refId="RecipeAddDialogContent_eventbinding" />
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
-	<EventBindingsSet refId="RecipeEditContent_eventbinding" />
+    <EventBindingsSet refId="RecipeEditContent_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
-	<EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
@@ -49,24 +52,18 @@
     <Dialog refId="RecipeEditDialog" />
   </Dialogs>
   <Contents>
-    <Content refId="MainPageContent" />
     <Content refId="AlarmPageCurrContent" />
     <Content refId="AlarmPageHistContent" />
     <Content refId="AlarmPageTabs" />
     <Content refId="ContentLeft" />
     <Content refId="ManualContent" />
-    <Content refId="ManualLeftRight" />
-    <Content refId="ManualMoveMotor" />
-    <Content refId="ManualRegulators" />
     <Content refId="LoginDialogueContent" />
     <Content refId="RecepieContent" />
     <Content refId="DiagnosticsPageTabs" />
     <Content refId="DiagnosticsPageSDM" />
     <Content refId="DiagnosticsPageAudit" />
     <Content refId="UserManagementPageUsers" />
-    <Content refId="RecipeAddDialogContent" />
     <Content refId="RecipeDeleteContent" />
-    <Content refId="RecipeEditContent" />
     <Content refId="RecipeAddEditRemoveContent" />
     <Content refId="RecipeCurrContent" />
     <Content refId="ChartsPageAxis1" />
@@ -79,6 +76,11 @@
     <Content refId="ChartsPageVtape" />
     <Content refId="SpecialPageContent" />
     <Content refId="ContentTop" />
+    <Content refId="RecipeAddDialogContent" />
+    <Content refId="RecipeEditContent" />
+    <Content refId="MainPageContent" />
+    <Content refId="ManualLeftRight" />
+    <Content refId="ManualMoveMotor" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

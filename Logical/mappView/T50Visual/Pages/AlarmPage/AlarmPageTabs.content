@@ -5,12 +5,12 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="AlarmTabs" top="9" left="9" width="681" height="401" zIndex="0">
           <Widgets>
-            <Widget xsi:type="widgets.brease.TabItem" id="CurrentAlarms" left="0" width="120" zIndex="0" text="$IAT/AlarmPage/ID_Alarms">
+            <Widget xsi:type="widgets.brease.TabItem" id="CurrentAlarms" left="0" width="350" zIndex="0" text="$IAT/AlarmPage/ID_Alarms">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlCurrAlarms" top="0" left="0" width="680" height="370" zIndex="0" contentId="AlarmPageCurrContent" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="HistoryAlarms" left="0" width="120" zIndex="1" text="$IAT/AlarmPage/ID_History">
+            <Widget xsi:type="widgets.brease.TabItem" id="HistoryAlarms" left="0" width="350" zIndex="1" text="$IAT/AlarmPage/ID_History">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlHistAlarms" top="0" left="0" width="680" height="370" zIndex="0" contentId="AlarmPageHistContent" />
               </Widgets>
