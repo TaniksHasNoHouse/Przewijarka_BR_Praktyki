@@ -39,5 +39,13 @@
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Alarms.PendingAlarms" attribute="value" />
 			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ImageAlarm" attribute="visible" />
 		</Binding>
-	</Bindings>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Status.StateCurrent" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlState" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Status.ModeCurrent" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlMode" attribute="value" />
+</Binding>
+</Bindings>
 </BindingsSet>
