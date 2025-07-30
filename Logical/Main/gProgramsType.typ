@@ -20,16 +20,9 @@ TYPE
 		PACKML_MODE_MANUAL := 2
 		);
 	MainLogicType : 	STRUCT 
-		Cmd : CmdType;
 		MotorMode : ModesType;
 		Step : StepEnum;
 		Mode : PackMLModes;
-	END_STRUCT;
-	CmdType : 	STRUCT 
-		Reset : BOOL;
-		Start : BOOL;
-		Stop : BOOL;
-		Abort : BOOL;
 	END_STRUCT;
 	MotorProdCmdType : 	STRUCT 
 		Enable : BOOL;
