@@ -1,0 +1,10 @@
+
+TYPE
+	PowerState : 
+		(
+		POWER_INIT,
+		POWER_REQUEST_ON,
+		POWER_CHECK_ON,
+		POWER_DONE
+		);
+END_TYPE

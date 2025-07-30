@@ -1,4 +1,5 @@
 VAR
+	PowerStep : PowerState;
 	MpAxisBasicMasterPar : MpAxisBasicParType;
 	MpAxisBasicMaster : MpAxisBasic;
 	LineVelocityInMeters : REAL;

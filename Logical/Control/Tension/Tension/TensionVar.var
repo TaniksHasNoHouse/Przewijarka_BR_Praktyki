@@ -1,6 +1,6 @@
 VAR RETAIN
-	RightWinderDiameter : REAL := 80.0;
-	LeftWinderDiameter : REAL := 30.0;
+	RightWinderDiameter : REAL := 30.0;
+	LeftWinderDiameter : REAL := 80.0;
 END_VAR
 VAR
 	Step : StepEnum;
@@ -17,10 +17,9 @@ VAR
 	ActLeftDancerPos : INT;
 	ActLeftDancerPosScal : REAL;
 	Distance : REAL;
-	SetRightDancerPos : REAL := 20.0;
-	SetLeftDancerPos : REAL := 20.0;
+	SetRightDancerPos : REAL := 50.0;
+	SetLeftDancerPos : REAL := 50.0;
 	ActRightDancerPosScal : REAL;
-	ProgressBarProcent : REAL;
 	MpAxisBasicFB : ARRAY[0..2] OF MpAxisBasic;
 	MpAxisBasicParams : ARRAY[0..2] OF MpAxisBasicParType;
 	ActRightDancerPos : INT;
