@@ -42,6 +42,7 @@ PROGRAM _CYCLIC
 	END_CASE
 	MpAxisBasicMaster.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	MpAxisBasicMaster.MoveAdditive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
+	MpAxisBasicMaster.MoveVelocity := gMainLogic.MotorMode.Manual.JogWithTenReg;
 	MpAxisBasicMaster.Stop := gMainLogic.MotorMode.Production.Cmd.EmergencyStop;
 	
 	IF (MpAxisBasicMasterPar.Velocity <> PrevVelocity) OR (MpAxisBasicMasterPar.Distance <> PrevDistance) THEN
@@ -52,7 +53,11 @@ PROGRAM _CYCLIC
 
 	UpdateEdge := UpdateTrigger AND NOT UpdateEdge;
 	
-	MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
+	IF gMainLogic.MotorMode.Production.Parameter.Distance >= 0.0 OR gMainLogic.MotorMode.Manual.Axis2.Parameter.Dir >=0 THEN
+		MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
+	ELSIF gMainLogic.MotorMode.Production.Parameter.Distance <= 0.0 OR gMainLogic.MotorMode.Manual.Axis2.Parameter.Dir <=0 THEN
+		MpAxisBasicMasterPar.Velocity := - gMainLogic.MotorMode.Production.Parameter.Velocity;
+	END_IF;
 	MpAxisBasicMasterPar.Distance := gMainLogic.MotorMode.Production.Parameter.Distance;
 	
 	MpAxisBasicMaster.Update := UpdateEdge;
