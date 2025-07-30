@@ -2,8 +2,11 @@
 ACTION actDoAlgebra: 
 	ActLeftDancerPosScal :=  brmfloor(((INT_TO_REAL(ActLeftDancerPos) - 4060.0) *(1000.0/135534.0)));
 	ActRightDancerPosScal := brmfloor(((INT_TO_REAL(ActRightDancerPos) - 4045.0) *(1000.0/135534.0)));
-	ProgressBarProcent :=  (TensionController[1].Info.ProcessedMaterial - StartigMaterialToProcess) * 1000.0 / gMainLogic.MotorMode.Production.Parameter.Distance;
+	gTensionLogic.Status.ActProcessedDistance := TensionController[1].Info.ProcessedMaterial - StartingMaterialToProcess;
+	ProgressBarProcent :=  (gTensionLogic.Status.ActProcessedDistance) * 1000.0 / gMainLogic.MotorMode.Production.Parameter.Distance;
 	IF ProgressBarProcent = 100.0 THEN
-	  StartigMaterialToProcess := TensionController[1].Info.ProcessedMaterial;
+	  StartingMaterialToProcess := TensionController[1].Info.ProcessedMaterial;
 	END_IF;
+	
+	
 END_ACTION
