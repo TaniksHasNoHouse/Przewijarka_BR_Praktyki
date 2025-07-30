@@ -23,6 +23,11 @@ TYPE
 	END_STRUCT;
 	MainPage_type : 	STRUCT 
 		RollAdj : RollAdj_type;
+		MaterialAdj : MaterialAdj_type;
+	END_STRUCT;
+	MaterialAdj_type : 	STRUCT 
+		Length : REAL;
+		Direction : BOOL;
 	END_STRUCT;
 END_TYPE
 
@@ -52,11 +57,9 @@ TYPE
 		TensionLeft : REAL := 0.0; (* Naci¹g lewy, zakres 0–14 cm *)
 		TensionRight : REAL := 0.0; (* Naci¹g prawy, zakres 0–14 cm *)
 		Speed : REAL := 0.0; (* Prêdkoœæ taœmy w m/s *)
-		Direction : BOOL := FALSE; (* Kierunek ruchu: FALSE = lewo, TRUE = prawo *)
 		RollLeft : MaxMinRollSize_type;
 		RollRight : MaxMinRollSize_type;
 		DataRegistration : BOOL := FALSE; (* Rejestracja danych: FALSE = wy³., TRUE = w³. *)
-		MaterialLength : REAL;
 		Dencer1PID : DencerPI_type;
 		Dencer2PID : DencerPI_type;
 	END_STRUCT;

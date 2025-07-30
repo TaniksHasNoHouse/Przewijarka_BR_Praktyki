@@ -22,7 +22,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 50;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 50;
 				gHMI.Recipe.CurrentRecipe.Speed := 10;
-				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -32,7 +31,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
 				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 1;
 
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe1Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -48,7 +46,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 70;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 70;
 				gHMI.Recipe.CurrentRecipe.Speed := 20;
-				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -58,7 +55,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
 				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
 
 				MpRecepieXml_0.FileName 			:= ADR('mappRecipe2Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -75,7 +71,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 90;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 90;
 				gHMI.Recipe.CurrentRecipe.Speed := 40;
-				gHMI.Recipe.CurrentRecipe.Direction := FALSE;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -85,7 +80,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
 				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 10;
 
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe3Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -101,7 +95,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 70;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 70;
 				gHMI.Recipe.CurrentRecipe.Speed := 20;
-				gHMI.Recipe.CurrentRecipe.Direction := TRUE;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -111,7 +104,6 @@ ACTION actRecipeManage:
 				gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := 80;
 				gHMI.Recipe.CurrentRecipe.RollRight.MinSize := 30;
 				gHMI.Recipe.CurrentRecipe.DataRegistration := FALSE;
-				gHMI.Recipe.CurrentRecipe.MaterialLength := 5;
 
 				MpRecepieXml_0.FileName 				:= ADR('mappRecipe4Test.xml');
 				MpRecepieXml_0.Save					:= TRUE;
@@ -150,7 +142,6 @@ ACTION actRecipeManage:
 		MaterialWidningEDITRecipe.TensionLeft := gHMI.Recipe.CurrentRecipe.TensionLeft;
 		MaterialWidningEDITRecipe.TensionRight := gHMI.Recipe.CurrentRecipe.TensionRight;
 		MaterialWidningEDITRecipe.Speed := gHMI.Recipe.CurrentRecipe.Speed;
-		MaterialWidningEDITRecipe.Direction := gHMI.Recipe.CurrentRecipe.Direction;
 		MaterialWidningEDITRecipe.Dencer1PID.P := gHMI.Recipe.CurrentRecipe.Dencer1PID.P;
 		MaterialWidningEDITRecipe.Dencer1PID.I := gHMI.Recipe.CurrentRecipe.Dencer1PID.I;
 		MaterialWidningEDITRecipe.Dencer2PID.P := gHMI.Recipe.CurrentRecipe.Dencer2PID.P;
@@ -160,7 +151,6 @@ ACTION actRecipeManage:
 		MaterialWidningEDITRecipe.RollRight.MaxSize := gHMI.Recipe.CurrentRecipe.RollRight.MaxSize;
 		MaterialWidningEDITRecipe.RollRight.MinSize := gHMI.Recipe.CurrentRecipe.RollRight.MinSize;
 		MaterialWidningEDITRecipe.DataRegistration := gHMI.Recipe.CurrentRecipe.DataRegistration;
-		MaterialWidningEDITRecipe.MaterialLength := gHMI.Recipe.CurrentRecipe.MaterialLength;
 		RecipeControl.Edit.DialogOpen							:= FALSE;
 	END_IF
 
@@ -168,7 +158,6 @@ ACTION actRecipeManage:
 		gHMI.Recipe.CurrentRecipe.TensionLeft := MaterialWidningEDITRecipe.TensionLeft;
 		gHMI.Recipe.CurrentRecipe.TensionRight := MaterialWidningEDITRecipe.TensionRight;
 		gHMI.Recipe.CurrentRecipe.Speed := MaterialWidningEDITRecipe.Speed;
-		gHMI.Recipe.CurrentRecipe.Direction := MaterialWidningEDITRecipe.Direction;
 		gHMI.Recipe.CurrentRecipe.Dencer1PID.P := MaterialWidningEDITRecipe.Dencer1PID.P;
 		gHMI.Recipe.CurrentRecipe.Dencer1PID.I := MaterialWidningEDITRecipe.Dencer1PID.I;
 		gHMI.Recipe.CurrentRecipe.Dencer2PID.P := MaterialWidningEDITRecipe.Dencer2PID.P;
@@ -178,7 +167,6 @@ ACTION actRecipeManage:
 		gHMI.Recipe.CurrentRecipe.RollRight.MaxSize := MaterialWidningEDITRecipe.RollRight.MaxSize;
 		gHMI.Recipe.CurrentRecipe.RollRight.MinSize := MaterialWidningEDITRecipe.RollRight.MinSize;
 		gHMI.Recipe.CurrentRecipe.DataRegistration := MaterialWidningEDITRecipe.DataRegistration;
-		gHMI.Recipe.CurrentRecipe.MaterialLength := MaterialWidningEDITRecipe.MaterialLength;
 		UIConnect.New.FileName := MpRecepieXml_0.Info.LastLoadedRecipe;
 		UIConnect.New.Create := TRUE;
 		IF (UIConnect.Status = mpRECIPE_UI_STATUS_IDLE) THEN

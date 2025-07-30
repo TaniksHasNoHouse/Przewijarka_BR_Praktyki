@@ -8,30 +8,26 @@
     <Widget xsi:type="widgets.brease.Label" id="LeftDancerLabel" top="233" left="5" width="190" height="26" zIndex="4" text="$IAT/RecipePage/ID_TensLeft" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="RightDancerLabel1" top="194" left="5" width="190" height="26" zIndex="5" text="$IAT/RecipePage/ID_TensRight" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="Speedlabel" top="273" left="5" width="140" height="26" zIndex="6" text="$IAT/RecipePage/ID_WindSpeed" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="DirectionLabel" top="40" left="370" width="120" height="26" zIndex="7" text="$IAT/RecipePage/ID_WindDir" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="RecordDataLabel1" top="79" left="370" width="105" height="26" zIndex="8" text="$IAT/RecipePage/ID_SaveData" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="Dencer1Label" top="240" left="428" width="60" height="26" zIndex="9" text="$IAT/RecipePage/ID_Dancer1" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="Dencer2Label" top="240" left="513" width="60" height="26" zIndex="10" text="$IAT/RecipePage/ID_Dancer2" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="RegPLabel" top="272" left="395" width="20" height="26" zIndex="11" text="P" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.Label" id="RegILabel" top="311" left="395" width="20" height="26" zIndex="12" text="I" fontSize="13px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollLeftNumIn" top="35" left="245" width="115" zIndex="13" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollLeftNumIn" top="75" left="245" width="115" zIndex="14" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollRightNumIn" top="115" left="245" width="115" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollRightNumIn" top="154" left="245" width="115" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="RightDancerNumIn" top="193" left="245" width="115" zIndex="17" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="LeftDancerNumIn" top="232" left="245" width="115" zIndex="18" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="WindingSpeedNumIn" top="271" left="245" width="115" zIndex="19" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer1PNumIn" top="270" left="420" width="75" zIndex="20" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2PNumIn" top="271" left="505" width="75" zIndex="21" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer1INumIn" top="309" left="420" width="75" zIndex="22" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2INumIn" top="310" left="505" width="75" zIndex="23" unitAlign="right" textAlign="center" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WidningDirSwitch" top="38" left="495" zIndex="24" mouseDownText="$IAT/RecipePage/ID_Right" text="$IAT/RecipePage/ID_Left" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="DataRecordSwitch" top="77" left="495" zIndex="25" mouseDownText="ON" text="OFF" fontSize="12px" />
-    <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="358" left="180" zIndex="26" text="$IAT/RecipePage/ID_Save" />
-    <Widget xsi:type="widgets.brease.Button" id="BtnCancel" top="358" left="305" zIndex="27" text="$IAT/RecipePage/ID_Cancel" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrRecLabel" top="10" left="5" width="155" height="15" zIndex="28" text="$IAT/RecipePage/ID_EditRec" fontSize="15px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="CurRecTextOut" top="5" left="170" width="260" height="25" zIndex="29" textAlign="left" fontSize="15px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="MaterialLenghtNumIn" top="310" left="245" width="115" zIndex="31" unit="{'metric':'MTR','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.Label" id="MaterialLenghtLabel" top="312" left="5" width="200" height="26" zIndex="30" text="$IAT/RecipePage/ID_Length" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="RecordDataLabel1" top="37" left="370" width="105" height="26" zIndex="7" text="$IAT/RecipePage/ID_SaveData" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="Dencer1Label" top="240" left="428" width="60" height="26" zIndex="8" text="$IAT/RecipePage/ID_Dancer1" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="Dencer2Label" top="240" left="513" width="60" height="26" zIndex="9" text="$IAT/RecipePage/ID_Dancer2" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="RegPLabel" top="272" left="395" width="20" height="26" zIndex="10" text="P" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.Label" id="RegILabel" top="311" left="395" width="20" height="26" zIndex="11" text="I" fontSize="13px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollLeftNumIn" top="35" left="245" width="115" zIndex="12" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollLeftNumIn" top="75" left="245" width="115" zIndex="13" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MaxRollRightNumIn" top="115" left="245" width="115" zIndex="14" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="MinRollRightNumIn" top="154" left="245" width="115" zIndex="15" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="RightDancerNumIn" top="193" left="245" width="115" zIndex="16" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="LeftDancerNumIn" top="232" left="245" width="115" zIndex="17" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="WindingSpeedNumIn" top="271" left="245" width="115" zIndex="18" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer1PNumIn" top="270" left="420" width="75" zIndex="19" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2PNumIn" top="271" left="505" width="75" zIndex="20" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer1INumIn" top="309" left="420" width="75" zIndex="21" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dencer2INumIn" top="310" left="505" width="75" zIndex="22" unitAlign="right" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="DataRecordSwitch" top="35" left="495" zIndex="23" mouseDownText="ON" text="OFF" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="358" left="180" zIndex="24" text="$IAT/RecipePage/ID_Save" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnCancel" top="358" left="305" zIndex="25" text="$IAT/RecipePage/ID_Cancel" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrRecLabel" top="10" left="5" width="155" height="15" zIndex="26" text="$IAT/RecipePage/ID_EditRec" fontSize="15px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="CurRecTextOut" top="5" left="170" width="260" height="25" zIndex="27" textAlign="left" fontSize="15px" />
   </Widgets>
 </Content>

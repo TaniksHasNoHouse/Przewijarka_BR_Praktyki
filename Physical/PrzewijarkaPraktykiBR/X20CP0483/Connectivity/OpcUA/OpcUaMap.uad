@@ -68,7 +68,6 @@
                 <Variable Name="MaxSize" EURangesId="3" />
                 <Variable Name="MinSize" EURangesId="4" />
               </Variable>
-              <Variable Name="MaterialLength" EURangesId="2" />
               <Variable Name="Dencer1PID">
                 <Variable Name="P" EURangesId="5" />
                 <Variable Name="I" EURangesId="6" />
@@ -113,7 +112,6 @@
             <Variable Name="MaxSize" EURangesId="3" />
             <Variable Name="MinSize" EURangesId="3" />
           </Variable>
-          <Variable Name="MaterialLength" EURangesId="2" />
           <Variable Name="Dencer1PID">
             <Variable Name="P" EURangesId="5" />
             <Variable Name="I" EURangesId="6" />

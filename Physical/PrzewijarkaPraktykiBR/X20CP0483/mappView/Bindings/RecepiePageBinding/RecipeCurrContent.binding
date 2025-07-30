@@ -9,10 +9,7 @@
 <Source xsi:type="opcUa" refId="::RecipePage:ImageDirectory.Current.CurrentOnOff" attribute="value" />
 <Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DataRecordImage" attribute="image" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::RecipePage:ImageDirectory.Current.CurrentArrow" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="DirectionImage" attribute="image" />
-</Binding>
+
 
 
 
@@ -81,10 +78,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Speed" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="WindingSpeedNumOut" attribute="node" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.MaterialLength" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeCurrContent" widgetRefId="MaterialWindingLenght" attribute="node" />
-</Binding>
+
 
 	
 
