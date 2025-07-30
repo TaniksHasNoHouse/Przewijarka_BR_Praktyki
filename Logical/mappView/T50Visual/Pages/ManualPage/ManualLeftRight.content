@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualLeftRight" height="380" width="690" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnLeft" top="179" left="515" width="140" height="45" zIndex="0" image="Media/SymbolLib/Arrow/ArrowLeft.svg" multiLine="true" text="$IAT/ManualPage/ID_MoveLeft" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnRight" top="305" left="513" width="145" height="45" zIndex="1" image="Media/SymbolLib/Arrow/ArrowRight.svg" imageAlign="right" multiLine="true" text="$IAT/ManualPage/ID_MoveRight" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumInVel" top="176" left="36" width="135" height="45" zIndex="2" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" cornerRadius="5px" textAlign="right" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnLeft" top="179" left="515" width="140" height="45" zIndex="0" image="Media/SymbolLib/Arrow/ArrowLeft.svg" multiLine="true" text="$IAT/ManualPage/ID_MoveLeft" wordWrap="true" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MPBtnRight" top="305" left="513" width="145" height="45" zIndex="1" image="Media/SymbolLib/Arrow/ArrowRight.svg" imageAlign="right" multiLine="true" text="$IAT/ManualPage/ID_MoveRight" wordWrap="true" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInVel" top="176" left="36" width="135" height="45" zIndex="2" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" cornerRadius="5px" textAlign="right" fontSize="20px" permissionOperate="['Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="ActiveLabel" top="45" left="35" width="70" height="25" zIndex="3" text="$IAT/ManualPage/ID_Activate" textAlign="center" />
     <Widget xsi:type="widgets.brease.Label" id="AssignFabricVelLabel" top="115" left="45" width="117" height="55" zIndex="4" multiLine="true" text="$IAT/ManualPage/ID_VSet" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="NumOutCurr" top="305" left="36" width="135" height="45" zIndex="5" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumOutCurr" top="305" left="36" width="135" height="45" zIndex="5" unit="{'metric':'2X','imperial':'FR','imperial-us':'FR'}" unitAlign="right" fontSize="20px" permissionOperate="['Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="CurrentFablicVel" top="245" left="16" width="176" height="55" zIndex="6" multiLine="true" text="$IAT/ManualPage/ID_VCurr" wordWrap="true" textAlign="center" />
     <Widget xsi:type="widgets.brease.Ellipse" id="IsNotWorking" top="18" left="545" width="80" height="80" zIndex="7" backColor="rgba(255, 0, 0, 1)" />
     <Widget xsi:type="widgets.brease.Ellipse" id="IsWorking" top="18" left="545" width="80" height="80" zIndex="8" backColor="rgba(0, 255, 0, 1)" visible="false" />
     <Widget xsi:type="widgets.brease.Label" id="CurrStateLabel" top="38" left="465" height="36" zIndex="9" multiLine="true" text="$IAT/ManualPage/ID_CurrState" wordWrap="true" textAlign="center" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ActivateTgBtn" top="37" left="120" width="110" height="41" zIndex="10" text="$IAT/ManualPage/ID_Activate" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ActivateTgBtn" top="37" left="120" width="110" height="41" zIndex="10" text="$IAT/ManualPage/ID_Activate" permissionOperate="['Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="MoveLabel" top="128" left="525" width="121" height="21" zIndex="11" text="$IAT/ManualPage/ID_Line" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dancer1NumInManual" top="179" left="275" width="135" height="45" zIndex="12" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Dancer2NumInManual" top="305" left="275" width="135" height="45" zIndex="13" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dancer1NumInManual" top="179" left="275" width="135" height="45" zIndex="12" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="20px" permissionOperate="['Supervisors']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Dancer2NumInManual" top="305" left="275" width="135" height="45" zIndex="13" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" fontSize="20px" permissionOperate="['Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="123" left="294" width="97" height="52" zIndex="14" text="$IAT/RecipePage/ID_Dancer1" textAlign="center" />
     <Widget xsi:type="widgets.brease.Label" id="Label2" top="249" left="292" width="102" height="51" zIndex="15" text="$IAT/RecipePage/ID_Dancer2" textAlign="center" />
   </Widgets>

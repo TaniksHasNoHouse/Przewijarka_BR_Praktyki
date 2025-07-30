@@ -5,12 +5,12 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabControl" id="DiagnosticsTabs" top="9" left="9" width="681" height="401" zIndex="0">
           <Widgets>
-            <Widget xsi:type="widgets.brease.TabItem" id="SystemDiagnosticsManager" left="0" width="250" zIndex="0" text="System Diagnostics Manager">
+            <Widget xsi:type="widgets.brease.TabItem" id="SystemDiagnosticsManager" left="0" width="350" zIndex="0" text="System Diagnostics Manager">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlSDM" top="0" left="0" width="680" height="370" zIndex="0" contentId="DiagnosticsPageSDM" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.TabItem" id="Audit" left="0" zIndex="1" text="$IAT/DiagnosticsPage/ID_Audit">
+            <Widget xsi:type="widgets.brease.TabItem" id="Audit" left="0" width="350" zIndex="1" text="$IAT/DiagnosticsPage/ID_Audit">
               <Widgets>
                 <Widget xsi:type="widgets.brease.ContentControl" id="ContentControlAudit" top="0" left="0" width="680" height="370" zIndex="0" contentId="DiagnosticsPageAudit" />
               </Widgets>
