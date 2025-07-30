@@ -2,7 +2,12 @@
 <Content id="AlarmPageHistContent" height="370" width="680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistoryWindow" top="10" left="10" width="660" height="350" zIndex="0" nextText="$IAT/HMI/ID_Next" previousText="$IAT/HMI/ID_Previous" permissionOperate="['Operators', 'Supervisors']">
-      <Widgets />
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem1" width="170" zIndex="0" columnType="timestamp" text="$IAT/AlarmPage/ID_Time" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem2" width="150" zIndex="1" text="$IAT/AlarmPage/ID_Message" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem3" zIndex="2" columnType="new state" text="$IAT/AlarmPage/ID_New" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem4" width="140" zIndex="3" columnType="old state" text="$IAT/AlarmPage/ID_Old" />
+      </Widgets>
     </Widget>
   </Widgets>
 </Content>
