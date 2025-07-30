@@ -13,4 +13,8 @@ ACTION actSetGlogals:
 	gTensionLogic.Status.LineIsHomed := TensionGroup.IsHomed AND gTensionLogic.Status.MasterIsHomed;
 	gTensionLogic.Status.LineIsPoweredOn := TensionGroup.PowerOn AND gTensionLogic.Status.MasterIsPowerOn;
 	gMainLogic.MotorMode.Production.Status.ActDistance := TensionController[1].Info.ProcessedMaterial;
+	gTensionLogic.Status.EnableAxis1 := MpAxisBasicFB[0].Info.DigitalInputsStatus.DriveEnable;
+	gTensionLogic.Status.EnableAxis2 := MpAxisBasicFB[1].Info.DigitalInputsStatus.DriveEnable;
+	gTensionLogic.Status.EnableAxis3 := MpAxisBasicFB[2].Info.DigitalInputsStatus.DriveEnable;
+	
 END_ACTION

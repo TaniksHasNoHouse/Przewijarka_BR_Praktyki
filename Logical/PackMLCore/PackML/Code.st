@@ -7,8 +7,8 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	MpPackMLCore_0(); 
-	MpPackMLMode_0(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_PRODUCTION);
-	MpPackMLMode_1(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_MANUAL);
+	MpPackMLMode_0(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_PRODUCTION, Start := gHMI.ControlBtn.Start, Stop := gHMI.ControlBtn.Stop, Reset := gHMI.ControlBtn.Reset);
+	MpPackMLMode_1(MpLink := ADR(gPackMLCore), Enable := TRUE, ModeID := PACKML_MODE_MANUAL, Start := gHMI.ControlBtn.Start, Stop := gHMI.ControlBtn.Stop, Reset := gHMI.ControlBtn.Reset);
 	actGetStatus;
 	IF MpPackMLCore_0.StateCurrent = mpPACKML_STATE_STOPPED THEN
 		actInterface;

@@ -2,10 +2,8 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Private="true">PackML_IF.typ</Object>
-    <Object Type="File">Variables.var</Object>
     <Object Type="Program" Language="IEC">PackML</Object>
-    <Object Type="File" Private="true">gPackML.var</Object>
-    <Object Type="File" Private="true">gPackML.typ</Object>
+    <Object Type="File">gPackML.var</Object>
+    <Object Type="File">gPackML.typ</Object>
   </Objects>
 </Package>

@@ -1,34 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="ContentTop_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Bindings>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.AutoManual" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Reset" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Stop" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStopTop" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Start" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="value" />
-</Binding>
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.AutoManual" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Reset" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Stop" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStopTop" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.ControlBtn.Start" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="value" />
+		</Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Start" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="style" />
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Start" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStartTop" attribute="style" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Stop" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStopTop" attribute="style" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Reset" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::MainPage:ManualOff" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="enable" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Alarms.PendingAlarms" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ImageAlarm" attribute="visible" />
+		</Binding>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Status.StateCurrent" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlState" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Stop" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonStopTop" attribute="style" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::MainPage:ButtonStyles.Reset" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Status.ModeCurrent" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlMode" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

@@ -6,9 +6,3 @@ VAR
 	MpDataRegPar_3 : MpDataRegPar;
 	MpDataRegPar_4 : MpDataRegPar;
 END_VAR
-(*Data .csv display*)
-VAR
-	MpRecepieXml_Data : MpRecipeXml;
-	MpRecipeUI_Data : MpRecipeUI;
-	UIConnectData : MpRecipeUIConnectType;
-END_VAR
