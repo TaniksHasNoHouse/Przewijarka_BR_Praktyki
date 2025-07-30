@@ -4,10 +4,10 @@ ACTION actProdIdle:
         
 		gMainLogic.MotorMode.Production.Parameter.Velocity := gHMI.Recipe.CurrentRecipe.Speed;
         
-		IF gHMI.Recipe.CurrentRecipe.Direction THEN
-			gMainLogic.MotorMode.Production.Parameter.Distance := gHMI.Recipe.CurrentRecipe.MaterialLength;
+		IF gHMI.Main.MaterialAdj.Direction THEN
+			gMainLogic.MotorMode.Production.Parameter.Distance := gHMI.Main.MaterialAdj.Length;
 		ELSE
-			gMainLogic.MotorMode.Production.Parameter.Distance := -gHMI.Recipe.CurrentRecipe.MaterialLength;
+			gMainLogic.MotorMode.Production.Parameter.Distance := -gHMI.Main.MaterialAdj.Length;
 		END_IF;
     
 	END_IF;
