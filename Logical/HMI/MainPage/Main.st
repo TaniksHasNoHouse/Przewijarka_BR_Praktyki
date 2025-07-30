@@ -14,6 +14,7 @@ PROGRAM _CYCLIC
 	
 	PhysicalBtn.Start.ColorOFF := TRUE;
 	PhysicalBtn.Reset.ColorON := TRUE;
+	PhysicalBtn.Reset.ColorOFF := FALSE;
 	PhysicalBtn.Stop.ColorEstop := FALSE;
 	
 	PhysicalBtn.Manual.Left.ColorOFF := FALSE;
@@ -97,7 +98,7 @@ PROGRAM _CYCLIC
 		ButtonStyles.Reset := 'working';
 	END_IF;
 	
-	IF Status.StateCurrent = 'Starting' THEN
+	IF Status.StateCurrent = 'Execute' THEN
 		gHMI.ControlBtn.Start := FALSE;
 		ButtonStyles.Start := 'working';
 			
