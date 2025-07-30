@@ -3,9 +3,11 @@ ACTION actStopped:
     
 			gMainLogic.MotorMode.Production.Cmd.Enable := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
-			gMainLogic.MotorMode.Production.Cmd.TensionEnable := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;	
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
+			gMainLogic.MotorMode.Production.Parameter.Distance := 0.0;
+			gMainLogic.MotorMode.Production.Parameter.DancerPos1 := 0.0;
+			gMainLogic.MotorMode.Production.Parameter.DancerPos2 := 0.0;
 
 			gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn := FALSE;
 			gMainLogic.MotorMode.Manual.Axis2.Cmd.PowerOn := FALSE;
@@ -15,9 +17,5 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Manual.Axis3.Cmd.Enable := FALSE;
 		
 			// cala linia zeby ruszyc -> enable -> home -> power on -> start winding 
-		
-			IF gMainLogic.MotorMode.Production.Cmd.Reset = TRUE THEN //please check if this variable is valid :) ealier there was gMainLogic.Cmd.Reset := TRUE
-	  			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
-		END_IF;
 	END_IF;
 END_ACTION
