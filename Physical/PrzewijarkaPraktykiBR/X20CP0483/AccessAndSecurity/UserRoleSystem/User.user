@@ -23,7 +23,7 @@
   </Element>
   <Element ID="Supervisor" Type="User">
     <Property ID="UserID" Value="4" />
-    <Property ID="Password" Value="tnijKVcWYmZxMcUIbjevCBx7xlIHyLcRHlSDFuQKlKE05FuBE/c=" />
+    <Property ID="Password" Value="/CBWP8LjCBOJjVMhdxfsKDWZ1Zyt3ZmmHqaz7RsALZxMBvHrXEo=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Supervisors" />
     </Group>

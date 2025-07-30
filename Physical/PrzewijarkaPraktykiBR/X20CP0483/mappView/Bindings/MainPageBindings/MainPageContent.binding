@@ -21,6 +21,25 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:Status.StateCurrent" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="PackMLStateTextOut" attribute="value" />
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.RightWinderDiameter" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="CurrRightSizeNumOut" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.LeftWinderDiameter" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="CurrLeftSizeNumOut" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ActLeftDancerPos" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="DenserLeftNumOut" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ActRightDancerPos" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="DenserRightNumOut" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ProgressBarProcent" attribute="node" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="WindingProgressBar" attribute="node" />
 </Binding>
 </Bindings>
 </BindingsSet>

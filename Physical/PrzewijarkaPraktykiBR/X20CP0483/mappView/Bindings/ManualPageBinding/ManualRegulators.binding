@@ -19,5 +19,29 @@
 </Binding>
 
 
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis3.Parameter.Axis3PID.P" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput5" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis2.Parameter.Axis2PID.I" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput4" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis2.Parameter.Axis2PID.P" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput3" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis1.Parameter.Axis1PID.I" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput2" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis1.Parameter.Axis1PID.P" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis3.Parameter.Axis3PID.I" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualRegulators" widgetRefId="NumericOutput6" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

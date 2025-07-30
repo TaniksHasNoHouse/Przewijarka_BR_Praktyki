@@ -34,6 +34,9 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::MainPage:ManualOff" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="enable" />
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Alarms.PendingAlarms" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ImageAlarm" attribute="visible" />
 </Binding>
 </Bindings>
 </BindingsSet>

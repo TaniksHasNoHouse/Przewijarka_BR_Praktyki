@@ -2,8 +2,9 @@
 <BindingsSet id="ChartsPageAxis1_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
 
+
 <Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Charts.Axis1" attribute="node" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis1.Parameter.RotarySpeed" attribute="node" />
 <Target xsi:type="brease" contentRefId="ChartsPageAxis1" widgetRefId="OnlineChartHDAAxis1" attribute="graph[Axis1].node" />
 </Binding>
 </Bindings>

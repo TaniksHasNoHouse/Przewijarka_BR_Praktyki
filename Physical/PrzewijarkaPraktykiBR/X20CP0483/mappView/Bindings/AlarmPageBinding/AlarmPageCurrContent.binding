@@ -2,7 +2,8 @@
 <BindingsSet id="AlarmPageCurrContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
 
-<Binding mode="oneWay">
+
+<Binding mode="twoWay">
 <Source xsi:type="mapp" refId="gAlarmXCore" attribute="link" />
 <Target xsi:type="brease" contentRefId="AlarmPageCurrContent" widgetRefId="AlarmListWindow" attribute="mpLink" />
 </Binding>
