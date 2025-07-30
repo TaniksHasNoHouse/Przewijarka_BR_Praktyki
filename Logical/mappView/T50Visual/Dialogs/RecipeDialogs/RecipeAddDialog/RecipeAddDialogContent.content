@@ -2,7 +2,7 @@
 <Content id="RecipeAddDialogContent" height="400" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.Label" id="NameLabel" top="0" left="0" width="55" zIndex="0" text="$IAT/RecipePage/ID_Name" fontSize="14px" />
-    <Widget xsi:type="widgets.brease.TextInput" id="NameTextIn" top="0" left="65" width="310" zIndex="1" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.TextInput" id="NameTextIn" top="0" left="65" width="310" zIndex="1" fontSize="14px" permissionOperate="['Supervisors']" />
     <Widget xsi:type="widgets.brease.Label" id="MaxLeftRollLabel" top="36" left="0" width="230" height="26" zIndex="2" multiLine="true" text="$IAT/RecipePage/ID_MaxLeft" wordWrap="true" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="MinLeftRollLabel" top="76" left="0" width="230" height="26" zIndex="3" multiLine="true" text="$IAT/RecipePage/ID_MinLeft" wordWrap="true" fontSize="13px" />
     <Widget xsi:type="widgets.brease.Label" id="MaxRightRollLabel" top="115" left="0" width="240" height="26" zIndex="4" multiLine="true" text="$IAT/RecipePage/ID_MaxRight" wordWrap="true" fontSize="13px" />

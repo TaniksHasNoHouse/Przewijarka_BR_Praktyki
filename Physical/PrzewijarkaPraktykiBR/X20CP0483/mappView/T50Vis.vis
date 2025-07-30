@@ -8,8 +8,9 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
-    <Page refId="SpecialPage" />
-  </Pages>
+	<Page refId="SpecialPage" />
+	<Page refId="ChartsDataPage" />
+	</Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ManualMoveMotor_binding" />

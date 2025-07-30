@@ -129,7 +129,11 @@
       <Task Name="MainContro">
         <Variable Name="xd" />
       </Task>
-      <Task Name="ChartsPage" />
+      <Task Name="ChartsPage">
+        <Variable Name="MpDataRecorder_0">
+          <Variable Name="Info" RecursiveEnable="2" />
+        </Variable>
+      </Task>
       <Task Name="MainPage">
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
       </Task>
