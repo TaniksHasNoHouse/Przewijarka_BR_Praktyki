@@ -37,5 +37,6 @@ ACTION actReadGlobals:
 	ELSIF NOT(gMainLogic.MotorMode.Manual.Axis3.Parameter.Dir) THEN
 		MpAxisBasicFB[2].JogNegative := gMainLogic.MotorMode.Manual.Axis3.Cmd.JogAxis;
 	END_IF;
-	
+	SetLeftDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos1;
+	SetLeftDancerPos := gMainLogic.MotorMode.Production.Parameter.DancerPos2;
 END_ACTION

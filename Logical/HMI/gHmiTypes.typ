@@ -49,8 +49,8 @@ TYPE
 		EnableEditing : BOOL;
 	END_STRUCT;
 	CurrentRecipe_type : 	STRUCT 
-		TensionLeft : REAL := 0.0; (* Naci¹g lewy, zakres 0–14 cm *)
-		TensionRight : REAL := 0.0; (* Naci¹g prawy, zakres 0–14 cm *)
+		TensionLeft : REAL := 50.0; (* Naci¹g lewy, zakres 0–14 cm *)
+		TensionRight : REAL := 50.0; (* Naci¹g prawy, zakres 0–14 cm *)
 		Speed : REAL := 0.0; (* Prêdkoœæ taœmy w m/s *)
 		Direction : BOOL := FALSE; (* Kierunek ruchu: FALSE = lewo, TRUE = prawo *)
 		RollLeft : MaxMinRollSize_type;
