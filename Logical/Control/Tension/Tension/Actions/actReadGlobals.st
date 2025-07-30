@@ -6,7 +6,6 @@ ACTION actReadGlobals:
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	TensionGroup.MoveVelocity := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	
-	MpAxisBasicFB[0].Enable := TRUE;
 	MpAxisBasicFB[0].Home := gMainLogic.MotorMode.Manual.Axis1.Cmd.Home;
 	MpAxisBasicFB[0].Power := gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn;
 	MpAxisBasicFB[0].ErrorReset := gMainLogic.MotorMode.Manual.Axis1.Cmd.Reset;
@@ -17,7 +16,6 @@ ACTION actReadGlobals:
 		MpAxisBasicFB[0].JogNegative := gMainLogic.MotorMode.Manual.Axis1.Cmd.JogAxis;
 	END_IF;
 	
-	MpAxisBasicFB[1].Enable := TRUE;
 	MpAxisBasicFB[1].Home := gMainLogic.MotorMode.Manual.Axis2.Cmd.Home;
 	MpAxisBasicFB[1].Power := gMainLogic.MotorMode.Manual.Axis2.Cmd.PowerOn;
 	MpAxisBasicFB[1].ErrorReset := gMainLogic.MotorMode.Manual.Axis2.Cmd.Reset;
@@ -27,8 +25,7 @@ ACTION actReadGlobals:
 	ELSIF NOT(gMainLogic.MotorMode.Manual.Axis2.Parameter.Dir) THEN
 		MpAxisBasicFB[1].JogNegative := gMainLogic.MotorMode.Manual.Axis2.Cmd.JogAxis;
 	END_IF;
-	
-	MpAxisBasicFB[2].Enable := TRUE;
+
 	MpAxisBasicFB[2].Home := gMainLogic.MotorMode.Manual.Axis3.Cmd.Home;
 	MpAxisBasicFB[2].Power := gMainLogic.MotorMode.Manual.Axis3.Cmd.PowerOn;
 	MpAxisBasicFB[2].ErrorReset := gMainLogic.MotorMode.Manual.Axis3.Cmd.Reset;

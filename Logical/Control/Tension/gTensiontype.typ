@@ -36,15 +36,6 @@ TYPE
 		Parameter : ProdParType;
 		Status : ProdStatusType;
 	END_STRUCT;
-	ProdCmdType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
-	ProdParType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
-	ProdStatusType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
 	ManAxisSelectType : 	STRUCT 
 		Axis1 : Axis1LogType;
 		Axis2 : Axis2LogType;
@@ -65,9 +56,6 @@ TYPE
 		Parameter : Axis3ParaType;
 		Status : Axis3StatType;
 	END_STRUCT;
-	Axis1CMDType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
 		RotarySpeed : REAL; (*rpm*)
 		Axis1DancerPara : Axis1ParaDancerPID;
@@ -86,9 +74,6 @@ TYPE
 	Axis1StatType : 	STRUCT 
 		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
-	Axis2CMDType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
 		LinearSpeed : REAL; (*m/min*)
 		Axis2PID : Axis2ParaPID;
@@ -100,9 +85,6 @@ TYPE
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
 		IsInMotion : BOOL; (*checks if axis is in motion*)
-	END_STRUCT;
-	Axis3CMDType : 	STRUCT 
-		a : BOOL;
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
 		RotarySpeed : REAL; (*in rpm*)
