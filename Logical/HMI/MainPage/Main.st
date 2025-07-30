@@ -5,115 +5,21 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	
-	ButtonStyles.Start := 'default';
-	ButtonStyles.Stop := 'default';
-	ButtonStyles.Reset := 'reset';
-	
-	ManualOff := FALSE;
-	
-	PhysicalBtn.Start.ColorOFF := TRUE;
-	PhysicalBtn.Reset.ColorON := TRUE;
-	PhysicalBtn.Reset.ColorOFF := FALSE;
-	PhysicalBtn.Stop.ColorEstop := FALSE;
-	
-	PhysicalBtn.Manual.Left.ColorOFF := FALSE;
-	PhysicalBtn.Manual.Left.ColorON := FALSE;
-	
-	PhysicalBtn.Manual.Right.ColorON := FALSE;
-	PhysicalBtn.Manual.Right.ColorOFF := FALSE;
-	
-
 	IF gTensionLogic.Status.EnableAxis1 = FALSE OR gTensionLogic.Status.EnableAxis2 = FALSE OR gTensionLogic.Status.EnableAxis3 = FALSE THEN
 		aBORT := TRUE;
 	END_IF;
 	
-	IF PhysicalBtn.Start.State = TRUE THEN
-		gHMI.ControlBtn.Start := TRUE;
+	actBtnAssignment;
+	actBasicColors;
+	
+	IF Status.ModeCurrent = 'Production' THEN
+		actProdColors;
 	END_IF;
 	
-	IF PhysicalBtn.Stop.State = TRUE THEN
-		gHMI.ControlBtn.Stop := TRUE;
-	END_IF;
-			
-	IF PhysicalBtn.Reset.State = TRUE THEN
-		gHMI.ControlBtn.Reset := TRUE;
-	END_IF;	
-
-	IF Status.StateCurrent = 'Aborting' THEN
-		ButtonStyles.Stop := 'Estopped';
-			
-		PhysicalBtn.Stop.ColorON := FALSE;
-		PhysicalBtn.Stop.ColorOFF := FALSE;
-
-		PhysicalBtn.Start.ColorON := FALSE;
-		PhysicalBtn.Stop.ColorEstop := TRUE;
+	IF Status.ModeCurrent = 'Manual' THEN
+		actManualMode;
 	END_IF;
 	
-	IF Status.StateCurrent = 'Stopped' THEN
-		IF Status.ModeCurrent = 'Manual' THEN
-			PhysicalBtn.Start.ColorOFF := FALSE;
-			PhysicalBtn.Stop.ColorOFF := FALSE;
-			PhysicalBtn.Start.ColorON := FALSE;
-			PhysicalBtn.Stop.ColorON := FALSE;
-			
-			PhysicalBtn.Manual.Left.ColorOFF := TRUE;
-			PhysicalBtn.Manual.Right.ColorOFF := TRUE;
-			
-			gHMI.Manual.JogLeftRight.JogLeft := FALSE;
-			gHMI.Manual.JogLeftRight.JogRight := FALSE;
-			
-			IF PhysicalBtn.Manual.Left.State = TRUE OR gHMI.Manual.JogLeftRight.JogLeftTemp THEN
-				gHMI.Manual.JogLeftRight.JogLeft := TRUE;
-				PhysicalBtn.Manual.Left.ColorOFF := FALSE;
-				PhysicalBtn.Manual.Left.ColorON := TRUE;
-			END_IF;
-			IF PhysicalBtn.Manual.Right.State = TRUE OR gHMI.Manual.JogLeftRight.JogRightTemp THEN
-				gHMI.Manual.JogLeftRight.JogRight := TRUE;
-				PhysicalBtn.Manual.Right.ColorOFF := FALSE;
-				PhysicalBtn.Manual.Right.ColorON := TRUE;
-			END_IF;
-		END_IF;
-		ManualOff := TRUE;
-		gHMI.ControlBtn.Stop := FALSE;
-		ButtonStyles.Stop := 'stopped';
-			
-		PhysicalBtn.Stop.ColorOFF := TRUE;
-		PhysicalBtn.Stop.ColorON := FALSE;
-			
-		PhysicalBtn.Start.ColorON := FALSE;
-	END_IF;
-	
-	IF Status.StateCurrent = 'Idle' THEN
-		PhysicalBtn.Stop.ColorON := FALSE;
-		PhysicalBtn.Stop.ColorOFF := TRUE;
-		PhysicalBtn.Reset.ColorOFF := TRUE;
-		PhysicalBtn.Reset.ColorON := FALSE;
-	END_IF;
-	
-	IF Status.StateCurrent = 'Resetting' THEN
-		gHMI.ControlBtn.Reset := FALSE;	
-		PhysicalBtn.Reset.ColorOFF := TRUE;
-		PhysicalBtn.Reset.ColorON := FALSE;
-		ButtonStyles.Reset := 'working';
-	END_IF;
-	
-	IF Status.StateCurrent = 'Execute' THEN
-		gHMI.ControlBtn.Start := FALSE;
-		ButtonStyles.Start := 'working';
-			
-		PhysicalBtn.Start.ColorOFF := FALSE;
-		PhysicalBtn.Start.ColorON := TRUE;
-			
-		PhysicalBtn.Stop.ColorON := FALSE;
-		PhysicalBtn.Stop.ColorOFF := TRUE;
-	END_IF;
-	
-	IF Status.StateCurrent = 'Complete' THEN
-		ButtonStyles.Start := 'default';
-		PhysicalBtn.Start.ColorOFF := TRUE;
-		PhysicalBtn.Start.ColorON := FALSE;
-	END_IF;
 	
 END_PROGRAM
 

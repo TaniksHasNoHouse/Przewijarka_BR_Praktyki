@@ -82,6 +82,8 @@ TYPE
 		SetBeltSpeedLeft : REAL;
 		JogLeftTemp : BOOL;
 		JogRightTemp : BOOL;
+		DenserLeft : REAL;
+		DenserRight : REAL;
 	END_STRUCT;
 	JogMotors_type : 	STRUCT 
 		Motor1 : manMotor_type;

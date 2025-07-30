@@ -1,7 +1,5 @@
 VAR
-	ButtonStates : ButtonStates_type;
 	ButtonStyles : ButtonStyles_type;
 	PhysicalBtn : PhysicalBtn_type;
-	ManualOff : BOOL;
 	aBORT : BOOL;
 END_VAR
