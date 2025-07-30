@@ -3,6 +3,8 @@
 PROGRAM _INIT
 	(* MpLink przekazujemy przez referencjê ADR *)
 	MpAlarmXCore_0(MpLink := ADR(gAlarmXCore), Enable := TRUE);
+	MpAlarmXHistory_0(MpLink := ADR(gAlarmXHistory), Enable := TRUE, DeviceName := ADR('DATA'));
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -38,13 +40,21 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore, 'ModuleOKError4XP');
 	END_IF;
 	
+	IF gHMI.Alarms.PendingAlarms THEN
+		Style := 'orange';
+	ELSE
+		Style := 'default';
+	END_IF;
+	
 	MpAlarmXCore_0();
+	MpAlarmXHistory_0();
 	
 	gHMI.Alarms.PendingAlarms := UDINT_TO_BOOL(MpAlarmXCore_0.PendingAlarms);
 END_PROGRAM
 
 PROGRAM _EXIT
 	(* W sekcji exit trzeba wywo³aæ/wy³aczyæ blok funkcyjny (Enable := FALSE) *)
-	MpAlarmXCore_0(MpLink := ADR(gAlarmXCore), Enable := FALSE);
+	MpAlarmXCore_0.Enable := FALSE;
+	MpAlarmXHistory_0.Enable := FALSE;
 END_PROGRAM
 

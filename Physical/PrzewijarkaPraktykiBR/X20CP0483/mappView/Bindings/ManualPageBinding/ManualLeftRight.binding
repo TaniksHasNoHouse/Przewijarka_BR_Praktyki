@@ -1,28 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="ManualLeftRight_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Bindings>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.Activate" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="ActivateTgBtn" attribute="value" />
-</Binding>
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.Activate" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="ActivateTgBtn" attribute="value" />
+		</Binding>
 
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.SetBeltSpeedLeft" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInLeftVel" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.SetBeltSpeedRight" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInRightVel" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogLeftTemp" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnLeft" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogRightTemp" attribute="value" />
-<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnRight" attribute="value" />
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogLeftTemp" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnLeft" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.JogRightTemp" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="MPBtnRight" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.DenserRight" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="Dancer2NumInManual" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.DenserLeft" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="Dancer1NumInManual" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.LineIsInMove" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="IsWorking" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Parameter.GroupLineVelocity" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumOutCurr" attribute="node" />
+		</Binding>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogLeftRight.SetBeltSpeed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualLeftRight" widgetRefId="NumInVel" attribute="node" />
 </Binding>
 </Bindings>
 </BindingsSet>

@@ -67,5 +67,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Manual.JogMotors.Motor3.Right" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="MomBtnRightMot3" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis3.Parameter.RotarySpeed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="Motor3CurrVel" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Mode.Manual.Axis1.Parameter.RotarySpeed" attribute="node" />
+<Target xsi:type="brease" contentRefId="ManualMoveMotor" widgetRefId="Motor1CurrVel" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>
