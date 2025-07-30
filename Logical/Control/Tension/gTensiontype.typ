@@ -70,7 +70,7 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
-		RotarySpeed : REAL;
+		RotarySpeed : REAL; (*rpm*)
 		Axis1DancerPara : Axis1ParaDancerPID;
 		Axis1PID : Axis1ParaPID;
 	END_STRUCT;
@@ -91,7 +91,7 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
-		LinearSpeed : REAL;
+		LinearSpeed : REAL; (*m/min*)
 		Axis2PID : Axis2ParaPID;
 	END_STRUCT;
 	Axis2ParaPID : 	STRUCT 
@@ -106,7 +106,7 @@ TYPE
 		a : BOOL;
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
-		RotarySpeed : REAL;
+		RotarySpeed : REAL; (*in rpm*)
 		Axis3DancerPara : Axis3ParaDancerPID;
 		Axis3PID : Axis3ParaPID;
 	END_STRUCT;
