@@ -7,9 +7,9 @@
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis2" top="50" left="470" zIndex="3" text="$IAT/DataPage/ID_Axis2" />
     <Widget xsi:type="widgets.brease.CheckBox" id="CheckBoxAxis3" top="90" left="380" zIndex="4" text="$IAT/DataPage/ID_Axis3" />
     <Widget xsi:type="widgets.brease.Label" id="LabelChooseData" top="10" left="20" width="300" zIndex="5" text="$IAT/DataPage/ID_Choose" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputFile" top="190" left="30" width="380" zIndex="6" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelLocalization" top="150" left="20" width="360" zIndex="7" text="$IAT/DataPage/ID_Localization" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputFile" top="200" left="30" width="380" zIndex="6" value="$IAT/DataPage/ID_NoFile" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelLocalization" top="160" left="20" width="360" zIndex="7" text="$IAT/DataPage/ID_Localization" />
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="250" left="20" width="200" zIndex="8" text="$IAT/DataPage/ID_Save" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIsSaved" top="300" left="35" width="370" zIndex="9" textAlign="center" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIsSaved" top="290" left="40" width="370" zIndex="9" textAlign="center" />
   </Widgets>
 </Content>

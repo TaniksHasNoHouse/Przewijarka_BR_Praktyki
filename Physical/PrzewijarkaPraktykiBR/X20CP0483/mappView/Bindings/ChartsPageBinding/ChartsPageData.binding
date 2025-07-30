@@ -26,7 +26,12 @@
 <Source xsi:type="opcUa" refId="::ChartsPage:MpDataRecorder_0.Info.CurrentFileName" attribute="value" />
 <Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextOutput1" attribute="value" />
 </Binding>
+
 <Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::ChartsPage:MpDataRecorder_0.Info.CurrentFileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextOutputFile" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Data.isSaving" attribute="value" />
 <Target xsi:type="brease" contentRefId="ChartsPageData" widgetRefId="TextOutputIsSaved" attribute="value" />
 </Binding>

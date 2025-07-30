@@ -118,5 +118,16 @@
         <seg>Save data:</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_NoFile">
+      <tuv xml:lang="pl">
+        <seg>brak utworzonego pliku</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>keine Datei erstellt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>no file saved</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
