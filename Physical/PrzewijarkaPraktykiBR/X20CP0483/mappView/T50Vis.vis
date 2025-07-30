@@ -28,6 +28,8 @@
     <BindingsSet refId="ManualRegulators_binding" />
     <BindingsSet refId="AlarmPageCurrContent_binding" />
     <BindingsSet refId="AlarmPageHistContent_binding" />
+    <BindingsSet refId="MainPageContent_binding" />
+    <BindingsSet refId="ContentTop_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="LoginDialogueContent_eventbinding" />
@@ -36,10 +38,9 @@
     <EventBindingsSet refId="RecipeAddDialogContent_eventbinding" />
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
-    <EventBindingsSet refId="RecipeEditContent_eventbinding" />
+	<EventBindingsSet refId="RecipeEditContent_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
-    <EventBindingsSet refId="ChartsPageData_eventbinding" />
-    <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+	<EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
