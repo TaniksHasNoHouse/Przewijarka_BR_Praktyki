@@ -113,7 +113,7 @@ TYPE
 		Home : BOOL;
 		Reset : BOOL;
 		PIDauto : BOOL;
-		JogAxis : BOOL;
+		JogAxis : BOOL; (*Jog is done respectivly to axis direction from parameters from derived type*)
 		TensionReg : BOOL;
 	END_STRUCT;
 	Axis1ParType : 	STRUCT 
@@ -136,7 +136,7 @@ TYPE
 		Home : BOOL;
 		Reset : BOOL;
 		PIDauto : BOOL;
-		JogAxis : BOOL;
+		JogAxis : BOOL; (*Jog is done respectivly to axis direction from parameters from derived type*)
 		TensionReg : BOOL;
 	END_STRUCT;
 	Axis2ParType : 	STRUCT 
@@ -159,7 +159,7 @@ TYPE
 		Home : BOOL;
 		Reset : BOOL;
 		PIDauto : BOOL;
-		JogAxis : BOOL;
+		JogAxis : BOOL; (*Jog is done respectivly to axis direction from parameters from derived type*)
 		TensionReg : BOOL;
 	END_STRUCT;
 	Axis3ParType : 	STRUCT 

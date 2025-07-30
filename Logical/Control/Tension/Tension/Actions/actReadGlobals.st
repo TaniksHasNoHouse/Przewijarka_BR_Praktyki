@@ -6,7 +6,7 @@ ACTION actReadGlobals:
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	TensionGroup.MoveVelocity := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	
-	MpAxisBasicFB[0].Home := gMainLogic.MotorMode.Manual.Axis1.Cmd.Home;
+	MpAxisBasicFB[0].Home := gMainLogic.MotorMode.Manual.Axis1.Cmd.Home; 
 	MpAxisBasicFB[0].Power := gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn;
 	MpAxisBasicFB[0].ErrorReset := gMainLogic.MotorMode.Manual.Axis1.Cmd.Reset;
 	MpAxisBasicFB[0].AutoTune := gMainLogic.MotorMode.Manual.Axis1.Cmd.PIDauto;
