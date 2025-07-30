@@ -1,6 +1,7 @@
 
 ACTION actBtnAssignment: 
 	PhysicalBtn.Manual.ManProd := FALSE;
+	gHMI.Recipe.EnableEditing := FALSE;
 	
 	IF PhysicalBtn.Production.Start.State = TRUE THEN
 		gHMI.ControlBtn.Start := TRUE;

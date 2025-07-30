@@ -23,6 +23,7 @@ ACTION actProdColors:
 	OR Status.StateCurrent = 'Complete'THEN
 		ButtonStyles.Reset := 'blue';
 		PhysicalBtn.Production.Reset.ColorON := TRUE;
+		gHMI.Recipe.EnableEditing := TRUE;
 		gHMI.ControlBtn.Start := FALSE;
 		gHMI.ControlBtn.Stop := FALSE;
 	END_IF;
