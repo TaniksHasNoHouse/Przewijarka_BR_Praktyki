@@ -8,7 +8,8 @@
     <Page refId="ManualPage" />
     <Page refId="RecepiePage" />
     <Page refId="UserManagementPage" />
-    <Page refId="SpecialPage" />
+	<Page refId="SpecialPage" />
+	<Page refId="ChartsDataPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
