@@ -1,5 +1,8 @@
 
-ACTION actReadGlobals: 
+ACTION actReadGlobals:
+	TensionController[0].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
+	TensionController[1].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
+	TensionController[2].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	TensionGroup.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	IF TensionGroup.IsHomed THEN
