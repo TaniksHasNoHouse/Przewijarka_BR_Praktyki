@@ -16,7 +16,7 @@ ACTION actStopped:
 		
 			// cala linia zeby ruszyc -> enable -> home -> power on -> start winding 
 		
-			IF gMainLogic.Cmd.Reset = TRUE THEN
+			IF gMainLogic.MotorMode.Production.Cmd.Reset = TRUE THEN //please check if this variable is valid :) ealier there was gMainLogic.Cmd.Reset := TRUE
 	  			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 		END_IF;
 	END_IF;

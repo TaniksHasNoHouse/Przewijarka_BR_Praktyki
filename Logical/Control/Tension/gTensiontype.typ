@@ -32,9 +32,7 @@ TYPE
 		Manual : ManAxisSelectType;
 	END_STRUCT;
 	ProdLogicType : 	STRUCT 
-		Cmd : ProdCmdType;
-		Parameter : ProdParType;
-		Status : ProdStatusType;
+		a : BOOL;
 	END_STRUCT;
 	ManAxisSelectType : 	STRUCT 
 		Axis1 : Axis1LogType;
@@ -42,17 +40,14 @@ TYPE
 		Axis3 : Axis3LogType;
 	END_STRUCT;
 	Axis1LogType : 	STRUCT 
-		Cmd : Axis1CMDType;
 		Parameter : Axis1ParaType;
 		Status : Axis1StatType;
 	END_STRUCT;
 	Axis2LogType : 	STRUCT 
-		Cmd : Axis2CMDType;
 		Parameter : Axis2ParaType;
 		Status : Axis2StatType;
 	END_STRUCT;
 	Axis3LogType : 	STRUCT 
-		Cmd : Axis3CMDType;
 		Parameter : Axis3ParaType;
 		Status : Axis3StatType;
 	END_STRUCT;
