@@ -9,5 +9,6 @@
     <File>actManualMode.st</File>
     <File>actBasicColors.st</File>
     <File>actBtnAssignment.st</File>
+    <File>actManualBtnAssignment.st</File>
   </Files>
 </Program>

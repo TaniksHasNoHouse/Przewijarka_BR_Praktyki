@@ -9,6 +9,16 @@ PROGRAM _CYCLIC
 		aBORT := TRUE;
 	END_IF;
 	
+	PhysicalBtn.Manual.ManProd := FALSE;
+	gHMI.Recipe.EnableEditing := FALSE;
+	
+	IF Status.StateCurrent = 'Stopped' THEN
+		PhysicalBtn.Manual.ManProd := TRUE;
+	END_IF;
+	IF Status.StateCurrent = 'Idle' THEN
+		gHMI.Recipe.EnableEditing := TRUE;
+	END_IF;
+	
 	actBtnAssignment;
 	actBasicColors;
 	

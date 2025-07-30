@@ -31,10 +31,7 @@
 			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ButtonResetTop" attribute="style" />
 		</Binding>
 
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::MainPage:ManualOff" attribute="value" />
-			<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="enable" />
-		</Binding>
+		
 		<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:Status.StateCurrent" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlState" attribute="value" />
@@ -42,6 +39,10 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:Status.ModeCurrent" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="PackMlMode" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::MainPage:PhysicalBtn.Manual.ManProd" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentTop" widgetRefId="ToggleSwitchManual" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

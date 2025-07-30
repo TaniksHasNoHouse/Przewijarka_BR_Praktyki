@@ -136,6 +136,7 @@
       </Task>
       <Task Name="MainPage">
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
+        <Variable Name="PhysicalBtn" RecursiveEnable="2" />
       </Task>
       <Task Name="PackML" />
       <Task Name="AlarmPage">

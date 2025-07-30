@@ -8,11 +8,11 @@ ACTION actProdColors:
 	END_IF;
 
 	IF Status.StateCurrent = 'Idle' 
-	OR Status.StateCurrent = 'Starting'
-	OR Status.StateCurrent = 'Execute'
-	OR Status.StateCurrent = 'Completing'
-	OR Status.StateCurrent = 'Complete'
-	OR Status.StateCurrent = 'Resetting' THEN
+		OR Status.StateCurrent = 'Starting'
+		OR Status.StateCurrent = 'Execute'
+		OR Status.StateCurrent = 'Completing'
+		OR Status.StateCurrent = 'Complete'
+		OR Status.StateCurrent = 'Resetting' THEN
 		ButtonStyles.Stop := 'red';
 		PhysicalBtn.Production.Stop.ColorON := TRUE;
 		gHMI.ControlBtn.Start := FALSE;
@@ -20,15 +20,10 @@ ACTION actProdColors:
 	END_IF;
 	
 	IF Status.StateCurrent = 'Stopped' 
-	OR Status.StateCurrent = 'Complete'THEN
+		OR Status.StateCurrent = 'Complete'THEN
 		ButtonStyles.Reset := 'blue';
 		PhysicalBtn.Production.Reset.ColorON := TRUE;
-		gHMI.Recipe.EnableEditing := TRUE;
 		gHMI.ControlBtn.Start := FALSE;
 		gHMI.ControlBtn.Stop := FALSE;
-	END_IF;
-	
-	IF Status.StateCurrent = 'Stopped' THEN
-	  PhysicalBtn.Manual.ManProd := TRUE;
 	END_IF;
 END_ACTION
