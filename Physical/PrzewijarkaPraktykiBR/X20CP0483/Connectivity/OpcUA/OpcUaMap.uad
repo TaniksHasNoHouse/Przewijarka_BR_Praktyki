@@ -80,10 +80,7 @@
             </Variable>
           </Variable>
           <Variable Name="Manual">
-            <Variable Name="JogLeftRight">
-              <Variable Name="SetBeltSpeedRight" EURangesId="2" />
-              <Variable Name="SetBeltSpeedLeft" EURangesId="2" />
-            </Variable>
+            <Variable Name="JogLeftRight" />
             <Variable Name="JogMotors">
               <Variable Name="Motor1">
                 <Variable Name="Speed" EURangesId="7" />

@@ -72,14 +72,12 @@ TYPE
 	Manual_type : 	STRUCT 
 		JogLeftRight : JogLeftRight_type;
 		JogMotors : JogMotors_type;
-		PidTune : PidTune_type;
 	END_STRUCT;
 	JogLeftRight_type : 	STRUCT 
 		Activate : BOOL;
 		JogLeft : BOOL;
 		JogRight : BOOL;
-		SetBeltSpeedRight : REAL;
-		SetBeltSpeedLeft : REAL;
+		SetBeltSpeed : REAL;
 		JogLeftTemp : BOOL;
 		JogRightTemp : BOOL;
 		DenserLeft : REAL;
@@ -90,20 +88,12 @@ TYPE
 		Motor2 : manMotor_type;
 		Motor3 : manMotor_type;
 	END_STRUCT;
-	PidTune_type : 	STRUCT 
-		Motor1 : manTuneMotor_type;
-		Motor2 : manTuneMotor_type;
-		Motor3 : manTuneMotor_type;
-	END_STRUCT;
 	manMotor_type : 	STRUCT 
 		Activate : BOOL;
 		Home : BOOL;
 		Speed : REAL;
 		Left : BOOL;
 		Right : BOOL;
-	END_STRUCT;
-	manTuneMotor_type : 	STRUCT 
-		Autotune : BOOL;
 	END_STRUCT;
 END_TYPE
 
