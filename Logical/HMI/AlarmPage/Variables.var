@@ -1,4 +1,5 @@
 VAR
 	MpAlarmXCore_0 : MpAlarmXCore;
+	MpAlarmXHistory_0 : MpAlarmXHistory;
 	Style : STRING[80];
 END_VAR
