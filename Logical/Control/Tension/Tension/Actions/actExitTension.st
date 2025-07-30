@@ -7,7 +7,7 @@ ACTION actExitTension:
     
 		TensionController[i].Enable := FALSE;
 		TensionController[i]();
-		MpAxisBasicFB[i].Enable := TRUE;
+		MpAxisBasicFB[i].Enable := FALSE;
 		MpAxisBasicFB[i]();
 
 	END_FOR;

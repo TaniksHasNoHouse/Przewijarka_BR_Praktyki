@@ -4,7 +4,7 @@ ACTION actStopped:
 			gMainLogic.MotorMode.Production.Cmd.Enable := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;	
-		gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
+			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 			gMainLogic.MotorMode.Production.Parameter.Distance := 0.0;
 			gMainLogic.MotorMode.Production.Parameter.DancerPos1 := 0.0;
 			gMainLogic.MotorMode.Production.Parameter.DancerPos2 := 0.0;

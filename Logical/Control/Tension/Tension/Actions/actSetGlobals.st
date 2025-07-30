@@ -17,4 +17,5 @@ ACTION actSetGlogals:
 	gTensionLogic.Status.EnableAxis2 := MpAxisBasicFB[1].Info.DigitalInputsStatus.DriveEnable;
 	gTensionLogic.Status.EnableAxis3 := MpAxisBasicFB[2].Info.DigitalInputsStatus.DriveEnable;
 	gTensionLogic.Status.ProgressBarProcent := ProgressBarProcent;
+	gTensionLogic.Status.ErrorExist := TensionController[0].Error OR TensionController[1].Error OR TensionController[2].Error OR TensionGroup.Error;
 END_ACTION

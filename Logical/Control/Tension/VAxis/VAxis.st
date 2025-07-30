@@ -68,6 +68,7 @@ PROGRAM _CYCLIC
 	gTensionLogic.Status.MasterIsHomed := MpAxisBasicMaster.IsHomed;
 	gTensionLogic.Status.MasterIsPowerOn := MpAxisBasicMaster.PowerOn;
 	gMainLogic.MotorMode.Production.Status.ActVelocity := LineVelocityInMeters;
+	gTensionLogic.Status.ErrorExist := MpAxisBasicMaster.Error;
 	MpAxisBasicMaster();
 	
 END_PROGRAM

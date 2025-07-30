@@ -27,6 +27,7 @@ TYPE
 		EnableAxis2 : BOOL; (*chacks if middle axis is enabled*)
 		EnableAxis3 : BOOL; (*chacks if right axis is enabled*)
 		ProgressBarProcent : REAL; (*procent for progress bar*)
+		ErrorExist : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;

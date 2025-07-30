@@ -1,8 +1,8 @@
 ACTION actProdResetting: 
 // Auto mode: start regulator (power axes) and turn off outputs
 	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_RESETTING, PACKML_MODE_PRODUCTION) THEN
-    
-		gMainLogic.MotorMode.Production.Cmd.Enable := TRUE;
+		gMainLogic.MotorMode.Production.Cmd.Reset := TRUE;
+		gMainLogic.MotorMode.Production.Cmd.Home := TRUE;
 		gMainLogic.MotorMode.Production.Cmd.PowerOn := TRUE;
 		gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
@@ -10,7 +10,7 @@ ACTION actProdResetting:
 		gMainLogic.MotorMode.Production.Parameter.DancerPos1 := gHMI.Recipe.CurrentRecipe.TensionLeft;
 		gMainLogic.MotorMode.Production.Parameter.DancerPos2 := gHMI.Recipe.CurrentRecipe.TensionRight;
     
-		IF gMainLogic.MotorMode.Production.Status.TensionStable THEN
+		IF gMainLogic.MotorMode.Production.Status.TensionReady THEN
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
 		END_IF;
     
