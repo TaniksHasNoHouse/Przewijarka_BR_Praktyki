@@ -15,29 +15,31 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	MpAxisBasicMaster.Enable := TRUE;
-	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	CASE PowerStep OF
 
 		POWER_INIT:
 			MpAxisBasicMaster.Power := FALSE;
+			MpAxisBasicMaster.Home := FALSE;
 			PowerStep := POWER_REQUEST_ON;
 
 		POWER_REQUEST_ON:
 			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
-			IF MpAxisBasicMaster.Power THEN
+			MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
+			IF MpAxisBasicMaster.Power AND MpAxisBasicMaster.Home THEN
 				PowerStep := POWER_CHECK_ON;
 			END_IF;
 			
 		POWER_CHECK_ON:
-			IF MpAxisBasicMaster.PowerOn THEN
+			IF MpAxisBasicMaster.PowerOn AND MpAxisBasicMaster.IsHomed THEN
 				PowerStep := POWER_DONE;
 			ELSE
 				MpAxisBasicMaster.Power := NOT MpAxisBasicMaster.Power;
+				MpAxisBasicMaster.Home := NOT MpAxisBasicMaster.Home;
 			END_IF;
 			
 		POWER_DONE:
 			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
+			MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 
 	END_CASE
 	MpAxisBasicMaster.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
