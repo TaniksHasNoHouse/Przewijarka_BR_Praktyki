@@ -47,6 +47,12 @@
           <High ValueProvider="Const">800</High>
         </EURange>
       </EURanges>
+      <EURanges Id="8">
+        <EURange>
+          <Low ValueProvider="Const">30</Low>
+          <High ValueProvider="Const">80</High>
+        </EURange>
+      </EURanges>
     </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
@@ -79,7 +85,11 @@
             </Variable>
           </Variable>
           <Variable Name="Manual">
-            <Variable Name="JogLeftRight" />
+            <Variable Name="JogLeftRight">
+              <Variable Name="SetBeltSpeed" EURangesId="2" />
+              <Variable Name="DenserLeft" EURangesId="1" />
+              <Variable Name="DenserRight" EURangesId="1" />
+            </Variable>
             <Variable Name="JogMotors">
               <Variable Name="Motor1">
                 <Variable Name="Speed" EURangesId="7" />
@@ -90,6 +100,15 @@
               <Variable Name="Motor3">
                 <Variable Name="Speed" EURangesId="7" />
               </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Main">
+            <Variable Name="MaterialAdj">
+              <Variable Name="Length" EURangesId="2" />
+            </Variable>
+            <Variable Name="RollAdj">
+              <Variable Name="LeftNum" EURangesId="8" />
+              <Variable Name="RightNum" EURangesId="8" />
             </Variable>
           </Variable>
         </Variable>

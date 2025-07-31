@@ -83,6 +83,41 @@ PROGRAM _CYCLIC
 		gHMI.Data.isSaving := 'FALSE';
 	END_IF;
 	
+	IF MpDataRecorder_0.Error THEN
+		MpDataRecorder_0.ErrorReset := TRUE;
+	ELSE
+		MpDataRecorder_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpDataRegPar_0.Error THEN
+		MpDataRegPar_0.ErrorReset := TRUE;
+	ELSE
+		MpDataRegPar_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpDataRegPar_1.Error THEN
+		MpDataRegPar_1.ErrorReset := TRUE;
+	ELSE
+		MpDataRegPar_1.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpDataRegPar_2.Error THEN
+		MpDataRegPar_2.ErrorReset := TRUE;
+	ELSE
+		MpDataRegPar_2.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpDataRegPar_3.Error THEN
+		MpDataRegPar_3.ErrorReset := TRUE;
+	ELSE
+		MpDataRegPar_3.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpDataRegPar_4.Error THEN
+		MpDataRegPar_4.ErrorReset := TRUE;
+	ELSE
+		MpDataRegPar_4.ErrorReset := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

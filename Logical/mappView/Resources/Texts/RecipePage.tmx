@@ -316,5 +316,27 @@ Suchen:</seg>
         <seg>No</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Loaded">
+      <tuv xml:lang="pl">
+        <seg>Receptura została załadowana</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Das Rezept wurde geladen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipe loaded successfully</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Warning">
+      <tuv xml:lang="pl">
+        <seg>Uwaga</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Achtung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Warning</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
