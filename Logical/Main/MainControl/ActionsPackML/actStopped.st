@@ -5,7 +5,6 @@ ACTION actStopped:
 			
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 
-			gTensionLogic.Status.SetDancers := TRUE;
 			gMainLogic.MotorMode.Production.Cmd.Home := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.Reset := FALSE;
 		
