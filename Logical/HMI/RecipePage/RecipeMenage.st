@@ -21,7 +21,7 @@ ACTION actRecipeManage:
 			
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 50;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 50;
-				gHMI.Recipe.CurrentRecipe.Speed := 10;
+				gHMI.Recipe.CurrentRecipe.Speed := 4;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -45,7 +45,7 @@ ACTION actRecipeManage:
 			CREATE_2:	// create the next recipe with default values, file name and a known picture index (Bitmap Group in the HMI) 
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 70;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 70;
-				gHMI.Recipe.CurrentRecipe.Speed := 20;
+				gHMI.Recipe.CurrentRecipe.Speed := 8;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;
@@ -70,7 +70,7 @@ ACTION actRecipeManage:
 				
 				gHMI.Recipe.CurrentRecipe.TensionLeft := 90;
 				gHMI.Recipe.CurrentRecipe.TensionRight := 90;
-				gHMI.Recipe.CurrentRecipe.Speed := 40;
+				gHMI.Recipe.CurrentRecipe.Speed := 12;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.P := 10;
 				gHMI.Recipe.CurrentRecipe.Dencer1PID.I := 1;
 				gHMI.Recipe.CurrentRecipe.Dencer2PID.P := 10;

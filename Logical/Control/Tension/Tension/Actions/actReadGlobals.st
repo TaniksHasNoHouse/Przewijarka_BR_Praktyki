@@ -11,6 +11,7 @@ ACTION actReadGlobals:
 	  	TensionGroup.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
 	END_IF;
 	TensionGroup.MoveVelocity := gTensionLogic.Status.SetDancers;
+	ProgressBarProcent := gTensionLogic.Status.ProgressBarProcent;
 //	MpAxisBasicFB[0].ErrorReset := gMainLogic.MotorMode.Manual.Axis1.Cmd.Reset;
 //	MpAxisBasicFB[0].Home := gMainLogic.MotorMode.Manual.Axis1.Cmd.Home;
 //	IF MpAxisBasicFB[0].IsHomed THEN
