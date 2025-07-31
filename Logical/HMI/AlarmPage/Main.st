@@ -66,6 +66,18 @@ PROGRAM _CYCLIC
 	MpAlarmXHistory_0();
 	
 	gHMI.Alarms.PendingAlarms := UDINT_TO_BOOL(MpAlarmXCore_0.PendingAlarms);
+	
+	IF MpAlarmXCore_0.Error THEN
+		MpAlarmXCore_0.ErrorReset := TRUE;
+	ELSE
+		MpAlarmXCore_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpAlarmXHistory_0.Error THEN
+		MpAlarmXHistory_0.ErrorReset := TRUE;
+	ELSE
+		MpAlarmXHistory_0.ErrorReset := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

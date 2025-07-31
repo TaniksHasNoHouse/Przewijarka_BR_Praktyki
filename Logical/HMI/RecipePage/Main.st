@@ -32,6 +32,24 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	actImageBinding;
+	
+	IF MpRecepieXml_0.Error THEN
+		MpRecepieXml_0.ErrorReset := TRUE;
+	ELSE
+		MpRecepieXml_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpRecipeRegPar_0.Error THEN
+		MpRecipeRegPar_0.ErrorReset := TRUE;
+	ELSE
+		MpRecipeRegPar_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpRecipeUI_0.Error THEN
+		MpRecipeUI_0.ErrorReset := TRUE;
+	ELSE
+		MpRecipeUI_0.ErrorReset := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT
