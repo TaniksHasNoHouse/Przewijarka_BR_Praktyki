@@ -7,6 +7,7 @@ ACTION actProdExecute:
 
 		IF gMainLogic.MotorMode.Production.Cmd.StartWinding THEN
 			IF gTensionLogic.Status.MoveDone THEN
+				gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 				MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION); 
 			END_IF;
 		END_IF;
