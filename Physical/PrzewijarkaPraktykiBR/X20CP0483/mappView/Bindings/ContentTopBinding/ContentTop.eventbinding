@@ -42,5 +42,15 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="ContentTop.ImageUser.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ContentTop" widgetRefId="ImageUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Login" userName="Supervisor" password="Supervisor" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
