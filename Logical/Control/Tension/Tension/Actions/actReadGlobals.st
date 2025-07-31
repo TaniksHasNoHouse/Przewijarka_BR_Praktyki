@@ -1,17 +1,14 @@
 
 ACTION actReadGlobals:
-//	TensionController[0].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
-//	TensionController[1].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
-//	TensionController[2].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
+	TensionController[0].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
+	TensionController[1].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
+	TensionController[2].ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	TensionGroup.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	
 	TensionGroup.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 
 	IF TensionGroup.IsHomed THEN
 	  	TensionGroup.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
-	END_IF;
-	IF TensionGroup.PowerOn THEN
-	//	TensionGroup.MoveVelocity := TensionGroup.PowerOn AND gTensionLogic.Status.MasterIsPowerOn;
 	END_IF;
 	TensionGroup.MoveVelocity := gTensionLogic.Status.SetDancers;
 //	MpAxisBasicFB[0].ErrorReset := gMainLogic.MotorMode.Manual.Axis1.Cmd.Reset;

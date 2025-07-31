@@ -5,8 +5,8 @@ PROGRAM _INIT
 	MpAxisBasicMasterPar.Position := 100.0;
 	MpAxisBasicMasterPar.Distance := 1000.0;
 	MpAxisBasicMasterPar.Velocity := 500.0;
-	MpAxisBasicMasterPar.Acceleration := 10.0;
-	MpAxisBasicMasterPar.Deceleration := 10.0;
+	MpAxisBasicMasterPar.Acceleration := 100.0;
+	MpAxisBasicMasterPar.Deceleration := 100.0;
 	MpAxisBasicMasterPar.Jog.Velocity := 500.0;
 	MpAxisBasicMasterPar.Jog.Acceleration := 10.0;
 	MpAxisBasicMasterPar.Jog.Deceleration := 10.0;
