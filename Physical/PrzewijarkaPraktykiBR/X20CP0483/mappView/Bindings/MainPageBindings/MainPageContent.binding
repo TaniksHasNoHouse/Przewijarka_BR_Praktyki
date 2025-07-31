@@ -37,10 +37,7 @@
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ActRightDancerPos" attribute="node" />
 			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="DenserRightNumOut" attribute="node" />
 		</Binding>
-		<Binding mode="oneWay">
-			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ProgressBarProcent" attribute="node" />
-			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="WindingProgressBar" attribute="node" />
-		</Binding>
+		
 	
 
 <Binding mode="twoWay">
@@ -54,6 +51,10 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Parameter.GroupLineVelocity" attribute="node" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="CurrLaneSpeedNumOut" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTensionLogic.Status.ProgressBarProcent" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="WindingProgressBar" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

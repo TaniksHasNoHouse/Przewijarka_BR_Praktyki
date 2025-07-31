@@ -5,6 +5,7 @@ ACTION actAborting:
     
 		IF Status.ModeCurrent = 'Production' THEN
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
+			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 			
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 		END_IF;
