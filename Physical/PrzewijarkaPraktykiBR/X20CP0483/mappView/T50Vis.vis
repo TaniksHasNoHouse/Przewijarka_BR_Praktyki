@@ -26,7 +26,7 @@
     <BindingsSet refId="ChartsPageDancer2_binding" />
     <BindingsSet refId="ChartsPageVtape_binding" />
     <BindingsSet refId="ManualLeftRight_binding" />
-	<BindingsSet refId="AlarmPageCurrContent_binding" />
+    <BindingsSet refId="AlarmPageCurrContent_binding" />
     <BindingsSet refId="AlarmPageHistContent_binding" />
     <BindingsSet refId="MainPageContent_binding" />
     <BindingsSet refId="ContentTop_binding" />
@@ -40,8 +40,8 @@
     <EventBindingsSet refId="RecipeAddEditRemoveContent_eventbinding" />
     <EventBindingsSet refId="RecipeDeleteContent_eventbinding" />
     <EventBindingsSet refId="RecipeEditContent_eventbinding" />
-    <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="AlarmPageCurrContent_eventbinding" />
+    <EventBindingsSet refId="ContentTop_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogue" />
@@ -58,7 +58,7 @@
     <Content refId="ManualContent" />
     <Content refId="ManualLeftRight" />
     <Content refId="ManualMoveMotor" />
-	<Content refId="LoginDialogueContent" />
+    <Content refId="LoginDialogueContent" />
     <Content refId="RecepieContent" />
     <Content refId="DiagnosticsPageTabs" />
     <Content refId="DiagnosticsPageSDM" />
