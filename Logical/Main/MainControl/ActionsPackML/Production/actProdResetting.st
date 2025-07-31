@@ -6,10 +6,11 @@ ACTION actProdResetting:
 		gMainLogic.MotorMode.Production.Cmd.Home := TRUE;
 		gMainLogic.MotorMode.Production.Cmd.PowerOn := TRUE;
 		gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
-		gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 		gMainLogic.MotorMode.Production.Parameter.Distance := 0.0;
     
-		IF gTensionLogic.Status.LineIsHomed THEN
+		IF gTensionLogic.Status.LineIsHomed AND gTensionLogic.Status.LineIsPoweredOn THEN
+			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
+			gMainLogic.MotorMode.Production.Cmd.Home := FALSE;
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
 		END_IF;
     
