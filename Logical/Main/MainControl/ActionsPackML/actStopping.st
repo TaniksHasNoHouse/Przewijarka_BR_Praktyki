@@ -7,11 +7,11 @@ ACTION actStopping:
 		gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;
 
 
-//		gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn := FALSE;
-//		gMainLogic.MotorMode.Manual.Axis2.Cmd.PowerOn := FALSE;
+		//		gMainLogic.MotorMode.Manual.Axis1.Cmd.PowerOn := FALSE;
+		//		gMainLogic.MotorMode.Manual.Axis2.Cmd.PowerOn := FALSE;
 		//		gMainLogic.MotorMode.Manual.Axis3.Cmd.PowerOn := FALSE;
 		IF NOT gTensionLogic.Status.LineIsPoweredOn THEN
-	  		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
+			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 		END_IF;
 		
 	END_IF;
