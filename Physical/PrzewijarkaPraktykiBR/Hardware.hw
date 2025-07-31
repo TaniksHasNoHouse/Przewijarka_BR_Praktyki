@@ -349,6 +349,9 @@
     <Group ID="FileDevice3" />
     <Parameter ID="FileDeviceName3" Value="DATA" />
     <Parameter ID="FileDevicePath3" Value="USER_PATH/Data" />
+    <Parameter ID="TimeZone" Value="160" />
+    <Parameter ID="ActivateDaylightSavingTime" Value="1" />
+    <Parameter ID="ActivateSntpServer" Value="1" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.0.1" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="AdminFTP" />
