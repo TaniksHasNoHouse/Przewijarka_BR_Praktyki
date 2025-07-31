@@ -1,5 +1,8 @@
 
 ACTION actBtnAssignment: 
+	gHMI.ControlBtn.Start := FALSE;
+	gHMI.ControlBtn.Stop := FALSE;
+	gHMI.ControlBtn.Reset := FALSE;
 	IF PhysicalBtn.Production.Start.State = TRUE THEN
 		gHMI.ControlBtn.Start := TRUE;
 	END_IF;

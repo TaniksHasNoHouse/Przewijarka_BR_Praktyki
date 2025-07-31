@@ -4,7 +4,7 @@
     <Widget xsi:type="widgets.brease.AlarmList" id="AlarmListWindow" top="10" left="10" width="660" zIndex="0" nextText="$IAT/HMI/ID_Next" previousText="$IAT/HMI/ID_Previous" permissionOperate="['Operators', 'Supervisors']">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemTimestamp" zIndex="0" columnType="timestamp" text="$IAT/AlarmPage/ID_Time" />
-        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemMessage" width="310" zIndex="1" text="$IAT/AlarmPage/ID_Message" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemMessage" width="370" zIndex="1" text="$IAT/AlarmPage/ID_Message" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemState" width="90" zIndex="2" columnType="state" text="$IAT/AlarmPage/ID_State" />
       </Widgets>
     </Widget>
