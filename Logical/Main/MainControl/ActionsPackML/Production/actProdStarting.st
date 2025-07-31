@@ -4,8 +4,11 @@ ACTION actProdStarting:
     
 	gTensionLogic.Status.SetDancers := TRUE;
 		
-	IF gMainLogic.MotorMode.Production.Status.TensionReady THEN
-		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
+		IF gMainLogic.MotorMode.Production.Status.TensionReady THEN
+			IF TESTbool THEN
+				MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
+			END_IF;
+		
 	END_IF;
     
 	END_IF;

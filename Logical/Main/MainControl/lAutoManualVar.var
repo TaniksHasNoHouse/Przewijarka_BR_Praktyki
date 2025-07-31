@@ -1,4 +1,5 @@
 VAR
 	Main : MainType;
 	xd : BOOL := TRUE;
+	TESTbool : BOOL;
 END_VAR
