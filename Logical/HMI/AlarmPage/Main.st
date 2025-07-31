@@ -40,6 +40,22 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore, 'ModuleOKError4XP');
 	END_IF;
 	
+	//Left winder alarm
+	IF gTensionLogic.Status.LeftWinderDiameter < 30.0 THEN
+		MpAlarmXSet(gAlarmXCore, 'LeftWinderDiameterLow');
+	END_IF;
+	IF gTensionLogic.Status.LeftWinderDiameter > 30.0 THEN
+		MpAlarmXReset(gAlarmXCore, 'LeftWinderDiameterLow');
+	END_IF;
+	
+	//Right winder alarm
+	IF gTensionLogic.Status.RightWinderDiameter < 30.0 THEN
+		MpAlarmXSet(gAlarmXCore, 'RightWinderDiameterLow');
+	END_IF;
+	IF gTensionLogic.Status.RightWinderDiameter > 30.0 THEN
+		MpAlarmXReset(gAlarmXCore, 'RightWinderDiameterLow');
+	END_IF;
+	
 	IF gHMI.Alarms.PendingAlarms THEN
 		Style := 'orange';
 	ELSE
