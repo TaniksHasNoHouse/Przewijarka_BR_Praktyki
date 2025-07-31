@@ -8,7 +8,7 @@ ACTION actDoAlgebra:
 	  ProgressBarProcent := 0.0;
 	END_IF;
 	IF ProgressBarProcent >= 100.0 THEN
-	  StartingMaterialToProcess := TensionController[1].Info.ProcessedMaterial;
+		StartingMaterialToProcess := TensionController[1].Info.ProcessedMaterial;
 	END_IF;
 	
 	
