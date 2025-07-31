@@ -8,6 +8,6 @@ VAR
 	SetRightDancerPos : STRING[255] := '::Tension:SetRightDancerPos';
 	ActRightDancerPosScal : STRING[255] := '::Tension:ActRightDancerPosScal';
 	gAxisString2 : STRING[32] := 'gAxis_2';
-	StepPID2 : ConfigPID2;
-	StepPID1 : ConfigPID1;
+	StepPID2 : ConfigPID2 := ACTIV_PID2;
+	StepPID1 : ConfigPID1 := ACTIV_PID1;
 END_VAR

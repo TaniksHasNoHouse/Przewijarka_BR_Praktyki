@@ -32,6 +32,7 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	actImageBinding;
+	gHMI.Recipe.Load := UIConnect.Recipe.Load;
 END_PROGRAM
 
 PROGRAM _EXIT
