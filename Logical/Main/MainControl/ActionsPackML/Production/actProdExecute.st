@@ -6,8 +6,7 @@ ACTION actProdExecute:
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := TRUE;
 
 		IF gMainLogic.MotorMode.Production.Cmd.StartWinding THEN
-			IF gTensionLogic.Status.ActProcessedDistance >= gMainLogic.MotorMode.Production.Parameter.Distance * 0.9 THEN
-				gMainLogic.MotorMode.Production.Parameter.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity/2;
+			IF gTensionLogic.Status.MoveDone THEN
 				MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION); 
 			END_IF;
 		END_IF;

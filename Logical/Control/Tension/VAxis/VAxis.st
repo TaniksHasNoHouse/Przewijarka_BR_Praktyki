@@ -15,50 +15,16 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	CASE PowerStep OF
 
-		POWER_INIT:
-			MpAxisBasicMaster.Power := FALSE;
-			MpAxisBasicMaster.Home := FALSE;
-			PowerStep := POWER_REQUEST_ON;
-
-		POWER_REQUEST_ON:
-			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
-			MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
-			IF MpAxisBasicMaster.Power AND MpAxisBasicMaster.Home THEN
-				PowerStep := POWER_CHECK_ON;
-			END_IF;
-			
-		POWER_CHECK_ON:
-			IF MpAxisBasicMaster.PowerOn AND MpAxisBasicMaster.IsHomed THEN
-				PowerStep := POWER_DONE;
-			ELSE
-				MpAxisBasicMaster.Power := NOT MpAxisBasicMaster.Power;
-				MpAxisBasicMaster.Home := NOT MpAxisBasicMaster.Home;
-			END_IF;
-			
-		POWER_DONE:
-			MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
-			MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
-
-	END_CASE
+	MpAxisBasicMaster.Power := gMainLogic.MotorMode.Production.Cmd.PowerOn;
+	MpAxisBasicMaster.Home := gMainLogic.MotorMode.Production.Cmd.Home;
 	MpAxisBasicMaster.ErrorReset := gMainLogic.MotorMode.Production.Cmd.Reset;
 	MpAxisBasicMaster.MoveAdditive := gMainLogic.MotorMode.Production.Cmd.StartWinding;
 	MpAxisBasicMaster.MoveVelocity := gMainLogic.MotorMode.Manual.JogWithTenReg;
 	MpAxisBasicMaster.Stop := gMainLogic.MotorMode.Production.Cmd.EmergencyStop;
-	
-	IF (MpAxisBasicMasterPar.Velocity <> PrevVelocity) OR (MpAxisBasicMasterPar.Distance <> PrevDistance) THEN
-		UpdateTrigger := TRUE;
-	ELSE
-		UpdateTrigger := FALSE;
-	END_IF
 
-	UpdateEdge := UpdateTrigger AND NOT UpdateEdge;
-	
-	MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity;
-	MpAxisBasicMasterPar.Distance := gMainLogic.MotorMode.Production.Parameter.Distance;
-	
-	MpAxisBasicMaster.Update := UpdateEdge;
+	MpAxisBasicMasterPar.Velocity := gMainLogic.MotorMode.Production.Parameter.Velocity * 1000.0/ 60.0;
+	MpAxisBasicMasterPar.Distance := gMainLogic.MotorMode.Production.Parameter.Distance * 1000.0;
 	
 	LineVelocityInMeters := MpAxisBasicMaster.Velocity * 60.0 / 1000.0;
 	
@@ -67,6 +33,7 @@ PROGRAM _CYCLIC
 	gTensionLogic.Status.MasterIsPowerOn := MpAxisBasicMaster.PowerOn;
 	gMainLogic.MotorMode.Production.Status.ActVelocity := LineVelocityInMeters;
 	gTensionLogic.Status.ErrorExist := MpAxisBasicMaster.Error;
+	gTensionLogic.Status.MoveDone := MpAxisBasicMaster.MoveDone;
 	MpAxisBasicMaster();
 	
 END_PROGRAM

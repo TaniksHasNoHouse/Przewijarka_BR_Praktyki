@@ -30,6 +30,7 @@ TYPE
 		ErrorExist : BOOL;
 		ActProcessedDistance : REAL; (*proceset distance from executed state*)
 		SetDancers : BOOL; (*force dancers to set position on riseing edge*)
+		MoveDone : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;

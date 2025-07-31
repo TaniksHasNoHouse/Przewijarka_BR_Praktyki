@@ -17,8 +17,8 @@ VAR
 	ActLeftDancerPos : INT;
 	ActLeftDancerPosScal : REAL;
 	Distance : REAL;
-	SetRightDancerPos : REAL := 10.0;
-	SetLeftDancerPos : REAL := 10.0;
+	SetRightDancerPos : REAL := 0.0;
+	SetLeftDancerPos : REAL := 0.0;
 	ActRightDancerPosScal : REAL;
 	ProgressBarProcent : REAL;
 	MpAxisBasicParams : ARRAY[0..2] OF MpAxisBasicParType;
