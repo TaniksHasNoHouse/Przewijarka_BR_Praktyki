@@ -12,10 +12,13 @@ PROGRAM _CYCLIC
 	PhysicalBtn.Manual.ManProd := FALSE;
 	gHMI.Recipe.EnableEditing := FALSE;
 	
-	IF Status.StateCurrent = 'Stopped' THEN
+	IF Status.StateCurrent = 'Stopped'
+	OR Status.StateCurrent = 'Aborded' THEN
 		PhysicalBtn.Manual.ManProd := TRUE;
 	END_IF;
-	IF Status.StateCurrent = 'Idle' THEN
+	IF Status.StateCurrent = 'Idle' 
+	OR Status.StateCurrent = 'Stopped'
+	OR Status.StateCurrent = 'Aborded' THEN
 		gHMI.Recipe.EnableEditing := TRUE;
 	END_IF;
 	
