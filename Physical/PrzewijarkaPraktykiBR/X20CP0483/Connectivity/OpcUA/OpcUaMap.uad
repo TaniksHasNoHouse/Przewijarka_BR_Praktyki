@@ -145,9 +145,7 @@
       <Task Name="AuditPage">
         <Variable Name="Export" />
       </Task>
-      <Task Name="MainContro">
-        <Variable Name="xd" />
-      </Task>
+      <Task Name="MainContro" />
       <Task Name="ChartsPage">
         <Variable Name="MpDataRecorder_0">
           <Variable Name="Info" RecursiveEnable="2" />

@@ -1,11 +1,10 @@
 ACTION actStopped:
 	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_STOPPED, PACKML_MODE_ALL) THEN
     
-			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
-			
+				
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
+			gMainLogic.MotorMode.Production.Parameter.Distance := 0.0;
 
-			gTensionLogic.Status.SetDancers := TRUE;
 			gMainLogic.MotorMode.Production.Cmd.Home := FALSE;
 			gMainLogic.MotorMode.Production.Cmd.Reset := FALSE;
 		

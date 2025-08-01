@@ -53,6 +53,7 @@ TYPE
 	Recipe_type : 	STRUCT 
 		CurrentRecipe : CurrentRecipe_type;
 		EnableEditing : BOOL;
+		Load : BOOL;
 	END_STRUCT;
 	CurrentRecipe_type : 	STRUCT 
 		TensionLeft : REAL := 50.0; (* Naci¹g lewy, zakres 0–14 cm *)

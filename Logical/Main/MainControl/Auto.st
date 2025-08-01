@@ -1,7 +1,6 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	 xd := TRUE;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -20,7 +19,6 @@ PROGRAM _CYCLIC
 	actProdComplete;
 	actManResetting;
 	actManIdle;
-	
 	 
 END_PROGRAM
 
