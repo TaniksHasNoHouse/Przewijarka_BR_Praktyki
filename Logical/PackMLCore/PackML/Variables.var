@@ -6,5 +6,4 @@ VAR
 	step : INT := 0; (* maszyna stanów *)
 	MpPackMLBasicUIConnect : MpPackMLBasicUIConnectType;
 	MpPackMLCore_0 : MpPackMLCore;
-	bulwielki : BOOL;
 END_VAR

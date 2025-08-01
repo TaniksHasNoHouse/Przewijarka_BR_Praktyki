@@ -44,7 +44,7 @@ PROGRAM _CYCLIC
 	IF gTensionLogic.Status.LeftWinderDiameter < 30.0 THEN
 		MpAlarmXSet(gAlarmXCore, 'LeftWinderDiameterLow');
 	END_IF;
-	IF gTensionLogic.Status.LeftWinderDiameter > 30.0 THEN
+	IF gTensionLogic.Status.LeftWinderDiameter >= 30.0 THEN
 		MpAlarmXReset(gAlarmXCore, 'LeftWinderDiameterLow');
 	END_IF;
 	
@@ -52,7 +52,7 @@ PROGRAM _CYCLIC
 	IF gTensionLogic.Status.RightWinderDiameter < 30.0 THEN
 		MpAlarmXSet(gAlarmXCore, 'RightWinderDiameterLow');
 	END_IF;
-	IF gTensionLogic.Status.RightWinderDiameter > 30.0 THEN
+	IF gTensionLogic.Status.RightWinderDiameter >= 30.0 THEN
 		MpAlarmXReset(gAlarmXCore, 'RightWinderDiameterLow');
 	END_IF;
 	

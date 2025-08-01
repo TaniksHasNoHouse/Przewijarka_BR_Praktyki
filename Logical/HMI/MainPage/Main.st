@@ -15,7 +15,9 @@ PROGRAM _CYCLIC
 	IF Status.StateCurrent = 'Stopped' THEN
 		PhysicalBtn.Manual.ManProd := TRUE;
 	END_IF;
-	IF Status.StateCurrent = 'Idle' THEN
+	IF Status.StateCurrent = 'Idle' 
+	OR Status.StateCurrent = 'Stopped'
+	OR Status.StateCurrent = 'Aborted' THEN
 		gHMI.Recipe.EnableEditing := TRUE;
 	END_IF;
 	
