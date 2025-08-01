@@ -7,6 +7,7 @@ ACTION actAborting:
 			gMainLogic.MotorMode.Production.Parameter.Velocity := 0.0;
 			gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 			gTensionLogic.Status.ProgressBarProcent := 0.0;
+			gMainLogic.MotorMode.Production.Cmd.Reset := TRUE;
 			
 			MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
 		END_IF;

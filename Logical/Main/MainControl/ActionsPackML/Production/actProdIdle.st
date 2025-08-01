@@ -12,6 +12,9 @@ ACTION actProdIdle:
 		ELSE
 			gMainLogic.MotorMode.Production.Parameter.Distance := -gHMI.Main.MaterialAdj.Length;
 		END_IF;
+		IF NOT gTensionLogic.Status.EnableAxis1 OR NOT gTensionLogic.Status.EnableAxis2 OR NOT gTensionLogic.Status.EnableAxis3 THEN
+			MpPackMLBasicUIConnect.StateControl.Abort := TRUE;
+		END_IF;
 		IF NOT gTensionLogic.Status.ErrorExist THEN
 	  		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_PRODUCTION);
 		END_IF;

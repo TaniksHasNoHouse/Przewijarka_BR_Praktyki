@@ -5,6 +5,7 @@ ACTION actStopping:
 		gMainLogic.MotorMode.Production.Cmd.StartWinding := FALSE;
 		gTensionLogic.Status.SetDancers := FALSE;
 		gMainLogic.MotorMode.Production.Cmd.PowerOn := FALSE;
+		gMainLogic.MotorMode.Production.Cmd.Reset := FALSE;
 		gTensionLogic.Status.ProgressBarProcent := 0.0;
 
 

@@ -1,3 +1,4 @@
 VAR
 	Status : StatusType;
+	MpPackMLBasicUIConnect : MpPackMLBasicUIConnectType;
 END_VAR

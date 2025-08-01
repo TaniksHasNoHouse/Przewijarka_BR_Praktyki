@@ -5,10 +5,6 @@
     <Property ID="UserID" Value="1" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Everyone" />
-      <Property ID="Role[2]" Value="Administrators" />
-      <Property ID="Role[3]" Value="Supervisors" />
-      <Property ID="Role[4]" Value="Operators" />
-      <Property ID="Role[5]" Value="Specials" />
     </Group>
   </Element>
   <Element ID="Admin" Type="User">
