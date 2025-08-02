@@ -7,40 +7,36 @@ TYPE
 		Status : StatusTensionType;
 	END_STRUCT;
 	CommandTensionType : 	STRUCT 
-		SetRightDancerPos : REAL;
-		SetLeftDancerPos : REAL;
+		SetRightDancerPos : REAL; (*sets position of right dancer in mm*)
+		SetLeftDancerPos : REAL; (*sets position of left dancer in mm*)
 	END_STRUCT;
 	ParameterTensionType : 	STRUCT 
 		GroupLineVelocity : REAL; (*in m/min*)
 	END_STRUCT;
 	StatusTensionType : 	STRUCT 
-		ActRightDancerPos : REAL;
-		ActLeftDancerPos : REAL;
-		LeftWinderDiameter : REAL;
-		RightWinderDiameter : REAL;
-		LineIsInMove : BOOL;
-		ProgressBarProcent : REAL;
-		LineIsHomed : BOOL;
-		LineIsPoweredOn : BOOL;
-		MasterIsPowerOn : BOOL;
-		MasterIsHomed : BOOL;
+		ActRightDancerPos : REAL; (*actual right dancer position in mm*)
+		ActLeftDancerPos : REAL; (*actual left dancer position in mmm*)
+		LeftWinderDiameter : REAL; (*diameter on left winder*)
+		RightWinderDiameter : REAL; (*diameter on right winder*)
+		LineIsInMove : BOOL; (*checks if line is moving*)
+		LineIsHomed : BOOL; (*checks if line is homed*)
+		LineIsPoweredOn : BOOL; (*checks if line is powered on*)
+		MasterIsPowerOn : BOOL; (*inside variable to communicate beatween programs*)
+		MasterIsHomed : BOOL; (*inside variable to communicate beatween programs*)
+		EnableAxis1 : BOOL; (*chacks if left axis is enabled*)
+		EnableAxis2 : BOOL; (*chacks if middle axis is enabled*)
+		EnableAxis3 : BOOL; (*chacks if right axis is enabled*)
+		ProgressBarProcent : REAL; (*procent for progress bar*)
+		ErrorExist : BOOL;
+		ActProcessedDistance : REAL; (*proceset distance from executed state*)
+		SetDancers : BOOL; (*force dancers to set position on riseing edge*)
+		MoveDone : BOOL;
 	END_STRUCT;
 	WorkModeType : 	STRUCT 
 		Production : ProdLogicType;
 		Manual : ManAxisSelectType;
 	END_STRUCT;
 	ProdLogicType : 	STRUCT 
-		Cmd : ProdCmdType;
-		Parameter : ProdParType;
-		Status : ProdStatusType;
-	END_STRUCT;
-	ProdCmdType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
-	ProdParType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
-	ProdStatusType : 	STRUCT 
 		a : BOOL;
 	END_STRUCT;
 	ManAxisSelectType : 	STRUCT 
@@ -49,25 +45,19 @@ TYPE
 		Axis3 : Axis3LogType;
 	END_STRUCT;
 	Axis1LogType : 	STRUCT 
-		Cmd : Axis1CMDType;
 		Parameter : Axis1ParaType;
 		Status : Axis1StatType;
 	END_STRUCT;
 	Axis2LogType : 	STRUCT 
-		Cmd : Axis2CMDType;
 		Parameter : Axis2ParaType;
 		Status : Axis2StatType;
 	END_STRUCT;
 	Axis3LogType : 	STRUCT 
-		Cmd : Axis3CMDType;
 		Parameter : Axis3ParaType;
 		Status : Axis3StatType;
 	END_STRUCT;
-	Axis1CMDType : 	STRUCT 
-		a : BOOL;
-	END_STRUCT;
 	Axis1ParaType : 	STRUCT 
-		RotarySpeed : REAL;
+		RotarySpeed : REAL; (*rpm*)
 		Axis1DancerPara : Axis1ParaDancerPID;
 		Axis1PID : Axis1ParaPID;
 	END_STRUCT;
@@ -82,13 +72,10 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis1StatType : 	STRUCT 
-		IsInMotion : BOOL;
-	END_STRUCT;
-	Axis2CMDType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 	Axis2ParaType : 	STRUCT 
-		LinearSpeed : REAL;
+		LinearSpeed : REAL; (*m/min*)
 		Axis2PID : Axis2ParaPID;
 	END_STRUCT;
 	Axis2ParaPID : 	STRUCT 
@@ -97,13 +84,10 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis2StatType : 	STRUCT 
-		IsInMotion : BOOL;
-	END_STRUCT;
-	Axis3CMDType : 	STRUCT 
-		a : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 	Axis3ParaType : 	STRUCT 
-		RotarySpeed : REAL;
+		RotarySpeed : REAL; (*in rpm*)
 		Axis3DancerPara : Axis3ParaDancerPID;
 		Axis3PID : Axis3ParaPID;
 	END_STRUCT;
@@ -118,6 +102,6 @@ TYPE
 		D : REAL;
 	END_STRUCT;
 	Axis3StatType : 	STRUCT 
-		IsInMotion : BOOL;
+		IsInMotion : BOOL; (*checks if axis is in motion*)
 	END_STRUCT;
 END_TYPE

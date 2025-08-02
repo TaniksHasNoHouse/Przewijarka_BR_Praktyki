@@ -1,8 +1,10 @@
 ACTION actAborted:
 // Just pass to clearing
 	IF MpPackMLStateIsActive(gPackMLCore, mpPACKML_STATE_ABORTED, PACKML_MODE_ALL) THEN
-		// Stay in aborted - PackML will handle Clear command from HMI
-		// No specific action needed, just wait for clear
-		MpPackMLStateComplete(gPackMLCore, PACKML_MODE_ALL);
+		IF NOT gHMI.Alarms.PendingAlarms THEN
+			gMainLogic.MotorMode.Production.Cmd.Reset := FALSE;
+	  		MpPackMLBasicUIConnect.StateControl.Clear := TRUE;
+		END_IF;
+		
 	END_IF;
 END_ACTION

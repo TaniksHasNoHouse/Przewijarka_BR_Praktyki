@@ -5,7 +5,6 @@
     <Object Type="File" Description="Page description">ManualPage.page</Object>
     <Object Type="File">ManualContent.content</Object>
     <Object Type="File">ManualLeftRight.content</Object>
-    <Object Type="File">ManualRegulators.content</Object>
     <Object Type="File">ManualMoveMotor.content</Object>
   </Objects>
 </Package>

@@ -75,5 +75,38 @@ Aktueller Status von PackML:</seg>
         <seg>Save</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Login">
+      <tuv xml:lang="pl">
+        <seg>Zaloguj się</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Einloggen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Log in</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_LoggedOut">
+      <tuv xml:lang="pl">
+        <seg>Pomyślnie wylogowano</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Erfolgreich abgemeldet</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Successfully logged out</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Out">
+      <tuv xml:lang="pl">
+        <seg>Wylogowano</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Abgemeldet</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logged out</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

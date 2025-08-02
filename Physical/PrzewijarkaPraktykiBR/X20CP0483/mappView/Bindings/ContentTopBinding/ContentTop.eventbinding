@@ -6,7 +6,7 @@
       <EventHandler>
         <Action>
           <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="LoginDialogue" headerText="Zaloguj się:" />
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="LoginDialogue" headerText="$IAT/MainPage/ID_Login" />
           </Target>
         </Action>
       </EventHandler>
@@ -17,6 +17,37 @@
         <Action>
           <Target xsi:type="clientSystem.Action">
             <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="Automatycznie wylogowano." header="Informacja" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentTop.LogoutButton.Click">
+      <Source xsi:type="widgets.brease.LogoutButton.Event" contentRefId="ContentTop" widgetRefId="LogoutButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Navigate" pageId="MainPage" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="$IAT/MainPage/ID_LoggedOut" header="$IAT/MainPage/ID_Out" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentTop.ImageUser.Click">
+      <Source xsi:type="widgets.brease.Image.Event" contentRefId="ContentTop" widgetRefId="ImageUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Login" userName="Supervisor" password="Supervisor" />
           </Target>
         </Action>
       </EventHandler>

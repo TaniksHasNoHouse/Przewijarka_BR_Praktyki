@@ -5,6 +5,6 @@
     <Object Type="File">T50Vis.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="Package">Bindings</Object>
-    <Object Type="File">ChartsPageData.eventbinding</Object>
+    <Object Type="File">ContentLeft.binding</Object>
   </Objects>
 </Package>

@@ -217,5 +217,126 @@ Suchen:</seg>
         <seg>Length to rewind:</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_Save">
+      <tuv xml:lang="pl">
+        <seg>Zapisz</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Speichern</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Cancel">
+      <tuv xml:lang="pl">
+        <seg>Anuluj</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Stornieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cancel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Dancer1">
+      <tuv xml:lang="pl">
+        <seg>Napinacz 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Spanner 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dancer 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Dancer2">
+      <tuv xml:lang="pl">
+        <seg>Napinacz 2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Spanner 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dancer 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Left">
+      <tuv xml:lang="pl">
+        <seg>Lewo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Links</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Left</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Right">
+      <tuv xml:lang="pl">
+        <seg>Prawo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rechts</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Right</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_USure">
+      <tuv xml:lang="pl">
+        <seg>Czy na pewno chcesz usunac recepture?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Möchten Sie das Rezept wirklich löschen?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Do you really want to delete recipe?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Yes">
+      <tuv xml:lang="pl">
+        <seg>Tak</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_No">
+      <tuv xml:lang="pl">
+        <seg>Nie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nein</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Loaded">
+      <tuv xml:lang="pl">
+        <seg>Receptura została załadowana</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Das Rezept wurde geladen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipe loaded successfully</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Warning">
+      <tuv xml:lang="pl">
+        <seg>Uwaga</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Achtung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Warning</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

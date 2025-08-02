@@ -1,6 +1,6 @@
 PROGRAM _INIT
 	MpAuditTrail_0.MpLink := ADR(gAuditTrail); 
-	MpAuditTrail_0.DeviceName := ADR('USER'); 
+	MpAuditTrail_0.DeviceName := ADR('DATA'); 
 	MpAuditTrail_0.Enable := TRUE;
 
 	MpAuditTrailUI_0.MpLink := ADR(gAuditTrail);
@@ -27,7 +27,19 @@ PROGRAM _CYCLIC
 	
 	Timer();
 	MpAuditTrail_0();
-	MpAuditTrailUI_0(); 
+	MpAuditTrailUI_0();
+	
+	IF MpAuditTrail_0.Error THEN
+		MpAuditTrail_0.ErrorReset := TRUE;
+	ELSE
+		MpAuditTrail_0.ErrorReset := FALSE;
+	END_IF;
+	
+	IF MpAuditTrailUI_0.Error THEN
+		MpAuditTrailUI_0.ErrorReset := TRUE;
+	ELSE
+		MpAuditTrailUI_0.ErrorReset := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

@@ -82,5 +82,27 @@
         <seg>Acknowledge all</seg>
       </tuv>
     </tu>
+    <tu tuid="ID_New">
+      <tuv xml:lang="pl">
+        <seg>Nowy stan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Neuwertiger Zustand</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ID_Old">
+      <tuv xml:lang="pl">
+        <seg>Stary stan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alter Zustand</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Old state</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

@@ -24,6 +24,16 @@
         <Property ID="Message" Value="Control keypad module uninstalled, not present or broken" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="LeftWinderDiameterLow" />
+        <Property ID="Message" Value="Left winder diameter too low! Check tape volume" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="RightWinderDiameterLow" />
+        <Property ID="Message" Value="Right winder diameter too low! Check tape volume" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

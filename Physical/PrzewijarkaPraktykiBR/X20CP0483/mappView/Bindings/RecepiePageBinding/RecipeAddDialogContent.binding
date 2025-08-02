@@ -27,10 +27,7 @@
 
 
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.MaterialLength" attribute="node" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaterialLenghtNumIn" attribute="node" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Speed" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WindingSpeedNumIn" attribute="node" />
@@ -59,14 +56,8 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.RollLeft.MaxSize" attribute="node" />
 <Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="MaxRollLeftNumIn" attribute="node" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.Direction" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="WidningDirSwitch" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHMI.Recipe.CurrentRecipe.DataRegistration" attribute="value" />
-<Target xsi:type="brease" contentRefId="RecipeAddDialogContent" widgetRefId="DataRecordSwitch" attribute="value" />
-</Binding>
+
+
 
 
 

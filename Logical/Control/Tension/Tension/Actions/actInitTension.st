@@ -20,7 +20,7 @@ ACTION actInitTension:
 	TensionController[2].PresetDiameter := RightWinderDiameter;
 	TensionController[0].SetPresetDiameter := TRUE;
 	TensionController[2].SetPresetDiameter := TRUE;
-	
+	TensionGroup.Enable := TRUE;
 	MpAxisBasicFB[0].MpLink := ADR(gAxis_1);
 	MpAxisBasicFB[1].MpLink := ADR(gAxis_2);
 	MpAxisBasicFB[2].MpLink := ADR(gAxis_3);

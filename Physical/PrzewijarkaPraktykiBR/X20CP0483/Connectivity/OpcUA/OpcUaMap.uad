@@ -47,6 +47,12 @@
           <High ValueProvider="Const">800</High>
         </EURange>
       </EURanges>
+      <EURanges Id="8">
+        <EURange>
+          <Low ValueProvider="Const">30</Low>
+          <High ValueProvider="Const">80</High>
+        </EURange>
+      </EURanges>
     </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
@@ -68,7 +74,6 @@
                 <Variable Name="MaxSize" EURangesId="3" />
                 <Variable Name="MinSize" EURangesId="4" />
               </Variable>
-              <Variable Name="MaterialLength" EURangesId="2" />
               <Variable Name="Dencer1PID">
                 <Variable Name="P" EURangesId="5" />
                 <Variable Name="I" EURangesId="6" />
@@ -81,8 +86,9 @@
           </Variable>
           <Variable Name="Manual">
             <Variable Name="JogLeftRight">
-              <Variable Name="SetBeltSpeedRight" EURangesId="2" />
-              <Variable Name="SetBeltSpeedLeft" EURangesId="2" />
+              <Variable Name="SetBeltSpeed" EURangesId="2" />
+              <Variable Name="DenserLeft" EURangesId="1" />
+              <Variable Name="DenserRight" EURangesId="1" />
             </Variable>
             <Variable Name="JogMotors">
               <Variable Name="Motor1">
@@ -96,8 +102,18 @@
               </Variable>
             </Variable>
           </Variable>
+          <Variable Name="Main">
+            <Variable Name="MaterialAdj">
+              <Variable Name="Length" EURangesId="2" />
+            </Variable>
+            <Variable Name="RollAdj">
+              <Variable Name="LeftNum" EURangesId="8" />
+              <Variable Name="RightNum" EURangesId="8" />
+            </Variable>
+          </Variable>
         </Variable>
         <Variable Name="gTensionLogic" RecursiveEnable="2" />
+        <Variable Name="Status" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="RecipePage">
         <Variable Name="UIConnect" RecursiveEnable="2" />
@@ -115,7 +131,6 @@
             <Variable Name="MaxSize" EURangesId="3" />
             <Variable Name="MinSize" EURangesId="3" />
           </Variable>
-          <Variable Name="MaterialLength" EURangesId="2" />
           <Variable Name="Dencer1PID">
             <Variable Name="P" EURangesId="5" />
             <Variable Name="I" EURangesId="6" />
@@ -130,14 +145,19 @@
       <Task Name="AuditPage">
         <Variable Name="Export" />
       </Task>
-      <Task Name="MainContro">
-        <Variable Name="xd" />
-      </Task>
+      <Task Name="MainContro" />
       <Task Name="ChartsPage">
-        <Variable Name="UIConnectData" RecursiveEnable="2" />
+        <Variable Name="MpDataRecorder_0">
+          <Variable Name="Info" RecursiveEnable="2" />
+        </Variable>
       </Task>
       <Task Name="MainPage">
         <Variable Name="ButtonStyles" RecursiveEnable="2" />
+        <Variable Name="PhysicalBtn" RecursiveEnable="2" />
+      </Task>
+      <Task Name="PackML" />
+      <Task Name="AlarmPage">
+        <Variable Name="Style" />
       </Task>
     </Module>
   </DefaultView>
